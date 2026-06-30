@@ -869,5 +869,154 @@ prediction — not just the intention to track one's beliefs — is what makes
 the commitment device effective.
 
 ================================================================================
+CHAPTER 12 — WHEN CERTAINTY KILLS
+================================================================================
+
+Section 12.1 — The Doctor Who Was Right
+
+1. Semmelweis, I. P. (1861). Die Aetiologie, der Begriff und die Prophylaxis
+des Kindbettfiebers. C.A. Hartleben's Verlags-Expedition.
+
+Translated and described in: Carter, K. C. (1983). Childbed Fever: A Scientific
+Biography of Ignaz Semmelweis. Greenwood Press.
+
+Semmelweis's own contemporaneous data documenting the mortality rate decline in
+the First Clinic at the Vienna General Hospital following the introduction of
+chlorinated lime handwashing — from approximately ten percent to approximately
+one percent within months of the intervention. The Carter scientific biography
+provides the primary English-language analysis of Semmelweis's data, method, and
+the institutional response.
+
+2. Nuland, S. B. (2003). The Doctors' Plague: Germs, Childbed Fever, and the
+Strange Story of Ignaz Semmelweis. W. W. Norton.
+
+The definitive modern account of Semmelweis's career, the institutional rejection
+of his evidence, his commitment to the mental asylum in 1865, and his death two
+weeks later of an infection consistent with the sepsis he had spent his career
+documenting. Documents the historical estimate of deaths attributable to the gap
+between Semmelweis's demonstration of the handwashing intervention and the wide
+acceptance of germ theory in the decade after his death.
+
+--------------------------------------------------------------------------------
+
+Section 12.2 — The Anatomy of Lethal Certainty
+
+3. Reason, J. (1990). Human Error. Cambridge University Press.
+https://doi.org/10.1017/CBO9781139062367
+
+The foundational framework for understanding systemic versus individual error,
+including the distributed nature of error in large-scale systems and the
+mechanism by which scale removes the individual corrective feedback that would
+otherwise be available to practitioners. The "Swiss cheese model" of accident
+causation — in which multiple independent failures must align for an error to
+produce a catastrophic outcome — is introduced here and is the conceptual basis
+for Factor Two (Scale) in Section 12.2.
+
+4. Taleb, N. N. (2007). The Black Swan: The Impact of the Highly Improbable.
+Random House.
+
+On the structure of irreversible consequences in complex systems, and
+specifically the asymmetry between reversible and irreversible errors in
+high-stakes domains. The argument that certainty is most dangerous precisely
+in the domains where error is hardest to recover from — that certainty disables
+the correction mechanism before the irreversibility has been discovered — draws
+on Taleb's analysis of "silent evidence" and the structure of catastrophic
+low-probability events.
+
+--------------------------------------------------------------------------------
+
+Section 12.3 — Certainty at Scale
+
+5. Topol, E. J. (2019). High-performance medicine: The convergence of human
+and artificial intelligence. Nature Medicine, 25(1), 44-56.
+https://doi.org/10.1038/s41591-018-0300-7
+
+Comprehensive review of deep learning algorithm performance in medical imaging
+across radiology, pathology, ophthalmology, and dermatology. Documents the
+headline finding that in several specific tasks, algorithms matched or exceeded
+specialist diagnostic accuracy. The review also raises questions about validation
+methodology and the conditions under which AI-physician performance comparisons
+translate to real-world clinical outcomes.
+
+6. Goddard, K., Roudsari, A., & Wyatt, J. C. (2012). Automation bias: A
+systematic review of frequency, effect mediators, and mitigators. Journal of
+the American Medical Informatics Association, 19(1), 121-127.
+https://doi.org/10.1136/amiajnl-2011-000089
+
+Systematic review of automation bias in clinical decision support contexts —
+the documented tendency of human operators to defer to automated system outputs
+rather than maintaining independent assessment, even when the automated output
+is incorrect. Demonstrates that automation bias is a reproducible, cross-domain
+behavioral pattern and that confident automated outputs suppress human judgment
+specifically in the cases where independent assessment would have caught the error.
+
+7. U.S. Securities and Exchange Commission and Commodity Futures Trading
+Commission. (2010). Findings Regarding the Market Events of May 6, 2010:
+Report of the Staffs of the CFTC and SEC to the Joint Advisory Committee on
+Emerging Regulatory Issues.
+https://www.sec.gov/news/studies/2010/marketevents-report.pdf
+
+The joint regulatory investigation documenting the May 6, 2010 Flash Crash,
+identifying the algorithmic trading feedback cascade as a central mechanism in
+the event. The finding that automated systems operating at machine speed entered
+a feedback loop with each other — each reading market signals partly produced by
+the others and trading on those signals — is the specific mechanism described in
+Section 12.3, Case Two.
+
+8. Dressel, J., & Farid, H. (2018). The accuracy, fairness, and limits of
+predicting recidivism. Science Advances, 4(1), eaao5580.
+https://doi.org/10.1126/sciadv.aao5580
+
+Demonstrates that COMPAS predictions are no more accurate than those of random
+untrained participants, and that the confident numerical score produces anchoring
+effects in human decision-makers: judges given a risk score cluster their
+decisions around that score in ways inconsistent with using it as one input among
+many. The irreversibility of the criminal justice domain — the sentences are
+served before corrections arrive — makes anchoring to an overconfident score
+particularly costly.
+
+--------------------------------------------------------------------------------
+
+Section 12.4 — The Loop
+
+9. Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019).
+Dissecting racial bias in an algorithm used to manage the health of
+populations. Science, 366(6464), 447-453.
+https://doi.org/10.1126/science.aax2342
+
+Documents a commercial health risk algorithm that systematically underestimated
+the health needs of Black patients relative to white patients at equivalent
+disease burden. The mechanism: the algorithm used prior healthcare costs as a
+proxy for health needs, but Black patients had historically incurred lower costs
+for equivalent needs due to disparate access to care. The training data encoded
+the outcome of a biased system; the model learned to reproduce that outcome as a
+prediction of future need. A primary empirical document for the medical feedback
+loop described in Section 12.4.
+
+10. Shumailov, I., Shumaylov, Z., Zhao, Y., Gal, Y., Papernot, N., &
+Anderson, R. (2023). The Curse of Recursion: Training on Generated Data Makes
+Models Forget. arXiv:2305.17493. https://arxiv.org/abs/2305.17493
+
+The paper introducing and documenting "model collapse" — the progressive
+divergence of model outputs from the underlying data distribution when models
+are trained on data influenced by previous model generations. Demonstrates that
+iterative training on AI-generated or AI-influenced data produces systematic
+degradation of model quality, with earlier-generation errors amplified in
+subsequent iterations.
+
+11. Lo, A. W. (2004). The adaptive markets hypothesis: Market efficiency from
+an evolutionary perspective. Journal of Portfolio Management, 30, 15-29.
+https://doi.org/10.3905/jpm.2004.442611
+
+The adaptive markets hypothesis, establishing that financial strategies are not
+stationary — their effectiveness depends on the market environment, which is
+itself shaped by the strategies being deployed at scale. When enough capital
+implements a strategy based on historical data, the strategy's deployment alters
+the market in ways not captured in the training data, producing overconfident
+predictions in an environment the model was not trained on. Provides the
+theoretical framework for the financial trading feedback loop discussed in
+Section 12.4.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
