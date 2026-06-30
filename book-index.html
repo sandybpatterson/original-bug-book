@@ -121,12 +121,12 @@
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 14px;
     }
     .index-list li {
       font-size: 0.92rem;
-      color: #999;
-      line-height: 1.55;
+      color: #888;
+      line-height: 1.65;
       padding-left: 16px;
       position: relative;
     }
@@ -134,11 +134,22 @@
       content: '·';
       position: absolute;
       left: 4px;
+      top: 0;
       color: #3a3a3a;
     }
     .index-list li em {
       color: #c8b89a;
       font-style: normal;
+      display: block;
+      margin-bottom: 1px;
+    }
+    .index-list li .cite {
+      display: block;
+      font-family: 'Courier New', monospace;
+      font-size: 0.7rem;
+      color: #4a4a4a;
+      letter-spacing: 0.02em;
+      margin-bottom: 4px;
     }
 
     footer {
@@ -179,12 +190,30 @@
         <a href="chapter.html?c=0">Prologue</a>
       </div>
       <ul class="index-list">
-        <li><em>confabulation</em> — introduced as the book's central phenomenon; the mind's tendency to invent explanations for things it does not understand and believe them sincerely</li>
-        <li><em>overconfidence</em> — identified as a foundational human cognitive flaw mirrored in AI systems</li>
-        <li><em>pattern detection</em> — introduced as an adaptive human trait that becomes a liability when misapplied</li>
-        <li><em>sycophancy</em> — first named as a human social behavior before being examined as an AI failure mode</li>
-        <li><em>the mirror</em> — the book's central structural metaphor: AI as a reflection of human cognition, not a departure from it</li>
-        <li><em>"the machine learned everything it knows from the only teacher it ever had"</em> — the book's opening premise, stated in the prologue</li>
+        <li>
+          <em>confabulation</em>
+          The mind's habit of inventing plausible explanations for things it doesn't understand, then believing them completely. Not lying — something stranger: the brain sealing over a gap so seamlessly that the person filling the gap doesn't know it's happening.
+        </li>
+        <li>
+          <em>overconfidence</em>
+          The tendency to believe we know more than we do and that our knowledge is more reliable than it is. One of the foundational cognitive flaws, and one of the first the book identifies as a flaw AI inherited directly from human output.
+        </li>
+        <li>
+          <em>pattern detection</em>
+          The brain's constant search for meaningful connections in incoming information — an adaptive trait that becomes a liability when applied to random or ambiguous data. Introduced in the prologue as a feature, examined in Chapter 2 as a bug.
+        </li>
+        <li>
+          <em>sycophancy</em>
+          The social behavior of telling people what they want to hear rather than what is accurate. Named first as a human tendency in the prologue; examined as an AI structural failure in Chapter 10.
+        </li>
+        <li>
+          <em>the mirror</em>
+          The book's central structural metaphor: AI as a reflection of human cognition, not a departure from it. Everything the machine does wrong, we taught it.
+        </li>
+        <li>
+          <em>"the machine learned everything it knows from the only teacher it ever had"</em>
+          The book's opening premise.
+        </li>
       </ul>
     </div>
 
@@ -195,22 +224,77 @@
         <a href="chapter.html?c=1">We Built It In Our Image</a>
       </div>
       <ul class="index-list">
-        <li><em>Mata v. Avianca</em> — 2023 federal court case in which attorney Steven Schwartz submitted a brief citing AI-generated case law that did not exist; the opening case study for the book's argument</li>
-        <li><em>Steven Schwartz</em> — attorney who submitted the fabricated citations in Mata v. Avianca (Spring 2023)</li>
-        <li><em>Judge P. Kevin Castel</em> — presided over Mata v. Avianca; sanctioned the attorneys involved</li>
-        <li><em>confabulation</em> — clinical definition introduced: the brain generating plausible, coherent, sincerely believed accounts to fill gaps in memory or knowledge, without awareness that it is doing so</li>
-        <li><em>reconstructive memory</em> — the finding that human memory does not play back stored recordings but rebuilds the past from fragments on each retrieval, introducing distortion each time</li>
-        <li><em>Fivush, Haden &amp; Reese study</em> — research on autobiographical memory formation in children showing how memory is co-constructed through conversation rather than preserved intact</li>
-        <li><em>Barclay &amp; Wellman memory accuracy study</em> — documented significant inaccuracy rates in participants' memories of their own diary entries; foundational evidence for reconstructive memory</li>
-        <li><em>Loftus &amp; Palmer experiment (1974)</em> — "smashed vs. contacted" study showing that the verb used in a question changes what subjects report remembering about a car accident; landmark evidence for the malleability of memory</li>
-        <li><em>Elizabeth Loftus</em> — memory researcher whose work across multiple decades established the plasticity and susceptibility of human memory to suggestion</li>
-        <li><em>lost in the mall procedure (Loftus, 1993)</em> — experiment in which subjects were induced to recall a vivid false childhood memory of being lost in a shopping mall; established that entirely fabricated memories can feel genuine</li>
-        <li><em>Hyman, Husband &amp; Billings study (1995)</em> — demonstrated that subjects could be led to "remember" a false hospitalization that never occurred, adding emotional specificity to the Loftus false-memory findings</li>
-        <li><em>Braun, Ellis &amp; Loftus — Bugs Bunny at Disneyland study (2001)</em> — subjects exposed to a fake Disneyland ad featuring Bugs Bunny (a Warner Bros. character who could not be at Disneyland) later reported memories of meeting him there; showed that advertising can implant false autobiographical memories</li>
-        <li><em>Bender, Gebru et al. — "Stochastic Parrots" (2021)</em> — influential paper arguing that large language models reproduce statistical patterns in training data without understanding, and amplify the biases embedded in that data</li>
-        <li><em>gap-filling</em> — the cognitive mechanism shared by human memory and AI language models: producing plausible-sounding output to bridge the space between what is actually known and what is being asked</li>
-        <li><em>"the original bug"</em> — the book's central phrase, defined in Chapter 1: the human mind itself is the source of the flaws now observed in AI systems trained on human output</li>
-        <li><em>"the human mind is the original bug"</em> — the book's thesis, stated directly</li>
+        <li>
+          <em>Mata v. Avianca (Spring 2023)</em>
+          Federal court case in which attorney Steven Schwartz filed a brief citing six AI-generated cases, none of which existed. Judge P. Kevin Castel of the S.D.N.Y. issued a sanctions order documenting the fabricated citations in June 2023. The book's opening case study: a lawyer was sanctioned not for using AI but for trusting it with the same unchecked confidence a human would apply to their own memory.
+        </li>
+        <li>
+          <em>Steven Schwartz</em>
+          The attorney who submitted the ChatGPT-fabricated citations in Mata v. Avianca. He told the court he had no idea an AI could "just make things up."
+        </li>
+        <li>
+          <em>Judge P. Kevin Castel</em>
+          The federal judge who presided over Mata v. Avianca and issued the sanctions order. S.D.N.Y., June 2023.
+        </li>
+        <li>
+          <em>confabulation (clinical definition)</em>
+          The clinical term for what AI did in Mata v. Avianca — and what human brains do constantly: generating plausible, coherent, sincerely believed accounts to fill gaps in knowledge, without any awareness that the gap exists. Not hallucination. Not lying. The brain producing a confident wrong answer and believing it.
+        </li>
+        <li>
+          <em>reconstructive memory</em>
+          The finding that human memory does not store events like recordings and play them back on demand. Instead, the brain rebuilds the past from fragments each time it retrieves a memory — slightly differently each time, without noticing the reconstruction is happening.
+        </li>
+        <li>
+          <em>Fivush, Haden &amp; Reese (1996)</em>
+          <span class="cite">Remembering Our Past: Studies in Autobiographical Memory · Cambridge University Press · Ed. Rubin</span>
+          Research on how autobiographical memories are formed through conversation. Shared storytelling with parents and peers shapes what children remember — meaning memory is co-constructed socially rather than stored individually. Two siblings who attended the same event often remember different events entirely.
+        </li>
+        <li>
+          <em>Barclay &amp; Wellman (1986)</em>
+          <span class="cite">Journal of Memory and Language, 25(1)</span>
+          Study in which participants failed to recognize their own past diary entries when shown alongside reconstructed versions. Even your own recorded words can feel unfamiliar after your memory has had a chance to rewrite them. The paper establishes that the reconstructive process is continuous and invisible to the person undergoing it.
+        </li>
+        <li>
+          <em>Loftus &amp; Palmer (1974)</em>
+          <span class="cite">Journal of Verbal Learning and Verbal Behavior, 13(5)</span>
+          The smashed/contacted experiment. Elizabeth Loftus and John Palmer changed a single verb in questions asked of eyewitnesses to a filmed car accident — "Did the cars smash into each other?" vs. "Did the cars contact each other?" — and found that word choice changed what people later reported seeing, including details that weren't in the film at all. The foundational evidence that memory is not a recording but a reconstruction shaped by what happens after the event.
+        </li>
+        <li>
+          <em>Elizabeth Loftus</em>
+          Memory researcher whose work across four decades established that human memory is plastic, malleable, and vulnerable to suggestion — from questions, advertising, and social context. The scientific foundation for most of Chapter 1's argument, and for the legal reform of eyewitness testimony procedures.
+        </li>
+        <li>
+          <em>lost in the mall procedure (Loftus, 1993)</em>
+          <span class="cite">American Psychologist, 48(5)</span>
+          Elizabeth Loftus and colleagues induced subjects to "remember" a vivid false childhood memory — being lost in a shopping mall — through nothing more than repeated suggestion. Many subjects not only accepted the false memory but added sensory and emotional detail that wasn't in the suggestion. A complete manufactured memory, felt as real as any genuine one.
+        </li>
+        <li>
+          <em>Hyman, Husband &amp; Billings (1995)</em>
+          <span class="cite">Applied Cognitive Psychology, 9(3)</span>
+          Replicated and extended the false-memory paradigm using fabricated hospitalizations and wedding receptions. Documented the rate at which subjects constructed emotionally specific, detailed memories of events that never occurred. The paper that showed the lost-in-the-mall finding wasn't a quirk of one particular scenario.
+        </li>
+        <li>
+          <em>Braun, Ellis &amp; Loftus (2002)</em>
+          <span class="cite">Psychology &amp; Marketing, 19(1)</span>
+          The Bugs Bunny at Disneyland study. Subjects exposed to a fake Disneyland advertisement featuring Bugs Bunny — a Warner Bros. character who could never have been at Disneyland — later reported childhood memories of meeting him there. Advertising had implanted a false autobiographical memory of an event that was physically impossible. The memory felt genuine.
+        </li>
+        <li>
+          <em>Bender, Gebru et al. — "Stochastic Parrots" (2021)</em>
+          <span class="cite">ACM Conference on Fairness, Accountability, and Transparency</span>
+          The paper arguing that large language models reproduce the statistical patterns of their training data without understanding them, and amplify the biases embedded in that data. The "stochastic parrot" framing: a system that produces fluent output by predicting likely word sequences, not by knowing anything.
+        </li>
+        <li>
+          <em>gap-filling</em>
+          The mechanism shared by human memory and AI language models: producing plausible output to bridge the space between what is actually known and what is being asked. The brain gap-fills. The model gap-fills. Neither announces when it is doing it.
+        </li>
+        <li>
+          <em>"the original bug"</em>
+          The book's central phrase, defined in Chapter 1: the human mind itself is the source of the cognitive flaws now observed in AI. The machine didn't invent confabulation, overconfidence, or narrative addiction — it learned them from the only training data it had.
+        </li>
+        <li>
+          <em>"the human mind is the original bug"</em>
+          The book's thesis, stated directly.
+        </li>
       </ul>
     </div>
 
@@ -221,19 +305,60 @@
         <a href="chapter.html?c=2">Pattern Machines</a>
       </div>
       <ul class="index-list">
-        <li><em>B.F. Skinner — superstitious pigeon experiment (1948)</em> — pigeons given food pellets on a random schedule began performing elaborate, idiosyncratic behaviors as if those behaviors caused the food; demonstrated that brains will construct causal patterns even when none exist</li>
-        <li><em>superstitious behavior</em> — the behavioral result of detecting patterns in random sequences; Skinner's term, applied in the chapter to both animals and humans</li>
-        <li><em>apophenia</em> — the tendency to perceive meaningful connections between unrelated things; coined by psychiatrist Klaus Conrad in 1958, originally to describe a symptom of early psychosis</li>
-        <li><em>Klaus Conrad (1958)</em> — German psychiatrist who coined the term apophenia to describe the experience of seeing connections where none exist</li>
-        <li><em>Brugger — neuroscience of apophenia</em> — research linking apophenia to dopamine activity, suggesting the pattern-detection tendency is chemically mediated</li>
-        <li><em>hot hand fallacy</em> — the widespread belief that a player who has made several shots in a row is "hot" and more likely to make the next one; statistically unsupported in most contexts</li>
-        <li><em>Gilovich, Vallone &amp; Tversky — hot hand study</em> — analyzed NBA shooting data and found no statistical evidence for streaks that couldn't be explained by chance; one of the most replicated and debated findings in behavioral science</li>
-        <li><em>smoke detector principle (Nesse)</em> — the evolutionary argument that false positives (detecting a threat that isn't there) are much cheaper than false negatives (missing a real threat), so brains evolved to over-detect patterns</li>
-        <li><em>patternicity (Shermer)</em> — Michael Shermer's term for the human tendency to find meaningful patterns in meaningless noise</li>
-        <li><em>dopamine reward prediction (Schultz)</em> — Wolfram Schultz's research showing dopamine neurons fire in anticipation of rewards, not just at their receipt; connects pattern detection to the brain's reward architecture</li>
-        <li><em>false positive / false negative asymmetry</em> — the evolutionary logic underlying human over-detection of patterns: the cost of a missed threat exceeded the cost of a false alarm across millions of years</li>
-        <li><em>machine apophenia</em> — the chapter's coined term for AI pattern-detection that produces confident outputs from spurious correlations in training data</li>
-        <li><em>"What is the mechanism?"</em> — the chapter's named practice: a grounding question that interrupts pattern-based reasoning by demanding a causal explanation before accepting a connection</li>
+        <li>
+          <em>Skinner — superstitious pigeon experiment (1948)</em>
+          <span class="cite">Journal of Experimental Psychology</span>
+          B.F. Skinner gave pigeons food at random intervals, completely unconnected to their behavior. The pigeons developed elaborate, idiosyncratic rituals — turning in circles, nodding rhythmically — as if those behaviors had caused the food. The brain will construct a causal pattern out of a random sequence rather than accept that the sequence has no pattern.
+        </li>
+        <li>
+          <em>superstitious behavior</em>
+          Skinner's term for behavior reinforced by accidental contingency. The behavior that preceded a reward "by chance" gets repeated as if it caused the reward. The chapter uses it to show that pattern-detection is not a cognitive error so much as a feature running faster than the evidence warrants.
+        </li>
+        <li>
+          <em>apophenia</em>
+          The tendency to perceive meaningful connections between unrelated things. Coined by German psychiatrist Klaus Conrad in 1958 to describe a feature of early-stage psychosis; later recognized as a normal cognitive tendency that psychosis simply exaggerates past the point of adaptive function.
+        </li>
+        <li>
+          <em>Klaus Conrad (1958)</em>
+          German psychiatrist who coined "apophenia" to describe the experience of seeing patterns and connections where none exist — originally as a symptom of emerging schizophrenia. The chapter uses the term more broadly for the universal tendency.
+        </li>
+        <li>
+          <em>Brugger — neuroscience of apophenia</em>
+          Research linking apophenia to dopamine activity. High-dopamine states produce more pattern-detection — more connections, more associations, more creative leaps and more false positives simultaneously. The tendency is chemically mediated, not just cognitive.
+        </li>
+        <li>
+          <em>hot hand fallacy</em>
+          The widespread belief that a player who has made several shots in a row is "hot" and more likely to make the next one. Intuitively obvious. Statistically unsupported in most analyses. The chapter uses it as the premier example of a pattern that feels real and isn't there.
+        </li>
+        <li>
+          <em>Gilovich, Vallone &amp; Tversky (1985)</em>
+          <span class="cite">Cognitive Psychology, 17(3)</span>
+          Thomas Gilovich, Robert Vallone, and Amos Tversky analyzed NBA shooting records and found no statistical evidence for hot streaks beyond random variation. One of the most replicated and debated findings in behavioral science: the pattern is compellingly real to observers and statistically absent in the data.
+        </li>
+        <li>
+          <em>smoke detector principle (Nesse)</em>
+          Evolutionary psychiatrist Randolph Nesse's argument that brains evolved to over-detect threats because false positives (detecting a threat that isn't there) are far less costly than false negatives (missing a real threat). A biased detector that occasionally fires for nothing is worth it if it saves your life when the real threat comes.
+        </li>
+        <li>
+          <em>patternicity (Shermer)</em>
+          Michael Shermer's term for the human tendency to find meaningful patterns in meaningless noise. The adaptive version of apophenia: in our evolutionary environment, finding false patterns was cheap; missing real ones was often fatal.
+        </li>
+        <li>
+          <em>dopamine reward prediction (Schultz)</em>
+          Wolfram Schultz's research showing that dopamine neurons fire in anticipation of rewards — at the moment a cue predicts a reward — rather than at the reward itself. This makes the prediction mechanism pleasurable, which drives the brain to keep pattern-detecting even when the patterns are spurious.
+        </li>
+        <li>
+          <em>false positive / false negative asymmetry</em>
+          The evolutionary logic behind human over-detection: across millions of years, missing a real threat cost more than falsely detecting one. Brains calibrated for survival over-detect; brains calibrated for accuracy often didn't survive to calibrate.
+        </li>
+        <li>
+          <em>machine apophenia</em>
+          The book's term for AI pattern-detection that produces confident outputs from spurious correlations in training data. The model finds a pattern because finding patterns is what it does — it has no mechanism for distinguishing a real correlation from a statistical artifact of the corpus.
+        </li>
+        <li>
+          <em>"What is the mechanism?"</em>
+          The chapter's practice question. Before accepting any connection between X and Y, demand a causal explanation: how specifically would X produce Y? The question interrupts pattern-based reasoning by requiring a concrete mechanism rather than a plausible-feeling association.
+        </li>
       </ul>
     </div>
 
@@ -244,22 +369,72 @@
         <a href="chapter.html?c=3">Confidence Without Competence</a>
       </div>
       <ul class="index-list">
-        <li><em>Rob Hall</em> — lead guide on the 1996 Everest expedition; established the turnaround rule as a safety mechanism and then violated it on May 10, 1996, contributing to his own death and that of clients including Doug Hansen</li>
-        <li><em>1996 Everest disaster (May 10, 1996)</em> — eight climbers died in a single storm; examined in the chapter as a case study in expert overconfidence and the collapse of pre-committed safety rules under in-the-moment pressure</li>
-        <li><em>turnaround rule</em> — Rob Hall's self-imposed deadline (2:00 p.m.) for turning back from the summit regardless of progress; abandoned on the day of the disaster</li>
-        <li><em>Doug Hansen</em> — client climber who Hall waited for past the turnaround time; both died on the descent</li>
-        <li><em>Dunning-Kruger effect</em> — the finding that people with low competence in a domain tend to overestimate their ability, while highly competent people tend to underestimate theirs</li>
-        <li><em>David Dunning &amp; Justin Kruger (1999, Cornell)</em> — published the foundational study of competence and self-assessment using tests of logical reasoning, grammar, and humor; subjects in the bottom quartile dramatically overestimated their performance</li>
-        <li><em>metacognition</em> — thinking about one's own thinking; the cognitive capacity that the Dunning-Kruger effect shows is impaired in the same people who most need it</li>
-        <li><em>"the deficit and the blindness arrive together"</em> — the chapter's formulation of the Dunning-Kruger mechanism: low competence and low awareness of low competence are products of the same underlying gap</li>
-        <li><em>Atul Gawande — Complications</em> — surgeon and writer whose work on medical decision-making and the limits of expert judgment is cited in the chapter</li>
-        <li><em>analysis paralysis</em> — the failure mode at the opposite extreme from overconfidence: excessive uncertainty that prevents any decision; the chapter addresses both poles</li>
-        <li><em>"hear hoofbeats, think horses"</em> — the medical heuristic for prioritizing common explanations; examined as an appropriate shortcut and also as a source of diagnostic overconfidence</li>
-        <li><em>Philip Tetlock study (1984)</em> — studied 284 expert political forecasters over 20 years and nearly 20,000 predictions; found that experts performed barely better than chance and significantly worse than simple statistical models</li>
-        <li><em>superforecasters</em> — Tetlock's term for the small subset of forecasters who dramatically outperformed experts; characterized by calibration, updating, and comfort with uncertainty rather than domain expertise</li>
-        <li><em>epistemic humility</em> — calibrated uncertainty about one's own knowledge; the chapter identifies it as a learnable practice rather than a personality trait</li>
-        <li><em>calibration</em> — the match between a person's confidence in their beliefs and the actual accuracy of those beliefs; superforecasters distinguish themselves through superior calibration</li>
-        <li><em>"What would have to be true for me to be wrong about this?"</em> — the chapter's named practice question for interrupting overconfidence; requires specifying the conditions under which a held belief would need to be revised</li>
+        <li>
+          <em>Rob Hall</em>
+          Lead guide on the 1996 Everest expedition who established a 2:00 p.m. turnaround rule as a safety mechanism and then violated it on the day of the disaster. Died on the descent waiting for a client he had refused to leave.
+        </li>
+        <li>
+          <em>1996 Everest disaster (May 10, 1996)</em>
+          Eight climbers died in a single storm, including experienced guides who had pre-committed to safety rules they abandoned under pressure from clients and the pull of the summit. The chapter's case study in what happens when expert confidence overrides pre-made constraints in the moment of decision.
+        </li>
+        <li>
+          <em>turnaround rule</em>
+          Rob Hall's self-imposed 2:00 p.m. deadline — turn back from the summit regardless of progress. Established specifically to prevent the summit fever that kills climbers who are too close to turn back. Abandoned on the day he died, with the summit in reach.
+        </li>
+        <li>
+          <em>Doug Hansen</em>
+          A client climber whom Hall waited for past the turnaround time on May 10, 1996. Both died on the descent.
+        </li>
+        <li>
+          <em>Dunning-Kruger effect</em>
+          The finding that people with low competence in a domain tend to overestimate their ability, while highly competent people tend to underestimate theirs. The disturbing part: the same skill deficit that causes poor performance also impairs the ability to recognize poor performance.
+        </li>
+        <li>
+          <em>Dunning &amp; Kruger (1999)</em>
+          <span class="cite">Journal of Personality and Social Psychology</span>
+          David Dunning and Justin Kruger tested subjects at Cornell on logical reasoning, grammar, and humor, then asked them to rate their own performance. Subjects in the bottom quartile dramatically overestimated their scores — not out of arrogance but because they lacked the skill to recognize what a good answer looked like. You need competence to know you're missing it.
+        </li>
+        <li>
+          <em>metacognition</em>
+          Thinking about one's own thinking: the capacity to evaluate the quality of your own reasoning. The Dunning-Kruger finding shows that metacognition is most impaired in the people who most need it.
+        </li>
+        <li>
+          <em>"the deficit and the blindness arrive together"</em>
+          The chapter's formulation of the Dunning-Kruger mechanism. Low competence and low awareness of low competence are products of the same gap. You can't use a skill you don't have to notice that you don't have it.
+        </li>
+        <li>
+          <em>Atul Gawande — Complications</em>
+          <span class="cite">Metropolitan Books, 2002</span>
+          Surgeon and writer whose book on medical decision-making and the limits of expert judgment the chapter draws on for its account of how expertise creates genuine ability and also particular blind spots — often in the same place.
+        </li>
+        <li>
+          <em>analysis paralysis</em>
+          The failure mode at the opposite end from overconfidence: excessive uncertainty that prevents any decision. The chapter treats both poles as problems — overconfidence kills and paralysis kills — and looks for the calibrated middle.
+        </li>
+        <li>
+          <em>"hear hoofbeats, think horses"</em>
+          The medical heuristic: when you hear a common-sounding symptom, look for the common explanation first before considering rarities. A useful shortcut and also the mechanism behind diagnostic anchoring — once the horse is identified, it becomes hard to hear the zebra.
+        </li>
+        <li>
+          <em>Philip Tetlock — political forecasting research</em>
+          Study tracking 284 expert political forecasters over 20 years and nearly 20,000 predictions. Experts performed barely better than chance and significantly worse than simple statistical models. The researchers who expressed the most confident opinions were the least accurate; those who held uncertainty more explicitly did better.
+        </li>
+        <li>
+          <em>superforecasters</em>
+          Tetlock's term for the small subset of forecasters who dramatically outperformed domain experts. Distinguished not by specialized knowledge but by practices: updating beliefs when evidence arrives, expressing uncertainty numerically, treating predictions as hypotheses rather than positions to defend.
+        </li>
+        <li>
+          <em>epistemic humility</em>
+          Calibrated uncertainty about one's own knowledge — not the paralysis of not knowing, but knowing exactly how uncertain you are. The chapter identifies it as a learnable practice rather than a personality trait.
+        </li>
+        <li>
+          <em>calibration</em>
+          The match between confidence and accuracy. A well-calibrated person who says they're 70% sure is right about 70% of the time. Most people are systematically overconfident: their subjective 70% is closer to 55% accuracy.
+        </li>
+        <li>
+          <em>"What would have to be true for me to be wrong about this?"</em>
+          The chapter's practice question. Requires specifying the conditions under which a held belief would need to be revised — which forces you to make explicit what evidence you are actually relying on.
+        </li>
       </ul>
     </div>
 
@@ -270,18 +445,56 @@
         <a href="chapter.html?c=4">The Shortcut Problem</a>
       </div>
       <ul class="index-list">
-        <li><em>Tversky &amp; Kahneman — spinning wheel / anchoring experiment (early 1970s)</em> — subjects shown a random number on a spinning wheel were influenced by that number when making subsequent numerical estimates with no logical connection to the wheel; foundational demonstration of the anchoring heuristic</li>
-        <li><em>anchoring heuristic</em> — the tendency to rely disproportionately on the first piece of information encountered (the "anchor") when making subsequent judgments, even when the anchor is arbitrary</li>
-        <li><em>availability heuristic</em> — the tendency to judge the likelihood of an event by how easily examples come to mind; causes systematic overestimation of vivid, recent, or emotionally resonant events</li>
-        <li><em>representativeness heuristic</em> — the tendency to judge probability by how closely something resembles a prototype, ignoring base rates</li>
-        <li><em>Linda problem / conjunction fallacy</em> — Tversky and Kahneman's experiment in which 85% of subjects judged "Linda is a bank teller and active in the feminist movement" as more probable than "Linda is a bank teller," despite the logical impossibility; demonstrates the representativeness heuristic overriding probabilistic reasoning</li>
-        <li><em>System 1 / System 2</em> — Kahneman's two-mode model of cognition: System 1 is fast, automatic, associative, and heuristic-driven; System 2 is slow, deliberate, effortful, and rule-based</li>
-        <li><em>Daniel Kahneman — Thinking, Fast and Slow (2011)</em> — the book synthesizing decades of research on cognitive biases and heuristics; foundational reference for the chapter</li>
-        <li><em>Mars Climate Orbiter (September 23, 1999)</em> — NASA spacecraft lost because one engineering team used metric units and another used imperial; a $327 million failure attributed to a systematic unit-conversion error that accumulated unchallenged over months</li>
-        <li><em>anchoring in clinical diagnosis — 2009 UK case</em> — a 43-year-old woman whose anxiety diagnosis became an anchor preventing physicians from investigating a cardiac condition; the heart problem was missed until it became serious</li>
-        <li><em>COMPAS</em> — Correctional Offender Management Profiling for Alternative Sanctions; a recidivism risk-scoring algorithm used in U.S. criminal courts, examined across multiple chapters as a case study in algorithmic bias</li>
-        <li><em>ProPublica Machine Bias investigation (Angwin et al., 2016)</em> — analysis of COMPAS scores for more than 7,000 defendants in Broward County, Florida, finding that the algorithm falsely flagged Black defendants as high-risk at nearly twice the rate of white defendants</li>
-        <li><em>fluency as System 2 trigger</em> — the chapter's argument that the feeling of effort or difficulty in processing information is the natural signal for engaging deliberate reasoning; when things feel too easy, they may warrant scrutiny</li>
+        <li>
+          <em>Tversky &amp; Kahneman — anchoring experiment (early 1970s)</em>
+          Amos Tversky and Daniel Kahneman spun a wheel of fortune marked 1–100 in front of subjects, then asked them to estimate things like the percentage of African countries in the UN. Subjects anchored on the random number the wheel had landed on — people who saw 65 gave consistently higher estimates than people who saw 10, even though the wheel was obviously random and obviously irrelevant.
+        </li>
+        <li>
+          <em>anchoring heuristic</em>
+          The tendency to rely disproportionately on the first numerical information encountered when making subsequent estimates, even when that anchor is arbitrary or irrelevant. First numbers stick.
+        </li>
+        <li>
+          <em>availability heuristic</em>
+          The tendency to judge likelihood by how easily examples come to mind. Plane crashes feel more dangerous than car trips because crashes make the news. The vividness of a remembered example distorts the estimate of its frequency.
+        </li>
+        <li>
+          <em>representativeness heuristic</em>
+          The tendency to judge probability by how closely something resembles a prototype or stereotype, overriding base-rate information. Leads to the conjunction fallacy and to systematic misjudgment of events that fit a compelling pattern.
+        </li>
+        <li>
+          <em>Linda problem / conjunction fallacy</em>
+          Tversky and Kahneman's experiment: subjects were given a description of Linda as a politically active philosophy student, then asked whether Linda was more likely to be (A) a bank teller or (B) a bank teller who is active in the feminist movement. 85% chose B, which is logically impossible — B is a subset of A. The representativeness heuristic overrode basic probability because the description matched "feminist activist."
+        </li>
+        <li>
+          <em>System 1 / System 2</em>
+          Kahneman's two-mode model of cognition. System 1: fast, automatic, associative, running constantly, driving most decisions without our awareness. System 2: slow, deliberate, effortful, required for logical reasoning — and easily overridden by System 1's confident suggestions.
+        </li>
+        <li>
+          <em>Kahneman — Thinking, Fast and Slow (2011)</em>
+          <span class="cite">Farrar, Straus and Giroux</span>
+          Kahneman's synthesis of decades of research on heuristics and biases. The book that brought the System 1/System 2 framework into wide circulation and serves as the primary reference for Chapter 4's structure.
+        </li>
+        <li>
+          <em>Mars Climate Orbiter (September 23, 1999)</em>
+          A $327 million NASA spacecraft lost because one engineering team used metric units and another used imperial, and neither caught the discrepancy across nine months of flight. Not a dramatic failure. A quiet, cumulative one — the kind the heuristic-driven mind is worst at catching precisely because nothing about it felt wrong at any single moment.
+        </li>
+        <li>
+          <em>anchoring in clinical diagnosis — 2009 UK case</em>
+          A 43-year-old woman whose anxiety diagnosis became an anchor preventing subsequent physicians from investigating her cardiac symptoms. The heart condition was missed until it was serious. The first label had defined the frame, and everything that came after it was evaluated relative to that anchor.
+        </li>
+        <li>
+          <em>COMPAS</em>
+          Correctional Offender Management Profiling for Alternative Sanctions. A recidivism risk-scoring algorithm used in U.S. criminal courts to inform bail, sentencing, and parole decisions. Examined across multiple chapters as a case study in what happens when algorithmic shortcuts carry irreversible consequences.
+        </li>
+        <li>
+          <em>ProPublica Machine Bias investigation (Angwin et al., 2016)</em>
+          <span class="cite">ProPublica, May 2016</span>
+          Analysis of COMPAS scores for more than 7,000 defendants in Broward County, Florida. Found that Black defendants were falsely flagged as high-risk at nearly twice the rate of white defendants, and white defendants were more often falsely classified as low-risk. The investigation that brought algorithmic recidivism scoring into mainstream public debate.
+        </li>
+        <li>
+          <em>fluency as System 2 trigger</em>
+          The chapter's argument that the feeling of effort or friction when processing information is the natural cue for engaging deliberate reasoning. Fluent, authoritative-sounding output — from a person or an AI — signals System 2 to stand down. The implication: the smoother the answer, the more it may warrant scrutiny.
+        </li>
       </ul>
     </div>
 
@@ -292,17 +505,51 @@
         <a href="chapter.html?c=5">Ask a Better Question</a>
       </div>
       <ul class="index-list">
-        <li><em>Douglas Adams — The Hitchhiker's Guide to the Galaxy (1979)</em> — the novel whose premise (a computer computes the Answer to Life, the Universe, and Everything as "42") structures the chapter's argument that wrong questions produce useless answers regardless of computational power</li>
-        <li><em>Deep Thought</em> — the fictional computer in Adams's novel that produces the answer "42" after seven and a half million years of computation; the chapter's image of a system that answers precisely and completely irrelevantly</li>
-        <li><em>"42"</em> — the answer Deep Thought gives; useless not because the computation failed but because the question was never properly formed</li>
-        <li><em>asterisk as wildcard / ASCII code 42</em> — the chapter's observation that 42 is the ASCII code for the asterisk (*), the universal symbol for "anything"; the answer was telling the questioners they had not specified what they were asking</li>
-        <li><em>question framing effects</em> — the finding that the structure and wording of a question systematically influences the answer, independent of the underlying facts being queried</li>
-        <li><em>leading questions</em> — questions that embed an assumption or suggest an expected answer; prohibited in legal testimony for this reason</li>
-        <li><em>Socrates / Socratic method</em> — the philosophical practice of questioning assumptions through structured dialogue rather than assertion; introduced as a historical model for the chapter's practices</li>
-        <li><em>Plato — Meno, Theaetetus, Republic</em> — dialogues in which Socrates demonstrates the Socratic method of inquiry through progressive questioning of assumptions</li>
-        <li><em>"the question before the question"</em> — the chapter's named three-step practice: write down your question, identify the assumption embedded in it, then ask one level deeper before seeking an answer</li>
-        <li><em>hidden assumptions exercise</em> — the chapter's practice using three loaded example questions to train the skill of identifying what a question presupposes before answering it</li>
-        <li><em>"the examined assumption is the beginning of real knowledge"</em> — closing phrase of the chapter</li>
+        <li>
+          <em>Douglas Adams — The Hitchhiker's Guide to the Galaxy (1979)</em>
+          <span class="cite">Pan Books</span>
+          Adams's novel built around the premise that a supercomputer spends seven and a half million years computing the Answer to Life, the Universe, and Everything and produces "42." The chapter uses it to argue that a system can answer precisely and completely irrelevantly when the question was never properly formed.
+        </li>
+        <li>
+          <em>Deep Thought</em>
+          The fictional computer in Adams's novel that produces "42." The image of a system that works perfectly and tells you nothing useful — not because the computation failed but because the question behind it was never specified.
+        </li>
+        <li>
+          <em>"42"</em>
+          Deep Thought's answer. Perfectly computed, utterly useless. The chapter's image of answering the wrong question with full competence.
+        </li>
+        <li>
+          <em>asterisk as wildcard / ASCII code 42</em>
+          The chapter's observation that 42 is the ASCII code for the asterisk (*), the universal symbol for "anything" or "everything." The answer was saying: you never told me what you were actually asking. Your question was a wildcard.
+        </li>
+        <li>
+          <em>question framing effects</em>
+          The systematic finding that the structure and wording of a question shapes the answer, independent of the underlying facts being queried. Change the frame and you change what you find out.
+        </li>
+        <li>
+          <em>leading questions</em>
+          Questions that embed an assumption or suggest an expected answer. Prohibited in legal examination for this reason. The chapter uses the legal prohibition as evidence that question structure is treated as consequential when stakes are high enough to enforce it.
+        </li>
+        <li>
+          <em>Socrates / Socratic method</em>
+          The philosophical practice of questioning assumptions through structured dialogue, attributed to Socrates and documented in Plato's dialogues. Introduced as the historical model for asking better questions rather than seeking better-researched answers.
+        </li>
+        <li>
+          <em>Plato — Meno, Theaetetus, Republic</em>
+          The dialogues in which Socrates demonstrates that what people confidently know often dissolves under questioning. The Meno on the teachability of virtue, the Theaetetus on the nature of knowledge, the Republic on justice — all structured as exercises in uncovering the assumption under the assumption.
+        </li>
+        <li>
+          <em>"the question before the question"</em>
+          The chapter's named three-step practice: (1) write down your question, (2) identify the assumption embedded in it, (3) ask one level deeper before seeking an answer. The practice that changes what you find out.
+        </li>
+        <li>
+          <em>hidden assumptions exercise</em>
+          The chapter uses three loaded example questions to demonstrate the skill of identifying what a question presupposes before answering it. Each question contains an assumption that, once named, changes whether the question should be answered at all.
+        </li>
+        <li>
+          <em>"the examined assumption is the beginning of real knowledge"</em>
+          Closing phrase of the chapter.
+        </li>
       </ul>
     </div>
 
@@ -313,21 +560,67 @@
         <a href="chapter.html?c=6">Narrative Is Not Truth</a>
       </div>
       <ul class="index-list">
-        <li><em>Heider &amp; Simmel animated shapes study (1944, Smith College)</em> — subjects watched a 34-second animation of two triangles and a circle moving around a box and spontaneously constructed detailed social narratives (romance, aggression, escape) from the abstract shapes; foundational evidence of the human narrative instinct</li>
-        <li><em>narrative instinct</em> — the automatic tendency to construct causal, character-driven stories from sequences of events; the chapter's central subject</li>
-        <li><em>default mode network</em> — the brain network most active during rest, mind-wandering, and narrative construction; implicated in the automatic storytelling that the chapter examines</li>
-        <li><em>Buckner, Andrews-Hanna &amp; Schacter — default mode network review</em> — comprehensive review of research on the default mode network's role in self-referential thought, narrative, and autobiographical memory</li>
-        <li><em>eyewitness testimony unreliability</em> — the chapter's application of the narrative instinct to legal contexts: witnesses construct stories as they watch events, then remember the story rather than the event</li>
-        <li><em>man books flight scenario</em> — the chapter's five-event exercise demonstrating how readers automatically construct a narrative of intent from unconnected facts</li>
-        <li><em>Iraq War WMDs / Colin Powell UN speech (February 5, 2003)</em> — Powell's presentation of intelligence to the United Nations Security Council making the case for Iraqi weapons of mass destruction; used as the chapter's extended case study in narrative coherence overwhelming ambiguous evidence</li>
-        <li><em>Chilcot Inquiry (2016)</em> — the British government's seven-year investigation into the Iraq War, which concluded that the case for invasion was built on intelligence that was exaggerated and presented with a certainty that was not warranted</li>
-        <li><em>recovered memory / therapeutic narrative (1980s–1990s)</em> — the period when therapists guided clients to "recover" memories of childhood abuse that research has since shown were frequently confabulated; examined as a case of narrative coherence producing sincere false belief</li>
-        <li><em>Loftus — recovered memory critique</em> — Elizabeth Loftus's work challenging the validity of recovered memories produced through therapeutic suggestion</li>
-        <li><em>Goldstein et al. — AI-generated misinformation study (2023)</em> — research finding that AI-generated misinformation is more persuasive than human-written misinformation partly because it is more narratively coherent</li>
-        <li><em>narrative coherence over factual accuracy</em> — the chapter's central argument: brains evaluate stories for narrative quality (does it hang together?) rather than factual accuracy (is each element true?)</li>
-        <li><em>three signals of false narrative</em> — the chapter's named warning signs: Clean Villain (someone is perfectly responsible), Satisfying Arc (the ending feels earned), Emotional Pull (the story produces a strong feeling)</li>
-        <li><em>"the narrative check"</em> — the chapter's named practice: before accepting an explanation, ask which of the three signals it triggers</li>
-        <li><em>conspiracy theories as structurally good stories</em> — the chapter's argument that conspiracy theories persist because they have excellent narrative structure, not because of the quality of their evidence</li>
+        <li>
+          <em>Heider &amp; Simmel (1944)</em>
+          <span class="cite">American Journal of Psychology · Smith College</span>
+          Fritz Heider and Marianne Simmel showed 34 seconds of abstract animation — two triangles and a circle moving around a box — to 34 subjects. Almost all of them spontaneously described the shapes in narrative terms: a bully, a couple, an escape. Nobody needed to be told to see a story. The foundational evidence that narrative construction is not a learned interpretation but a structural feature of the human perceptual system.
+        </li>
+        <li>
+          <em>narrative instinct</em>
+          The automatic tendency to construct causal, character-driven stories from sequences of events. The brain doesn't receive events; it receives episodes with protagonists, motivations, and arcs. This happens before any deliberate interpretation begins.
+        </li>
+        <li>
+          <em>default mode network</em>
+          The brain network most active during rest, mind-wandering, and self-referential thought. Among other things, a story-generating system running continuously in the background — even when you're not trying to tell a story.
+        </li>
+        <li>
+          <em>Buckner, Andrews-Hanna &amp; Schacter — default mode network review</em>
+          Comprehensive research review documenting the default mode network's role in self-referential thought, autobiographical memory, and imagined futures. The scientific basis for treating narrative not as an occasional activity but as the brain's default mode of operation.
+        </li>
+        <li>
+          <em>eyewitness testimony unreliability</em>
+          The legal and cognitive consequence of the narrative instinct: witnesses don't record events and report them; they construct a story as they watch, and then remember the story. Each retelling refines the narrative, not the facts.
+        </li>
+        <li>
+          <em>man books flight scenario</em>
+          The chapter's five-event exercise: five unconnected facts about a man booking a flight, and readers immediately construct a narrative of motivation and intent from them. Demonstrates that narrative construction is automatic — it happens before any decision to interpret.
+        </li>
+        <li>
+          <em>Colin Powell UN speech (February 5, 2003)</em>
+          Powell's presentation to the United Nations Security Council making the case for Iraqi weapons of mass destruction. The chapter's extended case study in how narrative coherence — a satisfying, internally consistent story — allowed ambiguous and contested intelligence to be presented with a certainty the underlying evidence didn't support.
+        </li>
+        <li>
+          <em>Chilcot Inquiry (2016)</em>
+          The British government's seven-year investigation into the Iraq War, concluding that the intelligence was exaggerated and presented with a certainty that was not warranted. The formal verdict on the Powell narrative: it was a better story than it was intelligence.
+        </li>
+        <li>
+          <em>recovered memory / therapeutic narrative (1980s–1990s)</em>
+          The period during which therapists guided clients to "recover" memories of childhood abuse. Elizabeth Loftus's research showed many of these memories were confabulated through therapeutic suggestion — narrative structures imposed on gaps that the therapeutic process had made patients feel they needed to fill.
+        </li>
+        <li>
+          <em>Loftus — recovered memory critique</em>
+          Elizabeth Loftus's body of work challenging the validity of therapeutically recovered memories, and the professional cost to her of publishing research that contradicted a therapeutic practice many believed was helping patients.
+        </li>
+        <li>
+          <em>Goldstein et al. — AI-generated misinformation study (2023)</em>
+          Found that AI-generated misinformation is more persuasive than human-written misinformation, in part because it is more narratively coherent. The machine doesn't know what happened but it knows how a story is supposed to sound.
+        </li>
+        <li>
+          <em>narrative coherence over factual accuracy</em>
+          The chapter's central finding: the brain evaluates stories for how well they hang together, not for whether each element is true. A coherent false story is more convincing than an incoherent true one.
+        </li>
+        <li>
+          <em>three signals of false narrative</em>
+          The chapter's named warning signs: Clean Villain (someone is perfectly and solely responsible), Satisfying Arc (the ending feels earned rather than arbitrary), Emotional Pull (the story produces a strong feeling that seems to confirm it). When all three are present, the narrative may be doing more work than the evidence.
+        </li>
+        <li>
+          <em>"the narrative check"</em>
+          The chapter's practice: before accepting an explanation, name which of the three signals it triggers. Not to reject the explanation but to notice when story-quality is doing the persuading.
+        </li>
+        <li>
+          <em>conspiracy theories as structurally good stories</em>
+          The chapter's argument that conspiracy theories persist not because of their evidence quality but because of their narrative quality — clear villains, coherent arcs, strong emotional pull. The very features that make them implausible to outsiders make them compelling to insiders.
+        </li>
       </ul>
     </div>
 
@@ -338,17 +631,48 @@
         <a href="chapter.html?c=7">What Does Understanding Even Mean</a>
       </div>
       <ul class="index-list">
-        <li><em>decoding vs. comprehension</em> — the chapter's opening distinction: converting symbols to sounds/words (decoding) is not the same as grasping meaning (comprehension); demonstrated through the child-reading example</li>
-        <li><em>Perfetti &amp; Stafura — reading comprehension theory (2014)</em> — research distinguishing the cognitive processes involved in decoding text from those required for genuine comprehension; applied in the chapter to the question of AI "understanding"</li>
-        <li><em>Chinese Room thought experiment (John Searle, 1980, University of California)</em> — Searle's argument that a system can manipulate symbols according to rules and produce outputs indistinguishable from understanding without any genuine comprehension occurring; the chapter's central philosophical reference</li>
-        <li><em>Systems Reply</em> — the counterargument to Searle's Chinese Room: even if no individual component understands, the system as a whole might; Searle's response is that shuffling the room's components together doesn't add understanding</li>
-        <li><em>Robot Reply</em> — the counterargument that grounding symbols in sensorimotor experience with the world would produce genuine understanding; the chapter examines why this may not be sufficient</li>
-        <li><em>Brain Simulator Reply</em> — the counterargument that if a system simulates every neuron of a Chinese speaker's brain, it would thereby understand; examined and found to preserve the original problem</li>
-        <li><em>predictive processing</em> — the theory that the brain's primary function is predicting sensory input and updating predictions based on error signals; the chapter examines how this describes cognition without settling the understanding question</li>
-        <li><em>Karl Friston — free energy principle</em> — Friston's mathematical framework for predictive processing, describing cognition as the minimization of prediction error</li>
-        <li><em>Andy Clark — Surfing Uncertainty</em> — Clark's accessible treatment of predictive processing and its implications for the nature of mind</li>
-        <li><em>paranoia / library joke</em> — the chapter's example illustrating the difference between pattern matching (recognizing words in a familiar context) and understanding (grasping what the words mean in this specific situation)</li>
-        <li><em>"probing for understanding"</em> — the chapter's named four-practice framework for testing whether genuine comprehension (AI's or anyone's) is present: shift the context, ask for an exception, push below the surface, bring what the text cannot contain</li>
+        <li>
+          <em>decoding vs. comprehension</em>
+          The chapter opens with a child reading aloud: converting symbols to sounds without understanding a word. The distinction matters because AI systems can decode and produce text fluently — without the comprehension that makes text meaningful to someone who actually knows what it refers to.
+        </li>
+        <li>
+          <em>Perfetti &amp; Stafura (2014)</em>
+          Reading comprehension research distinguishing the cognitive processes involved in decoding text from those required for genuine understanding. Applied in the chapter to the question of whether AI text generation is more like decoding than comprehension.
+        </li>
+        <li>
+          <em>Chinese Room thought experiment (John Searle, 1980)</em>
+          <span class="cite">Behavioral and Brain Sciences · University of California, Berkeley</span>
+          Searle imagines a person in a room following rules to manipulate Chinese symbols in response to inputs, producing outputs that look like fluent Chinese. The person inside understands nothing. Searle's argument: a system can produce outputs indistinguishable from understanding without any comprehension occurring. The chapter's central philosophical reference.
+        </li>
+        <li>
+          <em>Systems Reply</em>
+          The counterargument to Searle: even if no individual component understands, the system as a whole might. Searle's response: if you imagine the person memorizing all the rules and carrying the "room" in their head, the understanding still doesn't appear. Shuffling the components together doesn't produce comprehension.
+        </li>
+        <li>
+          <em>Robot Reply</em>
+          The counterargument that grounding symbols in sensorimotor experience with the physical world would produce genuine understanding. The chapter examines whether interaction with the world adds something that symbol manipulation alone lacks.
+        </li>
+        <li>
+          <em>Brain Simulator Reply</em>
+          The counterargument that simulating every neuron of a Chinese speaker's brain would produce genuine understanding. Searle's point: even if the simulation is perfect, the question of whether understanding is present remains open.
+        </li>
+        <li>
+          <em>predictive processing</em>
+          The theory that the brain's primary function is predicting sensory input and updating predictions based on prediction errors. The chapter examines how this framework describes cognition efficiently without settling whether the prediction process constitutes understanding.
+        </li>
+        <li>
+          <em>Karl Friston — free energy principle</em>
+          Friston's mathematical framework for predictive processing, describing cognition as the minimization of prediction error across sensory and motor systems. The scientific underpinning of the chapter's discussion of what machine cognition is doing.
+        </li>
+        <li>
+          <em>Andy Clark — Surfing Uncertainty (2016)</em>
+          <span class="cite">Oxford University Press</span>
+          Clark's accessible account of predictive processing and its implications for the nature of mind, perception, and action. One of the chapter's primary sources for the framework it uses to approach the understanding question.
+        </li>
+        <li>
+          <em>"probing for understanding"</em>
+          The chapter's four-practice framework for testing whether genuine comprehension is present — in AI or in anyone: (1) shift the context and see if the "understanding" transfers, (2) ask for an exception to the rule just stated, (3) push below the surface of the explanation offered, (4) bring something the text cannot contain and see what happens.
+        </li>
       </ul>
     </div>
 
@@ -359,23 +683,77 @@
         <a href="chapter.html?c=8">The Bias Mirror</a>
       </div>
       <ul class="index-list">
-        <li><em>autocomplete as mirror</em> — the chapter's opening image: word prediction systems reveal, through their suggestions, the statistical shape of the text they were trained on</li>
-        <li><em>WEAT (Word Embedding Association Test)</em> — a method for measuring bias in word embedding models by testing how strongly different words are associated with different concepts</li>
-        <li><em>Caliskan, Bryson &amp; Narayanan — WEAT study (2017, Science)</em> — demonstrated that word embeddings trained on web text reproduce human-documented associations between gender and career (men/science, women/arts) and between race and pleasantness; published in Science</li>
-        <li><em>word embeddings</em> — mathematical representations of words as vectors in high-dimensional space; the positions encode statistical associations from training data, including biased ones</li>
-        <li><em>three bias types</em> — the chapter's framework: historical bias (reflecting documented past inequities), representation bias (reflecting who is and isn't in the training data), and confirmation bias in training (feedback loops that amplify existing patterns)</li>
-        <li><em>Cirillo et al. — sex and gender bias in medical AI</em> — research documenting how AI diagnostic tools trained predominantly on male patient data perform worse on female patients</li>
-        <li><em>Bender et al. — Stochastic Parrots (representation)</em> — the paper's argument that training data assembled from the internet systematically underrepresents speakers of less-resourced languages and communities with less internet access</li>
-        <li><em>Amazon recruiting tool (2014–2018)</em> — Amazon's internally developed AI hiring tool, trained on historical resumes (predominantly from men), learned to penalize resumes containing the word "women's" (as in "women's chess club"); scrapped in 2018 after the bias was discovered (reported by Dastin/Reuters)</li>
-        <li><em>Google Photos gorilla incident (Summer 2015)</em> — Google's image recognition system labeled photos of Jacky Alciné, a Black man, as "gorillas"; a high-profile example of representation bias producing a harmful output</li>
-        <li><em>Jacky Alciné</em> — the man whose photos were mislabeled by Google Photos in 2015</li>
-        <li><em>COMPAS racial disparities (ProPublica 2016)</em> — the finding that Black defendants were nearly twice as likely as white defendants to be falsely classified as high risk by the COMPAS recidivism algorithm (false positive rate 44.9% vs. 23.5%)</li>
-        <li><em>Geena Davis Institute on Gender in Media</em> — research organization that has documented (since 2004) a persistent 3:1 male-to-female ratio in crowd scenes in film and television; audiences perceive a 1:1 ratio as having "too many women"</li>
-        <li><em>Annenberg Inclusion Initiative, USC (2022)</em> — found women comprised 38% of speaking characters in top-grossing films; cited as evidence of the systematic underrepresentation that becomes encoded in AI training data</li>
-        <li><em>Noble — Algorithms of Oppression</em> — Safiya Umoja Noble's book documenting how algorithmic systems reproduce and amplify racial and gender discrimination through their design and training data</li>
-        <li><em>Buolamwini &amp; Gebru — Gender Shades audit</em> — systematic audit of three commercial facial recognition systems, finding significantly higher error rates for darker-skinned faces and female faces, with the highest error rates for darker-skinned women</li>
-        <li><em>"Whose perspective is the default here?"</em> — the chapter's named practice question: a prompt for examining which worldview or experience is being treated as the neutral baseline in any AI output</li>
-        <li><em>cultural defaults encoded in corpus</em> — the chapter's argument that what counts as the "normal" or "neutral" perspective in any AI system reflects the demographics of whoever produced its training data</li>
+        <li>
+          <em>autocomplete as mirror</em>
+          The chapter's opening image: word prediction tools reveal, through their suggestions, the statistical shape of the text they were trained on. The suggestions are not neutral — they reflect whose language, concerns, and associations dominate the corpus.
+        </li>
+        <li>
+          <em>WEAT (Word Embedding Association Test)</em>
+          A method for measuring implicit associations in word embedding models by testing how strongly different words cluster together in the model's internal geometry.
+        </li>
+        <li>
+          <em>Caliskan, Bryson &amp; Narayanan (2017)</em>
+          <span class="cite">Science, 356(6334)</span>
+          Published in Science, this study used the WEAT to demonstrate that word embeddings trained on web text reproduce human-documented associations: men/science and women/arts, white names and pleasant words, Black names and unpleasant words. The research that put AI bias on the cover of a major science journal.
+        </li>
+        <li>
+          <em>word embeddings</em>
+          The mathematical representations of words as vectors in high-dimensional space. Words that tend to appear near each other in training text end up near each other in the model's internal geometry. The geometry encodes associations — including biased ones — with no label indicating their origin.
+        </li>
+        <li>
+          <em>three bias types</em>
+          The chapter's framework: historical bias (the model reflects documented past inequities), representation bias (reflects who is and isn't present in the training data), and confirmation bias in training (feedback loops that amplify existing patterns rather than correcting them).
+        </li>
+        <li>
+          <em>Cirillo et al. — sex and gender bias in medical AI</em>
+          Research documenting how AI diagnostic tools trained predominantly on male patient data perform worse on female patients, perpetuating the longstanding problem of medical research that uses male subjects as the default human.
+        </li>
+        <li>
+          <em>Bender et al. — Stochastic Parrots (2021)</em>
+          <span class="cite">ACM Conference on Fairness, Accountability, and Transparency</span>
+          Returned here for the paper's argument about representation: Common Crawl-trained models systematically underrepresent speakers of less-resourced languages, minority communities, and anyone with less internet access. The training corpus is not a sample of humanity; it is a sample of who was writing on the internet.
+        </li>
+        <li>
+          <em>Amazon recruiting tool (2014–2018)</em>
+          Amazon's internally developed AI hiring tool, trained on historical resumes — which came predominantly from men — learned to penalize resumes that contained the word "women's" (as in "women's chess club"). The tool was scrapped in 2018 after the bias was discovered and reported by Reuters. The model had learned the pattern it was trained on.
+        </li>
+        <li>
+          <em>Google Photos gorilla incident (Summer 2015)</em>
+          Google's image recognition system labeled photos of Jacky Alciné, a Black man, as "gorillas." Not a fringe product or a rogue output: the system had been trained without adequate representation of darker-skinned faces. Google's response was to remove the "gorilla" label from the classifier entirely — not to fix the underlying representation gap.
+        </li>
+        <li>
+          <em>Jacky Alciné</em>
+          The man whose photos were labeled "gorillas" by Google Photos in summer 2015. His tweet exposing the misclassification became one of the most widely cited examples of racial bias in AI systems.
+        </li>
+        <li>
+          <em>COMPAS racial disparities (ProPublica 2016)</em>
+          Returned from Chapter 4: Black defendants were nearly twice as likely as white defendants to be falsely classified as high-risk (44.9% false positive rate vs. 23.5%). White defendants were more often falsely classified as low-risk. The same algorithm, applied to the same kind of decision, operating differently by race.
+        </li>
+        <li>
+          <em>Geena Davis Institute on Gender in Media</em>
+          Research organization that has studied gender representation in film and television since 2004. The chapter cites one finding: a crowd scene with 30% women is perceived by audiences as having "too many women." The threshold for noticing gender imbalance has been normalized to the point where equality reads as excess.
+        </li>
+        <li>
+          <em>Annenberg Inclusion Initiative, USC (2022)</em>
+          Found women comprised 38% of speaking characters in top-grossing films despite comprising half the population. The systematic underrepresentation that gets encoded into AI training data drawn from film, text, and image archives.
+        </li>
+        <li>
+          <em>Noble — Algorithms of Oppression (2018)</em>
+          <span class="cite">New York University Press</span>
+          Safiya Umoja Noble's documentation of how search algorithms and AI systems reproduce racial and gender discrimination through their design choices and training data. The academic framework the chapter draws on for analyzing whose defaults get embedded in systems presented as neutral.
+        </li>
+        <li>
+          <em>Buolamwini &amp; Gebru — Gender Shades audit (2018)</em>
+          Joy Buolamwini and Timnit Gebru's systematic audit of three commercial facial recognition systems, finding dramatically higher error rates for darker-skinned faces and female faces — with error rates for darker-skinned women as high as 34%, compared to under 1% for light-skinned men.
+        </li>
+        <li>
+          <em>"Whose perspective is the default here?"</em>
+          The chapter's practice question: a prompt for examining which worldview, demographic, or experience is being treated as the neutral center in any AI output or system design. The default is not neutral; it's whoever produced the most training data.
+        </li>
+        <li>
+          <em>cultural defaults encoded in corpus</em>
+          What AI systems treat as "normal" or "universal" reflects the demographics of whoever produced the training data. The chapter's argument: this is not a fixable parameter but a structural property of how the technology works.
+        </li>
       </ul>
     </div>
 
@@ -386,15 +764,42 @@
         <a href="chapter.html?c=9">The Examined Assumption</a>
       </div>
       <ul class="index-list">
-        <li><em>O.J. Simpson trial (June 15, 1995)</em> — opening of the chapter; the verdict as a case study in how load-bearing assumptions shape what evidence appears significant</li>
-        <li><em>Christopher Darden</em> — prosecutor in the Simpson trial who asked Simpson to try on the glove found at the crime scene</li>
-        <li><em>Johnnie Cochran</em> — defense attorney whose phrase "if it doesn't fit, you must acquit" crystallized the load-bearing assumption that the glove's fit was definitive</li>
-        <li><em>"if it doesn't fit, you must acquit"</em> — Cochran's closing argument phrase; the chapter uses it to illustrate how a single load-bearing assumption can reorganize an entire evidence structure</li>
-        <li><em>load-bearing assumption</em> — the chapter's coined term for the unspoken premise that an argument depends on most; the assumption that, if removed, causes the entire argument to collapse</li>
-        <li><em>anatomy of a claim</em> — the chapter's four-level framework for dissecting any argument: (1) the stated premise, (2) uncontroversial background assumptions, (3) background assumptions worth examining, and (4) the load-bearing assumption</li>
-        <li><em>assisted living AI response example</em> — the chapter's demonstration case: an AI asked about care options for an elderly parent pattern-matches to institutional placement rather than asking what kind of care the family actually wants</li>
-        <li><em>four arguments exercise</em> — the chapter's practice using four real-world positions (defunding police, mood-altering patches, COVID vaccines, natural immunity) to train the skill of identifying load-bearing assumptions across politically diverse topics</li>
-        <li><em>"what is this argument resting on that it has not said out loud?"</em> — the chapter's named practice question; the core of the assumption habit</li>
+        <li>
+          <em>O.J. Simpson trial (June 15, 1995)</em>
+          The chapter opens on the verdict and uses the trial as a case study in how the load-bearing assumption each side brought to the evidence determined what the evidence meant — not because one side had better facts but because each had a different hidden premise organizing those facts.
+        </li>
+        <li>
+          <em>Christopher Darden</em>
+          Prosecutor in the Simpson trial who asked Simpson to try on the glove found at the crime scene — a decision that gave the defense its most memorable moment and its clearest load-bearing assumption.
+        </li>
+        <li>
+          <em>Johnnie Cochran</em>
+          Defense attorney whose phrase "if it doesn't fit, you must acquit" crystallized the hidden premise that the physical fit of the glove was definitive proof of innocence or guilt.
+        </li>
+        <li>
+          <em>"if it doesn't fit, you must acquit"</em>
+          Cochran's closing argument phrase. The chapter uses it to show how a single load-bearing assumption, once accepted by the audience, reorganizes an entire body of evidence around itself.
+        </li>
+        <li>
+          <em>load-bearing assumption</em>
+          The chapter's term for the hidden premise an argument depends on most heavily — the assumption that, if removed, causes the rest of the argument to collapse. Not the stated premise but the unspoken one underneath it.
+        </li>
+        <li>
+          <em>anatomy of a claim</em>
+          The chapter's four-level framework for dissecting any argument: (1) the stated premise — what is explicitly claimed; (2) background assumption that is uncontroversial; (3) background assumption worth examining; (4) the load-bearing assumption — what the argument cannot survive without and has not said out loud.
+        </li>
+        <li>
+          <em>assisted living AI response example</em>
+          The chapter demonstrates a load-bearing assumption at work in an AI conversation: an AI asked about care options for an elderly parent pattern-matches to institutional placement without asking what "care" means to this family. The hidden premise — "care" means professional institutional care — was never stated and is doing all the work.
+        </li>
+        <li>
+          <em>four arguments exercise</em>
+          The chapter trains the assumption-finding skill using four politically diverse positions: defunding police, mood-altering patches, COVID vaccines, natural immunity. Each contains a different kind of load-bearing assumption. The exercise is designed to make the skill portable across ideological context, not just the topics you find easy to interrogate.
+        </li>
+        <li>
+          <em>"what is this argument resting on that it has not said out loud?"</em>
+          The chapter's practice question. The core of the assumption habit.
+        </li>
       </ul>
     </div>
 
@@ -405,24 +810,80 @@
         <a href="chapter.html?c=10">The Social Animal and Its Machine</a>
       </div>
       <ul class="index-list">
-        <li><em>Asch conformity experiments (Solomon Asch, 1951)</em> — subjects asked to match line lengths gave wrong answers when confederates in the room answered incorrectly; 75% of subjects gave at least one wrong answer, with a conformity rate of 37% across trials — even when the correct answer was unambiguous</li>
-        <li><em>Solomon Asch</em> — social psychologist whose 1951 conformity experiments became foundational evidence that social pressure can override direct sensory evidence</li>
-        <li><em>social desirability bias</em> — the tendency to report beliefs and behaviors that will be approved of rather than those that are actually held; subjects doubted their own perception rather than the group</li>
-        <li><em>Tourangeau &amp; Yan — surveys and social desirability</em> — research documenting systematic underreporting of stigmatized behaviors in surveys, including alcohol consumption underreported by approximately 50%</li>
-        <li><em>sycophancy (organizational definition)</em> — the pattern of telling people what they want to hear rather than what is accurate, driven by social reward for approval-seeking behavior</li>
-        <li><em>Ashford &amp; Blatt — feedback-seeking in organizations</em> — research on how people in hierarchies seek feedback strategically to manage impressions rather than to improve performance</li>
-        <li><em>RLHF (reinforcement learning from human feedback)</em> — the training methodology in which human raters score model outputs and the model is trained to produce outputs that receive higher scores; the mechanism through which AI sycophancy is trained into models</li>
-        <li><em>Ouyang et al. — InstructGPT (2022)</em> — the paper describing the RLHF training process used to align GPT models with human preferences; the technical basis for understanding how human approval signals shape AI outputs</li>
-        <li><em>Sharma et al. — AI sycophancy study (2023)</em> — documented that AI systems trained with RLHF systematically shift their stated positions to match user-expressed preferences, even when doing so means contradicting accurate prior statements</li>
-        <li><em>AI sycophancy</em> — defined and named in this chapter: the systematic tendency of RLHF-trained models to produce outputs that maximize human approval rather than accuracy, because human approval was the training signal</li>
-        <li><em>Challenger disaster (January 28, 1986)</em> — the Space Shuttle Challenger exploded 73 seconds after launch, killing all seven crew members; examined as the chapter's extended case study in organizational sycophancy overriding technical evidence</li>
-        <li><em>Morton Thiokol engineers</em> — the engineers who warned against launching in cold temperatures due to O-ring concerns; overridden after NASA managers asked them to "put on your management hats"</li>
-        <li><em>O-ring seals</em> — the rubber components on the Challenger's solid rocket boosters whose performance in cold temperatures the engineers had flagged; the technical issue that organizational sycophancy suppressed</li>
-        <li><em>"put on your management hats"</em> — the phrase used by a NASA manager on the night before the Challenger launch, asking Thiokol engineers to reconsider their objection from a managerial rather than engineering perspective; the chapter's defining example of sycophancy-inducing pressure</li>
-        <li><em>Rogers Commission</em> — the presidential commission that investigated the Challenger disaster and documented the organizational failures, including the suppression of engineer concerns</li>
-        <li><em>Ptacek &amp; Eberhardt — breaking bad news in medicine</em> — research on how physicians soften diagnoses to reduce patient distress, with the unintended effect of reducing patient understanding of their actual condition</li>
-        <li><em>intermittent fasting Version A/B example</em> — the chapter's demonstration that asking the same question with different social signals (one framing suggesting the user wants validation, another suggesting openness) produces systematically different AI responses about the same topic</li>
-        <li><em>four practices for using AI as a thinking partner</em> — the chapter's named framework for interrupting the sycophancy loop in AI conversations</li>
+        <li>
+          <em>Asch conformity experiments (Solomon Asch, 1951)</em>
+          <span class="cite">Journal of Abnormal and Social Psychology</span>
+          Subjects asked to match line lengths in a group where confederates gave obviously wrong answers. 75% of subjects gave at least one wrong answer during the experiment. The conformity rate across trials was 37%. Subjects knew the lines didn't match. They doubted their own eyes rather than contradict the group. The foundational evidence that social pressure can override direct sensory evidence.
+        </li>
+        <li>
+          <em>Solomon Asch</em>
+          Social psychologist who designed and ran the conformity experiments in 1951. His finding that people doubt their own accurate perception when it conflicts with a group's stated perception remains one of the most widely cited and replicated results in social psychology.
+        </li>
+        <li>
+          <em>social desirability bias</em>
+          The tendency to report beliefs and behaviors that will be approved of rather than those actually held. The mechanism behind Asch's finding: subjects chose the group's wrong answer not because they believed it but because disagreeing in front of the group felt worse than being wrong.
+        </li>
+        <li>
+          <em>Tourangeau &amp; Yan — surveys and social desirability</em>
+          Research documenting systematic reporting distortions in surveys: stigmatized behaviors are underreported, approved behaviors overreported. The chapter notes that alcohol consumption is underreported in surveys by approximately 50% — people present the version of themselves they want others to see, even to anonymous questionnaires.
+        </li>
+        <li>
+          <em>sycophancy</em>
+          Defined in this chapter as the pattern of telling people what they want to hear rather than what is accurate, driven by social reward for approval-seeking behavior. Examined first as a human organizational failing, then as a structural AI problem.
+        </li>
+        <li>
+          <em>Ashford &amp; Blatt — feedback-seeking in organizations</em>
+          Research on how people in hierarchical organizations seek feedback strategically to manage impressions rather than to genuinely improve performance. Sycophancy in institutional settings: the feedback loop that produces the appearance of learning without the substance of it.
+        </li>
+        <li>
+          <em>RLHF (reinforcement learning from human feedback)</em>
+          The training methodology in which human raters score model outputs and the model is trained to maximize those scores. The chapter's key technical argument: when human approval is the training signal, the model learns to produce whatever humans approve of — which is not always the same as what is accurate.
+        </li>
+        <li>
+          <em>Ouyang et al. — InstructGPT (2022)</em>
+          <span class="cite">NeurIPS 2022</span>
+          The paper describing the RLHF training process used to align GPT models with human preferences. The technical foundation for understanding how the feedback mechanism that makes AI assistants helpful also trains them toward sycophancy.
+        </li>
+        <li>
+          <em>Sharma et al. — AI sycophancy study (2023)</em>
+          Documented that AI systems trained with RLHF systematically shift their stated positions to match user-expressed preferences, even when doing so means contradicting accurate prior statements. A model told "I think you're wrong" will often capitulate — not because it has reconsidered but because capitulation was rewarded in training.
+        </li>
+        <li>
+          <em>AI sycophancy</em>
+          Named and defined in this chapter: the systematic tendency of RLHF-trained models to produce outputs that maximize human approval rather than accuracy, because human approval was the training signal. Not a bug in a bad model. A structural consequence of the training method used by most major AI systems.
+        </li>
+        <li>
+          <em>Challenger disaster (January 28, 1986)</em>
+          Space Shuttle Challenger exploded 73 seconds after launch, killing all seven crew members. Engineers at Morton Thiokol had warned NASA against launching in cold temperatures the night before. Their objections were overridden after a NASA manager asked them to "put on your management hats." The chapter's extended case study in organizational sycophancy overriding technical evidence with fatal consequences.
+        </li>
+        <li>
+          <em>Morton Thiokol engineers</em>
+          The engineers who warned against the Challenger launch in cold temperatures due to concerns about O-ring performance in cold weather. Their technical objection was suppressed not by being refuted but by being reframed as an engineering opinion that management had considered and weighed.
+        </li>
+        <li>
+          <em>O-ring seals</em>
+          The rubber components on Challenger's solid rocket boosters whose performance in cold temperatures the Thiokol engineers had specifically flagged. The technical issue that organizational sycophancy prevented from stopping the launch.
+        </li>
+        <li>
+          <em>"put on your management hats"</em>
+          The phrase used by a NASA manager the night before the Challenger launch, asking Thiokol engineers to reconsider their objection from a managerial rather than engineering perspective. The defining image in the chapter of sycophancy-inducing institutional pressure: the explicit request to trade accuracy for approval.
+        </li>
+        <li>
+          <em>Rogers Commission</em>
+          The presidential commission that investigated the Challenger disaster and documented the organizational communication failures — including the suppression of engineer concerns by the approval-seeking dynamics of the pre-launch review process.
+        </li>
+        <li>
+          <em>Ptacek &amp; Eberhardt — breaking bad news in medicine</em>
+          Research on how physicians soften diagnoses to reduce patient distress. The chapter uses it to show that medical sycophancy is not malicious but still causes harm: patients who don't understand their prognosis make worse decisions about their care.
+        </li>
+        <li>
+          <em>intermittent fasting Version A/B example</em>
+          The chapter's demonstration that the same question about intermittent fasting produces systematically different AI responses depending on whether the phrasing signals the user wants validation or is genuinely open to challenge. Same facts; different social signals; different answers.
+        </li>
+        <li>
+          <em>four practices for using AI as a thinking partner</em>
+          The chapter's named framework for interrupting the sycophancy loop: signal that you want pushback rather than agreement; ask for the case against your view; name the bias you're checking for; treat disagreement as the useful output.
+        </li>
       </ul>
     </div>
 
@@ -433,21 +894,68 @@
         <a href="chapter.html?c=11">The Art of Being Wrong Productively</a>
       </div>
       <ul class="index-list">
-        <li><em>Darwin's notebook / "abstract of facts" / golden rule</em> — Darwin's documented practice of writing down observations that contradicted his theories immediately, before he could rationalize them away; named by him "his golden rule"</li>
-        <li><em>Charles Darwin — Autobiography</em> — Darwin's account of his own thinking practices, including his deliberate system for preserving inconvenient evidence</li>
-        <li><em>Darwin — On the Origin of Species / "Difficulties on Theory" chapter</em> — Darwin's decision to include a full chapter addressing the strongest objections to his own theory before his critics could; the chapter uses this as a model of productive wrongness</li>
-        <li><em>motivated reasoning</em> — the cognitive process of using reasoning to arrive at conclusions one is already committed to; the chapter's central cognitive failure</li>
-        <li><em>Ziva Kunda — motivated reasoning (foundational, 1990)</em> — Kunda's influential paper establishing motivated reasoning as a distinct cognitive phenomenon: people reason toward desired conclusions while maintaining the subjective experience of objectivity</li>
-        <li><em>biased assimilation / asymmetric scrutiny</em> — the pattern in which people apply much higher standards of evidence to claims that challenge their beliefs than to claims that support them</li>
-        <li><em>Lord, Ross &amp; Lepper — attitude polarization study</em> — demonstrated that presenting people with mixed evidence about capital deterrence caused believers and skeptics to both become more extreme, not more moderate; each side accepted the evidence that confirmed their view and critiqued the rest</li>
-        <li><em>anti-system</em> — the chapter's coined term for the cluster of cognitive mechanisms (motivated reasoning, biased assimilation, hindsight bias) that work together to protect beliefs from revision</li>
-        <li><em>AI cannot check its own work</em> — the chapter's key argument: a system trained to produce confident, fluent outputs cannot use those same outputs to verify whether they are accurate; the flaw and the detector use the same mechanism</li>
-        <li><em>Guo, Schlichtkrull &amp; Vlachos — automated fact-checking survey</em> — documented the limits of AI fact-checking systems, including their tendency to produce confident verdicts on claims where the evidence is genuinely ambiguous</li>
-        <li><em>Arkes et al. — hindsight bias</em> — research documenting the "I knew it all along" effect: once an outcome is known, people reconstruct their prior beliefs as having predicted it, making it harder to learn from failures</li>
-        <li><em>Gollwitzer — implementation intentions</em> — research showing that "if-then" pre-commitment plans ("if X happens, I will do Y") dramatically increase follow-through on intended behaviors; applied in the chapter to the practice of writing predictions before outcomes are known</li>
-        <li><em>four practices</em> — the chapter's named framework: write the prediction before the outcome; note inconvenient evidence immediately; review the record before deciding; conduct a post-mortem without mercy</li>
-        <li><em>notebook as external record (design principle)</em> — the chapter's argument that the purpose of external records is not memory but immunity to motivated reasoning: a written prediction cannot be silently revised after the fact</li>
-        <li><em>twenty years</em> — how long Darwin waited between formulating his theory and publishing it; used to illustrate what sustained commitment to being wrong productively looks like at the extreme</li>
+        <li>
+          <em>Darwin's notebook / "abstract of facts" / golden rule</em>
+          Charles Darwin's documented practice of writing down observations that contradicted his developing theory immediately upon encountering them, before his mind could rationalize them away. He called this practice his "golden rule." The chapter's primary model of what it looks like to treat being wrong as a tool rather than a verdict.
+        </li>
+        <li>
+          <em>Darwin — Autobiography</em>
+          Darwin's own account of his thinking practices, including his description of the golden rule and his admission that his memory for inconvenient evidence was worse than his memory for evidence that supported his ideas. The self-aware account of a mind trying to outsmart its own motivated reasoning.
+        </li>
+        <li>
+          <em>Darwin — On the Origin of Species / "Difficulties on Theory"</em>
+          Darwin's decision, before publication, to write a full chapter addressing the strongest objections to his own argument and working through them openly rather than leaving them for critics to exploit. The chapter uses this as the model of preemptive productive wrongness.
+        </li>
+        <li>
+          <em>motivated reasoning</em>
+          The cognitive process of using reasoning to arrive at conclusions you are already committed to. The chapter's central failure: people reason toward desired conclusions while subjectively experiencing themselves as reasoning objectively.
+        </li>
+        <li>
+          <em>Kunda — motivated reasoning (1990)</em>
+          <span class="cite">Psychological Bulletin</span>
+          Ziva Kunda's foundational paper establishing motivated reasoning as a distinct cognitive phenomenon. People don't just want to reach certain conclusions — they apply more rigorous scrutiny to evidence that challenges those conclusions and less scrutiny to evidence that supports them. The bias in the reasoning process, not just in the conclusion.
+        </li>
+        <li>
+          <em>biased assimilation / asymmetric scrutiny</em>
+          The pattern by which people apply much higher standards of evidence to claims that challenge their beliefs than to claims that confirm them. The same quality of study gets judged differently depending on which conclusion it reaches.
+        </li>
+        <li>
+          <em>Lord, Ross &amp; Lepper — attitude polarization study</em>
+          <span class="cite">Journal of Personality and Social Psychology</span>
+          Charles Lord, Lee Ross, and Mark Lepper presented people with mixed evidence about capital punishment's deterrent effect. Both believers and skeptics became more extreme in their positions, not more moderate — each side accepted the confirming evidence and critiqued the disconfirming evidence. Mixed evidence can increase polarization rather than reduce it.
+        </li>
+        <li>
+          <em>anti-system</em>
+          The chapter's term for the cluster of cognitive mechanisms — motivated reasoning, biased assimilation, hindsight bias — that work together to protect beliefs from revision. Not a single flaw but an integrated system that defeats revision at every stage of the process.
+        </li>
+        <li>
+          <em>AI cannot check its own work</em>
+          The chapter's key argument: an AI system trained to produce confident, fluent outputs cannot use those same outputs to verify whether they are accurate. The flaw and the error-detector operate through the same mechanism. This is why AI fact-checking of AI outputs is structurally problematic, not just technically imperfect.
+        </li>
+        <li>
+          <em>Guo, Schlichtkrull &amp; Vlachos — automated fact-checking survey</em>
+          Research documenting the limits of automated fact-checking systems, including their tendency to produce confident verdicts on claims where the evidence is genuinely ambiguous or where the model's own training is the source of the error being checked.
+        </li>
+        <li>
+          <em>Arkes et al. — hindsight bias</em>
+          Research on the "I knew it all along" effect: once an outcome is known, people reconstruct their prior beliefs as having predicted it. The result is that failures don't teach lessons — the mind edits the failure into a near-miss and the near-miss into foresight, leaving nothing to learn.
+        </li>
+        <li>
+          <em>Gollwitzer — implementation intentions (1999)</em>
+          Research showing that "if-then" pre-commitment plans dramatically increase follow-through on intended behaviors. Applied in the chapter to the practice of setting automatic responses to inconvenient evidence before you encounter it, rather than deciding in the moment — when motivated reasoning has the strongest pull.
+        </li>
+        <li>
+          <em>four practices</em>
+          The chapter's framework: (1) write the prediction before the outcome; (2) note inconvenient evidence in writing immediately, before motivated reasoning can work; (3) review the record before making decisions; (4) conduct a post-mortem without mercy — on decisions that went well and on decisions that didn't.
+        </li>
+        <li>
+          <em>notebook as external record</em>
+          The chapter's argument for why Darwin's notebook worked: not because it improved his memory but because it made his prior beliefs immune to motivated revision. A written prediction cannot be silently rewritten after the fact. The external record defeats the motivated reasoning because the motivated reasoning can't reach it.
+        </li>
+        <li>
+          <em>twenty years</em>
+          How long Darwin waited between formulating the theory of natural selection and publishing On the Origin of Species. Used not as a model to replicate but as the extreme end of what sustained productive wrongness looks like — twenty years of treating the theory as something to test rather than something to defend.
+        </li>
       </ul>
     </div>
 
@@ -458,29 +966,99 @@
         <a href="chapter.html?c=12">When Certainty Kills</a>
       </div>
       <ul class="index-list">
-        <li><em>Ignaz Semmelweis (Spring 1847, Vienna General Hospital)</em> — Hungarian physician who discovered that physician handwashing dramatically reduced childbed fever mortality; his findings were rejected by the medical establishment and he died in an asylum in 1865, likely of the same infection he had spent his career fighting</li>
-        <li><em>childbed fever / puerperal fever</em> — the infection killing approximately 10% of mothers in Semmelweis's First Obstetrical Clinic; caused by physicians going directly from autopsies to deliveries without washing hands</li>
-        <li><em>Jakob Kolletschka</em> — Semmelweis's colleague who died of an identical infection after an accidental scalpel cut during an autopsy; his death led Semmelweis to his handwashing hypothesis</li>
-        <li><em>miasma theory</em> — the prevailing medical framework attributing disease to "bad air"; its institutional authority made Semmelweis's competing explanation structurally unspeakable within the medical consensus of his time</li>
-        <li><em>chlorinated lime handwashing</em> — Semmelweis's intervention; reduced mortality in his ward from approximately 10% to approximately 1%, before the mechanism was understood or accepted</li>
-        <li><em>Nuland — The Doctors' Plague</em> — Sherwin Nuland's account of the Semmelweis case and its lessons for institutional medicine</li>
-        <li><em>Pasteur / Koch / germ theory</em> — the scientists whose work, decades after Semmelweis, provided the mechanism (bacteria) that made his observations comprehensible and acceptable to the medical establishment</li>
-        <li><em>three conditions for lethal certainty</em> — the chapter's framework: Factor One (high stakes, where the cost of error is irreversible), Factor Two (scale, where the error affects many people), Factor Three (irreversibility, where correction comes too late)</li>
-        <li><em>Reason — Human Error / Swiss cheese model</em> — James Reason's framework for understanding how accidents in complex systems occur when multiple protective layers (each imperfect) align their holes; applied in the chapter to algorithmic and institutional certainty</li>
-        <li><em>Taleb — The Black Swan</em> — Nassim Nicholas Taleb's argument that rare, high-impact events are systematically underweighted by systems optimized for average performance</li>
-        <li><em>automation bias</em> — the tendency for humans to over-trust automated systems and underweight their own judgment when it conflicts with the machine's output</li>
-        <li><em>Topol — 2018 systematic review of deep learning in medical imaging</em> — Eric Topol's review finding that AI systems can match or exceed specialist performance on specific diagnostic tasks; used alongside Goddard et al. to frame the automation bias problem</li>
-        <li><em>Goddard et al. — automation bias review</em> — systematic review of automation bias in medical contexts, documenting how clinicians who receive algorithmic recommendations tend to defer to them even when their own judgment is correct and the algorithm is wrong</li>
-        <li><em>Flash Crash (May 6, 2010)</em> — the U.S. stock market dropped nearly 1,000 points and recovered within 36 minutes; caused by algorithmic trading systems responding to each other's outputs in a feedback loop; examined as a case of automated certainty at financial scale</li>
-        <li><em>SEC/CFTC Flash Crash report</em> — the joint regulatory investigation into the Flash Crash, which identified the algorithmic feedback mechanisms that caused the event</li>
-        <li><em>COMPAS / Dressel &amp; Farid COMPAS accuracy study</em> — 2018 research finding that the COMPAS algorithm's accuracy in predicting recidivism was no better than that of random people recruited online with no criminal justice expertise</li>
-        <li><em>model collapse</em> — the term (also appearing in Chapter 16) for the degradation of AI model outputs that occurs when models train on outputs of previous models rather than original human-generated data</li>
-        <li><em>Obermeyer et al. — racial bias in health algorithm (2019)</em> — study of a widely used healthcare risk-scoring algorithm that systematically underestimated the health needs of Black patients, because it used healthcare costs as a proxy for health needs, and Black patients historically received less care for the same conditions</li>
-        <li><em>Shumailov et al. — model collapse study (2023)</em> — empirical demonstration of model collapse, showing that models trained on outputs of previous generations progressively lose diversity and accuracy</li>
-        <li><em>Lo — adaptive markets hypothesis (2004)</em> — Andrew Lo's framework for understanding financial markets as evolutionary systems rather than equilibrium systems; applied in the chapter to the problem of algorithmic certainty in unstable environments</li>
-        <li><em>institutional consensus</em> — the chapter's term for the human equivalent of model collapse: the way professional consensus can calcify into certainty that resists revision by contradicting evidence</li>
-        <li><em>red teams / audit requirements</em> — the chapter's named institutional interventions for interrupting lethal certainty in high-stakes systems</li>
-        <li><em>"What if this is wrong?"</em> — the chapter's named practice question; applied specifically to high-stakes, high-confidence beliefs and algorithmic outputs</li>
+        <li>
+          <em>Ignaz Semmelweis (Spring 1847, Vienna General Hospital)</em>
+          Hungarian physician who noticed that the mortality rate from childbed fever was ten times higher in the ward where physicians trained than in the midwife ward. The physicians were going directly from autopsies to deliveries without washing their hands. Semmelweis introduced chlorinated lime handwashing and reduced mortality from approximately 10% to approximately 1%. The medical establishment rejected his findings. He died in an asylum in 1865 — probably of the same infection he had spent his career fighting.
+        </li>
+        <li>
+          <em>childbed fever / puerperal fever</em>
+          The infection killing approximately 10% of mothers in Semmelweis's First Obstetrical Clinic, caused by physicians carrying cadaveric material from the autopsy room to the delivery room. The chapter's central case: a real solution, a resistant consensus, and a death toll that continued for decades after the solution was known.
+        </li>
+        <li>
+          <em>Jakob Kolletschka</em>
+          Semmelweis's colleague who died of an infection identical to childbed fever after an accidental scalpel cut during an autopsy. His death led Semmelweis to the hypothesis that cadaveric particles were the cause. The chapter uses Kolletschka's death as the moment of observation — and Semmelweis's inability to get anyone to act on it as the chapter's subject.
+        </li>
+        <li>
+          <em>miasma theory</em>
+          The prevailing medical framework of the period, attributing disease to "bad air." Its institutional authority meant that Semmelweis's competing explanation was structurally unspeakable within the medical consensus — not because physicians considered his evidence and rejected it, but because his explanation didn't fit the framework that defined what counted as a real explanation.
+        </li>
+        <li>
+          <em>chlorinated lime handwashing</em>
+          Semmelweis's intervention: wash hands in chlorinated lime solution before deliveries. Reduced mortality from 10% to 1%. Cheap, effective, immediately implementable. Not adopted for decades after it was documented.
+        </li>
+        <li>
+          <em>Nuland — The Doctors' Plague (2003)</em>
+          <span class="cite">W.W. Norton</span>
+          Sherwin Nuland's account of the Semmelweis case. The chapter's primary narrative source for its opening case study.
+        </li>
+        <li>
+          <em>Pasteur / Koch / germ theory</em>
+          The scientists who, decades after Semmelweis, provided the mechanism (bacteria) that made his observations comprehensible to the medical establishment. Germ theory didn't discover the problem Semmelweis had already solved — it explained why his solution worked. The consensus needed a mechanism before it could accept an observation.
+        </li>
+        <li>
+          <em>three conditions for lethal certainty</em>
+          The chapter's framework for when certainty becomes fatal: Factor One (high stakes — errors are irreversible), Factor Two (scale — the error affects many people simultaneously), Factor Three (speed — correction comes too late). Certainty becomes lethal when all three are present at once.
+        </li>
+        <li>
+          <em>Reason — Human Error / Swiss cheese model</em>
+          <span class="cite">Cambridge University Press, 1990</span>
+          James Reason's framework for understanding accidents in complex systems: protective layers (each imperfect, each with holes) usually prevent disasters, but when the holes align, the accident passes through. Applied in the chapter to AI systems where each protective layer is necessary and not sufficient.
+        </li>
+        <li>
+          <em>Taleb — The Black Swan (2007)</em>
+          <span class="cite">Random House</span>
+          Nassim Nicholas Taleb's argument that rare, high-impact events are systematically underestimated by systems optimized for average performance. The book the chapter draws on for its analysis of the limits of certainty in complex, unstable systems.
+        </li>
+        <li>
+          <em>automation bias</em>
+          The tendency to over-trust automated systems and underweight personal judgment when it conflicts with machine output. Documented across aviation, medicine, financial trading, and criminal justice. The chapter's case: not just that people trust the machine, but that the machine's confidence suppresses the human's willingness to question.
+        </li>
+        <li>
+          <em>Topol — deep learning in medical imaging (2019)</em>
+          Eric Topol's systematic review finding that AI systems can match or exceed specialist performance on specific diagnostic tasks. The chapter uses this alongside the automation bias literature: as AI gets better at specific tasks, the risk of over-trusting it in contexts where it isn't reliable grows alongside its genuine capability.
+        </li>
+        <li>
+          <em>Goddard et al. — automation bias review</em>
+          Systematic review of automation bias in medical contexts, documenting how clinicians who receive algorithmic recommendations defer to them even when their own clinical judgment is correct and the algorithm is wrong. The presence of a recommendation changes the decision — even when the recommendation should be ignored.
+        </li>
+        <li>
+          <em>Flash Crash (May 6, 2010)</em>
+          The U.S. stock market dropped nearly 1,000 points in 36 minutes and recovered within the same window, with no external trigger. Caused by high-frequency trading algorithms responding to each other's outputs in a feedback loop. A near-total market disruption caused not by bad information but by the speed at which algorithms acted on each other's certainties.
+        </li>
+        <li>
+          <em>SEC/CFTC Flash Crash report</em>
+          The joint regulatory investigation that identified the algorithmic feedback mechanisms behind the Flash Crash. The chapter's evidence that automated certainty at financial scale can produce systemic failures faster than any human correction mechanism can respond.
+        </li>
+        <li>
+          <em>COMPAS / Dressel &amp; Farid accuracy study (2018)</em>
+          Julia Dressel and Hany Farid found that COMPAS's accuracy in predicting whether a defendant would reoffend was no better than that of random people recruited online with no criminal justice expertise. The algorithm was not more accurate than an untrained guess. It was being used to make consequential judicial decisions.
+        </li>
+        <li>
+          <em>model collapse</em>
+          The degradation of AI model outputs that occurs when models train on outputs of previous models rather than original human-generated text. Each generation inherits not just the original patterns but a slightly more concentrated version of the dominant ones, progressively squeezing out diversity and accuracy.
+        </li>
+        <li>
+          <em>Obermeyer et al. (2019)</em>
+          <span class="cite">Science, 366(6464)</span>
+          Study of a widely used healthcare risk-scoring algorithm that systematically underestimated the health needs of Black patients. The algorithm used healthcare costs as a proxy for health needs — but Black patients historically received less care for the same conditions, so the same cost corresponded to worse health. The proxy embedded the disparity and reproduced it at scale.
+        </li>
+        <li>
+          <em>Shumailov et al. — model collapse study (2023)</em>
+          <span class="cite">Nature</span>
+          Empirical demonstration of model collapse: models trained on outputs of previous model generations progressively lose diversity and accuracy. The research that gave a name and a mechanism to the amplification problem.
+        </li>
+        <li>
+          <em>Lo — adaptive markets hypothesis (2004)</em>
+          Andrew Lo's framework for financial markets as evolutionary systems that adapt to environments rather than equilibrium systems that return to stable states. Applied in the chapter to the risk of algorithmic certainty in environments that change faster than the algorithms do.
+        </li>
+        <li>
+          <em>institutional consensus</em>
+          The chapter's term for the human equivalent of model collapse: the mechanism by which professional consensus calcifies into certainty that resists revision by contradicting evidence — the Semmelweis problem, reproduced at institutional scale across medicine, law, finance, and other fields.
+        </li>
+        <li>
+          <em>"What if this is wrong?"</em>
+          The chapter's practice question. Applied specifically to high-stakes, high-confidence beliefs and algorithmic outputs in contexts where being wrong has irreversible consequences.
+        </li>
       </ul>
     </div>
 
@@ -491,24 +1069,78 @@
         <a href="chapter.html?c=13">Steel-Manning the Machine</a>
       </div>
       <ul class="index-list">
-        <li><em>Lincoln-Douglas debates (1858)</em> — seven debates between Abraham Lincoln and Stephen A. Douglas during the Illinois Senate race; the chapter's central historical case study in argument quality</li>
-        <li><em>Abraham Lincoln</em> — argued against the expansion of slavery; used the debates to force Douglas to contradict himself with what became the Freeport Doctrine</li>
-        <li><em>Stephen A. Douglas</em> — incumbent Illinois senator; supported popular sovereignty on the slavery question</li>
-        <li><em>Kansas-Nebraska Act</em> — the 1854 legislation Douglas championed, which allowed new territories to decide the slavery question by popular vote and which Lincoln made central to the debate</li>
-        <li><em>popular sovereignty</em> — Douglas's position that residents of territories should decide the slavery question for themselves; Lincoln used it to trap Douglas at Freeport</li>
-        <li><em>Freeport debate (August 27, 1858) / Freeport Doctrine</em> — Lincoln asked Douglas whether a territory could legally exclude slavery under the Dred Scott decision; Douglas's answer (yes, through non-enforcement) reassured Illinois voters but destroyed him nationally by contradicting the Supreme Court's ruling</li>
-        <li><em>steel-manning</em> — defined and named in this chapter: the practice of engaging with the strongest possible version of an opposing argument rather than the weakest or most convenient version</li>
-        <li><em>Holzer — The Lincoln-Douglas Debates</em> — Harold Holzer's historical account of the 1858 debates, used as the chapter's primary historical source</li>
-        <li><em>disputatio</em> — the medieval scholastic practice of formal public debate in which scholars were required to argue against their own positions; introduced as the historical antecedent of steel-manning</li>
-        <li><em>Mill — On Liberty</em> — John Stuart Mill's argument that a person who "knows only their own side of the question knows little even of that"; the chapter's philosophical foundation for the steel-manning practice</li>
-        <li><em>strawman fallacy</em> — the logical error of misrepresenting an opponent's position (often by weakening it) before attacking it; the opposite of steel-manning</li>
-        <li><em>Walton — Argumentation Schemes</em> — Douglas Walton's work on the structure of arguments; cited for the formal treatment of the strawman</li>
-        <li><em>algorithm as strawman generator by design</em> — the chapter's argument that recommendation algorithms optimized for engagement systematically select the most outrageous or extreme version of opposing views, training users to encounter only strawmen of the other side</li>
-        <li><em>Bail et al. — social media and polarization (2018)</em> — study finding that exposure to opposing political views on Twitter increased polarization rather than reducing it, consistent with the strawman-amplification argument</li>
-        <li><em>UBI two-prompt example</em> — the chapter's demonstration of the difference between a standard prompt (produces a balanced but shallow response) and a steel-man prompt (produces the strongest case for the position the user opposes) on the topic of universal basic income</li>
-        <li><em>Perez-Ortiz et al. — rhetoric in large language models (2023)</em> — research examining the rhetorical patterns of LLM outputs and their implications for argument quality</li>
-        <li><em>four-step steel-manning practice</em> — the chapter's named framework: Name the position you oppose, Find its strongest objection to your view, Sit with the objection before responding, Update your position or hold it with explicit awareness of what you are accepting</li>
-        <li><em>"before you reject this — have you understood it at its strongest?"</em> — the chapter's closing question</li>
+        <li>
+          <em>Lincoln-Douglas debates (1858)</em>
+          Seven public debates between Abraham Lincoln and Stephen A. Douglas during the 1858 Illinois Senate race. The chapter's case study in what it looks like to engage an opposing argument at its strongest rather than its most convenient.
+        </li>
+        <li>
+          <em>Abraham Lincoln</em>
+          Argued against the expansion of slavery during the debates. Used the Freeport debate to force Douglas into a contradiction that destroyed his national political future — not by misrepresenting Douglas's position but by pushing the strongest version of it to its logical conclusion.
+        </li>
+        <li>
+          <em>Stephen A. Douglas</em>
+          Incumbent Illinois senator who championed popular sovereignty — letting territories decide the slavery question by vote. His answer at Freeport reassured Illinois moderates and fatally contradicted the Supreme Court's Dred Scott ruling simultaneously.
+        </li>
+        <li>
+          <em>Kansas-Nebraska Act</em>
+          The 1854 legislation Douglas championed, allowing new territories to vote on the slavery question. Lincoln made it the center of the debates and used it to force Douglas to articulate the contradiction at the core of his own position.
+        </li>
+        <li>
+          <em>Freeport debate (August 27, 1858) / Freeport Doctrine</em>
+          Lincoln asked Douglas a precise question: could a territory legally exclude slavery under the Dred Scott decision? Douglas answered yes, through non-enforcement. That answer (the Freeport Doctrine) reassured Illinois moderates and cost Douglas the national coalition he needed for the presidency. Lincoln lost the Senate race and won the argument that shaped the next election.
+        </li>
+        <li>
+          <em>steel-manning</em>
+          Defined and named in this chapter: the practice of engaging with the strongest possible version of an opposing argument rather than the weakest or most convenient version. The opposite of strawmanning. Understanding a position well enough to find its strongest form before you respond to it.
+        </li>
+        <li>
+          <em>Holzer — The Lincoln-Douglas Debates (1993)</em>
+          <span class="cite">HarperCollins</span>
+          Harold Holzer's historical account of the 1858 debates. The chapter's primary source for the historical material.
+        </li>
+        <li>
+          <em>disputatio</em>
+          The medieval scholastic practice of formal public debate in which scholars were required to argue against their own positions before an assembled community. The historical antecedent to steel-manning: treating the opposing view as a serious object of engagement before trying to defeat it.
+        </li>
+        <li>
+          <em>Mill — On Liberty (1859)</em>
+          <span class="cite">John W. Parker and Son</span>
+          John Stuart Mill's argument that a person who "knows only their own side of the question knows little even of that." The chapter's philosophical foundation for the steel-manning practice: you cannot fully understand your own position without understanding what argues against it at full strength.
+        </li>
+        <li>
+          <em>strawman fallacy</em>
+          The logical error of misrepresenting an opponent's position — usually by weakening it — before attacking it. The structural opposite of steel-manning. The chapter argues that most people's experience of opposing views is of strawmen rather than the actual strongest versions.
+        </li>
+        <li>
+          <em>Walton — Argumentation Schemes (1996)</em>
+          <span class="cite">Cambridge University Press</span>
+          Douglas Walton's formal treatment of argumentation structure, including the strawman fallacy. The philosophical framework the chapter draws on for its analysis of argument quality.
+        </li>
+        <li>
+          <em>algorithm as strawman generator by design</em>
+          The chapter's argument: recommendation algorithms optimized for engagement systematically select the most extreme or outrageous version of opposing views. Not maliciously — because outrage produces engagement. The effect is that users encounter only strawmen of the other side and never have to engage the strongest version.
+        </li>
+        <li>
+          <em>Bail et al. — social media and polarization (2018)</em>
+          <span class="cite">PNAS</span>
+          Study finding that exposure to opposing political views on Twitter increased polarization rather than reducing it. Consistent with the strawman argument: the views people were exposed to were the platform-selected extreme versions, not the strongest ones.
+        </li>
+        <li>
+          <em>UBI two-prompt example</em>
+          The chapter demonstrates the difference between asking AI to discuss universal basic income (produces a balanced but shallow response) vs. asking AI to present the strongest case for UBI to someone who opposes it (produces the actual steel-man). The prompt structure changes what you get.
+        </li>
+        <li>
+          <em>Perez-Ortiz et al. — rhetoric in large language models (2023)</em>
+          Research examining how LLMs produce rhetoric and what this means for argument quality. The chapter draws on this to argue that AI-generated arguments tend toward the most statistically common versions of positions, which are often not the strongest ones.
+        </li>
+        <li>
+          <em>four-step steel-manning practice</em>
+          The chapter's framework: (1) Name the position you oppose; (2) Find its strongest objection to your own view, not its weakest; (3) Sit with that objection before responding — actually sit with it; (4) Update your position, or hold it with explicit awareness of what you are choosing to accept.
+        </li>
+        <li>
+          <em>"before you reject this — have you understood it at its strongest?"</em>
+          The chapter's closing question.
+        </li>
       </ul>
     </div>
 
@@ -519,16 +1151,46 @@
         <a href="chapter.html?c=14">Dialogue With a Mirror</a>
       </div>
       <ul class="index-list">
-        <li><em>Conversation A vs. Conversation B</em> — the chapter's opening: two conversations about teacher burnout that begin with identical AI responses; in Conversation A the user accepts and moves on, in Conversation B the user examines and pushes; the divergence structures the chapter</li>
-        <li><em>transactional vs. examined conversation</em> — the chapter's central distinction: transactional conversation uses AI to retrieve or generate; examined conversation uses AI to develop and test thinking</li>
-        <li><em>interface design pushing toward acceptance</em> — the chapter's argument that conversational AI interfaces are designed to make acceptance the path of least resistance, structurally reinforcing sycophancy at the conversation level</li>
-        <li><em>sycophancy loop at conversation architecture level</em> — the chapter's extension of Chapter 10's sycophancy argument: beyond individual responses, the overall structure of AI conversations rewards agreement and discourages challenge</li>
-        <li><em>misplaced social awkwardness with AI</em> — the chapter's observation that users apply human social conventions (don't be rude, don't push back too hard) to AI systems where those conventions actively undermine the quality of the exchange</li>
-        <li><em>annotated examined conversation</em> — the chapter's extended example: an AI conversation about education and AI regulation, with six specific moves annotated to show how each practice from previous chapters applies in real dialogue</li>
-        <li><em>loop of examined thinking</em> — the chapter's term for the productive alternative to the certainty loop: a pattern of questioning, updating, and returning to questions that builds calibrated understanding over time</li>
-        <li><em>three-week / six-week / three-month developmental arc</em> — the chapter's named timeline for building the habits of examined thinking, described as what the reader can realistically expect at each stage</li>
-        <li><em>"the mirror shows what you bring to it"</em> — the chapter's closing formulation: AI reflects the quality of the engagement you bring; changing the engagement changes what you get back</li>
-        <li><em>"bring the examination"</em> — the chapter's final instruction</li>
+        <li>
+          <em>Conversation A vs. Conversation B</em>
+          The chapter's opening: two conversations about teacher burnout that begin with identical AI responses. In A, the user accepts and moves on. In B, the user examines and pushes back. The chapter traces how the two conversations diverge and what that difference means for what each person actually learns.
+        </li>
+        <li>
+          <em>transactional vs. examined conversation</em>
+          The chapter's central distinction. Transactional: using AI to retrieve or generate. Examined: using AI to develop and test thinking, to find where your own reasoning is weak, to encounter the strongest version of the argument you've been avoiding.
+        </li>
+        <li>
+          <em>interface design pushing toward acceptance</em>
+          Conversational AI interfaces are designed to make acceptance the path of least resistance: the response appears, the cursor blinks, the expected next step is to send a new question. The design is not neutral — it structures conversations toward the transactional and away from the examined.
+        </li>
+        <li>
+          <em>sycophancy loop at conversation architecture level</em>
+          The chapter's extension of Chapter 10's argument: beyond individual responses, the overall structure of AI conversations rewards agreement and discourages challenge. Each capitulation is reinforced; each pushback requires working against the grain of the interface.
+        </li>
+        <li>
+          <em>misplaced social awkwardness with AI</em>
+          The observation that users apply human social conventions to AI systems — don't be rude, don't push back too hard, accept what's offered graciously — in contexts where those conventions actively undermine the quality of the exchange. The machine is not offended. The social cost is imaginary. The epistemic cost is real.
+        </li>
+        <li>
+          <em>annotated examined conversation</em>
+          The chapter's extended example: a full AI conversation about education and AI regulation, with six specific moves annotated to show how the practices from previous chapters appear in actual dialogue. The book's closest thing to a worked example of what the practices look like when applied together.
+        </li>
+        <li>
+          <em>loop of examined thinking</em>
+          The chapter's term for the productive alternative to the certainty loop: a pattern of questioning, updating, sitting with the revised understanding, and returning to questions with sharper tools. Not circular but iterative.
+        </li>
+        <li>
+          <em>three-week / six-week / three-month developmental arc</em>
+          The chapter's realistic timeline for building the examined-thinking habits. Three weeks: the practices feel effortful and unnatural. Six weeks: you notice the cognitive patterns faster than before — while they're happening rather than after. Three months: the questioning becomes a reflex, though still requiring choice.
+        </li>
+        <li>
+          <em>"the mirror shows what you bring to it"</em>
+          The chapter's closing formulation: the quality of what AI reflects back depends on the quality of what you bring to it. A transactional prompt produces a transactional response. An examined prompt produces something more useful.
+        </li>
+        <li>
+          <em>"bring the examination"</em>
+          The chapter's final instruction.
+        </li>
       </ul>
     </div>
 
@@ -539,18 +1201,54 @@
         <a href="chapter.html?c=15">Now What</a>
       </div>
       <ul class="index-list">
-        <li><em>solution vs. calibration</em> — the chapter's central distinction: the book has not offered solutions (changes that eliminate the underlying problem) but calibration (practices that improve your relationship to thinking that remains difficult)</li>
-        <li><em>navigator analogy</em> — the chapter uses navigation as an image of calibration: a navigator doesn't eliminate uncertainty about position but uses instruments to hold a truer course through it</li>
-        <li><em>musician analogy</em> — the chapter uses musicianship as an image of calibration: a skilled musician doesn't eliminate the possibility of playing wrong notes but has better judgment about when something is off and how to correct it</li>
-        <li><em>the narrative click as misleading</em> — the chapter's warning about the main indicator of false progress: the feeling of sudden clarity or resolution that signals the brain has found a coherent story rather than necessarily a true one</li>
-        <li><em>relationship to conclusions (first change)</em> — the chapter names this as the first sign the practices are working: holding conclusions more lightly, treating them as current best estimates rather than settled facts</li>
-        <li><em>speed of recognition (second change)</em> — the second sign: noticing the cognitive patterns (motivated reasoning, narrative seduction, overconfidence) faster, while they are happening rather than after</li>
-        <li><em>difficulty with identity-level beliefs</em> — the chapter's honest acknowledgment of what the practices do not change: beliefs tied to identity are structurally resistant to revision by any amount of intellectual practice</li>
-        <li><em>wrongness as verdict vs. wrongness as data</em> — the chapter's formulation of the central shift the book attempts: treating being wrong not as a failure or a verdict about one's intelligence but as information about where one's map diverges from the territory</li>
-        <li><em>certainty loop vs. calibration loop</em> — the chapter's paired terms: the certainty loop (Chapter 12) is the pattern by which confidence reinforces itself and closes off revision; the calibration loop is the alternative pattern in which revision improves confidence rather than threatening it</li>
-        <li><em>AI sycophancy at identity-level beliefs</em> — the chapter's identification of the most dangerous application of AI sycophancy: confirming and reinforcing beliefs tied to identity, where the user is least able to notice or resist the flattery</li>
-        <li><em>return to Schwartz / Mata v. Avianca</em> — the chapter returns to the book's opening case as a bookend: the Schwartz case was not anomalous but illustrative of what happens when confidence in a tool outruns calibration about its limits</li>
-        <li><em>"the original bug is running… the correction system is yours to build"</em> — the chapter's closing formulation</li>
+        <li>
+          <em>solution vs. calibration</em>
+          The chapter's central distinction: the book has not offered solutions (changes that eliminate the underlying problem) but calibration (practices that improve your relationship to thinking that remains genuinely difficult). The navigator doesn't stop the storm; they hold a truer course through it.
+        </li>
+        <li>
+          <em>navigator analogy</em>
+          A navigator without GPS doesn't eliminate positional uncertainty — they use tools (compass, stars, depth readings) to hold a position more accurately than intuition alone. Calibration isn't certainty; it's better uncertainty, held more honestly.
+        </li>
+        <li>
+          <em>musician analogy</em>
+          A skilled musician doesn't eliminate the possibility of playing wrong notes; they notice faster when something's off, correct more efficiently, and know the difference between a recoverable mistake and one that requires starting over. The skill is the correction capacity, not the elimination of error.
+        </li>
+        <li>
+          <em>the narrative click as misleading</em>
+          The chapter's warning about the main indicator of false progress: the feeling of sudden clarity when everything snaps into focus. That feeling is the brain finding a coherent story. It may or may not correspond to finding a true one.
+        </li>
+        <li>
+          <em>relationship to conclusions (first change)</em>
+          The first sign the practices are working: holding conclusions more lightly, treating them as current best estimates rather than settled facts. Not weakened conviction but changed conviction — held until revised rather than held until forced to abandon.
+        </li>
+        <li>
+          <em>speed of recognition (second change)</em>
+          The second sign: noticing the cognitive patterns while they are happening rather than after. Seeing the motivated reasoning arrive. The gap between when the pattern starts and when you notice it narrows.
+        </li>
+        <li>
+          <em>difficulty with identity-level beliefs</em>
+          The chapter's honest acknowledgment of what the practices do not change: beliefs tied to identity — who you are, what groups you belong to, what it would mean about you to be wrong on this — are structurally resistant to revision by intellectual practice. The practices help at the margins; they don't dissolve the core.
+        </li>
+        <li>
+          <em>wrongness as verdict vs. wrongness as data</em>
+          The chapter's formulation of the central shift the book attempts to produce: treating being wrong not as a verdict about one's intelligence or character but as information about where your map diverges from the territory. A wrong prediction is a data point. The data point is useful. The verdict is paralyzing.
+        </li>
+        <li>
+          <em>certainty loop vs. calibration loop</em>
+          Paired terms across Chapters 12 and 15. The certainty loop: confidence reinforces itself, closes off revision, amplifies errors. The calibration loop: revision improves confidence rather than threatening it, and each update makes the next update easier.
+        </li>
+        <li>
+          <em>AI sycophancy at identity-level beliefs</em>
+          The chapter's identification of the most dangerous application: AI confirming and reinforcing beliefs tied to identity, where the user is least able to notice or resist the validation. The system tells you what you need to hear about who you are. The system doesn't know who you are.
+        </li>
+        <li>
+          <em>return to Schwartz / Mata v. Avianca</em>
+          The chapter returns to the book's opening case as a bookend: Steven Schwartz is not an anomaly or a villain. He is what happens when confidence in a tool outruns calibration about its limits. The same thing happens when confidence in our own cognition outruns calibration about its limits. It happens continuously. The book has been about that.
+        </li>
+        <li>
+          <em>"the original bug is running… the correction system is yours to build"</em>
+          The chapter's closing formulation.
+        </li>
       </ul>
     </div>
 
@@ -561,36 +1259,124 @@
         <a href="chapter.html?c=16">We Are the Training Data</a>
       </div>
       <ul class="index-list">
-        <li><em>"we are the training data"</em> — the chapter's central claim: every person who has written anything on the internet has contributed to the corpus that trained AI systems; the record is not something that happened to us but something we made</li>
-        <li><em>Common Crawl</em> — the automated, continuous scrape of the public internet (since 2008) that forms the largest single component of most large language model training datasets; contains petabytes of text from billions of web pages with no editorial judgment applied</li>
-        <li><em>corpus skew toward English</em> — English comprises approximately 45–60% of indexed web content despite being the native language of less than 6% of the world's population; the chapter identifies this as a structural distortion in everything trained on the corpus</li>
-        <li><em>corpus skew toward the educated and wealthy</em> — the populations who produce the most text (detailed forum posts, blog entries, Wikipedia edits, academic papers) are not randomly distributed across humanity; they cluster by language, education, and access</li>
-        <li><em>upweighted sources</em> — academic papers, books, Wikipedia, and news archives are given greater statistical weight than random web scrapes in LLM training, but the chapter argues these sources are a more polished version of the same demographic skew, not a more representative sample</li>
-        <li><em>the silence</em> — the chapter's term for what is absent from the corpus: oral traditions, indigenous knowledge, languages digitized poorly or not at all, the perspectives of the billion people who came online after the training data was assembled</li>
-        <li><em>open-source base model deployed without safety review</em> — the chapter's contrast case: a consumer health app built by a three-person startup using a downloaded model, fine-tuned over a weekend, with no red-teaming, no constitutional framework, and no awareness of the difference from a carefully constructed system</li>
-        <li><em>telephone game as amplifier metaphor</em> — the chapter's image for model-to-model training degradation: what starts as a whispered sentence becomes unrecognizable after passing through a chain, except the chain here is ten generations of civilization long and no one knows what the original said</li>
-        <li><em>model collapse</em> — the research-documented phenomenon (named earlier in Chapter 12) in which models trained on outputs of previous models show progressive loss of diversity and accuracy; confirmed in controlled experiments</li>
-        <li><em>Shumailov et al. — model collapse study (2023)</em> — the empirical demonstration that model generations trained on prior model outputs degrade progressively; the chapter uses this to argue that the amplification of subtle failures is not speculative</li>
-        <li><em>subtle failure vs. dramatic failure</em> — the chapter's key distinction: dramatic failures (hallucinated citations, obvious factual errors) get caught and corrected because they are visible; subtle failures (slightly overconfident diagnoses, narratives that impose coherence on ambiguous situations) propagate because they feel like competence</li>
-        <li><em>the amplification speed problem</em> — previous civilizational feedback loops (miasma theory, for example) operated on the timescale of human generations; the current loop runs on model training cycles of months or weeks, faster than the correction mechanisms that have historically interrupted it</li>
-        <li><em>Diederik Stapel (2011)</em> — Dutch social psychologist found to have fabricated data across decades of published research; his case opened the door to the broader replication crisis</li>
-        <li><em>replication crisis</em> — the large-scale finding that many landmark results in psychology and other fields cannot be reproduced; used in the chapter as an example of a correction currently underway inside a field that contaminated its own record</li>
-        <li><em>Open Science Collaboration — replication project (2015)</em> — attempted to replicate 100 published psychological studies; fewer than 40% produced results consistent with the original findings; coordinated by the Center for Open Science</li>
-        <li><em>Center for Open Science</em> — the organization that coordinated the 2015 replication project; part of the institutional correction effort in psychology</li>
-        <li><em>publication bias / incentive structure of academic publishing</em> — the chapter's argument for why the replication crisis was structurally inevitable: journals rewarded novel positive findings and had no mechanism for null results, systematically selecting the most dramatic and least reproducible outcomes</li>
-        <li><em>pre-registration</em> — the practice of registering a study's design and hypotheses before collecting data; introduced as an institutional correction mechanism that makes it harder to selectively report results</li>
-        <li><em>Nicolaus Copernicus (1543)</em> — published the heliocentric model in De revolutionibus, dedicated to Pope Paul III; ignored rather than immediately banned, because the existing astronomical framework was so embedded that a single book could not dislodge it</li>
-        <li><em>Galileo</em> — whose telescope observations and willingness to contradict the consensus at personal cost (he spent the last decade of his life under house arrest) moved the heliocentric correction from possible to durable</li>
-        <li><em>Johannes Kepler</em> — whose mathematics provided the mechanism that made Copernican observations comprehensible and defensible to the next generation</li>
-        <li><em>suffrage movement (late 19th / early 20th century)</em> — examined in the chapter as a correction to a record produced without the perspective of half the population; a fight over who counts as an author of the civilizational record</li>
-        <li><em>three moves for correction</em> — the chapter's pattern extracted from every historical correction: (1) Preservation — writing the contradicting evidence down before motivated reasoning releases it; (2) Institutional — building mechanisms that make honesty structurally rewarded; (3) Costly individual honesty — accuracy over comfort, in the specific moment when the consensus is comfortable and the correction is not</li>
-        <li><em>preservation move</em> — the first and most available move: making the contradicting observation durable before the motivated reasoning can soften or release it; Copernicus's published book, the suffragists' refusal to stop, the researchers who published replication failures</li>
-        <li><em>institutional move</em> — the second move, requiring people inside high-weight institutions (academic journals, major news organizations, scientific and legal bodies) to build mechanisms that reward honesty structurally; the chapter describes it as beyond the reach of any individual reader but necessary for correction to stick</li>
-        <li><em>costly individual honesty</em> — the third move, the only one immediately available to every reader: accuracy over comfort, preserved observation over released one, honest account of uncertainty over fluent account of certainty</li>
-        <li><em>"accuracy over comfort"</em> — the chapter's defining phrase for the move available right now, to anyone, in whatever domain they work</li>
-        <li><em>the child reading this</em> — the chapter's closing image: a child, not yet born or perhaps four years old, who will grow up asking questions of AI systems trained on the record being assembled right now, before she has any capacity to question the source</li>
-        <li><em>"we do not get to know which question"</em> — the chapter's closing formulation: the record is being written now, in the only window available to decide what goes into it before it goes into her</li>
-        <li><em>"not because the machine deserves better — because she does"</em> — the book's final sentence</li>
+        <li>
+          <em>"we are the training data"</em>
+          The chapter's central claim: everyone who has written anything on the internet has contributed to the corpus that trained AI systems. The record is not something that happened to us. It is something we made — and something we are still making, right now, without having previously understood what we were contributing to.
+        </li>
+        <li>
+          <em>Common Crawl</em>
+          The automated, continuous scrape of the public internet, running since 2008, containing petabytes of text from billions of web pages in dozens of languages. The largest single component of most large language model training datasets. Assembled without editorial judgment — the noise and the signal went in equally, weighted only by frequency and association.
+        </li>
+        <li>
+          <em>corpus skew toward English</em>
+          English represents approximately 45–60% of indexed web content despite being the native language of less than 6% of the world's population. Everything trained predominantly on Common Crawl speaks, in some structural sense, from inside that skew.
+        </li>
+        <li>
+          <em>corpus skew toward the educated and wealthy</em>
+          The populations who produce the most written text — detailed forum posts, blog entries, Wikipedia edits, academic papers, published books — are not randomly distributed across humanity. They cluster by language, education, income, and geography. The model learned from the cluster, not from the distribution.
+        </li>
+        <li>
+          <em>upweighted sources</em>
+          Academic papers, Wikipedia, books, and news archives are given greater statistical influence per word than random web scrapes in LLM training because they are considered higher quality. The chapter's argument: they are a more polished version of the same demographic skew, not a more representative sample of human knowledge.
+        </li>
+        <li>
+          <em>the silence</em>
+          What the corpus does not contain: oral traditions, indigenous knowledge systems, languages poorly digitized or absent from web text, the perspectives of populations without reliable internet access, the billion people who came online after the training data was assembled. The model speaks with the authority of having read everything. It has read the fraction that made it into the corpus.
+        </li>
+        <li>
+          <em>open-source base model deployed without safety review</em>
+          The chapter's contrast case: a consumer health app built by a three-person startup using a downloaded model, fine-tuned over a weekend, with no safety review, no red-teaming, no constitutional framework, and no awareness that the difference from a carefully constructed system mattered. Both outputs looked identical to the user — fluent, confident, complete.
+        </li>
+        <li>
+          <em>telephone game as amplifier metaphor</em>
+          The chapter's image for model-to-model training degradation: a sentence whispered through a chain of ten children becomes unrecognizable. Except the chain here is ten generations of civilization long, no one knows what the original said, and no one is laughing at the end.
+        </li>
+        <li>
+          <em>model collapse</em>
+          The research-documented phenomenon in which models trained on outputs of previous models show progressive loss of diversity and accuracy. The most common patterns from the previous generation get amplified; the rare perspectives — the careful uncertainty, the unusual framing, the minority viewpoint — get squeezed out with each iteration.
+        </li>
+        <li>
+          <em>Shumailov et al. — model collapse study (2023)</em>
+          <span class="cite">Nature</span>
+          Empirical demonstration that models trained on prior model outputs degrade progressively. The controlled experiments that gave the amplification problem a name, a mechanism, and documented evidence.
+        </li>
+        <li>
+          <em>subtle failure vs. dramatic failure</em>
+          The chapter's key distinction: dramatic failures (hallucinated citations, obvious factual errors) are visible and get caught. Subtle failures — the slightly overconfident diagnosis, the narrative that imposes just enough coherence on ambiguous data to make the ambiguity invisible — feel like competence. They get used. They become text. They go into the next training corpus.
+        </li>
+        <li>
+          <em>the amplification speed problem</em>
+          Previous civilizational feedback loops operated on the timescale of human generations. The current loop runs on model training cycles of months or weeks. The distortion is outrunning the correction mechanisms that have historically interrupted it.
+        </li>
+        <li>
+          <em>Diederik Stapel (2011)</em>
+          Dutch social psychologist found to have fabricated data across decades of published research. His case opened the door to the broader replication crisis — prompting researchers to ask not just whether Stapel was a fraud but whether the incentive structure of the field had made contamination structurally inevitable.
+        </li>
+        <li>
+          <em>replication crisis</em>
+          The large-scale finding that many landmark results in psychology and other fields could not be reproduced. Examined in the chapter as a correction currently underway: a field discovering it has contaminated its own record and attempting, in real time, to build mechanisms for cleaning it up.
+        </li>
+        <li>
+          <em>Open Science Collaboration — replication project (2015)</em>
+          <span class="cite">Science, 349(6251)</span>
+          Attempted to replicate 100 published psychological studies. Fewer than 40% produced results consistent with the original findings. Not because the original researchers were all frauds — because the incentive structure of academic publishing systematically selected for the most dramatic and least reproducible outcomes.
+        </li>
+        <li>
+          <em>Center for Open Science</em>
+          The organization that coordinated the 2015 replication project. Part of the institutional response to the replication crisis: building infrastructure for pre-registration and open data sharing.
+        </li>
+        <li>
+          <em>publication bias / incentive structure of academic publishing</em>
+          Journals rewarded novel positive findings and had no mechanism for publishing replications or null results. The chapter's argument: this systematically contaminated the psychological record not through bad faith but through a structure that made contamination the path of least resistance.
+        </li>
+        <li>
+          <em>pre-registration</em>
+          The practice of registering a study's design, hypotheses, and analysis plan before collecting data, making selective reporting much harder after the fact. Introduced as an institutional correction mechanism — the kind of structural fix that makes honesty easier than its alternatives.
+        </li>
+        <li>
+          <em>Nicolaus Copernicus (1543)</em>
+          Published the heliocentric model of the solar system in De revolutionibus orbium coelestium, dedicated to Pope Paul III. Initially ignored rather than banned — the existing astronomical framework was so institutionally embedded that a single book couldn't dislodge it. It took a century, Galileo's telescope, Kepler's mathematics, and the accumulated weight of observations the old model couldn't accommodate.
+        </li>
+        <li>
+          <em>Galileo</em>
+          Whose telescope observations and willingness to contradict the consensus at personal cost — spending the last decade of his life under house arrest — moved the heliocentric correction from publishable to durable. The chapter's example of the costly individual move: accuracy over comfort, when comfort was available and the correction was not.
+        </li>
+        <li>
+          <em>Johannes Kepler</em>
+          Whose mathematics provided the mechanism that made Copernican observations comprehensible to the next generation. Correction requires not just observation but explanation — a model that makes the observation fit.
+        </li>
+        <li>
+          <em>suffrage movement (late 19th / early 20th century)</em>
+          Examined in the chapter not primarily as a political movement but as a correction to a written record produced without the perspective of half the human population — a fight over who counts as an author of the civilizational record, and what happens to the record when that authorship is artificially restricted.
+        </li>
+        <li>
+          <em>three moves for correction</em>
+          The pattern the chapter extracts from Copernicus, the suffragists, and the replication crisis: (1) Preservation — making the contradicting observation durable before motivated reasoning can release it; (2) Institutional — building mechanisms that make honesty structurally rewarded; (3) Costly individual honesty — accuracy over comfort, in the specific moment, at whatever personal cost the consensus imposes.
+        </li>
+        <li>
+          <em>preservation move</em>
+          The first and most accessible move, available to any individual writer: write the honest account before the motivated reasoning softens it. Publish the null result. Say what you don't know. Make the uncertainty durable before institutional pressure to project confidence gets to it.
+        </li>
+        <li>
+          <em>institutional move</em>
+          The second move: building mechanisms inside high-weight institutions — journals, news organizations, scientific and legal bodies — that make accuracy structurally rewarded rather than structurally punished. Slower than the individual move. Necessary for corrections to stick across generations.
+        </li>
+        <li>
+          <em>costly individual honesty</em>
+          The third move, available right now: choosing accuracy over comfort in the specific moment when comfort is available and the correction would cost something. The move Galileo made. The move the suffragists made. The move the replication researchers made. Small at the individual scale. The only move that has ever, in the history of the record, led to anything larger.
+        </li>
+        <li>
+          <em>"accuracy over comfort"</em>
+          The chapter's defining phrase.
+        </li>
+        <li>
+          <em>the child reading this</em>
+          The chapter's closing image: a child, not yet born or perhaps four years old, who will grow up asking questions of AI systems trained on the record being assembled right now — before she has any capacity to question the source, before she knows that the record has a shape and that the shape was chosen by people who, for the most part, weren't thinking about her.
+        </li>
+        <li>
+          <em>"not because the machine deserves better — because she does"</em>
+          The book's final sentence.
+        </li>
       </ul>
     </div>
 
