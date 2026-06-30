@@ -225,9 +225,10 @@
   // of playFrom() before re-queueing from the new index.
 
   function buildUtterances() {
-    // Rebuild the utterance array from the current translatedParagraphs and selectedVoice.
-    // Must be rebuilt whenever voice, speed, or language changes, because
-    // SpeechSynthesisUtterance properties are baked in at speak() time.
+    // Pre-wrap all paragraphs NOW so word spans are in the DOM before
+    // onboundary fires — onboundary can fire almost simultaneously with onstart.
+    getStoryParagraphs().forEach(el => wrapWordsInPara(el));
+
     utterances = translatedParagraphs.map((text, i) => {
       const u = new SpeechSynthesisUtterance(text);
       u.voice = selectedVoice;
@@ -237,8 +238,8 @@
 
       u.onstart = () => {
         currentIndex = i;
-        highlightParagraph(i);                          // visually mark the current paragraph
-        updateProgressBar(i / utterances.length);       // advance the progress bar
+        highlightParagraph(i);
+        updateProgressBar(i / utterances.length);
       };
       u.onboundary = (e) => {
         if (e.name === 'word') highlightWord(i, e.charIndex);
@@ -532,11 +533,12 @@
       }
 
       .sbp-progress-wrap {
-        flex: 1;                /* stretches to fill available horizontal space */
+        flex: 1;
         min-width: 120px;
         display: flex;
         flex-direction: column;
         gap: 0.35rem;
+        overflow: visible;
       }
 
       .sbp-progress-track {
@@ -545,6 +547,8 @@
         border-radius: 2px;
         cursor: pointer;
         position: relative;
+        overflow: visible;
+        margin: 8px 0;          /* room for the thumb to sit above/below the track */
       }
       .sbp-progress-fill {
         height: 100%;
@@ -641,18 +645,32 @@
         -webkit-appearance: none;
         appearance: none;
         width: 80px;
-        height: 2px;
+        height: 4px;
         background: #2a2a2a;
         border-radius: 2px;
         cursor: pointer;
       }
       .sbp-speed-slider::-webkit-slider-thumb {
         -webkit-appearance: none;
-        width: 12px;
-        height: 12px;
+        width: 14px;
+        height: 14px;
         background: #c8b89a;
         border-radius: 50%;
-        cursor: pointer;
+        cursor: grab;
+        box-shadow: 0 0 6px rgba(0,0,0,0.6);
+      }
+      .sbp-speed-slider::-webkit-slider-thumb:active {
+        cursor: grabbing;
+        transform: scale(1.35);
+      }
+      .sbp-speed-slider::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+        background: #c8b89a;
+        border-radius: 50%;
+        border: none;
+        cursor: grab;
+        box-shadow: 0 0 6px rgba(0,0,0,0.6);
       }
 
       .sbp-lang-btn {
