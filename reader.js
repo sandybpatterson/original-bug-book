@@ -650,48 +650,56 @@
         outline: none;
       }
 
-      .sbp-speed-wrap {
+      .sbp-step-speed {
         display: flex;
-        flex-direction: column;
-        gap: 0.2rem;
         align-items: center;
+        gap: 4px;
       }
-      .sbp-speed {
-        font-size: 0.7rem;
+      .sbp-step-btn {
+        background: none;
+        border: 1px solid #3a3a3a;
         color: #888;
-        letter-spacing: 0.05em;
-        text-align: center;
-      }
-      .sbp-speed-slider {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 80px;
-        height: 4px;
-        background: #2a2a2a;
-        border-radius: 2px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-family: inherit;
+        transition: all 0.15s;
+        padding: 0;
+        line-height: 1;
+        flex-shrink: 0;
       }
-      .sbp-speed-slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 14px;
-        height: 14px;
-        background: #c8b89a;
-        border-radius: 50%;
-        cursor: grab;
-        box-shadow: 0 0 6px rgba(0,0,0,0.6);
+      .sbp-step-btn:hover {
+        border-color: #c8b89a;
+        color: #c8b89a;
+        background: rgba(200,184,154,0.08);
       }
-      .sbp-speed-slider::-webkit-slider-thumb:active {
-        cursor: grabbing;
-        transform: scale(1.35);
+      .sbp-speed-display {
+        background: none;
+        border: 1px solid #3a3a3a;
+        color: #888;
+        font-size: 0.68rem;
+        font-family: 'Courier New', monospace;
+        letter-spacing: 0.05em;
+        padding: 0 6px;
+        height: 24px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.15s;
+        flex-shrink: 0;
       }
-      .sbp-speed-slider::-moz-range-thumb {
-        width: 14px;
-        height: 14px;
-        background: #c8b89a;
-        border-radius: 50%;
-        border: none;
-        cursor: grab;
-        box-shadow: 0 0 6px rgba(0,0,0,0.6);
+      .sbp-speed-display:hover {
+        border-color: #c8b89a;
+        color: #c8b89a;
+        background: rgba(200,184,154,0.08);
       }
 
       .sbp-lang-btn {
@@ -861,11 +869,11 @@
           </div>
           <div class="sbp-meta">
             <span class="sbp-status" id="sbp-status">Ready</span>
-            <button class="sbp-autoplay-btn" id="sbp-autoplay" title="Auto-advance to next chapter on finish">Autoplay</button>
-            <div class="sbp-speed-wrap">
-              <input type="range" class="sbp-speed-slider" id="sbp-speed"
-                min="0.6" max="1.8" step="0.1" value="1.0" aria-label="Speed">
-              <span class="sbp-speed" id="sbp-speed-label">1.0×</span>
+            <div class="sbp-step-speed">
+              <button class="sbp-step-btn" id="sbp-speed-down" aria-label="Decrease speed">−</button>
+              <button class="sbp-speed-display" id="sbp-speed-display" title="Tap to jump +0.5×">1.0×</button>
+              <button class="sbp-step-btn" id="sbp-speed-up" aria-label="Increase speed">+</button>
+              <button class="sbp-autoplay-btn" id="sbp-autoplay" title="Auto-advance to next chapter on finish">Autoplay</button>
             </div>
           </div>
         </div>
@@ -991,18 +999,19 @@
       thumb.style.transition = '';
     });
 
-    // Speed slider: update rate and rebuild utterances if already playing
-    // so the change takes effect immediately without the user stopping and restarting.
-    const speedSlider = document.getElementById('sbp-speed');
-    speedSlider?.addEventListener('input', (e) => {
-      speed = parseFloat(e.target.value);
-      document.getElementById('sbp-speed-label').textContent = `${speed.toFixed(1)}×`;
+    // Step speed control: − decreases by 0.1, + increases by 0.1, center tap adds 0.5.
+    function setSpeed(newSpeed) {
+      speed = Math.round(Math.max(0.5, Math.min(3.0, newSpeed)) * 10) / 10;
+      document.getElementById('sbp-speed-display').textContent = `${speed.toFixed(1)}×`;
       if (isPlaying || isPaused) {
         const idx = currentIndex;
         buildUtterances();
         playFrom(idx);
       }
-    });
+    }
+    document.getElementById('sbp-speed-down')?.addEventListener('click', () => setSpeed(speed - 0.1));
+    document.getElementById('sbp-speed-up')?.addEventListener('click', () => setSpeed(speed + 0.1));
+    document.getElementById('sbp-speed-display')?.addEventListener('click', () => setSpeed(speed + 0.5));
 
     // Voice dropdown: same pattern — rebuild and restart from the current position.
     document.getElementById('sbp-voice-select')?.addEventListener('change', (e) => {
