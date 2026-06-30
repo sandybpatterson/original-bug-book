@@ -240,6 +240,9 @@
         highlightParagraph(i);                          // visually mark the current paragraph
         updateProgressBar(i / utterances.length);       // advance the progress bar
       };
+      u.onboundary = (e) => {
+        if (e.name === 'word') highlightWord(i, e.charIndex);
+      };
       u.onend = () => {
         // Only the last paragraph triggers the finished state.
         if (i === utterances.length - 1) {
@@ -319,24 +322,52 @@
 
 
   // ── HIGHLIGHT ────────────────────────────────────────────────────────────────
-  // Adds/removes the .sbp-reading CSS class on the current paragraph element.
-  // The index here matches the index in the extracted paragraph array, which
-  // in turn matches the filtered set of <p> elements in the DOM — both use
-  // the same length > 10 filter, so they stay in sync.
+  // Paragraph-level: adds .sbp-reading to the active <p>.
+  // Word-level: wraps each word in a <span data-cs="N"> then adds
+  // .sbp-word-active to the span matching the charIndex from onboundary.
+
+  function wrapWordsInPara(paraEl) {
+    if (paraEl.dataset.sbpWrapped) return;
+    const text = paraEl.textContent;
+    let pos = 0;
+    const html = text.split(/(\s+)/).map(token => {
+      const start = pos;
+      pos += token.length;
+      return /^\s*$/.test(token)
+        ? token
+        : `<span class="sbp-word" data-cs="${start}">${token}</span>`;
+    }).join('');
+    paraEl.innerHTML = html;
+    paraEl.dataset.sbpWrapped = '1';
+  }
+
+  function highlightWord(paraIndex, charIndex) {
+    document.querySelectorAll('.sbp-word-active').forEach(el => el.classList.remove('sbp-word-active'));
+    const paras = getStoryParagraphs();
+    if (!paras[paraIndex]) return;
+    const spans = paras[paraIndex].querySelectorAll('.sbp-word');
+    for (const span of spans) {
+      const cs = parseInt(span.dataset.cs, 10);
+      if (cs <= charIndex && charIndex < cs + span.textContent.length) {
+        span.classList.add('sbp-word-active');
+        return;
+      }
+    }
+  }
 
   function highlightParagraph(index) {
     clearHighlight();
     const paras = getStoryParagraphs();
     if (paras[index]) {
+      wrapWordsInPara(paras[index]);
       paras[index].classList.add('sbp-reading');
       paras[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
 
   function clearHighlight() {
-    document.querySelectorAll('.sbp-reading').forEach(el => {
-      el.classList.remove('sbp-reading');
-    });
+    document.querySelectorAll('.sbp-reading').forEach(el => el.classList.remove('sbp-reading'));
+    document.querySelectorAll('.sbp-word-active').forEach(el => el.classList.remove('sbp-word-active'));
   }
 
   // Must use the same selector and filter as extractParagraphs() so that
@@ -661,6 +692,14 @@
       .sbp-lang-item.active {
         color: #c8b89a;
         background: rgba(200,184,154,0.06);
+      }
+
+      /* Word-level highlight — applied by highlightWord() via onboundary events. */
+      .sbp-word-active {
+        background: rgba(200, 184, 154, 0.28);
+        border-radius: 2px;
+        padding: 0 1px;
+        transition: background 0.08s ease;
       }
 
       /* Applied by highlightParagraph() to the currently-spoken <p> element.
