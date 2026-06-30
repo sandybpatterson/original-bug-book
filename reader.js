@@ -71,8 +71,8 @@
   function extractParagraphs() {
     const container = document.querySelector('.story-body, article, main, .content')
                       || document.body;
-    const paras = Array.from(container.querySelectorAll('p'))
-      .map(p => p.textContent.trim())
+    const paras = Array.from(container.querySelectorAll('h1, h2, h3, h4, p'))
+      .map(el => el.textContent.trim())
       .filter(t => t.length > 10);
     return paras;
   }
@@ -375,8 +375,8 @@
   function getStoryParagraphs() {
     const container = document.querySelector('.story-body, article, main, .content')
                       || document.body;
-    return Array.from(container.querySelectorAll('p'))
-      .filter(p => p.textContent.trim().length > 10);
+    return Array.from(container.querySelectorAll('h1, h2, h3, h4, p'))
+      .filter(el => el.textContent.trim().length > 10);
   }
 
 
