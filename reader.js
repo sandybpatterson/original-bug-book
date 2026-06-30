@@ -795,8 +795,8 @@
 
       .sbp-autoplay-btn {
         background: none;
-        border: 1px solid #2a2a2a;
-        color: #555;
+        border: 1px solid #444;
+        color: #888;
         font-size: 0.6rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -812,8 +812,8 @@
         background: rgba(200,184,154,0.08);
       }
       .sbp-autoplay-btn:hover {
-        border-color: #888;
-        color: #888;
+        border-color: #aaa;
+        color: #aaa;
       }
       .sbp-autoplay-btn.active:hover {
         border-color: #c8b89a;
