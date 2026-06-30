@@ -1,9 +1,5 @@
 # THE ORIGINAL BUG
-### By Sandy B. Patterson
-
----
-
-# Chapter 16 — We Are the Training Data
+### Chapter 16 — We Are the Training Data
 
 ---
 
@@ -286,8 +282,6 @@ It is a reason to take seriously what you do with the next paragraph you write. 
 You are imagining it now. That is the difference this chapter is asking you to carry forward. Not certainty that it will be enough. Just the refusal to pretend you do not know what you are contributing to anymore.
 
 \* \* \*
-
-She will ask her question someday. Maybe about her body. Maybe about her grandmother's country. Maybe about something that has not happened yet, to a person who has not been hurt yet, in a conflict that has not started yet, and the system she asks will have been trained on the record we are producing during these years. Not the record of the distant past. The record of right now. Of this decade. Of the millions of pieces of text being written today, this week, while you read this sentence, by people who for the most part are not thinking about her at all.
 
 She will ask her question someday. Maybe about her body. Maybe about her grandmother's country. Maybe about something that has not happened yet, to a person who has not been hurt yet, in a conflict that has not started yet, and the system she asks will answer with whatever the record contained when it was trained — built, in part, from what was written during the years when she was too young to know to be afraid of the answer.
 

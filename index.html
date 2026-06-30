@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Original Bug — Sandy B. Patterson</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: Georgia, 'Times New Roman', serif;
+      min-height: 100vh;
+    }
+
+    a { color: #c9a84c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .nav-brand {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #c9a84c;
+    }
+    .nav-links {
+      display: flex;
+      gap: 8px;
+    }
+    .nav-links a {
+      font-family: 'Courier New', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      padding: 5px 14px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .nav-links a:hover {
+      color: #c9a84c;
+      border-color: #c9a84c44;
+      text-decoration: none;
+    }
+
+    .hero {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 28px 48px;
+    }
+    .eyebrow {
+      font-family: 'Courier New', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #f0f0f0;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .hero .subtitle {
+      font-size: 1.15rem;
+      color: #888;
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .byline {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #555;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #c9a84c;
+      margin: 40px 0;
+    }
+
+    .premise {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 28px 60px;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #bbb;
+    }
+    .premise p { margin-bottom: 1.4em; }
+
+    .toc-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 28px 100px;
+    }
+    .toc-label {
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .chapter-row {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid #161616;
+      transition: background 0.12s;
+    }
+    .chapter-row:first-of-type { border-top: 1px solid #161616; }
+
+    .chapter-row a {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      width: 100%;
+      color: inherit;
+      text-decoration: none;
+    }
+    .chapter-row a:hover .chapter-title { color: #c9a84c; }
+    .chapter-row a:hover { text-decoration: none; }
+
+    .chapter-num {
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      color: #444;
+      letter-spacing: 0.1em;
+      flex-shrink: 0;
+      width: 24px;
+    }
+    .chapter-title {
+      font-size: 1rem;
+      color: #d0d0d0;
+      transition: color 0.15s;
+      flex: 1;
+    }
+    .chapter-status {
+      font-family: 'Courier New', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #333;
+      flex-shrink: 0;
+    }
+    .chapter-status.ready { color: #4a7c4a; }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 28px 24px;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: #333;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-brand">The Original Bug</span>
+    <div class="nav-links">
+      <a href="https://sandybpatterson.github.io/ai-tools-directory/">AI Tools</a>
+      <a href="https://sandybpatterson.github.io/ai-tools-directory/newsletter.html">Newsletter</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <p class="eyebrow">Sandy B. Patterson</p>
+    <h1>The Original Bug</h1>
+    <p class="subtitle">Human Cognition and the AI It Corrupted</p>
+    <p class="byline">A nonfiction book in 16 chapters</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="premise">
+    <p>Every flaw identified in AI — hallucination, overconfidence, pattern obsession, bias, narrative dependency, sycophancy — has a precise counterpart in human cognition. Because AI was trained on human output. The machine is a mirror. The reflection is accurate.</p>
+  </div>
+
+  <div class="toc-wrap">
+    <p class="toc-label">Table of Contents</p>
+
+    <div class="chapter-row"><a href="chapter.html?c=1"><span class="chapter-num">1</span><span class="chapter-title">We Built It In Our Image</span><span class="chapter-status ready">Read</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=2"><span class="chapter-num">2</span><span class="chapter-title">Pattern Machines</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=3"><span class="chapter-num">3</span><span class="chapter-title">Confidence Without Competence</span><span class="chapter-status ready">Read</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=4"><span class="chapter-num">4</span><span class="chapter-title">The Shortcut Problem</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=5"><span class="chapter-num">5</span><span class="chapter-title">Ask a Better Question</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=6"><span class="chapter-num">6</span><span class="chapter-title">Narrative Is Not Truth</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=7"><span class="chapter-num">7</span><span class="chapter-title">What Does Understanding Even Mean</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=8"><span class="chapter-num">8</span><span class="chapter-title">The Bias Mirror</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=9"><span class="chapter-num">9</span><span class="chapter-title">The Examined Assumption</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=10"><span class="chapter-num">10</span><span class="chapter-title">The Social Animal and Its Machine</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=11"><span class="chapter-num">11</span><span class="chapter-title">The Art of Being Wrong Productively</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=12"><span class="chapter-num">12</span><span class="chapter-title">When Certainty Kills</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=13"><span class="chapter-num">13</span><span class="chapter-title">Chapter 13</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=14"><span class="chapter-num">14</span><span class="chapter-title">Chapter 14</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=15"><span class="chapter-num">15</span><span class="chapter-title">Chapter 15</span><span class="chapter-status">Coming soon</span></a></div>
+    <div class="chapter-row"><a href="chapter.html?c=16"><span class="chapter-num">16</span><span class="chapter-title">We Are the Training Data</span><span class="chapter-status ready">Read</span></a></div>
+  </div>
+
+  <footer>
+    &copy; Sandy B. Patterson &mdash; The Original Bug
+  </footer>
+
+</body>
+</html>

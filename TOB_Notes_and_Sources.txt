@@ -1,0 +1,375 @@
+================================================================================
+THE ORIGINAL BUG
+Human Cognition and the AI It Corrupted
+Sandy B. Patterson
+
+NOTES AND SOURCES
+================================================================================
+
+A note on sourcing: this book makes specific empirical claims throughout. What
+follows documents the research behind those claims, organized by chapter, for
+readers who want to verify, explore further, or simply know where the evidence
+came from. Sources are listed in the order the claims appear in each chapter.
+
+================================================================================
+CHAPTER 1 — WE BUILT IT IN OUR IMAGE
+================================================================================
+
+Section 1.1 — The Brief
+
+1. The Mata v. Avianca fabricated citations case: Weiser, B. (2023, June 8).
+Here's What Happens When Your Lawyer Uses ChatGPT. The New York Times.
+https://www.nytimes.com/2023/06/08/nyregion/lawyer-chatgpt-sanctions.html
+
+Primary reporting on attorney Steven Schwartz's submission of an AI-generated
+brief containing fabricated case citations, and Judge P. Kevin Castel's
+subsequent order. See also the underlying court record: Mata v. Avianca, Inc.,
+No. 22-cv-1461 (PKC), 2023 WL 4114965 (S.D.N.Y. June 22, 2023) — the court's
+published sanctions order documenting the fabricated citations in detail.
+
+--------------------------------------------------------------------------------
+
+Section 1.2 — You Do This Too
+
+2. Sibling memory divergence and the reconstructive nature of autobiographical
+memory: Fivush, R., Haden, C., & Reese, E. (1996). Remembering, recounting, and
+reminiscing: The development of autobiographical memory in social context. In
+D. C. Rubin (Ed.), Remembering Our Past: Studies in Autobiographical Memory.
+Cambridge University Press, 341-359.
+
+On the social and reconstructive nature of autobiographical memory and how
+shared events produce divergent individual accounts between people who
+experienced them together.
+
+3. The finding that siblings often reject each other's accounts of shared
+memories as simply wrong rather than differently perceived: Barclay, C. R., &
+Wellman, H. M. (1986). Accuracies and inaccuracies in autobiographical memories.
+Journal of Memory and Language, 25(1), 93-103.
+https://doi.org/10.1016/0749-596X(86)90023-9
+
+Demonstrates that people frequently fail to recognize their own past memory
+reports when presented alongside reconstructed versions, suggesting the
+reconstructive process is continuous and opaque to introspection. For
+sibling-specific divergence in early memory see also: Mullen, M. K. (1994).
+Earliest recollections of childhood: A demographic analysis. Cognition, 52(1),
+55-79.
+
+4. The "smashed versus contacted" car crash memory experiment: Loftus, E. F.,
+& Palmer, J. C. (1974). Reconstruction of automobile destruction: An example
+of the interaction between language and memory. Journal of Verbal Learning and
+Verbal Behavior, 13(5), 585-589. https://doi.org/10.1016/S0022-5371(74)80011-3
+
+The foundational study documenting that a single altered verb in a question
+asked after viewing a film of a car accident significantly changed both
+participants' speed estimates and their reported memory of physical details
+that were not present in the film (broken glass).
+
+--------------------------------------------------------------------------------
+
+Section 1.3 — The Invented Memory
+
+5. The "lost in the mall" false memory implantation study: Loftus, E. F.
+(1993). The reality of repressed memories. American Psychologist, 48(5),
+518-537. https://doi.org/10.1037/0003-066X.48.5.518
+
+Introduces and describes the lost in the mall paradigm, in which approximately
+25% of subjects came to falsely remember a fabricated childhood event presented
+alongside three real ones.
+
+6. Replication and extension of the false memory implantation paradigm: Hyman,
+I. E., Husband, T. H., & Billings, F. J. (1995). False memories of childhood
+experiences. Applied Cognitive Psychology, 9(3), 181-197.
+https://doi.org/10.1002/acp.2350090302
+
+Extends the false memory paradigm using fabricated hospitalization and wedding
+reception scenarios, documenting rates of false memory formation across
+subjects with full sensory and emotional detail.
+
+7. The Bugs Bunny at Disneyland false memory study: Braun, K. A., Ellis, R., &
+Loftus, E. F. (2002). Make my memory: How advertising can change our memories
+of the past. Psychology & Marketing, 19(1), 1-23.
+https://doi.org/10.1002/mar.1000
+
+Documents false memory formation following exposure to a fake advertisement
+featuring a character (Bugs Bunny) who could not plausibly have appeared at
+the location described, demonstrating that suggestion as mild as an
+advertisement can implant a fully-detailed fabricated memory.
+
+--------------------------------------------------------------------------------
+
+Section 1.4 — The Mirror
+
+8. On language models learning communicative patterns — including unflagged
+uncertainty — from human-generated training corpora: Bender, E. M., Gebru, T.,
+McMillan-Major, A., & Shmitchell, S. (2021). On the Dangers of Stochastic
+Parrots: Can Language Models Be Too Big? Proceedings of the 2021 ACM Conference
+on Fairness, Accountability, and Transparency, 610-623.
+https://doi.org/10.1145/3442188.3445922
+
+Establishes the nature of large language model training corpora as
+human-generated text and the implications of that origin for model behavior,
+including the inheritance of communicative patterns — such as confident,
+unhedged prose — present in the source material.
+
+================================================================================
+CHAPTER 2 — PATTERN MACHINES
+================================================================================
+
+Section 2.1 — The Pigeon
+
+1. The original superstitious pigeon study: Skinner, B. F. (1948).
+'Superstition' in the pigeon. Journal of Experimental Psychology, 38(2),
+168-172. https://doi.org/10.1037/h0055873
+
+The foundational study documenting the development of ritualistic behavior in
+pigeons receiving food on a fixed-interval schedule independent of their
+behavior, demonstrating that coincidental behavior-reward pairings produce
+entrenched "superstitious" rituals.
+
+--------------------------------------------------------------------------------
+
+Section 2.2 — The Pattern-Seeking Brain
+
+2. The introduction of apophenia as a clinical concept: Conrad, K. (1958). Die
+beginnende Schizophrenie: Versuch einer Gestaltanalyse des Wahns. Thieme.
+
+The original introduction of the term apophenia to describe the heightened
+pattern perception observed in early-stage psychosis, with Conrad's explicit
+framing of it as a spectrum phenomenon extending into normal cognition.
+
+3. On the neurological basis of apophenia across the clinical-to-normal
+spectrum: Brugger, P. (2001). From haunted brain to haunted science: A
+cognitive neuroscience view of paranormal and pseudoscientific thought. In J.
+Houran & R. Lange (Eds.), Haunting and Poltergeists: Multidisciplinary
+Perspectives. McFarland, 195-213.
+
+4. The hot hand fallacy in basketball: Gilovich, T., Vallone, R., & Tversky,
+A. (1985). The hot hand in basketball: On the misperception of random
+sequences. Cognitive Psychology, 17(3), 295-314.
+https://doi.org/10.1016/0010-0285(85)90010-6
+
+The foundational study demonstrating that the belief in a "hot hand" — that a
+player who has made several shots in a row is more likely to make the next
+one — persists despite statistical evidence that shooting performance across
+sequences is much closer to random than perceived.
+
+--------------------------------------------------------------------------------
+
+Section 2.3 — Why the Brain Does This
+
+5. The smoke detector principle, explaining why evolution favors
+over-sensitive threat detection: Nesse, R. M. (2001). The smoke detector
+principle: Natural selection and the regulation of defensive responses.
+Annals of the New York Academy of Sciences, 935(1), 75-85.
+https://doi.org/10.1111/j.1749-6632.2001.tb03472.x
+
+6. On the pervasiveness of patternicity across human belief systems and its
+evolutionary origin: Shermer, M. (2011). The Believing Brain: From Ghosts and
+Gods to Politics and Conspiracies. Times Books.
+
+7. On the role of dopamine neurons in reward prediction and pattern learning:
+Schultz, W. (1998). Predictive reward signal of dopamine neurons. Journal of
+Neurophysiology, 80(1), 1-27. https://doi.org/10.1152/jn.1998.80.1.1
+
+The foundational paper establishing that dopamine neurons fire not simply in
+response to reward but in response to the prediction of reward, providing the
+neurological basis for why pattern confirmation feels intrinsically
+satisfying regardless of whether the pattern is genuine.
+
+--------------------------------------------------------------------------------
+
+Section 2.4 — The Mirror
+
+No new sources in this section; draws on the apophenia and pattern-detection
+research cited in Section 2.2 above, applied to AI outputs.
+
+--------------------------------------------------------------------------------
+
+Section 2.5 — The Mechanism Question
+
+Related reading on the systematic human tendency to identify causal patterns
+in samples too small to support causal inference: Kahneman, D. (2011).
+Thinking, Fast and Slow. Farrar, Straus and Giroux. — see Chapter 10, "The Law
+of Small Numbers."
+
+================================================================================
+CHAPTER 3 — CONFIDENCE WITHOUT COMPETENCE
+================================================================================
+
+Section 3.1 — The Hook
+
+1. Rob Hall and the 1996 Everest disaster: Krakauer, J. (1997). Into Thin Air: A
+Personal Account of the Mount Everest Disaster. Villard Books.
+
+The definitive account of the May 1996 Everest disaster, including the documented
+timeline of Hall's two o'clock turnaround rule, the decision to push past it, and
+the sequence of events that followed. Hall's death and the circumstances of his
+final radio contact with his wife are drawn from Krakauer's firsthand reporting.
+The book remains the primary English-language account of the expedition.
+
+--------------------------------------------------------------------------------
+
+Section 3.2 — The Dunning-Kruger Experiment
+
+2. The Cornell studies on metacognitive failure: Kruger, J., & Dunning, D. (1999).
+Unskilled and unaware of it: How difficulties in recognizing one's own incompetence
+lead to inflated self-assessments. Journal of Personality and Social Psychology,
+77(6), 1121-1134. https://doi.org/10.1037/0022-3514.77.6.1121
+
+The original study documenting that participants scoring in the bottom quarter
+dramatically overestimated their performance across logical reasoning, grammar, and
+humor domains. The finding that metacognitive ability is built from the same skills
+required to perform in the domain — meaning low performers lack access to the very
+capacity that would reveal their deficit — is the paper's central contribution and
+is documented here. The study has been replicated many times and also subjected to
+methodological critique; for a nuanced reassessment see: Nuhfer, E., Fleischer, S.,
+Cogan, C., Wirth, K., & Gaze, E. (2017). How random noise and a graphical
+convention subverted behavioral scientists' explanations of self-assessment data.
+PLOS ONE, 12(8). https://doi.org/10.1371/journal.pone.0183253 — The core finding
+that confidence and competence can decouple in predictable ways survives this
+critique even if the specific effect size is debated.
+
+--------------------------------------------------------------------------------
+
+Section 3.3 — The AI Mirror
+
+3. Diagnostic error and overconfidence in clinical medicine: Graber, M. L.,
+Franklin, N., & Gordon, R. (2005). Diagnostic error in internal medicine. Archives
+of Internal Medicine, 165(13), 1493-1499.
+https://doi.org/10.1001/archinte.165.13.1493
+
+Used in this section to establish the clinical parallel to AI overconfidence —
+that confident fluent outputs in high-stakes medical contexts have documented
+costs when certainty exceeds competence. The paper documents cognitive factors
+including overconfidence and premature closure as primary contributors to
+diagnostic error.
+
+--------------------------------------------------------------------------------
+
+Section 3.4 — The Other Side of the Gap
+
+2. Underestimation by highly competent performers: Kruger & Dunning (1999) — see
+Section 3.2 above. The finding that top-quarter performers consistently
+underestimated their relative performance is documented in the same paper and is
+the less-cited half of the original study.
+
+4. Expert knowledge and decision difficulty: Gawande, A. (2002). Complications:
+A Surgeon's Notes on an Imperfect Science. Metropolitan Books.
+
+Gawande's account of how deep clinical expertise can introduce its own form of
+decision paralysis — knowing too much about what can go wrong — is drawn from
+his clinical observations and case descriptions throughout this book, particularly
+the chapters on uncertainty and fallibility in surgical practice.
+
+5. Superforecasters and epistemic humility: Tetlock, P. E. (2005). Expert Political
+Judgment: How Good Is It? How Can We Know? Princeton University Press.
+
+The twenty-year study of 284 expert forecasters producing nearly 20,000 verifiable
+predictions. The finding that average expert performance barely exceeded chance, and
+that a small subset of superforecasters dramatically outperformed the group through
+calibrated uncertainty rather than superior domain knowledge, is the book's central
+empirical contribution. For the more accessible treatment and additional findings
+from the subsequent Good Judgment Project see: Tetlock, P. E., & Gardner, D.
+(2015). Superforecasting: The Art and Science of Prediction. Crown Publishers.
+
+================================================================================
+CHAPTER 4 — THE SHORTCUT PROBLEM
+================================================================================
+
+Section 4.1 — The Hook
+
+The spinning wheel anchoring experiment: Tversky, A., & Kahneman, D. (1974).
+Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124-1131.
+https://doi.org/10.1126/science.185.4157.1124
+
+This is the foundational paper introducing anchoring and adjustment alongside the
+availability heuristic and representativeness. The UN member states spinning wheel
+experiment is described here. The finding that a completely irrelevant random
+number shifted estimates by twenty percentage points has been replicated across
+cultures, professions, and age groups in the decades since.
+
+The broader claim that anchoring affects judicial sentencing, consumer pricing,
+and medical diagnosis is supported by a substantial secondary literature. For
+judicial anchoring see: Englich, B., Mussweiler, T., & Strack, F. (2006). Playing
+dice with criminal sentences. Personality and Social Psychology Bulletin, 32(2),
+188-200. https://doi.org/10.1177/0146167205282152
+
+--------------------------------------------------------------------------------
+
+Section 4.2 — The Shortcuts
+
+The availability heuristic: Tversky, A., & Kahneman, D. (1974). — see above.
+The availability heuristic is introduced and documented in the same foundational
+paper. The plane crash versus car accident example reflects a well-documented
+disparity between perceived and actual risk; the availability effect on risk
+perception is comprehensively reviewed in: Slovic, P. (1987). Perception of risk.
+Science, 236(4799), 280-285. https://doi.org/10.1126/science.3563507
+
+The representativeness heuristic: Kahneman, D., & Tversky, A. (1973). On the
+psychology of prediction. Psychological Review, 80(4), 237-251.
+https://doi.org/10.1037/h0034747
+
+The Linda problem (conjunction fallacy): Tversky, A., & Kahneman, D. (1983).
+Extensional versus intuitive reasoning: The conjunction fallacy in probability
+judgment. Psychological Review, 90(4), 293-315.
+https://doi.org/10.1037/0033-295X.90.4.293
+
+The finding that 85% of participants chose the logically impossible option B is
+from this paper. The persistence of the conjunction fallacy even among
+statistically trained participants who had been explicitly taught the relevant rule
+is documented in the same study and subsequent replications.
+
+--------------------------------------------------------------------------------
+
+Section 4.4 — When Shortcuts Kill
+
+Mars Climate Orbiter: Isbell, A. (1999). Mars Climate Orbiter Mishap
+Investigation Board Phase I Report. NASA.
+https://llis.nasa.gov/llis_lib/pdf/1009464main1_0641-mr.pdf
+
+The official investigation documenting the imperial-to-metric units mismatch that
+destroyed the $327 million spacecraft after nine months of undetected error.
+
+Anchoring in clinical diagnosis: Graber, M. L., Franklin, N., & Gordon, R.
+(2005). Diagnostic error in internal medicine. Archives of Internal Medicine,
+165(13), 1493-1499. https://doi.org/10.1001/archinte.165.13.1493
+
+The estimate that diagnostic errors affect approximately 10-15% of clinical
+encounters, with cognitive bias including anchoring as a contributing factor in
+the majority of cases, draws from: Saposnik, G., Redelmeier, D., Ruff, C. C., &
+Tobler, P. N. (2016). Cognitive biases associated with medical decisions: A
+systematic review. BMC Medical Informatics and Decision Making, 16, 138.
+https://doi.org/10.1186/s12911-016-0377-1
+
+COMPAS racial disparities: Angwin, J., Larson, J., Mattu, S., & Kirchner, L.
+(2016, May 23). Machine Bias. ProPublica.
+https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+
+The investigation examining outcomes for more than 7,000 defendants in Broward
+County, Florida, finding that Black defendants were nearly twice as likely as
+white defendants to be falsely flagged as high risk. The methodology and findings
+were subsequently challenged by Northpointe (the COMPAS developer) and debated
+in the academic literature; see Flores, A. W., Bechtel, K., & Lowenkamp, C. T.
+(2016). False positives, false negatives, and false analyses: A rejoinder to
+"Machine Bias." Federal Probation, 80(2), 38-46. The core racial disparity
+finding, while contested in its interpretation, has not been successfully refuted.
+
+--------------------------------------------------------------------------------
+
+Section 4.5 — The Close
+
+Kahneman's two-system framework: Kahneman, D. (2011). Thinking, Fast and Slow.
+Farrar, Straus and Giroux.
+
+The System 1 / System 2 framework draws on Kahneman's synthesis of decades of
+research conducted with Amos Tversky and subsequently alone. The book is the
+definitive popular treatment. The underlying research is documented across the
+papers cited in Sections 4.1 and 4.2 above and in the broader Kahneman-Tversky
+corpus. For the technical underpinning of the dual-process theory see also:
+Stanovich, K. E., & West, R. F. (2000). Individual differences in reasoning:
+Implications for the rationality debate. Behavioral and Brain Sciences, 23(5),
+645-665. https://doi.org/10.1017/S0140525X00003435
+
+================================================================================
+[ Additional chapters to be added ]
+================================================================================

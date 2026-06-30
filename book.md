@@ -9,7 +9,7 @@
 
 | Chapter | Title | Status |
 |---------|-------|--------|
-| [Chapter 1](chapter-01.md) | We Built It In Our Image | ✓ Complete |
+| [Chapter 1](TOB_Chapter1_Complete.md) | We Built It In Our Image | ✓ Complete |
 | Chapter 2 | *(add title)* | |
 | Chapter 3 | *(add title)* | |
 | Chapter 4 | *(add title)* | |
@@ -24,7 +24,7 @@
 | Chapter 13 | *(add title)* | |
 | Chapter 14 | *(add title)* | |
 | Chapter 15 | *(add title)* | |
-| [Chapter 16](chapter-16.md) | We Are the Training Data | ✓ Complete |
+| [Chapter 16](TOB_Chapter16_Complete.md) | We Are the Training Data | ✓ Complete |
 
 ---
 

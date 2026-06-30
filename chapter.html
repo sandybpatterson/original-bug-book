@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Original Bug</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: Georgia, 'Times New Roman', serif;
+      min-height: 100vh;
+    }
+
+    a { color: #c9a84c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .nav-brand {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #c9a84c;
+    }
+    .nav-links {
+      display: flex;
+      gap: 8px;
+    }
+    .nav-links a {
+      font-family: 'Courier New', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      padding: 5px 14px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .nav-links a:hover {
+      color: #c9a84c;
+      border-color: #c9a84c44;
+      text-decoration: none;
+    }
+
+    #content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 28px 100px;
+    }
+
+    /* Markdown-rendered prose styles */
+    #content h1 {
+      font-size: 1.1rem;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    #content h3 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #f0f0f0;
+      line-height: 1.15;
+      margin-bottom: 40px;
+      font-family: Georgia, serif;
+    }
+    #content hr {
+      border: none;
+      border-top: 1px solid #1e1e1e;
+      margin: 48px 0;
+    }
+    #content h2 {
+      font-family: 'Courier New', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      font-weight: 400;
+      margin: 48px 0 24px;
+    }
+    #content p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: #d8d8d8;
+      margin-bottom: 1.6em;
+    }
+    #content blockquote {
+      border-left: 2px solid #c9a84c;
+      margin: 2em 0;
+      padding: 0 0 0 24px;
+      color: #c9a84c;
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    #content blockquote p { color: #c9a84c; margin-bottom: 0; }
+    #content strong { color: #f0f0f0; font-weight: 600; }
+    #content em { font-style: italic; color: #e0e0e0; }
+
+    /* Section divider \* \* \* */
+    #content p:has(> em:only-child) {
+      text-align: center;
+      color: #444;
+      letter-spacing: 0.3em;
+      margin: 2.5em 0;
+    }
+
+    /* Exercise / exhibit boxes — paragraph after a bold-only paragraph */
+    #content .box-label {
+      font-family: 'Courier New', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+    /* Footer line */
+    #content > p:last-child {
+      font-family: 'Courier New', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      color: #333;
+      text-transform: uppercase;
+      margin-top: 60px;
+      padding-top: 28px;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    #loading {
+      max-width: 680px;
+      margin: 120px auto;
+      padding: 0 28px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #333;
+    }
+
+    #error-msg {
+      display: none;
+      max-width: 680px;
+      margin: 120px auto;
+      padding: 0 28px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: #663333;
+    }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 28px 24px;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    /* Chapter nav */
+    .chapter-nav {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 28px 40px;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Courier New', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #444;
+    }
+    .chapter-nav a { color: #c9a84c; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-brand"><a href="index.html" style="color:#c9a84c;">The Original Bug</a></span>
+    <div class="nav-links">
+      <a href="index.html">All Chapters</a>
+      <a href="https://sandybpatterson.github.io/ai-tools-directory/">AI Tools</a>
+    </div>
+  </nav>
+
+  <div id="loading">Loading chapter…</div>
+  <div id="error-msg">Chapter not found.</div>
+  <div id="content" style="display:none;"></div>
+
+  <div class="chapter-nav" id="chapter-nav" style="display:none;">
+    <span id="prev-link"></span>
+    <a href="index.html">↑ All Chapters</a>
+    <span id="next-link"></span>
+  </div>
+
+  <footer>
+    &copy; Sandy B. Patterson &mdash; The Original Bug
+  </footer>
+
+  <script>
+    const chapters = {
+      1:  { file: 'TOB_Chapter1_Complete.md',  title: 'We Built It In Our Image' },
+      2:  { file: 'TOB_Chapter2_Complete.md',  title: 'Pattern Machines' },
+      3:  { file: 'TOB_Chapter3_Complete.md',  title: 'Confidence Without Competence' },
+      4:  { file: 'TOB_Chapter4_Complete.md',  title: 'The Shortcut Problem' },
+      5:  { file: 'TOB_Chapter5_Complete.md',  title: 'Ask a Better Question' },
+      6:  { file: 'TOB_Chapter6_Complete.md',  title: 'Narrative Is Not Truth' },
+      7:  { file: 'TOB_Chapter7_Complete.md',  title: 'What Does Understanding Even Mean' },
+      8:  { file: 'TOB_Chapter8_Complete.md',  title: 'The Bias Mirror' },
+      9:  { file: 'TOB_Chapter9_Complete.md',  title: 'The Examined Assumption' },
+      10: { file: 'TOB_Chapter10_Complete.md', title: 'The Social Animal and Its Machine' },
+      11: { file: 'TOB_Chapter11_Complete.md', title: 'The Art of Being Wrong Productively' },
+      12: { file: 'TOB_Chapter12_Complete.md', title: 'When Certainty Kills' },
+      13: { file: 'TOB_Chapter13_Complete.md', title: 'Chapter 13' },
+      14: { file: 'TOB_Chapter14_Complete.md', title: 'Chapter 14' },
+      15: { file: 'TOB_Chapter15_Complete.md', title: 'Chapter 15' },
+      16: { file: 'TOB_Chapter16_Complete.md', title: 'We Are the Training Data' },
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const num = parseInt(params.get('c'), 10);
+    const chapter = chapters[num];
+
+    if (!chapter) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('error-msg').style.display = 'block';
+    } else {
+      document.title = `Chapter ${num}: ${chapter.title} — The Original Bug`;
+
+      fetch(chapter.file)
+        .then(r => {
+          if (!r.ok) throw new Error('not found');
+          return r.text();
+        })
+        .then(md => {
+          document.getElementById('loading').style.display = 'none';
+          const el = document.getElementById('content');
+          el.innerHTML = marked.parse(md);
+          el.style.display = 'block';
+
+          // Prev / next nav
+          const nav = document.getElementById('chapter-nav');
+          nav.style.display = 'flex';
+          if (chapters[num - 1]) {
+            document.getElementById('prev-link').innerHTML =
+              `<a href="chapter.html?c=${num-1}">← Ch ${num-1}</a>`;
+          }
+          if (chapters[num + 1]) {
+            document.getElementById('next-link').innerHTML =
+              `<a href="chapter.html?c=${num+1}">Ch ${num+1} →</a>`;
+          }
+        })
+        .catch(() => {
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('error-msg').style.display = 'block';
+          document.getElementById('error-msg').textContent =
+            `Chapter ${num} hasn't been converted yet. Check back soon.`;
+        });
+    }
+  </script>
+
+  <script src="reader.js"></script>
+
+</body>
+</html>
