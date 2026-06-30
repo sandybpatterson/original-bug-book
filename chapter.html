@@ -259,6 +259,12 @@
           el.innerHTML = marked.parse(md);
           el.style.display = 'block';
 
+          // Load reader.js only after content is in the DOM — it extracts
+          // paragraphs on init, so it must run after markdown is rendered.
+          const readerScript = document.createElement('script');
+          readerScript.src = 'reader.js';
+          document.body.appendChild(readerScript);
+
           // Prev / next nav
           const nav = document.getElementById('chapter-nav');
           nav.style.display = 'flex';
@@ -280,7 +286,6 @@
     }
   </script>
 
-  <script src="reader.js"></script>
 
 </body>
 </html>
