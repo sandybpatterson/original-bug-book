@@ -648,5 +648,36 @@ the claim that representation bias in training produces concrete disparate
 performance outcomes.
 
 ================================================================================
+CHAPTER 9 — THE EXAMINED ASSUMPTION
+================================================================================
+
+Section 9.4 — Four Arguments
+
+1. Morgan, R. E., & Thompson, A. (2021). Criminal Victimization, 2020. Bureau
+of Justice Statistics, U.S. Department of Justice. NCJ 301773.
+https://bjs.ojp.gov/content/pub/pdf/cv20.pdf
+
+Cited in Argument One (crime and defunding) to ground the claim about the
+complexity of attributing crime trend changes to single policy variables,
+particularly during the pandemic period when many variables shifted
+simultaneously. The BJS annual victimization survey documents national crime
+trends and is the primary source used by researchers tracking crime rates; it
+does not establish causal relationships between policy changes and outcomes,
+illustrating exactly the evidential gap the argument's load-bearing assumption
+crosses without acknowledgment.
+
+2. Krammer, F. (2020). SARS-CoV-2 vaccines in development. Nature, 586,
+516-527. https://doi.org/10.1038/s41586-020-2798-3
+
+Cited in Argument Three (COVID vaccine development speed) as documentation of
+the prior two decades of mRNA platform development that preceded the COVID
+vaccines, and of the concurrent trial structure that enabled compressed
+timelines without reducing scientific rigor. Establishes that the speed of
+COVID vaccine development was a product of process architecture — parallel
+rather than sequential phases, pre-existing platform science, government
+assumption of financial risk — rather than a reduction in safety standards,
+which is the premise the argument's load-bearing assumption ignored.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
