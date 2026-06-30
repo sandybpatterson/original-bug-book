@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index — The Original Bug</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: Georgia, 'Times New Roman', serif;
+      min-height: 100vh;
+    }
+
+    a { color: #c9a84c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .nav-brand {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #c9a84c;
+    }
+    .nav-links {
+      display: flex;
+      gap: 8px;
+    }
+    .nav-links a {
+      font-family: 'Courier New', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      padding: 5px 14px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .nav-links a:hover {
+      color: #c9a84c;
+      border-color: #c9a84c44;
+      text-decoration: none;
+    }
+
+    .header {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 28px 40px;
+    }
+    .eyebrow {
+      font-family: 'Courier New', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #f0f0f0;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .index-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 28px 100px;
+    }
+
+    .chapter-block {
+      margin-bottom: 48px;
+    }
+
+    .chapter-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .chapter-heading .ch-num {
+      font-family: 'Courier New', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: #444;
+      flex-shrink: 0;
+    }
+    .chapter-heading a {
+      font-size: 1rem;
+      color: #d0d0d0;
+      transition: color 0.15s;
+    }
+    .chapter-heading a:hover {
+      color: #c9a84c;
+      text-decoration: none;
+    }
+
+    .index-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .index-list li {
+      font-size: 0.92rem;
+      color: #999;
+      line-height: 1.5;
+      padding-left: 16px;
+      position: relative;
+    }
+    .index-list li::before {
+      content: '·';
+      position: absolute;
+      left: 4px;
+      color: #3a3a3a;
+    }
+    .index-list li em {
+      color: #c8b89a;
+      font-style: normal;
+    }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 28px 24px;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: #333;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-brand">The Original Bug</span>
+    <div class="nav-links">
+      <a href="index.html">Contents</a>
+      <a href="https://sandybpatterson.github.io/ai-tools-directory/">AI Tools</a>
+      <a href="https://sandybpatterson.github.io/ai-tools-directory/newsletter.html">Newsletter</a>
+    </div>
+  </nav>
+
+  <div class="header">
+    <p class="eyebrow">Sandy B. Patterson</p>
+    <h1>Index</h1>
+    <p>Key terms, people, studies, and cases — in the order they appear in the book.</p>
+  </div>
+
+  <div class="index-wrap">
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">P</span>
+        <a href="chapter.html?c=0">Prologue</a>
+      </div>
+      <ul class="index-list">
+        <li>confabulation</li>
+        <li>overconfidence</li>
+        <li>pattern detection</li>
+        <li>sycophancy</li>
+        <li>the mirror (as structural metaphor)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">1</span>
+        <a href="chapter.html?c=1">We Built It In Our Image</a>
+      </div>
+      <ul class="index-list">
+        <li><em>Mata v. Avianca</em> (Steven Schwartz / fabricated citations)</li>
+        <li>confabulation (named and defined)</li>
+        <li>reconstructive memory</li>
+        <li>Fivush, Haden &amp; Reese — autobiographical memory</li>
+        <li>Barclay &amp; Wellman — memory accuracy study</li>
+        <li>Loftus &amp; Palmer — "smashed vs contacted" car crash experiment</li>
+        <li>Loftus — lost in the mall (false memory implantation)</li>
+        <li>Hyman, Husband &amp; Billings — false hospitalization memory</li>
+        <li>Braun, Ellis &amp; Loftus — Bugs Bunny at Disneyland</li>
+        <li>Bender, Gebru et al. — Stochastic Parrots</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">2</span>
+        <a href="chapter.html?c=2">Pattern Machines</a>
+      </div>
+      <ul class="index-list">
+        <li>Skinner — superstitious pigeon experiment</li>
+        <li>apophenia (Conrad 1958)</li>
+        <li>Brugger — apophenia neuroscience</li>
+        <li>hot hand fallacy</li>
+        <li>Gilovich, Vallone &amp; Tversky — hot hand study</li>
+        <li>smoke detector principle (Nesse)</li>
+        <li>patternicity (Shermer)</li>
+        <li>Schultz — dopamine and reward prediction</li>
+        <li>law of small numbers (Kahneman)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">3</span>
+        <a href="chapter.html?c=3">Confidence Without Competence</a>
+      </div>
+      <ul class="index-list">
+        <li>Rob Hall / 1996 Everest disaster</li>
+        <li>turnaround rule</li>
+        <li>Dunning-Kruger effect</li>
+        <li>Kruger &amp; Dunning — metacognitive failure study</li>
+        <li>metacognition</li>
+        <li>Graber, Franklin &amp; Gordon — diagnostic error in medicine</li>
+        <li>Gawande — <em>Complications</em></li>
+        <li>superforecasters</li>
+        <li>Tetlock — <em>Expert Political Judgment</em></li>
+        <li>calibrated uncertainty</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">4</span>
+        <a href="chapter.html?c=4">The Shortcut Problem</a>
+      </div>
+      <ul class="index-list">
+        <li>anchoring and adjustment</li>
+        <li>Tversky &amp; Kahneman — spinning wheel experiment</li>
+        <li>availability heuristic</li>
+        <li>representativeness heuristic</li>
+        <li>Linda problem (conjunction fallacy)</li>
+        <li>System 1 / System 2</li>
+        <li>Kahneman — <em>Thinking, Fast and Slow</em></li>
+        <li>Mars Climate Orbiter</li>
+        <li>Saposnik et al. — cognitive bias in clinical decisions</li>
+        <li>Englich, Mussweiler &amp; Strack — judicial anchoring</li>
+        <li>COMPAS recidivism score</li>
+        <li>Angwin et al. — Machine Bias (ProPublica)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">5</span>
+        <a href="chapter.html?c=5">Ask a Better Question</a>
+      </div>
+      <ul class="index-list">
+        <li>Douglas Adams — <em>The Hitchhiker's Guide to the Galaxy</em></li>
+        <li>Deep Thought / the answer "42"</li>
+        <li>question framing effects</li>
+        <li>Socratic method</li>
+        <li>Plato — <em>Meno</em>, <em>Theaetetus</em>, <em>Republic</em></li>
+        <li>the question before the question</li>
+        <li>examined assumption (introduced)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">6</span>
+        <a href="chapter.html?c=6">Narrative Is Not Truth</a>
+      </div>
+      <ul class="index-list">
+        <li>Heider &amp; Simmel — animated shapes study</li>
+        <li>narrative instinct</li>
+        <li>default mode network</li>
+        <li>Buckner, Andrews-Hanna &amp; Schacter — default network review</li>
+        <li>Iraq War WMD / Chilcot Report</li>
+        <li>recovered memory / therapeutic narrative</li>
+        <li>Loftus — reality of repressed memories</li>
+        <li>Goldstein et al. — AI-generated influence operations</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">7</span>
+        <a href="chapter.html?c=7">What Does Understanding Even Mean</a>
+      </div>
+      <ul class="index-list">
+        <li>decoding vs comprehension</li>
+        <li>Perfetti &amp; Stafura — reading comprehension theory</li>
+        <li>Chinese Room thought experiment</li>
+        <li>Searle — "Minds, Brains, and Programs"</li>
+        <li>Systems Reply / Robot Reply / Brain Simulator Reply</li>
+        <li>predictive processing</li>
+        <li>Clark — <em>Surfing Uncertainty</em></li>
+        <li>free energy principle</li>
+        <li>Friston — predictive brain theory</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">8</span>
+        <a href="chapter.html?c=8">The Bias Mirror</a>
+      </div>
+      <ul class="index-list">
+        <li>word embeddings</li>
+        <li>Word Embedding Association Test (WEAT)</li>
+        <li>Caliskan, Bryson &amp; Narayanan — WEAT study</li>
+        <li>historical bias (in training data)</li>
+        <li>representation bias</li>
+        <li>Cirillo et al. — sex and gender bias in medical AI</li>
+        <li>Bender et al. — Stochastic Parrots (representation)</li>
+        <li>Amazon recruiting tool (Dastin / Reuters)</li>
+        <li>Google Photos gorilla incident (Simonite / Wired)</li>
+        <li>COMPAS racial disparities (Angwin et al. / ProPublica)</li>
+        <li>Geena Davis Institute on Gender in Media</li>
+        <li>Annenberg Inclusion Initiative</li>
+        <li>Noble — <em>Algorithms of Oppression</em></li>
+        <li>Buolamwini &amp; Gebru — Gender Shades audit</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">9</span>
+        <a href="chapter.html?c=9">The Examined Assumption</a>
+      </div>
+      <ul class="index-list">
+        <li>O.J. Simpson trial / "if it doesn't fit"</li>
+        <li>load-bearing assumption</li>
+        <li>anatomy of a claim</li>
+        <li>AI transcript / assisted living case study</li>
+        <li>Morgan &amp; Thompson — BJS criminal victimization data</li>
+        <li>Krammer — mRNA vaccine development (Nature 2020)</li>
+        <li>assumption habit (practice)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">10</span>
+        <a href="chapter.html?c=10">The Social Animal and Its Machine</a>
+      </div>
+      <ul class="index-list">
+        <li>Asch conformity experiments</li>
+        <li>social desirability bias</li>
+        <li>Tourangeau &amp; Yan — sensitive questions in surveys</li>
+        <li>sycophancy (organizational behavior)</li>
+        <li>Ashford &amp; Blatt — feedback-seeking in organizations</li>
+        <li>reinforcement learning from human feedback (RLHF)</li>
+        <li>Ouyang et al. — InstructGPT / RLHF training</li>
+        <li>Sharma et al. — AI sycophancy study</li>
+        <li>Challenger disaster</li>
+        <li>Rogers Commission report</li>
+        <li>Ptacek &amp; Eberhardt — breaking bad news in medicine</li>
+        <li>medical sycophancy (confident self-diagnosis)</li>
+        <li>using AI as a thinking partner (practice)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">11</span>
+        <a href="chapter.html?c=11">The Art of Being Wrong Productively</a>
+      </div>
+      <ul class="index-list">
+        <li>Darwin's notebook (golden rule)</li>
+        <li>Darwin — <em>Autobiography</em></li>
+        <li>motivated reasoning</li>
+        <li>Kunda — motivated reasoning study</li>
+        <li>biased assimilation</li>
+        <li>Lord, Ross &amp; Lepper — attitude polarization study</li>
+        <li>AI self-checking limitations</li>
+        <li>Guo, Schlichtkrull &amp; Vlachos — automated fact-checking survey</li>
+        <li>pre-mortem / post-mortem</li>
+        <li>hindsight bias</li>
+        <li>Arkes et al. — eliminating hindsight bias</li>
+        <li>implementation intentions</li>
+        <li>Gollwitzer — implementation intentions study</li>
+        <li>four-practice error-correction system</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">12</span>
+        <a href="chapter.html?c=12">When Certainty Kills</a>
+      </div>
+      <ul class="index-list">
+        <li>Ignaz Semmelweis</li>
+        <li>childbed fever / puerperal fever</li>
+        <li>Jakob Kolletschka</li>
+        <li>miasma theory</li>
+        <li>Semmelweis — <em>Die Aetiologie…</em> (1861)</li>
+        <li>Nuland — <em>The Doctors' Plague</em></li>
+        <li>lethal certainty (three conditions)</li>
+        <li>Reason — <em>Human Error</em> / Swiss cheese model</li>
+        <li>Taleb — <em>The Black Swan</em></li>
+        <li>automation bias (medical)</li>
+        <li>Topol — deep learning in medicine</li>
+        <li>Goddard et al. — automation bias review</li>
+        <li>Flash Crash (May 6, 2010)</li>
+        <li>SEC/CFTC Flash Crash report</li>
+        <li>COMPAS judicial anchoring</li>
+        <li>Dressel &amp; Farid — COMPAS accuracy study</li>
+        <li>feedback loop / model collapse</li>
+        <li>Obermeyer et al. — racial bias in health algorithm</li>
+        <li>Shumailov et al. — model collapse study</li>
+        <li>Lo — adaptive markets hypothesis</li>
+        <li>red teams / audit requirements</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">13</span>
+        <a href="chapter.html?c=13">Steel-Manning the Machine</a>
+      </div>
+      <ul class="index-list">
+        <li>Lincoln-Douglas debates (1858)</li>
+        <li>Stephen A. Douglas / popular sovereignty</li>
+        <li>Freeport Doctrine</li>
+        <li>steel-manning (defined)</li>
+        <li>Holzer — <em>The Lincoln-Douglas Debates</em></li>
+        <li><em>disputatio</em> (medieval scholastic method)</li>
+        <li>Mill — <em>On Liberty</em></li>
+        <li>strawman fallacy</li>
+        <li>Walton — <em>Argumentation Schemes</em></li>
+        <li>algorithm as strawman machine</li>
+        <li>Bail et al. — social media and polarization</li>
+        <li>AI as default strawman generator</li>
+        <li>Universal Basic Income (UBI) two-prompt example</li>
+        <li>Perez-Ortiz et al. — rhetoric in large language models</li>
+        <li>steel-manning your own beliefs (four-step practice)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">14</span>
+        <a href="chapter.html?c=14">Dialogue With a Mirror</a>
+      </div>
+      <ul class="index-list">
+        <li>Conversation A vs Conversation B (teacher burnout example)</li>
+        <li>interface design and transactional default</li>
+        <li>sycophancy loop (architectural)</li>
+        <li>prior position shaping the question</li>
+        <li>social awkwardness with AI</li>
+        <li>annotated examined conversation (AI education example)</li>
+        <li>six moves of the examined conversation</li>
+        <li>loop of examined thinking</li>
+        <li>habit formation (three-week / six-week / three-month arc)</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">15</span>
+        <a href="chapter.html?c=15">Now What</a>
+      </div>
+      <ul class="index-list">
+        <li>solution vs calibration (distinction)</li>
+        <li>the navigator / musician analogies</li>
+        <li>relationship to conclusions (first change)</li>
+        <li>speed of recognition (second change)</li>
+        <li>difficulty at identity-level beliefs (what does not change)</li>
+        <li>wrongness as data vs wrongness as verdict</li>
+        <li>two loops (certainty loop / calibration loop)</li>
+        <li>comfort of protected belief vs integrity of tested belief</li>
+        <li>knowing why you hold what you hold</li>
+        <li>AI sycophancy at identity-level beliefs</li>
+      </ul>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-heading">
+        <span class="ch-num">16</span>
+        <a href="chapter.html?c=16">We Are the Training Data</a>
+      </div>
+      <ul class="index-list">
+        <li>training data (as civilizational record)</li>
+        <li>Common Crawl</li>
+        <li>language distribution / English dominance in corpus</li>
+        <li>Wikipedia demographic skew</li>
+        <li>the silence in the corpus</li>
+        <li>responsible vs reckless deployment (two-system comparison)</li>
+        <li>telephone game / generational distortion</li>
+        <li>model collapse (civilizational scale)</li>
+        <li>Shumailov et al. — model collapse study</li>
+        <li>speed of feedback loops (human generation vs model training cycle)</li>
+        <li>subtle failure vs dramatic failure</li>
+        <li>Copernicus — <em>De revolutionibus orbium coelestium</em> (1543)</li>
+        <li>Galileo</li>
+        <li>suffrage movement as record correction</li>
+        <li>Diederik Stapel fraud</li>
+        <li>replication crisis</li>
+        <li>Open Science Collaboration — reproducibility study (2015)</li>
+        <li>pre-registration of study designs</li>
+        <li>three moves of record correction (preservation, institutional, costly)</li>
+        <li>the child reading this</li>
+        <li>accuracy over comfort</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; Sandy B. Patterson &mdash; The Original Bug
+  </footer>
+
+</body>
+</html>
