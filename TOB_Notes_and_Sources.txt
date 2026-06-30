@@ -398,5 +398,70 @@ claim through its assumptions via sequential questioning — draws directly on
 the Socratic method as documented across these works.
 
 ================================================================================
+CHAPTER 6 — NARRATIVE IS NOT TRUTH
+================================================================================
+
+Section 6.1 — The Shapes
+
+1. Heider, F., & Simmel, M. (1944). An experimental study of apparent
+behavior. American Journal of Psychology, 57(2), 243-259.
+https://doi.org/10.2307/1416950
+
+The original study presenting a short animation of geometric shapes to
+participants and documenting the universal narrative interpretation response —
+the assignment of intention, emotion, and relationship to triangles and a
+circle. The finding has been replicated across cultures and populations,
+including with participants explicitly warned they are watching geometric shapes.
+
+--------------------------------------------------------------------------------
+
+Section 6.2 — The Story Machine
+
+2. Buckner, R. L., Andrews-Hanna, J. R., & Schacter, D. L. (2008). The
+brain's default network: Anatomy, function, and relevance to disease. Annals
+of the New York Academy of Sciences, 1124, 1-38.
+https://doi.org/10.1196/annals.1440.011
+
+The foundational review establishing the default mode network's role in
+narrative construction, self-referential thought, and the automatic assignment
+of meaning to event sequences. Documents the network's activation during
+social inference, future simulation, and episodic memory retrieval — all of
+which share the common feature of narrative construction from incomplete
+information.
+
+--------------------------------------------------------------------------------
+
+Section 6.4 — When the Story Becomes the Truth
+
+3. The Iraq Inquiry (Chilcot Report). (2016). Report of the Iraq Inquiry.
+Executive Summary. UK Government.
+https://www.gov.uk/government/publications/the-report-of-the-iraq-inquiry
+
+The official UK inquiry finding, after seven years of investigation, that
+the certainty presented about Iraqi WMD went well beyond what the intelligence
+actually supported. Documents the gap between the narrative constructed for
+public and political consumption and the ambiguous, contested intelligence
+that underlay it.
+
+4. Loftus, E. F. (1993). The reality of repressed memories. American
+Psychologist, 48(5), 518-537. https://doi.org/10.1037/0003-066X.48.5.518
+
+On the mechanism by which therapeutic narrative frameworks can generate false
+autobiographical memories with the full experiential weight of genuine ones.
+The recovered memory research documented here established that the brain
+cannot, from the inside, reliably distinguish between a genuine memory and a
+narratively coherent reconstruction that has been experienced with sufficient
+emotional intensity.
+
+5. Goldstein, J. A., Sastry, G., Musser, M., DiResta, R., Gentzel, M., &
+Sedova, K. (2023). Generative Language Models and Automated Influence
+Operations: Emerging Threats and Potential Mitigations. arXiv:2301.04246.
+
+On AI-generated narrative misinformation and the specific danger of coherent
+false accounts compared to straightforward factual errors. The finding that
+narrative structure is retained more reliably than factual content by readers
+exposed to AI-generated accounts is central to the argument of Section 6.4.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
