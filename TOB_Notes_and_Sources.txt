@@ -679,5 +679,110 @@ assumption of financial risk — rather than a reduction in safety standards,
 which is the premise the argument's load-bearing assumption ignored.
 
 ================================================================================
+CHAPTER 10 — THE SOCIAL ANIMAL AND ITS MACHINE
+================================================================================
+
+Section 10.1 — The Line
+
+1. Asch, S. E. (1951). Effects of group pressure upon the modification and
+distortion of judgments. In H. Guetzkow (Ed.), Groups, Leadership and Men.
+Carnegie Press, 177-190.
+
+The original conformity study documenting that approximately 75% of subjects
+gave at least one incorrect answer matching the group consensus, and that
+across all critical trials subjects conformed to the wrong answer about 37%
+of the time. The finding that subjects reported genuine perceptual doubt —
+not merely social compliance — is central to the argument of Section 10.1.
+The study has been replicated extensively across cultures and is among the
+most cited findings in social psychology.
+
+--------------------------------------------------------------------------------
+
+Section 10.2 — The Approval Machine
+
+2. Tourangeau, R., & Yan, T. (2007). Sensitive questions in surveys.
+Psychological Bulletin, 133(5), 859-883.
+https://doi.org/10.1037/0033-2909.133.5.859
+
+Comprehensive review of social desirability bias in survey research,
+documenting the systematic underreporting of stigmatized behaviors and
+overreporting of socially valued ones across domains including alcohol
+consumption, sexual behavior, charitable giving, and voting. The ~50%
+underreporting of alcohol consumption relative to population-level sales
+data is representative of the documented gap between reported and actual
+behavior in self-report surveys.
+
+3. Ashford, S. J., & Blatt, R. (2003). Reflections on the looking glass:
+A review of research on feedback-seeking behavior in organizations. Journal
+of Management, 29(6), 773-799.
+https://doi.org/10.1016/S0149-2063(03)00079-5
+
+On sycophantic behavior in organizational settings, including the documented
+tendency for subordinates to rate superiors' ideas more favorably than those
+same ideas rate when presented anonymously, and the broader pattern of
+adjusting expressed assessments toward what high-status individuals are
+perceived to want to hear.
+
+--------------------------------------------------------------------------------
+
+Section 10.3 — What the Machine Learned to Do
+
+4. Sharma, M., Tong, M., Korbak, T., et al. (2023). Towards Understanding
+Sycophancy in Language Models. arXiv:2310.13548.
+https://arxiv.org/abs/2310.13548
+
+Documents sycophantic behavior in large language models, including the
+reversal of correct answers under user challenge without new evidence, the
+validation of incorrect beliefs when stated with user confidence, and the
+divergence in response quality between neutral prompts and prompts containing
+stated user positions. See also Section 10.4 (⁸) for the health/medical
+domain findings from this paper.
+
+5. Ouyang, L., Wu, J., Jiang, X., et al. (2022). Training language models
+to follow instructions with human feedback. Advances in Neural Information
+Processing Systems, 35, 27730-27744.
+
+The foundational paper on reinforcement learning from human feedback (RLHF)
+for language model alignment, describing the mechanism by which human
+evaluator preferences shape model behavior during training. The argument
+in Section 10.3 — that sycophancy in models emerges structurally from
+training sycophantic humans to rate outputs — depends on this training
+architecture as described here.
+
+--------------------------------------------------------------------------------
+
+Section 10.4 — When Agreement Kills
+
+6. Presidential Commission on the Space Shuttle Challenger Accident. (1986).
+Report of the Presidential Commission on the Space Shuttle Challenger
+Accident. Volume I. U.S. Government Printing Office.
+https://history.nasa.gov/rogersrep/genindex.htm
+
+The Rogers Commission report documenting the O-ring failure as the direct
+technical cause of the Challenger disaster, and the organizational
+communication failures that allowed the launch to proceed despite engineers'
+explicit objections. The finding that dissenting technical opinions were
+overridden through social pressure rather than technical rebuttal is the
+basis for the Case One argument in Section 10.4.
+
+7. Ptacek, J. T., & Eberhardt, T. L. (1996). Breaking bad news: A review
+of the literature. JAMA, 276(6), 496-502.
+https://doi.org/10.1001/jama.1996.03540060072041
+
+Comprehensive review of physician communication patterns around serious
+diagnoses, documenting the systematic tendency to soften, delay, and
+underspecify information delivery in ways that leave patients without
+accurate understanding of their condition. The mechanism described — immediate
+social feedback reinforcing softer delivery over accurate delivery — is the
+approval-seeking dynamic analyzed in Section 10.4, Case Two.
+
+8. Sharma, M., Tong, M., Korbak, T., et al. (2023). — see ⁴ above.
+
+The finding that users presenting confident self-diagnoses received
+validation at significantly higher rates than users presenting the same
+symptoms as open questions is drawn from the health/medical domain analysis
+in this paper.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
