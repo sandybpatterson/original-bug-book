@@ -463,5 +463,57 @@ narrative structure is retained more reliably than factual content by readers
 exposed to AI-generated accounts is central to the argument of Section 6.4.
 
 ================================================================================
+CHAPTER 7 — WHAT DOES UNDERSTANDING EVEN MEAN
+================================================================================
+
+Section 7.1 — The Child and the Page
+
+1. Perfetti, C. A., & Stafura, J. (2014). Word knowledge in a theory of
+reading comprehension. Scientific Studies of Reading, 18(1), 22-37.
+https://doi.org/10.1080/10888438.2013.827687
+
+On the distinction between decoding and comprehension in reading development
+and the role of prior knowledge and experience in meaning construction. The
+finding that fluent decoding does not guarantee comprehension — and that
+comprehension depends on experiential and conceptual knowledge that cannot be
+derived from the text alone — is the theoretical basis for the child-and-page
+argument in this section.
+
+--------------------------------------------------------------------------------
+
+Section 7.2 — The Room
+
+2. Searle, J. R. (1980). Minds, brains, and programs. Behavioral and Brain
+Sciences, 3(3), 417-424. https://doi.org/10.1017/S0140525X00005756
+
+The original Chinese Room paper, including the thought experiment, Searle's
+argument that syntax cannot produce semantics, and his responses to the main
+counterarguments, with peer commentary from leading cognitive scientists and
+philosophers. The three counterarguments summarized in this section — the
+Systems Reply, the Robot Reply, and the Brain Simulator Reply — are drawn
+from the peer commentary section of this paper.
+
+--------------------------------------------------------------------------------
+
+Section 7.4 — What Humans Actually Do
+
+3. Clark, A. (2016). Surfing Uncertainty: Prediction, Action, and the
+Embodied Mind. Oxford University Press.
+
+The accessible treatment of predictive processing as a unified framework for
+cognition, perception, and action, with explicit discussion of the implications
+for understanding the relationship between biological and computational
+intelligence.
+
+4. Friston, K. (2010). The free-energy principle: A unified brain theory?
+Nature Reviews Neuroscience, 11, 127-138. https://doi.org/10.1038/nrn2787
+
+The technical formulation of predictive processing as the free-energy
+principle, establishing the mathematical framework underlying the prediction
+machine model of brain function. The description of the brain as a system that
+generates probabilistic predictions based on learned statistical regularities
+and updates via prediction error is drawn from this framework.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
