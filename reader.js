@@ -402,10 +402,13 @@
     if (el) el.textContent = text;
   }
 
-  // fraction is 0–1; converts to a CSS percentage width on the fill bar.
+  // fraction is 0–1; updates both the fill bar and the draggable thumb.
   function updateProgressBar(fraction) {
+    const pct = Math.round(fraction * 100);
     const bar = document.getElementById('sbp-progress-fill');
-    if (bar) bar.style.width = `${Math.round(fraction * 100)}%`;
+    const thumb = document.getElementById('sbp-progress-thumb');
+    if (bar) bar.style.width = `${pct}%`;
+    if (thumb) thumb.style.left = `${pct}%`;
   }
 
   // Alias used during translation so the progress bar shows translation progress.
@@ -534,10 +537,10 @@
       }
 
       .sbp-progress-track {
-        height: 2px;
+        height: 4px;
         background: #2a2a2a;
         border-radius: 2px;
-        cursor: pointer;        /* click-to-seek is handled in bindEvents() */
+        cursor: pointer;
         position: relative;
       }
       .sbp-progress-fill {
@@ -545,8 +548,27 @@
         background: #c8b89a;
         border-radius: 2px;
         width: 0%;
-        transition: width 0.3s ease;
-        pointer-events: none;   /* clicks pass through to the track, not the fill */
+        transition: width 0.25s ease;
+        pointer-events: none;
+      }
+      .sbp-progress-thumb {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+        width: 14px;
+        height: 14px;
+        background: #c8b89a;
+        border-radius: 50%;
+        cursor: grab;
+        box-shadow: 0 0 6px rgba(0,0,0,0.6);
+        transition: left 0.25s ease, transform 0.12s ease;
+        z-index: 2;
+      }
+      .sbp-progress-thumb.dragging {
+        cursor: grabbing;
+        transform: translate(-50%, -50%) scale(1.35);
+        transition: transform 0.12s ease;
       }
 
       .sbp-meta {
@@ -764,8 +786,9 @@
         </div>
 
         <div class="sbp-progress-wrap">
-          <div class="sbp-progress-track" id="sbp-progress-track" title="Click to skip">
+          <div class="sbp-progress-track" id="sbp-progress-track" title="Drag to scrub">
             <div class="sbp-progress-fill" id="sbp-progress-fill"></div>
+            <div class="sbp-progress-thumb" id="sbp-progress-thumb"></div>
           </div>
           <div class="sbp-meta">
             <span class="sbp-status" id="sbp-status">Ready</span>
@@ -843,15 +866,59 @@
     document.getElementById('sbp-play-btn')?.addEventListener('click', togglePlayPause);
     document.getElementById('sbp-stop-btn')?.addEventListener('click', stopPlayback);
 
-    // Click on the progress track → calculate click position as a 0–1 fraction
-    // of the track width, then seek to that paragraph.
-    document.getElementById('sbp-progress-track')?.addEventListener('click', (e) => {
-      const rect = e.currentTarget.getBoundingClientRect();
-      const fraction = (e.clientX - rect.left) / rect.width;
-      if (utterances.length) {
-        buildUtterances();
-        skipTo(Math.max(0, Math.min(1, fraction)));
-      }
+    // Scrubber: click on track, or drag the thumb, to seek.
+    const track = document.getElementById('sbp-progress-track');
+    const thumb = document.getElementById('sbp-progress-thumb');
+    let dragging = false;
+
+    function getFraction(clientX) {
+      const rect = track.getBoundingClientRect();
+      return Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    }
+    function doSeek(fraction) {
+      updateProgressBar(fraction);
+      if (utterances.length) { buildUtterances(); skipTo(fraction); }
+    }
+
+    // Click on track (not on thumb)
+    track?.addEventListener('click', (e) => {
+      if (!dragging) doSeek(getFraction(e.clientX));
+    });
+
+    // Mouse drag on thumb
+    thumb?.addEventListener('mousedown', (e) => {
+      dragging = true;
+      thumb.classList.add('dragging');
+      thumb.style.transition = 'transform 0.12s ease'; // disable left transition while dragging
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      doSeek(getFraction(e.clientX));
+    });
+    document.addEventListener('mouseup', () => {
+      if (!dragging) return;
+      dragging = false;
+      thumb?.classList.remove('dragging');
+      thumb.style.transition = ''; // restore transition
+    });
+
+    // Touch drag on thumb
+    thumb?.addEventListener('touchstart', (e) => {
+      dragging = true;
+      thumb.classList.add('dragging');
+      thumb.style.transition = 'transform 0.12s ease';
+      e.preventDefault();
+    }, { passive: false });
+    document.addEventListener('touchmove', (e) => {
+      if (!dragging) return;
+      doSeek(getFraction(e.touches[0].clientX));
+    }, { passive: true });
+    document.addEventListener('touchend', () => {
+      if (!dragging) return;
+      dragging = false;
+      thumb?.classList.remove('dragging');
+      thumb.style.transition = '';
     });
 
     // Speed slider: update rate and rebuild utterances if already playing
