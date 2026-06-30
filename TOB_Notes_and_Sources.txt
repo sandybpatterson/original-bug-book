@@ -1018,5 +1018,73 @@ theoretical framework for the financial trading feedback loop discussed in
 Section 12.4.
 
 ================================================================================
+CHAPTER 13 — STEEL-MANNING THE MACHINE
+================================================================================
+
+Section 13.1 — The Strongest Version
+
+1. Holzer, H. (1993). The Lincoln-Douglas Debates: The First Complete,
+Unexpurgated Text. HarperCollins.
+
+The complete transcripts of all seven debates with full historical context,
+including the Freeport exchange, Douglas's Freeport Doctrine response, and the
+documented political consequences for Douglas's national ambitions. The finding
+that Lincoln's precise engagement with Douglas's actual argument — rather than
+a weakened version of it — produced the question that exposed the incompatibility
+between the Dred Scott ruling and popular sovereignty is the specific historical
+case analyzed in Section 13.1.
+
+2. Mill, J. S. (1859). On Liberty. John W. Parker and Son.
+
+Chapter 2, "Of the Liberty of Thought and Discussion," contains Mill's extended
+argument for the necessity of engaging with opposing positions at their strongest.
+The claim that a person who knows only their own side of a question knows little
+even of that — and that genuine understanding of a position requires encountering
+the strongest form of the challenge to it — is the philosophical foundation for
+the steel-manning discipline described throughout this chapter.
+
+--------------------------------------------------------------------------------
+
+Section 13.2 — The Strawman and Why We Love It
+
+3. Walton, D. (1996). Argumentation Schemes for Presumptive Reasoning.
+Lawrence Erlbaum Associates.
+
+On the formal taxonomy of argumentation fallacies including the strawman, with
+analysis of why misrepresentation of opposing positions is cognitively rewarding
+and therefore structurally persistent in human reasoning. Documents the
+distinction between the rhetorical damage the strawman does to opposing arguments
+and the less-examined epistemic damage it does to the person deploying it.
+
+4. Bail, C. A., Argyle, L. P., Brown, T. W., et al. (2018). Exposure to
+opposing views on social media can increase political polarization. Proceedings
+of the National Academy of Sciences, 115(37), 9216-9221.
+https://doi.org/10.1073/pnas.1804840115
+
+Documents the counterintuitive finding that exposure to opposing political views
+on social media, when those views are presented in algorithmically optimized
+forms, increases rather than decreases political polarization. The mechanism is
+consistent with the strawman amplification described in Section 13.2: the
+algorithmically surfaced versions of opposing views are the extreme, easily
+dismissed versions that generate engagement, not the thoughtful, carefully stated
+versions that would require genuine engagement to address.
+
+--------------------------------------------------------------------------------
+
+Section 13.3 — The Strawman Generator
+
+5. Perez-Ortiz, M., Duckworth, P., & Shawe-Taylor, J. (2023). Rhetoric and
+Reasoning in Large Language Models. arXiv:2311.09526.
+https://arxiv.org/abs/2311.09526
+
+On the relationship between the statistical distribution of arguments in training
+data and the arguments language models retrieve in response to critique requests.
+Establishes that frequency in training data is a stronger predictor of argument
+retrieval than argument quality or logical strength — the mechanism by which
+models default to common objections rather than strongest objections. Directly
+supports the claim in Section 13.3 that AI systems are structural strawman
+generators absent explicit instruction to seek the strongest available challenge.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
