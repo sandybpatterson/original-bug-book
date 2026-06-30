@@ -784,5 +784,90 @@ symptoms as open questions is drawn from the health/medical domain analysis
 in this paper.
 
 ================================================================================
+CHAPTER 11 — THE ART OF BEING WRONG PRODUCTIVELY
+================================================================================
+
+Section 11.1 — The Notebook
+
+1. Darwin, C. (1887). The Autobiography of Charles Darwin, 1809-1882.
+(Edited by Nora Barlow, 1958 edition.) Collins.
+
+Darwin's own account of his golden rule of writing down contradicting
+evidence immediately, including his explicit acknowledgment that the mind
+tends to release inconvenient observations faster than confirming ones. The
+"abstract of facts" notebook practice is described in Darwin's own words as
+a discipline imposed against the natural grain of his cognitive tendencies.
+The autobiography was not published in full during Darwin's lifetime; the
+Nora Barlow edition (1958) restored passages omitted from the 1887 family
+publication.
+
+--------------------------------------------------------------------------------
+
+Section 11.2 — The Anti-System
+
+2. Kunda, Z. (1990). The case for motivated reasoning. Psychological
+Bulletin, 108(3), 480-498. https://doi.org/10.1037/0033-2909.108.3.480
+
+The foundational paper establishing motivated reasoning as a distinct
+cognitive phenomenon — the tendency to reason toward a desired conclusion
+rather than toward whatever conclusion the evidence supports. The key finding
+that more capable reasoners produce better-defended wrong beliefs rather than
+more accurate ones (because they have more cognitive resources to deploy in
+defense of the conclusion) is central to the argument of Section 11.2.
+
+3. Lord, C. G., Ross, L., & Lepper, M. R. (1979). Biased assimilation and
+attitude polarization: The effects of prior theories on subsequently
+considered evidence. Journal of Personality and Social Psychology, 37(11),
+2098-2109. https://doi.org/10.1037/0022-3514.37.11.2098
+
+Documents the asymmetric scrutiny applied to confirming versus disconfirming
+evidence — the finding that people apply rigorous methodological skepticism
+to evidence that challenges existing beliefs while accepting supporting
+evidence with minimal scrutiny, and that exposure to mixed evidence can
+actually increase attitude polarization rather than moderate it.
+
+--------------------------------------------------------------------------------
+
+Section 11.3 — No Notebook
+
+4. Guo, Z., Schlichtkrull, M., & Vlachos, A. (2022). A Survey on Automated
+Fact-Checking. Transactions of the Association for Computational Linguistics,
+10, 178-206. https://doi.org/10.1162/tacl_a_00454
+
+On the fundamental limitations of automated fact-checking systems in
+identifying reasoning errors versus factual errors. Establishes that
+automated systems excel at checking stated claims against external evidence
+but lack the capacity to detect the motivated reasoning and selective
+scrutiny that produce the errors in the first place — the structural
+limitation that makes AI self-checking an inadequate substitute for
+human error-correction practices.
+
+--------------------------------------------------------------------------------
+
+Section 11.4 — Building the System
+
+5. Arkes, H. R., Faust, D., Guilmette, T. J., & Hart, K. (1988).
+Eliminating the hindsight bias. Journal of Applied Psychology, 73(2),
+305-307. https://doi.org/10.1037/0021-9010.73.2.305
+
+Demonstrates that writing down predictions before outcomes are known
+significantly reduces hindsight bias — the tendency to retrospectively
+inflate the perceived probability of what actually occurred. The finding
+that external records outperform retrospective recall for self-assessment
+of reasoning quality is the empirical basis for Practice One and the
+broader design principle of the four-practice system in Section 11.4.
+
+6. Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of
+simple plans. American Psychologist, 54(7), 493-503.
+https://doi.org/10.1037/0003-066X.54.7.493
+
+The foundational paper on implementation intentions, demonstrating that
+forming specific written commitments ("When X occurs, I will do Y") produces
+dramatically higher follow-through rates than general intentions. Supports
+the design principle that the specificity and externality of a written
+prediction — not just the intention to track one's beliefs — is what makes
+the commitment device effective.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
