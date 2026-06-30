@@ -371,5 +371,32 @@ Implications for the rationality debate. Behavioral and Brain Sciences, 23(5),
 645-665. https://doi.org/10.1017/S0140525X00003435
 
 ================================================================================
+CHAPTER 5 — ASK A BETTER QUESTION
+================================================================================
+
+Section 5.1 — The Hook
+
+1. Adams, D. (1979). The Hitchhiker's Guide to the Galaxy. Pan Books.
+
+The source of the Deep Thought narrative used throughout this chapter,
+including the forty two answer and the wildcard observation. The ASCII
+connection (42 = asterisk) has been noted by multiple Adams scholars and is
+consistent with his documented interest in computing.
+
+--------------------------------------------------------------------------------
+
+Section 5.4 — The Examined Question
+
+2. Plato. (ca. 399-387 BCE). The Meno; The Theaetetus; The Republic.
+Various translations.
+
+The primary sources for Socratic method as a practice of examining assumptions
+through structured questioning rather than the delivery of information. The
+concept of the examined life and the priority of the examined assumption are
+central to the Apology. The dialogue form used in this section — following a
+claim through its assumptions via sequential questioning — draws directly on
+the Socratic method as documented across these works.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
