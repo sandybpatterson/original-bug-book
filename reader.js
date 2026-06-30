@@ -242,7 +242,7 @@
         updateProgressBar(i / utterances.length);
       };
       u.onboundary = (e) => {
-        if (e.name === 'word') highlightWord(i, e.charIndex);
+        if (e.name === 'word') highlightWord(e.charIndex);
       };
       u.onend = () => {
         // Only the last paragraph triggers the finished state.
@@ -343,14 +343,14 @@
     paraEl.dataset.sbpWrapped = '1';
   }
 
-  function highlightWord(paraIndex, charIndex) {
+  function highlightWord(charIndex) {
     document.querySelectorAll('.sbp-word-active').forEach(el => el.classList.remove('sbp-word-active'));
-    const paras = getStoryParagraphs();
-    if (!paras[paraIndex]) return;
-    const spans = Array.from(paras[paraIndex].querySelectorAll('.sbp-word'));
+    // Use the already-highlighted paragraph rather than index matching —
+    // avoids any mismatch between utterance index and DOM element order.
+    const activePara = document.querySelector('.sbp-reading');
+    if (!activePara) return;
+    const spans = Array.from(activePara.querySelectorAll('.sbp-word'));
     if (!spans.length) return;
-    // Find the last span whose start position is <= charIndex — most robust
-    // against slight offsets caused by punctuation or Unicode characters.
     let best = spans[0];
     for (const span of spans) {
       if (parseInt(span.dataset.cs, 10) <= charIndex) best = span;
@@ -542,16 +542,28 @@
       }
 
       .sbp-progress-track {
+        height: 20px;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+      }
+      .sbp-progress-track::before {
+        content: '';
+        position: absolute;
+        left: 0; right: 0;
+        top: 50%;
+        transform: translateY(-50%);
         height: 4px;
         background: #2a2a2a;
         border-radius: 2px;
-        cursor: pointer;
-        position: relative;
-        overflow: visible;
-        margin: 8px 0;          /* room for the thumb to sit above/below the track */
+        pointer-events: none;
       }
       .sbp-progress-fill {
-        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 4px;
         background: #c8b89a;
         border-radius: 2px;
         width: 0%;
