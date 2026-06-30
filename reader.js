@@ -328,7 +328,8 @@
 
   function wrapWordsInPara(paraEl) {
     if (paraEl.dataset.sbpWrapped) return;
-    const text = paraEl.textContent;
+    // Trim to match extractParagraphs() so charIndex values from onboundary align.
+    const text = paraEl.textContent.trim();
     let pos = 0;
     const html = text.split(/(\s+)/).map(token => {
       const start = pos;
@@ -345,14 +346,16 @@
     document.querySelectorAll('.sbp-word-active').forEach(el => el.classList.remove('sbp-word-active'));
     const paras = getStoryParagraphs();
     if (!paras[paraIndex]) return;
-    const spans = paras[paraIndex].querySelectorAll('.sbp-word');
+    const spans = Array.from(paras[paraIndex].querySelectorAll('.sbp-word'));
+    if (!spans.length) return;
+    // Find the last span whose start position is <= charIndex — most robust
+    // against slight offsets caused by punctuation or Unicode characters.
+    let best = spans[0];
     for (const span of spans) {
-      const cs = parseInt(span.dataset.cs, 10);
-      if (cs <= charIndex && charIndex < cs + span.textContent.length) {
-        span.classList.add('sbp-word-active');
-        return;
-      }
+      if (parseInt(span.dataset.cs, 10) <= charIndex) best = span;
+      else break;
     }
+    best.classList.add('sbp-word-active');
   }
 
   function highlightParagraph(index) {
