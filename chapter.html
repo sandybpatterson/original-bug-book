@@ -220,6 +220,7 @@
 
   <script>
     const chapters = {
+      0:  { file: 'TOB_Prologue_Complete.md',  title: 'Prologue' },
       1:  { file: 'TOB_Chapter1_Complete.md',  title: 'We Built It In Our Image' },
       2:  { file: 'TOB_Chapter2_Complete.md',  title: 'Pattern Machines' },
       3:  { file: 'TOB_Chapter3_Complete.md',  title: 'Confidence Without Competence' },
@@ -232,9 +233,9 @@
       10: { file: 'TOB_Chapter10_Complete.md', title: 'The Social Animal and Its Machine' },
       11: { file: 'TOB_Chapter11_Complete.md', title: 'The Art of Being Wrong Productively' },
       12: { file: 'TOB_Chapter12_Complete.md', title: 'When Certainty Kills' },
-      13: { file: 'TOB_Chapter13_Complete.md', title: 'Chapter 13' },
-      14: { file: 'TOB_Chapter14_Complete.md', title: 'Chapter 14' },
-      15: { file: 'TOB_Chapter15_Complete.md', title: 'Chapter 15' },
+      13: { file: 'TOB_Chapter13_Complete.md', title: 'Steel-Manning the Machine' },
+      14: { file: 'TOB_Chapter14_Complete.md', title: 'Dialogue With a Mirror' },
+      15: { file: 'TOB_Chapter15_Complete.md', title: 'Now What' },
       16: { file: 'TOB_Chapter16_Complete.md', title: 'We Are the Training Data' },
     };
 
@@ -242,11 +243,17 @@
     const num = parseInt(params.get('c'), 10);
     const chapter = chapters[num];
 
+    function chapLabel(n) {
+      return n === 0 ? 'Prologue' : `Ch ${n}`;
+    }
+
     if (!chapter) {
       document.getElementById('loading').style.display = 'none';
       document.getElementById('error-msg').style.display = 'block';
     } else {
-      document.title = `Chapter ${num}: ${chapter.title} — The Original Bug`;
+      document.title = num === 0
+        ? `Prologue — The Original Bug`
+        : `Chapter ${num}: ${chapter.title} — The Original Bug`;
 
       fetch(chapter.file)
         .then(r => {
@@ -270,11 +277,11 @@
           nav.style.display = 'flex';
           if (chapters[num - 1]) {
             document.getElementById('prev-link').innerHTML =
-              `<a href="chapter.html?c=${num-1}">← Ch ${num-1}</a>`;
+              `<a href="chapter.html?c=${num-1}">← ${chapLabel(num-1)}</a>`;
           }
           if (chapters[num + 1]) {
             document.getElementById('next-link').innerHTML =
-              `<a href="chapter.html?c=${num+1}">Ch ${num+1} →</a>`;
+              `<a href="chapter.html?c=${num+1}">${chapLabel(num+1)} →</a>`;
           }
         })
         .catch(() => {
