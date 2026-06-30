@@ -60,6 +60,7 @@
   let translationCache = {};            // keyed by "lang:first40chars" to avoid re-fetching
   let speed = 1.0;                      // playback rate, controlled by the speed slider
   let translating = false;              // true while an async translation is in progress
+  let autoplay = false;                 // true while autoplay-next-chapter is enabled
 
 
   // ── EXTRACT STORY TEXT ───────────────────────────────────────────────────────
@@ -248,6 +249,14 @@
         // Only the last paragraph triggers the finished state.
         if (i === utterances.length - 1) {
           stopPlayback();
+          if (autoplay) {
+            const params = new URLSearchParams(window.location.search);
+            const nextNum = parseInt(params.get('c'), 10) + 1;
+            if (!isNaN(nextNum)) {
+              window.location.href = `chapter.html?c=${nextNum}&autoplay=1`;
+              return;
+            }
+          }
           updateStatus('Finished');
         }
       };
@@ -784,6 +793,33 @@
         to { transform: rotate(360deg); }
       }
 
+      .sbp-autoplay-btn {
+        background: none;
+        border: 1px solid #2a2a2a;
+        color: #555;
+        font-size: 0.6rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 2px 8px;
+        border-radius: 999px;
+        cursor: pointer;
+        font-family: inherit;
+        transition: all 0.15s;
+      }
+      .sbp-autoplay-btn.active {
+        border-color: #c8b89a;
+        color: #c8b89a;
+        background: rgba(200,184,154,0.08);
+      }
+      .sbp-autoplay-btn:hover {
+        border-color: #888;
+        color: #888;
+      }
+      .sbp-autoplay-btn.active:hover {
+        border-color: #c8b89a;
+        color: #c8b89a;
+      }
+
       /* Narrow screens: controls wrap, selects go full-width on second row. */
       @media (max-width: 600px) {
         .sbp-reader {
@@ -825,6 +861,7 @@
           </div>
           <div class="sbp-meta">
             <span class="sbp-status" id="sbp-status">Ready</span>
+            <button class="sbp-autoplay-btn" id="sbp-autoplay" title="Auto-advance to next chapter on finish">Autoplay</button>
             <div class="sbp-speed-wrap">
               <input type="range" class="sbp-speed-slider" id="sbp-speed"
                 min="0.6" max="1.8" step="0.1" value="1.0" aria-label="Speed">
@@ -1018,6 +1055,12 @@
       await handleLanguageChange(code);
     });
 
+    // Autoplay toggle: flips the autoplay state and reflects it on the button.
+    document.getElementById('sbp-autoplay')?.addEventListener('click', () => {
+      autoplay = !autoplay;
+      document.getElementById('sbp-autoplay')?.classList.toggle('active', autoplay);
+    });
+
     // Some browsers (Firefox, older Safari) fire onvoiceschanged asynchronously.
     // Registering here ensures the dropdown is repopulated when voices arrive.
     if (synth.onvoiceschanged !== undefined) {
@@ -1048,6 +1091,21 @@
     loadVoices();
 
     setTimeout(loadVoices, 500); // second call catches async voice loading
+
+    // If we arrived here via autoplay navigation, activate the toggle and auto-start.
+    // Delay 650ms so voices have time to load before buildUtterances() runs.
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('autoplay') === '1') {
+      autoplay = true;
+      document.getElementById('sbp-autoplay')?.classList.add('active');
+      setTimeout(() => {
+        buildUtterances();
+        playFrom(0);
+        isPlaying = true;
+        updatePlayButton();
+        updateStatus('Playing');
+      }, 650);
+    }
 
     updateStatus('Ready');
   }
