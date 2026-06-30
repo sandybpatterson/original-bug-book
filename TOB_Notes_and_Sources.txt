@@ -1086,5 +1086,79 @@ supports the claim in Section 13.3 that AI systems are structural strawman
 generators absent explicit instruction to seek the strongest available challenge.
 
 ================================================================================
-[ Additional chapters to be added ]
+CHAPTER 16 — WE ARE THE TRAINING DATA
+================================================================================
+
+Section 16.2 — The Record
+
+1. Common Crawl Foundation. (2008–present). Common Crawl.
+https://commoncrawl.org/
+
+The largest openly available web corpus, continuously scraped since 2008 and
+used as a primary training data source for most major large language models.
+For analysis of Common Crawl's language distribution and demographic skew see:
+Kreutzer, J., Caswell, I., Wang, L., et al. (2022). Quality at a glance: An
+audit of web-crawled multilingual datasets. Transactions of the Association for
+Computational Linguistics, 10, 50-72. https://doi.org/10.1162/tacl_a_00447
+— documents the overrepresentation of English (estimated 45-60% of indexed
+content despite under 6% native-speaker population share) and the demographic
+clustering of online text producers in educated, urban, and wealthy populations.
+
+--------------------------------------------------------------------------------
+
+Section 16.3 — The Amplifier
+
+2. Shumailov, I., Shumaylov, Z., Zhao, Y., Gal, Y., Papernot, N., &
+Anderson, R. (2023). The Curse of Recursion: Training on Generated Data Makes
+Models Forget. arXiv:2305.17493. https://arxiv.org/abs/2305.17493
+
+See also Chapter 12, source ¹⁰. The model collapse research is cited here in
+the context of the civilizational feedback loop — the mechanism by which AI
+outputs contaminate training corpora across successive model generations,
+progressively concentrating the center of the distribution and squeezing out
+rare perspectives and careful uncertainty.
+
+--------------------------------------------------------------------------------
+
+Section 16.4 — When It Changed
+
+3. Copernicus, N. (1543). De revolutionibus orbium coelestium [On the
+Revolutions of the Celestial Spheres]. Johannes Petreius.
+
+The publication that began the Copernican revolution in astronomy, dedicated
+to Pope Paul III and initially received as a mathematical convenience rather
+than a literal claim about the arrangement of the solar system. The century-long
+delay between publication and paradigm shift — requiring Galileo's telescopic
+observations and Kepler's mathematical framework before the correction became
+undeniable — is the historical case study for institutional resistance to record
+correction examined in Section 16.4. For the historical account see: Kuhn, T. S.
+(1957). The Copernican Revolution: Planetary Astronomy in the Development of
+Western Thought. Harvard University Press.
+
+4. On the suffrage movement as a fight over who counts as an author of the
+civilizational record: DuBois, E. C. (1978). Feminism and Suffrage: The
+Emergence of an Independent Women's Movement in America, 1848-1869. Cornell
+University Press. — For the broader international suffrage movement and its
+relationship to political record-keeping and institutional exclusion see also:
+Holton, S. S. (1996). Suffrage Days: Stories from the Women's Suffrage Movement.
+Routledge.
+
+The suffrage argument as analyzed in this section is not primarily a political
+history but a structural observation: sustained correction of a contaminated
+record requires people who refuse to accept that the absence of their voices is
+a natural condition rather than a removable constraint.
+
+5. Open Science Collaboration. (2015). Estimating the reproducibility of
+psychological science. Science, 349(6251), aac4716.
+https://doi.org/10.1126/science.aac4716
+
+The landmark replication project coordinated by the Center for Open Science,
+attempting to reproduce 100 published studies from top psychology journals.
+The finding that fewer than 40% produced results consistent with the original
+is the empirical anchor for the replication crisis discussion in Section 16.4.
+The mechanism analyzed — publication bias selecting for novel positive findings
+while providing no outlet for replications or null results — is identified here
+as a structural contamination of the psychological literature, not a matter of
+individual fraud.
+
 ================================================================================
