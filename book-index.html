@@ -1382,6 +1382,13 @@
 
   </div>
 
+  <script>
+    document.querySelectorAll('.chapter-block').forEach(function(block) {
+      var num = block.querySelector('.ch-num').textContent.trim();
+      block.id = num === 'P' ? 'ch-0' : 'ch-' + num;
+    });
+  </script>
+
   <footer>
     &copy; Sandy B. Patterson &mdash; The Original Bug
   </footer>

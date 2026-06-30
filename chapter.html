@@ -192,6 +192,14 @@
       color: #444;
     }
     .chapter-nav a { color: #c9a84c; }
+
+    .sup-link {
+      color: #7a6a4a;
+      text-decoration: none;
+    }
+    .sup-link:hover {
+      color: #c9a84c;
+    }
   </style>
 </head>
 <body>
@@ -220,6 +228,35 @@
   </footer>
 
   <script>
+    function linkSuperscripts(container, href) {
+      var supRx = /([¹²³⁴⁵⁶⁷⁸⁹])/g;
+      var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
+      var nodes = [];
+      var node;
+      while ((node = walker.nextNode())) {
+        if (supRx.test(node.nodeValue)) nodes.push(node);
+        supRx.lastIndex = 0;
+      }
+      nodes.forEach(function(textNode) {
+        var parts = textNode.nodeValue.split(supRx);
+        if (parts.length <= 1) return;
+        var frag = document.createDocumentFragment();
+        parts.forEach(function(part, i) {
+          if (!part) return;
+          if (i % 2 === 0) {
+            frag.appendChild(document.createTextNode(part));
+          } else {
+            var a = document.createElement('a');
+            a.href = href;
+            a.textContent = part;
+            a.className = 'sup-link';
+            frag.appendChild(a);
+          }
+        });
+        textNode.parentNode.replaceChild(frag, textNode);
+      });
+    }
+
     const chapters = {
       0:  { file: 'TOB_Prologue_Complete.md',  title: 'Prologue' },
       1:  { file: 'TOB_Chapter1_Complete.md',  title: 'We Built It In Our Image' },
@@ -266,6 +303,9 @@
           const el = document.getElementById('content');
           el.innerHTML = marked.parse(md);
           el.style.display = 'block';
+
+          // Link superscript numbers to this chapter's index section
+          linkSuperscripts(el, 'book-index.html#ch-' + num);
 
           // Load reader.js only after content is in the DOM — it extracts
           // paragraphs on init, so it must run after markdown is rendered.
