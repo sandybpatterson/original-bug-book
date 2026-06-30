@@ -515,5 +515,138 @@ generates probabilistic predictions based on learned statistical regularities
 and updates via prediction error is drawn from this framework.
 
 ================================================================================
+CHAPTER 8 — THE BIAS MIRROR
+================================================================================
+
+Section 8.1 — The Autocomplete
+
+1. Caliskan, A., Bryson, J. J., & Narayanan, A. (2017). Semantics derived
+automatically from language corpora contain human-like biases. Science,
+356(6334), 183-186. https://doi.org/10.1126/science.aal4230
+
+The original Word Embedding Association Test (WEAT) paper, demonstrating that
+word embedding models trained on internet text reproduce documented human
+implicit biases: European American names associated more strongly with pleasant
+concepts than African American names; male terms associated more strongly with
+career and science; female terms with family and arts. The mechanism is
+statistical inheritance rather than explicit programming — the model encoded the
+distributional patterns of the text corpus, which reflected the distributional
+patterns of the society that produced it.
+
+--------------------------------------------------------------------------------
+
+Section 8.2 — Three Flavors of Bias
+
+2. Cirillo, D., Catuara-Solarz, S., Morey, C., Guney, E., Subirats, L.,
+Savio, S., & Rubio-Martinez, J. (2020). Sex and gender differences and biases
+in artificial intelligence for biomedicine and healthcare. npj Digital Medicine,
+3(81). https://doi.org/10.1038/s41746-020-0288-5
+
+Review documenting sex and gender bias in medical AI systems, including the
+historical underrepresentation of women in clinical trials and the downstream
+consequences for diagnostic AI trained on that data. Documents specific domains
+including cardiovascular disease, dermatology, and mental health where AI
+systems trained on male-skewed data show reduced accuracy on female patients.
+
+3. Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On
+the dangers of stochastic parrots: Can language models be too big? Proceedings
+of the 2021 ACM Conference on Fairness, Accountability, and Transparency,
+610-623. https://doi.org/10.1145/3442188.3445922
+
+The paper documenting the demographic skew of internet text used to train large
+language models and the implications for whose perspectives, concerns, and
+cultural references are overrepresented in model outputs. The "stochastic
+parrot" framing — statistical reproduction of text patterns without
+comprehension — is the conceptual framework for the representation bias
+discussion in this section.
+
+--------------------------------------------------------------------------------
+
+Section 8.3 — The Cases
+
+4. Dastin, J. (2018, October 9). Amazon scraps secret AI recruiting tool that
+showed bias against women. Reuters.
+https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G
+
+Primary reporting on Amazon's internal development and subsequent abandonment
+of a machine learning tool trained on ten years of hiring data that downrated
+resumes containing female-associated signals. The mechanism — learning
+historical success patterns from a dataset with documented gender skew — is the
+historical bias case study in this section.
+
+5. Simonite, T. (2018, January 11). When It Comes to Gorillas, Google Photos
+Remains Blind. Wired.
+https://www.wired.com/story/when-it-comes-to-gorillas-google-photos-remains-blind/
+
+Follow-up reporting on the 2015 Google Photos misclassification incident
+confirming that three years after the incident became public, Google's fix was
+to remove the gorilla label from the classifier entirely rather than address
+the underlying training data representation problem. Documents the persistence
+of the issue and Google's approach to managing rather than solving the bias.
+
+6. Angwin, J., Larson, J., Mattu, S., & Kirchner, L. (2016, May 23). Machine
+Bias. ProPublica.
+https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+
+See also entry under Chapter 4, Section 4.4. The ProPublica investigation of
+COMPAS in Broward County, Florida, finding Black defendants nearly twice as
+likely as white defendants to be falsely flagged as high risk. In this chapter
+the case is analyzed specifically as an example of compounded historical and
+confirmation bias, with the criminal justice history as training data encoding
+decades of racially disparate enforcement.
+
+--------------------------------------------------------------------------------
+
+Section 8.4 — The Cultural Default
+
+7. Geena Davis Institute on Gender in Media. (2020). Inclusion in the Director's
+Chair: Analysis of Director Gender & Race/Ethnicity Across 1,300 Popular Films
+from 2007-2019. Geena Davis Institute.
+https://seejane.org/research-informs-empowers/inclusion-in-the-directors-chair/
+
+The finding that male-to-female ratios in crowd scenes in family films average
+three to one, and that equal gender representation was perceived by test
+audiences as female-dominated, establishing that the skewed baseline had been
+normalized as neutral. Extensive documentation of representation patterns across
+film and television genres over more than a decade.
+
+8. Smith, S. L., Choueiti, M., Pieper, K., Case, A., & Clark, H. (2022).
+Inclusion in the Recording Industry? The 2021 USC Annenberg Inclusion
+Initiative Music Report. USC Annenberg Inclusion Initiative.
+https://assets.uscannenberg.org/docs/aii-music-report-2022.pdf
+
+The annual Annenberg Inclusion Initiative report on representation in
+top-grossing film, TV, and streaming content. The finding that women
+represented thirty-eight percent of speaking characters, with underrepresentation
+of racial/ethnic minorities, LGBT characters, and characters with disabilities
+relative to US population. Annual reports available at: https://annenberg.usc.edu/research/aii
+
+--------------------------------------------------------------------------------
+
+Section 8.5 — The Question to Carry
+
+9. Noble, S. U. (2018). Algorithms of Oppression: How Search Engines Reinforce
+Racism. NYU Press.
+
+On the reproduction of racial bias through algorithmic systems, specifically
+search engines, and the gap between the apparent neutrality of algorithmic
+outputs and the social history encoded in the training data and ranking
+structures. The argument that scale and fluency amplify rather than neutralize
+historical bias in AI systems — that the model magnifies what it inherited —
+draws on Noble's framework.
+
+10. Buolamwini, J., & Gebru, T. (2018). Gender shades: Intersectional accuracy
+disparities in commercial gender classification. Proceedings of Machine Learning
+Research, 81, 1-15. http://proceedings.mlr.press/v81/buolamwini18a.html
+
+Audit of three commercial facial recognition systems (Microsoft, IBM, Face++)
+finding accuracy disparities of up to 34 percentage points between lighter-
+skinned men (highest accuracy) and darker-skinned women (lowest accuracy). The
+study directly links underrepresentation in training data to measurable, audited
+accuracy gaps on real deployed systems. A foundational empirical document for
+the claim that representation bias in training produces concrete disparate
+performance outcomes.
+
+================================================================================
 [ Additional chapters to be added ]
 ================================================================================
