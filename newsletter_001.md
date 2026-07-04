@@ -1,4 +1,4 @@
-# Issue 001 — July 4, 2026
+# July 4, 2026
 
 ### Your Name Was the Interview
 

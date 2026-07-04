@@ -147,14 +147,6 @@
       text-decoration: none;
     }
 
-    .issue-num {
-      font-family: 'Courier New', monospace;
-      font-size: 0.63rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #444;
-      margin-bottom: 8px;
-    }
     .issue-date {
       font-family: 'Courier New', monospace;
       font-size: 0.7rem;
@@ -242,7 +234,6 @@
       card.href = `newsletter-post.html?i=${issue.id}`;
       card.className = 'issue-card';
       card.innerHTML = `
-        <div class="issue-num">Issue ${issue.id}</div>
         <div class="issue-date">${issue.date}</div>
         <div class="issue-title">${issue.title}</div>
         <div class="issue-subtitle">${issue.subtitle}</div>
