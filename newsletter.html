@@ -161,7 +161,6 @@
     .issue-card {
       flex-shrink: 0;
       width: 280px;
-      padding: 24px;
       background: #111111;
       border: 1px solid #1e1e1e;
       border-radius: 10px;
@@ -170,11 +169,21 @@
       color: inherit;
       transition: border-color 0.15s, background 0.15s;
       display: block;
+      overflow: hidden;
     }
     .issue-card:hover {
       border-color: #c9a84c44;
       background: #141414;
       text-decoration: none;
+    }
+    .issue-card-img {
+      width: 100%;
+      height: 148px;
+      object-fit: cover;
+      display: block;
+    }
+    .issue-card-body {
+      padding: 20px 24px 24px;
     }
 
     .issue-date {
@@ -197,6 +206,42 @@
       color: #666;
       font-style: italic;
       line-height: 1.5;
+    }
+
+    .book-promo {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 28px 48px;
+    }
+    .book-promo-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 10px;
+      padding: 18px 24px;
+      color: #888;
+      font-family: 'Courier New', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .book-promo-link:hover {
+      border-color: #c9a84c44;
+      color: #c9a84c;
+      text-decoration: none;
+    }
+    .book-promo-label {
+      color: #c9a84c;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .book-promo-arrow {
+      margin-left: auto;
+      flex-shrink: 0;
     }
 
     footer {
@@ -236,6 +281,14 @@
     </div>
   </div>
 
+  <div class="book-promo">
+    <a href="book-index.html" class="book-promo-link">
+      <span class="book-promo-label">The Original Bug</span>
+      Read the book — all chapters available now
+      <span class="book-promo-arrow">→</span>
+    </a>
+  </div>
+
   <div class="issues-section">
     <p class="section-label">All Issues</p>
     <div class="issues-strip">
@@ -253,7 +306,9 @@
         id: '001',
         date: 'July 4, 2026',
         title: 'Your Name Was the Interview',
-        subtitle: 'The algorithm decided before you typed a single word.'
+        subtitle: 'The algorithm decided before you typed a single word.',
+        img: 'issue_001.jpg',
+        imgAlt: 'Two resumes side by side on a desk'
       }
     ];
 
@@ -264,9 +319,12 @@
       card.href = `newsletter-post.html?i=${issue.id}`;
       card.className = 'issue-card';
       card.innerHTML = `
-        <div class="issue-date">${issue.date}</div>
-        <div class="issue-title">${issue.title}</div>
-        <div class="issue-subtitle">${issue.subtitle}</div>
+        ${issue.img ? `<img class="issue-card-img" src="${issue.img}" alt="${issue.imgAlt || ''}">` : ''}
+        <div class="issue-card-body">
+          <div class="issue-date">${issue.date}</div>
+          <div class="issue-title">${issue.title}</div>
+          <div class="issue-subtitle">${issue.subtitle}</div>
+        </div>
       `;
       track.appendChild(card);
     });
