@@ -85,16 +85,46 @@
       line-height: 1.6;
     }
 
-    .substack-wrap {
+    .subscribe-card {
       max-width: 680px;
       margin: 0 auto;
       padding: 0 28px 56px;
     }
-    .substack-wrap iframe {
-      width: 100%;
+    .subscribe-inner {
+      background: #111;
       border: 1px solid #1e1e1e;
       border-radius: 10px;
-      display: block;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .subscribe-inner p {
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      color: #888;
+      font-style: italic;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .subscribe-btn {
+      display: inline-block;
+      align-self: flex-start;
+      font-family: 'Courier New', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0a0a0a;
+      background: #c9a84c;
+      padding: 12px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background 0.15s, transform 0.12s;
+    }
+    .subscribe-btn:hover {
+      background: #debb6a;
+      transform: translateY(-1px);
+      text-decoration: none;
     }
 
     .issues-section {
@@ -199,11 +229,11 @@
     <p class="subtitle">Field notes on AI and the human mind behind it.</p>
   </div>
 
-  <div class="substack-wrap">
-    <iframe src="https://sandybpatterson.substack.com/embed"
-      height="180"
-      frameborder="0"
-      scrolling="no"></iframe>
+  <div class="subscribe-card">
+    <div class="subscribe-inner">
+      <p>New issues drop when there's something worth saying. No schedule, no noise.</p>
+      <a class="subscribe-btn" href="https://sandybpatterson.substack.com" target="_blank" rel="noopener noreferrer">Subscribe on Substack →</a>
+    </div>
   </div>
 
   <div class="issues-section">
