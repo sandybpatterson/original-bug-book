@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Original Bug</title>
+  <title>Newsletter — The Original Bug</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -64,7 +64,6 @@
       padding: 60px 28px 100px;
     }
 
-    /* Markdown-rendered prose styles */
     #content h1 {
       font-size: 1.1rem;
       font-family: 'Courier New', monospace;
@@ -79,8 +78,16 @@
       font-weight: 700;
       color: #f0f0f0;
       line-height: 1.15;
-      margin-bottom: 40px;
+      margin-bottom: 16px;
       font-family: Georgia, serif;
+    }
+    #content h3 + p em:only-child {
+      display: block;
+      font-size: 1.1rem;
+      color: #888;
+      font-style: italic;
+      margin-bottom: 40px;
+      line-height: 1.6;
     }
     #content hr {
       border: none;
@@ -115,26 +122,6 @@
     #content strong { color: #f0f0f0; font-weight: 600; }
     #content em { font-style: italic; color: #e0e0e0; }
 
-    /* Section divider \* \* \* */
-    #content p:has(> em:only-child) {
-      text-align: center;
-      color: #444;
-      letter-spacing: 0.3em;
-      margin: 2.5em 0;
-    }
-
-    /* Exercise / exhibit boxes — paragraph after a bold-only paragraph */
-    #content .box-label {
-      font-family: 'Courier New', monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #c9a84c;
-      margin-bottom: 12px;
-      margin-top: 40px;
-    }
-
-    /* Footer line */
     #content > p:last-child {
       font-family: 'Courier New', monospace;
       font-size: 0.68rem;
@@ -167,19 +154,7 @@
       color: #663333;
     }
 
-    footer {
-      border-top: 1px solid #1a1a1a;
-      padding: 28px 24px;
-      text-align: center;
-      font-family: 'Courier New', monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.1em;
-      color: #333;
-      text-transform: uppercase;
-    }
-
-    /* Chapter nav */
-    .chapter-nav {
+    .issue-nav {
       max-width: 680px;
       margin: 0 auto;
       padding: 0 28px 40px;
@@ -191,15 +166,17 @@
       text-transform: uppercase;
       color: #444;
     }
-    .chapter-nav a { color: #c9a84c; }
+    .issue-nav a { color: #c9a84c; }
 
-    .sup-link {
-      color: #c9a84c;
-      opacity: 0.6;
-      text-decoration: none;
-    }
-    .sup-link:hover {
-      opacity: 1;
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 28px 24px;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: #333;
+      text-transform: uppercase;
     }
   </style>
 </head>
@@ -215,13 +192,13 @@
     </div>
   </nav>
 
-  <div id="loading">Loading chapter…</div>
-  <div id="error-msg">Chapter not found.</div>
+  <div id="loading">Loading…</div>
+  <div id="error-msg">Issue not found.</div>
   <div id="content" style="display:none;"></div>
 
-  <div class="chapter-nav" id="chapter-nav" style="display:none;">
+  <div class="issue-nav" id="issue-nav" style="display:none;">
     <span id="prev-link"></span>
-    <a href="index.html">↑ All Chapters</a>
+    <a href="newsletter.html">↑ All Issues</a>
     <span id="next-link"></span>
   </div>
 
@@ -230,72 +207,22 @@
   </footer>
 
   <script>
-    function linkSuperscripts(container, href) {
-      var supRx = /([¹²³⁴⁵⁶⁷⁸⁹])/g;
-      var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
-      var nodes = [];
-      var node;
-      while ((node = walker.nextNode())) {
-        if (supRx.test(node.nodeValue)) nodes.push(node);
-        supRx.lastIndex = 0;
-      }
-      nodes.forEach(function(textNode) {
-        var parts = textNode.nodeValue.split(supRx);
-        if (parts.length <= 1) return;
-        var frag = document.createDocumentFragment();
-        parts.forEach(function(part, i) {
-          if (!part) return;
-          if (i % 2 === 0) {
-            frag.appendChild(document.createTextNode(part));
-          } else {
-            var a = document.createElement('a');
-            a.href = href;
-            a.textContent = part;
-            a.className = 'sup-link';
-            frag.appendChild(a);
-          }
-        });
-        textNode.parentNode.replaceChild(frag, textNode);
-      });
-    }
-
-    const chapters = {
-      0:  { file: 'TOB_Prologue_Complete.md',  title: 'Prologue' },
-      1:  { file: 'TOB_Chapter1_Complete.md',  title: 'We Built It In Our Image' },
-      2:  { file: 'TOB_Chapter2_Complete.md',  title: 'Pattern Machines' },
-      3:  { file: 'TOB_Chapter3_Complete.md',  title: 'Confidence Without Competence' },
-      4:  { file: 'TOB_Chapter4_Complete.md',  title: 'The Shortcut Problem' },
-      5:  { file: 'TOB_Chapter5_Complete.md',  title: 'Ask a Better Question' },
-      6:  { file: 'TOB_Chapter6_Complete.md',  title: 'Narrative Is Not Truth' },
-      7:  { file: 'TOB_Chapter7_Complete.md',  title: 'What Does Understanding Even Mean' },
-      8:  { file: 'TOB_Chapter8_Complete.md',  title: 'The Bias Mirror' },
-      9:  { file: 'TOB_Chapter9_Complete.md',  title: 'The Examined Assumption' },
-      10: { file: 'TOB_Chapter10_Complete.md', title: 'The Social Animal and Its Machine' },
-      11: { file: 'TOB_Chapter11_Complete.md', title: 'The Art of Being Wrong Productively' },
-      12: { file: 'TOB_Chapter12_Complete.md', title: 'When Certainty Kills' },
-      13: { file: 'TOB_Chapter13_Complete.md', title: 'Steel-Manning the Machine' },
-      14: { file: 'TOB_Chapter14_Complete.md', title: 'Dialogue With a Mirror' },
-      15: { file: 'TOB_Chapter15_Complete.md', title: 'Now What' },
-      16: { file: 'TOB_Chapter16_Complete.md', title: 'We Are the Training Data' },
+    const issues = {
+      '001': { file: 'newsletter_001.md', title: 'Your Name Was the Interview', date: 'July 4, 2026' }
     };
 
+    const ids = Object.keys(issues);
     const params = new URLSearchParams(window.location.search);
-    const num = parseInt(params.get('c'), 10);
-    const chapter = chapters[num];
+    const id = params.get('i');
+    const issue = issues[id];
 
-    function chapLabel(n) {
-      return n === 0 ? 'Prologue' : `Ch ${n}`;
-    }
-
-    if (!chapter) {
+    if (!issue) {
       document.getElementById('loading').style.display = 'none';
       document.getElementById('error-msg').style.display = 'block';
     } else {
-      document.title = num === 0
-        ? `Prologue — The Original Bug`
-        : `Chapter ${num}: ${chapter.title} — The Original Bug`;
+      document.title = `${issue.title} — The Original Bug`;
 
-      fetch(chapter.file)
+      fetch(issue.file)
         .then(r => {
           if (!r.ok) throw new Error('not found');
           return r.text();
@@ -306,36 +233,24 @@
           el.innerHTML = marked.parse(md);
           el.style.display = 'block';
 
-          // Link superscript numbers to this chapter's index section
-          linkSuperscripts(el, 'book-index.html#ch-' + num);
-
-          // Load reader.js only after content is in the DOM — it extracts
-          // paragraphs on init, so it must run after markdown is rendered.
-          const readerScript = document.createElement('script');
-          readerScript.src = 'reader.js';
-          document.body.appendChild(readerScript);
-
-          // Prev / next nav
-          const nav = document.getElementById('chapter-nav');
+          const nav = document.getElementById('issue-nav');
           nav.style.display = 'flex';
-          if (chapters[num - 1]) {
+          const idx = ids.indexOf(id);
+          if (ids[idx + 1]) {
             document.getElementById('prev-link').innerHTML =
-              `<a href="chapter.html?c=${num-1}">← ${chapLabel(num-1)}</a>`;
+              `<a href="newsletter-post.html?i=${ids[idx + 1]}">← Older</a>`;
           }
-          if (chapters[num + 1]) {
+          if (ids[idx - 1]) {
             document.getElementById('next-link').innerHTML =
-              `<a href="chapter.html?c=${num+1}">${chapLabel(num+1)} →</a>`;
+              `<a href="newsletter-post.html?i=${ids[idx - 1]}">Newer →</a>`;
           }
         })
         .catch(() => {
           document.getElementById('loading').style.display = 'none';
           document.getElementById('error-msg').style.display = 'block';
-          document.getElementById('error-msg').textContent =
-            `Chapter ${num} hasn't been converted yet. Check back soon.`;
         });
     }
   </script>
-
 
 </body>
 </html>
