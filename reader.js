@@ -36,13 +36,17 @@
     return /iPhone|iPad|iPod/.test(navigator.userAgent);
   }
 
-  // Returns true if the user has a decent enhanced/neural voice installed.
-  // Ava and Nathan are the best free downloadable options on iOS.
+  // Returns true if the user has any non-novelty, non-Samantha English voice installed.
+  // Samantha is the only pre-installed iOS English voice — anything else means
+  // the user has downloaded something better.
   function hasGoodVoice() {
-    return allVoices.some(v => {
+    const usableEnglish = allVoices.filter(v =>
+      !NOVELTY_VOICES.has(v.name.toLowerCase()) &&
+      v.lang.toLowerCase().startsWith('en')
+    );
+    return usableEnglish.some(v => {
       const n = v.name.toLowerCase();
-      return n.includes('ava') || n.includes('nathan') ||
-             n.includes('enhanced') || n.includes('premium') || n.includes('neural');
+      return n !== 'samantha'; // anything other than Samantha counts
     });
   }
 
@@ -303,7 +307,7 @@
     const voices = getBestVoicesForLang(lang.speechLang);
 
     select.innerHTML = '';
-    voices.slice(0, 12).forEach((v, i) => {
+    voices.forEach((v, i) => {
       const opt = document.createElement('option');
       opt.value = i;
       opt.textContent = v.name.replace(/Microsoft|Google|Apple/g, '').trim();
@@ -1386,7 +1390,8 @@
     bindEvents();
     loadVoices();
 
-    setTimeout(loadVoices, 500); // second call catches async voice loading
+    setTimeout(loadVoices, 500);   // second call for browsers that load voices async
+    setTimeout(loadVoices, 2000);  // third call for iOS which can be slower after install
 
     // If we arrived here via autoplay navigation, activate the toggle and auto-start.
     // Delay 650ms so voices have time to load before buildUtterances() runs.
