@@ -87,10 +87,9 @@
         <button class="sbp-voice-close" id="sbp-voice-close">✕</button>
         <p class="sbp-vm-eyebrow">iPhone Voice Setup</p>
         <h2 class="sbp-vm-title">Download a natural&#8209;sounding voice</h2>
-        <a class="sbp-vm-settings-link" href="App-prefs:root=ACCESSIBILITY" id="sbp-vm-open-settings">
-          Open Accessibility Settings →
-        </a>
         <ol class="sbp-vm-steps">
+          <li>Open the <strong>Settings</strong> app ⚙️</li>
+          <li>Tap <strong>Accessibility</strong></li>
           <li>Tap <strong>Spoken Content</strong></li>
           <li>Tap <strong>Voices</strong></li>
           <li>Tap <strong>English</strong></li>
@@ -1051,27 +1050,7 @@
         line-height: 1.6;
         margin-bottom: 24px;
       }
-      .sbp-vm-settings-link {
-        display: block;
-        font-family: 'Courier New', monospace;
-        font-size: 0.7rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #c8b89a;
-        background: rgba(200,184,154,0.08);
-        border: 1px solid rgba(200,184,154,0.2);
-        border-radius: 8px;
-        padding: 12px 16px;
-        margin-bottom: 20px;
-        text-decoration: none;
-        transition: background 0.15s, border-color 0.15s;
-      }
-      .sbp-vm-settings-link:hover {
-        background: rgba(200,184,154,0.15);
-        border-color: rgba(200,184,154,0.4);
-        text-decoration: none;
-      }
-      .sbp-vm-toggle-row {
+.sbp-vm-toggle-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
