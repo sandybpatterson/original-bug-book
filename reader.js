@@ -31,6 +31,84 @@
     'cellos', 'fred', 'good news', 'jester', 'junior', 'kathy'
   ]);
 
+  function isIOS() {
+    return /iPhone|iPad|iPod/.test(navigator.userAgent);
+  }
+
+  // Returns true if the user has a decent enhanced/neural voice installed.
+  // Ava and Nathan are the best free downloadable options on iOS.
+  function hasGoodVoice() {
+    return allVoices.some(v => {
+      const n = v.name.toLowerCase();
+      return n.includes('ava') || n.includes('nathan') ||
+             n.includes('enhanced') || n.includes('premium') || n.includes('neural');
+    });
+  }
+
+  function checkVoiceQuality() {
+    if (!isIOS()) return;
+    if (hasGoodVoice()) return;
+    if (localStorage.getItem('sbp-voice-hint')) return;
+    setTimeout(showVoicePrompt, 900);
+  }
+
+  function showVoicePrompt() {
+    if (document.getElementById('sbp-voice-prompt')) return;
+    const reader = document.getElementById('sbp-reader');
+    if (!reader) return;
+
+    const el = document.createElement('div');
+    el.id = 'sbp-voice-prompt';
+    el.className = 'sbp-voice-prompt';
+    el.innerHTML = `
+      <span class="sbp-vp-text">A much better voice is available for your iPhone — free.</span>
+      <button class="sbp-vp-btn sbp-vp-yes" id="sbp-vp-yes">Set up now</button>
+      <button class="sbp-vp-btn sbp-vp-no" id="sbp-vp-no">Not now</button>
+    `;
+    reader.appendChild(el);
+
+    document.getElementById('sbp-vp-yes').addEventListener('click', () => {
+      el.remove();
+      showVoiceInstructions();
+    });
+    document.getElementById('sbp-vp-no').addEventListener('click', () => {
+      el.remove();
+      localStorage.setItem('sbp-voice-hint', '1');
+    });
+  }
+
+  function showVoiceInstructions() {
+    const overlay = document.createElement('div');
+    overlay.id = 'sbp-voice-overlay';
+    overlay.className = 'sbp-voice-overlay';
+    overlay.innerHTML = `
+      <div class="sbp-voice-modal">
+        <button class="sbp-voice-close" id="sbp-voice-close">✕</button>
+        <p class="sbp-vm-eyebrow">iPhone Voice Setup</p>
+        <h2 class="sbp-vm-title">Download a natural&#8209;sounding voice</h2>
+        <ol class="sbp-vm-steps">
+          <li>Open the <strong>Settings</strong> app</li>
+          <li>Tap <strong>Accessibility</strong></li>
+          <li>Tap <strong>Spoken Content</strong></li>
+          <li>Tap <strong>Voices</strong></li>
+          <li>Tap <strong>English</strong></li>
+          <li>Find <strong>Ava</strong> or <strong>Nathan</strong> and tap the download icon next to <em>Enhanced</em></li>
+        </ol>
+        <p class="sbp-vm-note">Once the download finishes, come back here and refresh the page. The new voice will appear in the Voice dropdown.</p>
+        <button class="sbp-vm-done" id="sbp-voice-done">Got it</button>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    function close() {
+      overlay.remove();
+      localStorage.setItem('sbp-voice-hint', '1');
+    }
+    document.getElementById('sbp-voice-close').addEventListener('click', close);
+    document.getElementById('sbp-voice-done').addEventListener('click', close);
+    overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+  }
+
   const LANGUAGES = [
     { code: 'en', label: 'English',    flag: '🇺🇸', speechLang: 'en-US' },
     { code: 'es', label: 'Español',    flag: '🇪🇸', speechLang: 'es-ES' },
@@ -168,6 +246,7 @@
   function loadVoices() {
     allVoices = synth.getVoices();
     populateVoiceSelect();
+    checkVoiceQuality();
   }
 
   // Returns voices sorted by best fit for the given language tag.
@@ -835,6 +914,133 @@
         border-color: #c8b89a;
         color: #c8b89a;
       }
+
+      /* ── Voice upgrade prompt (iOS only) ── */
+      .sbp-voice-prompt {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        flex-wrap: wrap;
+        padding: 0.5rem 0 0.1rem;
+        border-top: 1px solid #1a1a1a;
+        margin-top: 0.25rem;
+      }
+      .sbp-vp-text {
+        font-size: 0.72rem;
+        color: #888;
+        flex: 1;
+        min-width: 180px;
+      }
+      .sbp-vp-btn {
+        font-family: inherit;
+        font-size: 0.68rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding: 5px 14px;
+        cursor: pointer;
+        transition: all 0.15s;
+        white-space: nowrap;
+      }
+      .sbp-vp-yes {
+        background: #c8b89a;
+        color: #0e0e0e;
+        border: 1px solid #c8b89a;
+      }
+      .sbp-vp-yes:hover { background: #ddd0b8; border-color: #ddd0b8; }
+      .sbp-vp-no {
+        background: none;
+        color: #555;
+        border: 1px solid #2a2a2a;
+      }
+      .sbp-vp-no:hover { color: #888; border-color: #444; }
+
+      /* ── Voice setup modal ── */
+      .sbp-voice-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.78);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        backdrop-filter: blur(4px);
+      }
+      .sbp-voice-modal {
+        background: #111;
+        border: 1px solid #2a2a2a;
+        border-radius: 12px;
+        padding: 36px 32px 32px;
+        max-width: 400px;
+        width: 100%;
+        position: relative;
+      }
+      .sbp-voice-close {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: none;
+        border: none;
+        color: #555;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 4px 8px;
+        transition: color 0.15s;
+        line-height: 1;
+      }
+      .sbp-voice-close:hover { color: #c8b89a; }
+      .sbp-vm-eyebrow {
+        font-family: 'Courier New', monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: #c8b89a;
+        margin-bottom: 10px;
+      }
+      .sbp-vm-title {
+        font-family: Georgia, serif;
+        font-size: 1.25rem;
+        color: #e8e8e8;
+        margin-bottom: 24px;
+        line-height: 1.3;
+      }
+      .sbp-vm-steps {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      .sbp-vm-steps li {
+        font-family: Georgia, serif;
+        font-size: 0.88rem;
+        color: #888;
+        line-height: 1.75;
+      }
+      .sbp-vm-steps li strong { color: #e0d8cc; font-weight: 600; }
+      .sbp-vm-steps li em { color: #c8b89a; font-style: normal; }
+      .sbp-vm-note {
+        font-size: 0.78rem;
+        color: #555;
+        font-style: italic;
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+      .sbp-vm-done {
+        font-family: 'Courier New', monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background: #c8b89a;
+        color: #0e0e0e;
+        border: none;
+        border-radius: 999px;
+        padding: 10px 28px;
+        cursor: pointer;
+        transition: background 0.15s;
+        display: block;
+        width: 100%;
+      }
+      .sbp-vm-done:hover { background: #ddd0b8; }
 
       /* Narrow screens: controls wrap, selects go full-width on second row. */
       @media (max-width: 600px) {
