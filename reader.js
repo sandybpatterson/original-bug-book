@@ -304,7 +304,12 @@
     if (!select) return;
 
     const lang = LANGUAGES.find(l => l.code === currentLang) || LANGUAGES[0];
-    const voices = getBestVoicesForLang(lang.speechLang);
+
+    // On iOS use ALL non-novelty voices — skip the language filter so nothing
+    // gets hidden by a mismatched lang tag (e.g. Ava appearing as en-GB).
+    const voices = isIOS()
+      ? allVoices.filter(v => !NOVELTY_VOICES.has(v.name.toLowerCase()))
+      : getBestVoicesForLang(lang.speechLang);
 
     select.innerHTML = '';
     voices.forEach((v, i) => {
@@ -315,7 +320,19 @@
       select.appendChild(opt);
     });
 
-    // On iOS without enhanced voices, surface Ava and Nathan as tappable setup prompts
+    // Debug badge: shows total voice count so we can tell if getVoices() is working
+    const label = document.querySelector('.sbp-label[for="sbp-voice-select"], .sbp-select-wrap .sbp-label');
+    const badge = document.getElementById('sbp-voice-count');
+    if (label) {
+      if (badge) badge.remove();
+      const b = document.createElement('span');
+      b.id = 'sbp-voice-count';
+      b.style.cssText = 'margin-left:5px;font-size:0.55rem;color:#444;';
+      b.textContent = `(${voices.length})`;
+      label.appendChild(b);
+    }
+
+    // On iOS without a good voice, surface Ava and Nathan as tappable setup prompts
     if (isIOS() && !hasGoodVoice() && currentLang === 'en') {
       const divider = document.createElement('option');
       divider.disabled = true;
