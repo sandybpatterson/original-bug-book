@@ -63,7 +63,7 @@
     el.innerHTML = `
       <span class="sbp-vp-text">A much better voice is available for your iPhone — free.</span>
       <button class="sbp-vp-btn sbp-vp-yes" id="sbp-vp-yes">Set up now</button>
-      <button class="sbp-vp-btn sbp-vp-no" id="sbp-vp-no">Not now</button>
+      <button class="sbp-vp-btn sbp-vp-no" id="sbp-vp-no">✕</button>
     `;
     reader.appendChild(el);
 
@@ -71,9 +71,9 @@
       el.remove();
       showVoiceInstructions();
     });
+    // ✕ just hides for this session — does NOT set localStorage
     document.getElementById('sbp-vp-no').addEventListener('click', () => {
       el.remove();
-      localStorage.setItem('sbp-voice-hint', '1');
     });
   }
 
@@ -86,23 +86,33 @@
         <button class="sbp-voice-close" id="sbp-voice-close">✕</button>
         <p class="sbp-vm-eyebrow">iPhone Voice Setup</p>
         <h2 class="sbp-vm-title">Download a natural&#8209;sounding voice</h2>
+        <a class="sbp-vm-settings-link" href="App-prefs:root=ACCESSIBILITY" id="sbp-vm-open-settings">
+          Open Accessibility Settings →
+        </a>
         <ol class="sbp-vm-steps">
-          <li>Open the <strong>Settings</strong> app</li>
-          <li>Tap <strong>Accessibility</strong></li>
           <li>Tap <strong>Spoken Content</strong></li>
           <li>Tap <strong>Voices</strong></li>
           <li>Tap <strong>English</strong></li>
           <li>Find <strong>Ava</strong> or <strong>Nathan</strong> and tap the download icon next to <em>Enhanced</em></li>
         </ol>
-        <p class="sbp-vm-note">Once the download finishes, come back here and refresh the page. The new voice will appear in the Voice dropdown.</p>
+        <p class="sbp-vm-note">Once the download finishes, come back here and refresh. The new voice will appear in the Voice dropdown.</p>
+        <label class="sbp-vm-toggle-row">
+          <span class="sbp-vm-toggle-label">Don't remind me again</span>
+          <span class="sbp-toggle">
+            <input type="checkbox" id="sbp-vm-noremind">
+            <span class="sbp-toggle-track"><span class="sbp-toggle-thumb"></span></span>
+          </span>
+        </label>
         <button class="sbp-vm-done" id="sbp-voice-done">Got it</button>
       </div>
     `;
     document.body.appendChild(overlay);
 
     function close() {
+      if (document.getElementById('sbp-vm-noremind')?.checked) {
+        localStorage.setItem('sbp-voice-hint', '1');
+      }
       overlay.remove();
-      localStorage.setItem('sbp-voice-hint', '1');
     }
     document.getElementById('sbp-voice-close').addEventListener('click', close);
     document.getElementById('sbp-voice-done').addEventListener('click', close);
@@ -1024,6 +1034,68 @@
         font-style: italic;
         line-height: 1.6;
         margin-bottom: 24px;
+      }
+      .sbp-vm-settings-link {
+        display: block;
+        font-family: 'Courier New', monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #c8b89a;
+        background: rgba(200,184,154,0.08);
+        border: 1px solid rgba(200,184,154,0.2);
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        transition: background 0.15s, border-color 0.15s;
+      }
+      .sbp-vm-settings-link:hover {
+        background: rgba(200,184,154,0.15);
+        border-color: rgba(200,184,154,0.4);
+        text-decoration: none;
+      }
+      .sbp-vm-toggle-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .sbp-vm-toggle-label {
+        font-size: 0.8rem;
+        color: #666;
+      }
+      .sbp-toggle { position: relative; display: inline-block; }
+      .sbp-toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
+      .sbp-toggle-track {
+        display: block;
+        width: 40px;
+        height: 22px;
+        background: #2a2a2a;
+        border-radius: 999px;
+        border: 1px solid #3a3a3a;
+        transition: background 0.2s;
+        position: relative;
+      }
+      .sbp-toggle input:checked + .sbp-toggle-track {
+        background: #c8b89a;
+        border-color: #c8b89a;
+      }
+      .sbp-toggle-thumb {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        background: #888;
+        border-radius: 50%;
+        transition: left 0.2s, background 0.2s;
+      }
+      .sbp-toggle input:checked + .sbp-toggle-track .sbp-toggle-thumb {
+        left: 20px;
+        background: #0e0e0e;
       }
       .sbp-vm-done {
         font-family: 'Courier New', monospace;
