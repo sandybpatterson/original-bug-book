@@ -90,12 +90,12 @@
         <ol class="sbp-vm-steps">
           <li>Open the <strong>Settings</strong> app ⚙️</li>
           <li>Tap <strong>Accessibility</strong></li>
-          <li>Tap <strong>Spoken Content</strong></li>
+          <li>Tap <strong>Vision</strong> — then <strong>Read &amp; Speak</strong><br><span class="sbp-vm-alt">Or look for <strong>Spoken Content</strong> on newer iOS</span></li>
           <li>Tap <strong>Voices</strong></li>
           <li>Tap <strong>English</strong></li>
-          <li>Find <strong>Ava</strong> or <strong>Nathan</strong> and tap the download icon next to <em>Enhanced</em></li>
+          <li>Find a voice with <em>Enhanced</em> next to it and tap the download ⬇ icon</li>
         </ol>
-        <p class="sbp-vm-note">Once the download finishes, come back here and refresh. The new voice will appear in the Voice dropdown.</p>
+        <p class="sbp-vm-note">Can't find it? Open Settings and search <strong>"voices"</strong> in the search bar at the top. Once downloaded, come back and refresh — the new voice will appear in the dropdown above.</p>
         <label class="sbp-vm-toggle-row">
           <span class="sbp-vm-toggle-label">Don't remind me again</span>
           <span class="sbp-toggle">
@@ -1043,6 +1043,7 @@
       }
       .sbp-vm-steps li strong { color: #e0d8cc; font-weight: 600; }
       .sbp-vm-steps li em { color: #c8b89a; font-style: normal; }
+      .sbp-vm-alt { font-size: 0.78rem; color: #555; font-style: italic; }
       .sbp-vm-note {
         font-size: 0.78rem;
         color: #555;
