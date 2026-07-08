@@ -28,7 +28,8 @@
   // These appear in getVoices() but are not useful for reading — hide them.
   const NOVELTY_VOICES = new Set([
     'albert', 'bad news', 'bahh', 'bells', 'boing', 'bubbles',
-    'cellos', 'fred', 'good news', 'jester', 'junior', 'kathy'
+    'cellos', 'fred', 'good news', 'jester', 'junior', 'kathy',
+    'organ', 'superstar', 'whisper', 'ralph', 'wobble', 'zarvox'
   ]);
 
   function isIOS() {
@@ -48,7 +49,7 @@
   function checkVoiceQuality() {
     if (!isIOS()) return;
     if (hasGoodVoice()) return;
-    if (localStorage.getItem('sbp-voice-hint')) return;
+    if (localStorage.getItem('sbp-voice-hint-v2')) return;
     setTimeout(showVoicePrompt, 900);
   }
 
@@ -110,7 +111,7 @@
 
     function close() {
       if (document.getElementById('sbp-vm-noremind')?.checked) {
-        localStorage.setItem('sbp-voice-hint', '1');
+        localStorage.setItem('sbp-voice-hint-v2', '1');
       }
       overlay.remove();
     }
@@ -305,13 +306,28 @@
     select.innerHTML = '';
     voices.slice(0, 12).forEach((v, i) => {
       const opt = document.createElement('option');
-      opt.value = i;                                                     // index into the sorted voices array
+      opt.value = i;
       opt.textContent = v.name.replace(/Microsoft|Google|Apple/g, '').trim();
-      opt.dataset.voiceUri = v.voiceURI;                                 // stored for reference, not actively used
+      opt.dataset.voiceUri = v.voiceURI;
       select.appendChild(opt);
     });
 
-    selectedVoice = voices[0] || null; // auto-select the best available voice
+    // On iOS without enhanced voices, surface Ava and Nathan as tappable setup prompts
+    if (isIOS() && !hasGoodVoice() && currentLang === 'en') {
+      const divider = document.createElement('option');
+      divider.disabled = true;
+      divider.textContent = '── Free upgrades ──';
+      select.appendChild(divider);
+
+      ['Ava (Enhanced)', 'Nathan (Enhanced)'].forEach(name => {
+        const opt = document.createElement('option');
+        opt.value = `__setup__${name}`;
+        opt.textContent = `⬇ ${name}`;
+        select.appendChild(opt);
+      });
+    }
+
+    selectedVoice = voices[0] || null;
   }
 
 
@@ -1301,6 +1317,11 @@
 
     // Voice dropdown: same pattern — rebuild and restart from the current position.
     document.getElementById('sbp-voice-select')?.addEventListener('change', (e) => {
+      if (e.target.value.startsWith('__setup__')) {
+        e.target.value = '0'; // revert dropdown to first real voice
+        showVoiceInstructions();
+        return;
+      }
       const voices = getBestVoicesForLang(
         LANGUAGES.find(l => l.code === currentLang)?.speechLang || 'en-US'
       );
