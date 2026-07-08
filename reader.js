@@ -24,6 +24,13 @@
   //   flag:       emoji flag for the language button
   //   speechLang: the BCP-47 tag used to filter Web Speech API voices
   //               (e.g. 'en-US' will prefer voices whose lang starts with 'en')
+  // Apple novelty/special-effect voices built into macOS and iOS.
+  // These appear in getVoices() but are not useful for reading — hide them.
+  const NOVELTY_VOICES = new Set([
+    'albert', 'bad news', 'bahh', 'bells', 'boing', 'bubbles',
+    'cellos', 'fred', 'good news', 'jester', 'junior', 'kathy'
+  ]);
+
   const LANGUAGES = [
     { code: 'en', label: 'English',    flag: '🇺🇸', speechLang: 'en-US' },
     { code: 'es', label: 'Español',    flag: '🇪🇸', speechLang: 'es-ES' },
@@ -174,16 +181,17 @@
   // fallback that browsers pick when nothing else matches.
   function getBestVoicesForLang(speechLang) {
     const langPrefix = speechLang.split('-')[0].toLowerCase();
+    const usable = allVoices.filter(v => !NOVELTY_VOICES.has(v.name.toLowerCase()));
 
-    let matches = allVoices.filter(v =>
+    let matches = usable.filter(v =>
       v.lang.toLowerCase() === speechLang.toLowerCase()
     );
     if (!matches.length) {
-      matches = allVoices.filter(v =>
+      matches = usable.filter(v =>
         v.lang.toLowerCase().startsWith(langPrefix)
       );
     }
-    if (!matches.length) matches = allVoices;
+    if (!matches.length) matches = usable;
 
     return matches.sort((a, b) => {
       if (a.default && !b.default) return 1;  // push system default down
