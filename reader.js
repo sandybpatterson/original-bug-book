@@ -94,12 +94,12 @@
         <ol class="sbp-vm-steps">
           <li>Open the <strong>Settings</strong> app ⚙️</li>
           <li>Tap <strong>Accessibility</strong></li>
-          <li>Tap <strong>Vision</strong> — then <strong>Read &amp; Speak</strong><br><span class="sbp-vm-alt">Or look for <strong>Spoken Content</strong> on newer iOS</span></li>
-          <li>Tap <strong>Voices</strong></li>
-          <li>Tap <strong>English</strong></li>
-          <li>Find a voice with <em>Enhanced</em> next to it and tap the download ⬇ icon</li>
+          <li>Tap <strong>Vision</strong> → <strong>Read &amp; Speak</strong><br><span class="sbp-vm-alt">On newer iOS: <strong>Spoken Content</strong></span></li>
+          <li>Tap <strong>Voices</strong> → <strong>English</strong></li>
+          <li>Find a voice with <em>Enhanced</em> — tap ⬇ to download if needed</li>
+          <li>Tap the voice <strong>name</strong> to set it as your default</li>
         </ol>
-        <p class="sbp-vm-note">Can't find it? Open Settings and search <strong>"voices"</strong> in the search bar at the top. Once downloaded, come back and refresh — the new voice will appear in the dropdown above.</p>
+        <p class="sbp-vm-note">iPhone ignores voice changes from web pages and always uses your iOS default. Setting it as default here is what actually changes what you hear. Can't find Voices? Search <strong>"voices"</strong> in the Settings search bar.</p>
         <label class="sbp-vm-toggle-row">
           <span class="sbp-vm-toggle-label">Don't remind me again</span>
           <span class="sbp-toggle">
@@ -1072,7 +1072,21 @@
         line-height: 1.6;
         margin-bottom: 24px;
       }
-.sbp-vm-toggle-row {
+      .sbp-ios-voice-btn {
+        background: none;
+        border: 1px solid #2a2a2a;
+        color: #c8b89a;
+        font-family: inherit;
+        font-size: 0.72rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: border-color 0.15s;
+        white-space: nowrap;
+      }
+      .sbp-ios-voice-btn:hover { border-color: #c8b89a; }
+
+      .sbp-vm-toggle-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1182,10 +1196,17 @@
         </div>
 
         <div class="sbp-selects">
+          ${isIOS() ? `
+          <div class="sbp-select-wrap">
+            <span class="sbp-label">Voice</span>
+            <button class="sbp-ios-voice-btn" id="sbp-ios-voice-btn">Change voice ›</button>
+          </div>
+          ` : `
           <div class="sbp-select-wrap">
             <span class="sbp-label">Voice</span>
             <select class="sbp-select" id="sbp-voice-select" aria-label="Voice"></select>
           </div>
+          `}
 
           <div class="sbp-select-wrap">
             <span class="sbp-label">Language</span>
@@ -1246,6 +1267,7 @@
   function bindEvents() {
     document.getElementById('sbp-play-btn')?.addEventListener('click', togglePlayPause);
     document.getElementById('sbp-stop-btn')?.addEventListener('click', stopPlayback);
+    document.getElementById('sbp-ios-voice-btn')?.addEventListener('click', showVoiceInstructions);
 
     // Scrubber: click on track, or drag the thumb, to seek.
     const track = document.getElementById('sbp-progress-track');
