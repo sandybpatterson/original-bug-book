@@ -317,33 +317,16 @@
   }
 
   function populateVoiceSelect() {
-    const select = document.getElementById('sbp-voice-select');
-    if (!select) return;
-
     if (isIOS()) {
-      // iOS only: build the two-slot picker
-      const real = getIOSRealVoices();
-      select.innerHTML = '';
-      real.forEach((v, i) => {
-        const opt = document.createElement('option');
-        opt.value = i;
-        const label = v.name.replace(/Microsoft|Google|Apple/g, '').trim();
-        opt.textContent = i === 0 && real.length > 1 ? `${label} (default)` : label;
-        select.appendChild(opt);
-      });
-
-      if (!hasGoodVoice()) {
-        const hint = document.createElement('option');
-        hint.value = '__setup__';
-        hint.textContent = '⬇ Download a better voice';
-        select.appendChild(hint);
-      }
-
-      selectedVoice = real[0] || null;
+      // iOS ignores the voice property — the system default is used for everything.
+      // No dropdown to populate; voice is changed via the "Change voice ›" button.
+      selectedVoice = null;
       return;
     }
 
-    // Desktop: full voice picker
+    const select = document.getElementById('sbp-voice-select');
+    if (!select) return;
+
     const lang = LANGUAGES.find(l => l.code === currentLang) || LANGUAGES[0];
     const voices = getBestVoicesForLang(lang.speechLang);
     select.innerHTML = '';
@@ -1289,7 +1272,10 @@
         <div class="sbp-selects">
           <div class="sbp-select-wrap">
             <span class="sbp-label">Voice</span>
-            <select class="sbp-select" id="sbp-voice-select" aria-label="Voice"></select>
+            ${isIOS()
+              ? `<button class="sbp-ios-voice-btn" id="sbp-ios-voice-btn">Change voice ›</button>`
+              : `<select class="sbp-select" id="sbp-voice-select" aria-label="Voice"></select>`
+            }
           </div>
 
           <div class="sbp-select-wrap">
