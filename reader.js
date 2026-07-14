@@ -402,6 +402,7 @@
     isPaused = false;
     updatePlayButton();
     playSilentAudio();
+    setupMediaSession();
     setMediaSessionState('playing');
 
     for (let i = index; i < utterances.length; i++) {
@@ -452,29 +453,33 @@
 
   // ── MEDIA SESSION ────────────────────────────────────────────────────────────
   // Hooks TTS playback into the iOS/Android lock screen media card.
-  // speechSynthesis alone doesn't hold the audio session open during pause,
-  // so a silent looping <audio> element keeps the card visible on the lock
-  // screen even when the reader is paused.
+  // speechSynthesis alone doesn't activate the iOS audio session; an
+  // AudioContext with a looping silent buffer does. pauseSilentAudio is only
+  // called on full stop — during TTS pause the session stays alive so the card
+  // remains visible on the lock screen.
 
-  let _silentAudio = null;
-
-  function getSilentAudio() {
-    if (_silentAudio) return _silentAudio;
-    _silentAudio = document.createElement('audio');
-    // Minimal silent WAV, looped to hold the iOS audio session open
-    _silentAudio.src = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=';
-    _silentAudio.loop = true;
-    _silentAudio.volume = 0.001;
-    document.body.appendChild(_silentAudio);
-    return _silentAudio;
-  }
+  let _silentCtx = null;
 
   function playSilentAudio() {
-    getSilentAudio().play().catch(() => {});
+    try {
+      if (_silentCtx && _silentCtx.state !== 'closed') {
+        _silentCtx.resume().catch(() => {});
+        return;
+      }
+      _silentCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const buf = _silentCtx.createBuffer(1, _silentCtx.sampleRate, _silentCtx.sampleRate);
+      const src = _silentCtx.createBufferSource();
+      src.buffer = buf;
+      src.loop = true;
+      src.connect(_silentCtx.destination);
+      src.start(0);
+    } catch (e) {}
   }
 
   function pauseSilentAudio() {
-    if (_silentAudio) _silentAudio.pause();
+    try {
+      if (_silentCtx) { _silentCtx.close(); _silentCtx = null; }
+    } catch (e) {}
   }
 
   function setMediaSessionState(state) {
