@@ -453,33 +453,32 @@
 
   // ── MEDIA SESSION ────────────────────────────────────────────────────────────
   // Hooks TTS playback into the iOS/Android lock screen media card.
-  // speechSynthesis alone doesn't activate the iOS audio session; an
-  // AudioContext with a looping silent buffer does. pauseSilentAudio is only
-  // called on full stop — during TTS pause the session stays alive so the card
-  // remains visible on the lock screen.
+  // iOS Now Playing only tracks <audio>/<video> elements — Web Audio API and
+  // speechSynthesis alone do not appear on the lock screen. A silent looping
+  // <audio> element holds the audio session open. pauseSilentAudio is only
+  // called on full stop; during TTS pause the element keeps running so the
+  // lock screen card stays visible.
 
-  let _silentCtx = null;
+  let _silentAudio = null;
+
+  function getSilentAudio() {
+    if (_silentAudio) return _silentAudio;
+    _silentAudio = document.createElement('audio');
+    // 100ms silent WAV (8000 Hz, 8-bit, mono) — iOS requires real audio data
+    _silentAudio.src = 'data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YSADAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA==';
+    _silentAudio.loop = true;
+    _silentAudio.volume = 1.0;
+    _silentAudio.preload = 'auto';
+    document.body.appendChild(_silentAudio);
+    return _silentAudio;
+  }
 
   function playSilentAudio() {
-    try {
-      if (_silentCtx && _silentCtx.state !== 'closed') {
-        _silentCtx.resume().catch(() => {});
-        return;
-      }
-      _silentCtx = new (window.AudioContext || window.webkitAudioContext)();
-      const buf = _silentCtx.createBuffer(1, _silentCtx.sampleRate, _silentCtx.sampleRate);
-      const src = _silentCtx.createBufferSource();
-      src.buffer = buf;
-      src.loop = true;
-      src.connect(_silentCtx.destination);
-      src.start(0);
-    } catch (e) {}
+    getSilentAudio().play().catch(() => {});
   }
 
   function pauseSilentAudio() {
-    try {
-      if (_silentCtx) { _silentCtx.close(); _silentCtx = null; }
-    } catch (e) {}
+    if (_silentAudio) _silentAudio.pause();
   }
 
   function setMediaSessionState(state) {
