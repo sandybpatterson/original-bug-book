@@ -401,9 +401,13 @@
     isPlaying = true;
     isPaused = false;
     updatePlayButton();
-    playSilentAudio();
-    setupMediaSession();
-    setMediaSessionState('playing');
+
+    // Start the silent audio first. iOS won't register Now Playing metadata
+    // until the audio session is established, so we set it after play() resolves.
+    playSilentAudio().then(() => {
+      setupMediaSession();
+      setMediaSessionState('playing');
+    });
 
     for (let i = index; i < utterances.length; i++) {
       synth.speak(utterances[i]);
@@ -474,7 +478,7 @@
   }
 
   function playSilentAudio() {
-    getSilentAudio().play().catch(() => {});
+    return getSilentAudio().play().catch(() => {});
   }
 
   function pauseSilentAudio() {
@@ -1521,7 +1525,6 @@
       }, 650);
     }
 
-    setupMediaSession();
     updateStatus('Ready');
   }
 
