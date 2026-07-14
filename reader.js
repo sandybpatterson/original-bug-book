@@ -299,18 +299,53 @@
   // Fills the voice <select> dropdown with up to 12 voices for the current language.
   // Brand prefixes (Microsoft, Google, Apple) are stripped from display names
   // because they add noise without being useful to the reader.
+  // On iOS, getVoices() returns many names but only two actually work:
+  //   1. Samantha — Apple's built-in voice, always addressable directly
+  //   2. The system default — whatever the user has set in iOS Settings;
+  //      all other voice names silently route here
+  // We find these two real slots and discard everything else.
+  function getIOSRealVoices() {
+    const samantha = allVoices.find(v => v.name.toLowerCase() === 'samantha');
+    const systemDefault = allVoices.find(v => v.default) ||
+                          allVoices.find(v => !NOVELTY_VOICES.has(v.name.toLowerCase()) &&
+                                              v.name.toLowerCase() !== 'samantha' &&
+                                              v.lang.toLowerCase().startsWith('en'));
+    const real = [];
+    if (systemDefault) real.push(systemDefault);
+    if (samantha && samantha !== systemDefault) real.push(samantha);
+    return real;
+  }
+
   function populateVoiceSelect() {
     const select = document.getElementById('sbp-voice-select');
     if (!select) return;
 
+    if (isIOS()) {
+      // iOS only: build the two-slot picker
+      const real = getIOSRealVoices();
+      select.innerHTML = '';
+      real.forEach((v, i) => {
+        const opt = document.createElement('option');
+        opt.value = i;
+        const label = v.name.replace(/Microsoft|Google|Apple/g, '').trim();
+        opt.textContent = i === 0 && real.length > 1 ? `${label} (default)` : label;
+        select.appendChild(opt);
+      });
+
+      if (!hasGoodVoice()) {
+        const hint = document.createElement('option');
+        hint.value = '__setup__';
+        hint.textContent = '⬇ Download a better voice';
+        select.appendChild(hint);
+      }
+
+      selectedVoice = real[0] || null;
+      return;
+    }
+
+    // Desktop: full voice picker
     const lang = LANGUAGES.find(l => l.code === currentLang) || LANGUAGES[0];
-
-    // On iOS use ALL non-novelty voices — skip the language filter so nothing
-    // gets hidden by a mismatched lang tag (e.g. Ava appearing as en-GB).
-    const voices = isIOS()
-      ? allVoices.filter(v => !NOVELTY_VOICES.has(v.name.toLowerCase()))
-      : getBestVoicesForLang(lang.speechLang);
-
+    const voices = getBestVoicesForLang(lang.speechLang);
     select.innerHTML = '';
     voices.forEach((v, i) => {
       const opt = document.createElement('option');
@@ -319,34 +354,6 @@
       opt.dataset.voiceUri = v.voiceURI;
       select.appendChild(opt);
     });
-
-    // Debug badge: shows total voice count so we can tell if getVoices() is working
-    const label = document.querySelector('.sbp-label[for="sbp-voice-select"], .sbp-select-wrap .sbp-label');
-    const badge = document.getElementById('sbp-voice-count');
-    if (label) {
-      if (badge) badge.remove();
-      const b = document.createElement('span');
-      b.id = 'sbp-voice-count';
-      b.style.cssText = 'margin-left:5px;font-size:0.55rem;color:#444;';
-      b.textContent = `(${voices.length})`;
-      label.appendChild(b);
-    }
-
-    // On iOS without a good voice, surface Ava and Nathan as tappable setup prompts
-    if (isIOS() && !hasGoodVoice() && currentLang === 'en') {
-      const divider = document.createElement('option');
-      divider.disabled = true;
-      divider.textContent = '── Free upgrades ──';
-      select.appendChild(divider);
-
-      ['Ava (Enhanced)', 'Nathan (Enhanced)'].forEach(name => {
-        const opt = document.createElement('option');
-        opt.value = `__setup__${name}`;
-        opt.textContent = `⬇ ${name}`;
-        select.appendChild(opt);
-      });
-    }
-
     selectedVoice = voices[0] || null;
   }
 
@@ -411,6 +418,8 @@
     isPlaying = true;
     isPaused = false;
     updatePlayButton();
+    playSilentAudio();
+    setMediaSessionState('playing');
 
     for (let i = index; i < utterances.length; i++) {
       synth.speak(utterances[i]);
@@ -431,12 +440,15 @@
       isPlaying = false;
       updatePlayButton();
       updateStatus('Paused');
+      setMediaSessionState('paused');
     } else if (isPaused) {
       synth.resume();
       isPaused = false;
       isPlaying = true;
       updatePlayButton();
       updateStatus('Playing');
+      playSilentAudio();
+      setMediaSessionState('playing');
     }
   }
 
@@ -450,6 +462,85 @@
     updatePlayButton();
     updateProgressBar(0);
     updateStatus('Ready');
+    pauseSilentAudio();
+    setMediaSessionState('none');
+  }
+
+
+  // ── MEDIA SESSION ────────────────────────────────────────────────────────────
+  // Hooks TTS playback into the iOS/Android lock screen media card.
+  // speechSynthesis alone doesn't hold the audio session open during pause,
+  // so a silent looping <audio> element keeps the card visible on the lock
+  // screen even when the reader is paused.
+
+  let _silentAudio = null;
+
+  function getSilentAudio() {
+    if (_silentAudio) return _silentAudio;
+    _silentAudio = document.createElement('audio');
+    // Minimal silent WAV, looped to hold the iOS audio session open
+    _silentAudio.src = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=';
+    _silentAudio.loop = true;
+    _silentAudio.volume = 0.001;
+    document.body.appendChild(_silentAudio);
+    return _silentAudio;
+  }
+
+  function playSilentAudio() {
+    getSilentAudio().play().catch(() => {});
+  }
+
+  function pauseSilentAudio() {
+    if (_silentAudio) _silentAudio.pause();
+  }
+
+  function setMediaSessionState(state) {
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = state;
+  }
+
+  function setupMediaSession() {
+    if (!('mediaSession' in navigator)) return;
+
+    // Pull chapter title from the first meaningful heading on the page
+    const heading = document.querySelector('main h1, main h2, main h3, article h1, article h3');
+    const chapterTitle = heading?.textContent?.trim() || document.title || 'The Original Bug';
+
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: chapterTitle,
+      artist: 'Sandy B. Patterson',
+      album: 'The Original Bug',
+    });
+
+    navigator.mediaSession.setActionHandler('play', () => {
+      if (!isPlaying) togglePlayPause();
+      playSilentAudio();
+      setMediaSessionState('playing');
+    });
+
+    navigator.mediaSession.setActionHandler('pause', () => {
+      if (isPlaying) togglePlayPause();
+      setMediaSessionState('paused');
+      // silent audio keeps running so the lock screen card stays visible
+    });
+
+    navigator.mediaSession.setActionHandler('stop', () => {
+      stopPlayback();
+    });
+
+    // Skip to next / previous chapter
+    const params = new URLSearchParams(window.location.search);
+    const chNum = parseInt(params.get('c'), 10);
+
+    if (!isNaN(chNum) && chNum > 0) {
+      navigator.mediaSession.setActionHandler('previoustrack', () => {
+        window.location.href = `chapter.html?c=${chNum - 1}`;
+      });
+    }
+    if (!isNaN(chNum)) {
+      navigator.mediaSession.setActionHandler('nexttrack', () => {
+        window.location.href = `chapter.html?c=${chNum + 1}&autoplay=1`;
+      });
+    }
   }
 
   // Seeks to a position expressed as a fraction (0–1) of the total paragraph count.
@@ -1196,17 +1287,10 @@
         </div>
 
         <div class="sbp-selects">
-          ${isIOS() ? `
-          <div class="sbp-select-wrap">
-            <span class="sbp-label">Voice</span>
-            <button class="sbp-ios-voice-btn" id="sbp-ios-voice-btn">Change voice ›</button>
-          </div>
-          ` : `
           <div class="sbp-select-wrap">
             <span class="sbp-label">Voice</span>
             <select class="sbp-select" id="sbp-voice-select" aria-label="Voice"></select>
           </div>
-          `}
 
           <div class="sbp-select-wrap">
             <span class="sbp-label">Language</span>
@@ -1341,13 +1425,13 @@
     // Voice dropdown: same pattern — rebuild and restart from the current position.
     document.getElementById('sbp-voice-select')?.addEventListener('change', (e) => {
       if (e.target.value.startsWith('__setup__')) {
-        e.target.value = '0'; // revert dropdown to first real voice
+        e.target.value = '0';
         showVoiceInstructions();
         return;
       }
-      const voices = getBestVoicesForLang(
-        LANGUAGES.find(l => l.code === currentLang)?.speechLang || 'en-US'
-      );
+      const voices = isIOS()
+        ? getIOSRealVoices()
+        : getBestVoicesForLang(LANGUAGES.find(l => l.code === currentLang)?.speechLang || 'en-US');
       selectedVoice = voices[parseInt(e.target.value)] || null;
       if (isPlaying || isPaused) {
         const idx = currentIndex;
@@ -1447,6 +1531,7 @@
       }, 650);
     }
 
+    setupMediaSession();
     updateStatus('Ready');
   }
 
