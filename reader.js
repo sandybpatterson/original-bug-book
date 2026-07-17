@@ -361,15 +361,16 @@
       u.volume = 1.0;
 
       u.onstart = () => {
+        _lastSpeechActivity = Date.now();
         currentIndex = i;
         highlightParagraph(i);
         updateProgressBar(i / utterances.length);
       };
       u.onboundary = (e) => {
+        _lastSpeechActivity = Date.now();
         if (e.name === 'word') highlightWord(e.charIndex);
       };
       u.onend = () => {
-        // Only the last paragraph triggers the finished state.
         if (i === utterances.length - 1) {
           stopPlayback();
           if (autoplay) {
@@ -381,6 +382,9 @@
             }
           }
           updateStatus('Finished');
+        } else if (isPlaying) {
+          // Chain to the next paragraph one at a time so iOS can't drop the queue.
+          synth.speak(utterances[i + 1]);
         }
       };
       u.onerror = (e) => {
@@ -409,9 +413,12 @@
       setMediaSessionState('playing');
     });
 
-    for (let i = index; i < utterances.length; i++) {
-      synth.speak(utterances[i]);
-    }
+    // Speak only the first utterance. Each utterance's onend chains to the next.
+    // Pre-queuing all at once causes iOS to drop the queue when the screen locks.
+    _lastSpeechActivity = Date.now();
+    if (index < utterances.length) synth.speak(utterances[index]);
+    startResumeTimer();
+    startWatchdog();
   }
 
   // Three-state toggle: stopped → playing → paused → playing → ...
@@ -440,9 +447,48 @@
     }
   }
 
+  // iOS Safari stalls speechSynthesis silently after ~15 seconds. A periodic
+  // pause+resume keeps it alive both in the foreground and when backgrounded.
+  let _resumeTimer = null;
+  let _watchdogTimer = null;
+  let _lastSpeechActivity = 0;
+
+  function startResumeTimer() {
+    stopResumeTimer();
+    _resumeTimer = setInterval(() => {
+      if (isPlaying && !isPaused && synth.speaking) {
+        synth.pause();
+        synth.resume();
+      }
+    }, 14000);
+  }
+
+  function stopResumeTimer() {
+    if (_resumeTimer) { clearInterval(_resumeTimer); _resumeTimer = null; }
+  }
+
+  function startWatchdog() {
+    stopWatchdog();
+    _watchdogTimer = setInterval(() => {
+      if (isPlaying && !isPaused && !synth.speaking) {
+        if (Date.now() - _lastSpeechActivity > 3000) {
+          // Should be playing but nothing has spoken in 3 seconds — restart
+          buildUtterances();
+          playFrom(currentIndex);
+        }
+      }
+    }, 2000);
+  }
+
+  function stopWatchdog() {
+    if (_watchdogTimer) { clearInterval(_watchdogTimer); _watchdogTimer = null; }
+  }
+
   // Full stop: cancels speech, resets index to 0, clears highlight and progress.
   function stopPlayback() {
     synth.cancel();
+    stopResumeTimer();
+    stopWatchdog();
     isPlaying = false;
     isPaused = false;
     currentIndex = 0;
