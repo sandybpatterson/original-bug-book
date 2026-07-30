@@ -192,13 +192,16 @@ effect of ChatGPT on students' learning performance, learning perception, and
 higher-order thinking: insights from a meta-analysis. Humanities and Social
 Sciences Communications. https://www.nature.com/articles/s41599-025-04787-y
 
-Published May 6, 2025 and retracted April 22, 2026 after critics — including
-Ben Williamson, University of Edinburgh — noted the meta-analysis pooled 51
-studies with incompatible methods, populations, and outcome measures into a
-single reported effect size (g = 0.867 for learning performance), and that
-the claimed underlying studies could not plausibly have been conducted,
-reviewed, and published in the timeframe stated. The paper had accumulated
-approximately 486,000 views and 266 citations before retraction.
+Published May 6, 2025 and retracted April 22, 2026. The retraction notice
+itself cites discrepancies in the meta-analysis, specifically the pooling of
+studies too different in method and sample to combine into the single
+reported effect size (g = 0.867 for learning performance). The paper had
+accumulated approximately 486,000 views and 266 citations before retraction.
+Note: some press coverage attributed the methodological catch to named
+commentators (e.g., Ben Williamson, University of Edinburgh) but his verified
+public remarks concerned the paper's outsized influence and social media
+circulation after publication, not the original technical critique — avoid
+crediting him with catching the pooling error specifically.
 
 Related reading on the systematic human tendency to identify causal patterns
 in samples too small to support causal inference: Kahneman, D. (2011).
