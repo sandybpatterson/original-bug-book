@@ -155,7 +155,7 @@ You will not always be able to tell. Neither will the machine. But asking is not
 
 \* \* \*
 
-Schwartz was not an outlier. He was the first documented case in what has become one of the most reliable patterns in the brief history of AI deployment. A public database now tracks roughly 1,490 court proceedings worldwide where a party relied on AI-hallucinated material and a court responded — more than a thousand of them in the United States alone. The fine Schwartz, his co-counsel, and their firm shared — $5,000 between the three of them — reads, in retrospect, like an opening act.
+Schwartz was not an outlier. He was the first documented case in what has become one of the most reliable patterns in the brief history of AI deployment. A database maintained by legal researcher Damien Charlotin has tracked the pattern since April 2025⁸ — a few hundred cases within its first year, past a thousand within months after that, past fifteen hundred not long after that. It updates daily. It has never once gone down. Whatever number it shows the day you read this, it will be higher by the time you finish the chapter. The fine Schwartz, his co-counsel, and their firm shared — $5,000 between the three of them — reads, in retrospect, like an opening act.
 
 The penalties escalated fast. In March 2026 a Sixth Circuit panel ordered two attorneys to pay $15,000 each to the court registry, reimburse the opposing party's full appellate fees, and pay double costs — after their briefs contained more than two dozen fabricated citations. The panel wrote that no filing should contain any citation that the lawyer has not personally read and verified, regardless of whether it came from generative AI or any other source.
 

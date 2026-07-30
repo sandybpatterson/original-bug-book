@@ -98,6 +98,20 @@ human-generated text and the implications of that origin for model behavior,
 including the inheritance of communicative patterns — such as confident,
 unhedged prose — present in the source material.
 
+--------------------------------------------------------------------------------
+
+Section 1.5 — The Original
+
+8. The AI Hallucination Cases database: Charlotin, D. AI Hallucination Cases
+Database. https://www.damiencharlotin.com/hallucinations/
+
+A continuously updated (daily), publicly searchable database of legal
+decisions worldwide in which a party relied on AI-generated hallucinated
+material and a court responded, maintained by legal researcher Damien
+Charlotin since April 2025. Because it updates daily, any specific count
+cited in this chapter should be treated as a snapshot, not a fixed total —
+check the live database for the current figure.
+
 ================================================================================
 CHAPTER 2 — PATTERN MACHINES
 ================================================================================
