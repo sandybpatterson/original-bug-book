@@ -278,6 +278,10 @@ cleanly, citations 1–9 all have matching entries in `TOB_Notes_and_Sources.txt
    tails." This one predates all the fixes above; it was in the chapter's
    original text, not introduced by this editing pass. Fixed to "nine heads
    and one tail," matching the actual sequence shown.
+7. The hot-hand passage restated "thirty-three years / three decades" four
+   times across three short paragraphs, and one closing sentence
+   substantively repeated a point the paragraph before it had already made
+   (field-wide persistence of the wrong finding). Trimmed to state it once.
 
 Note the pattern across fixes 2-5: each was introduced by the same editing
 pass that added the real-world 2026 examples this file's ".5 section"
