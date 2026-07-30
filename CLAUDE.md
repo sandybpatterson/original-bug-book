@@ -273,13 +273,20 @@ cleanly, citations 1–9 all have matching entries in `TOB_Notes_and_Sources.txt
    of Section 2.5's pre-existing signature line ("real in its conviction,
    absent in its foundation"), diluting that line's impact by using it twice
    in one chapter. Gave 2.2 its own closing instead.
+6. The Section 2.2 coin-flip example itself (`H H H H H T H H H H`) is 9
+   heads and 1 tail — but the prose described it as "eight heads and two
+   tails." This one predates all the fixes above; it was in the chapter's
+   original text, not introduced by this editing pass. Fixed to "nine heads
+   and one tail," matching the actual sequence shown.
 
-Note the pattern across fixes 2-5: each one was introduced by the same
-editing pass that added the real-world 2026 examples this file's ".5 section"
+Note the pattern across fixes 2-5: each was introduced by the same editing
+pass that added the real-world 2026 examples this file's ".5 section"
 convention calls for. Real examples raise the stakes on getting every detail
 right — verify mechanism, attribution, and citation separately, and check
 new prose against the rest of the chapter for unintentional repetition —
-before treating a passage as settled, per this chapter's own thesis.
+before treating a passage as settled, per this chapter's own thesis. Fix 6
+breaks that pattern — a reminder that original content deserves the same
+scrutiny as new additions, not just spot-checks on what got added recently.
 
 **Fixed:** Chapter 1's July 2026 revision (commit `8043001`, tightened prose
 + rewrote Section 1.5 with the 2026 court-sanction examples) cut a paragraph
