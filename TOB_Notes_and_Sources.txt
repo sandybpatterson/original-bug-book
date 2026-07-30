@@ -312,13 +312,19 @@ Gawande's observation is the same documented phenomenon as that literature.
 5. Superforecasters and epistemic humility: Tetlock, P. E. (2005). Expert Political
 Judgment: How Good Is It? How Can We Know? Princeton University Press.
 
-The twenty-year study of 284 expert forecasters producing more than 82,000 verifiable
-predictions (82,361 forecasts by 2003, per Tetlock's own accounting). The finding that average expert performance barely exceeded chance, and
-that a small subset of superforecasters dramatically outperformed the group through
-calibrated uncertainty rather than superior domain knowledge, is the book's central
-empirical contribution. For the more accessible treatment and additional findings
-from the subsequent Good Judgment Project see: Tetlock, P. E., & Gardner, D.
-(2015). Superforecasting: The Art and Science of Prediction. Crown Publishers.
+The twenty-year study (1984-2003) of 284 expert forecasters producing more than
+82,000 verifiable predictions (82,361 forecasts by 2003, per Tetlock's own
+accounting) is documented here. The finding that average expert performance barely
+exceeded chance is this book's central empirical contribution. The "superforecasters"
+finding is NOT from this same study or population — it comes from a separate,
+later research effort: the Good Judgment Project (2011-2015), an IARPA-sponsored
+forecasting tournament that Tetlock co-led with Barbara Mellers and Don Moore,
+which recruited thousands of ordinary volunteer forecasters (not credentialed
+experts) to make real-time predictions on geopolitical questions. The high-performing
+subset identified within that tournament, and the term "superforecasters" itself,
+are documented in: Tetlock, P. E., & Gardner, D. (2015). Superforecasting: The Art
+and Science of Prediction. Crown Publishers. The chapter text was corrected to
+present these as two distinct studies rather than one continuous 20-year project.
 
 ================================================================================
 CHAPTER 4 — THE SHORTCUT PROBLEM
