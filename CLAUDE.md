@@ -383,13 +383,24 @@ and the Graber et al. 2005 citation's "premature closure" framing, which
 matches well-established terminology in that same diagnostic-error
 literature.
 
-**Chapter 3 status: at diminishing returns.** Four real fixes found and
-verified across two passes (Tetlock's number, the borrowed "analysis
-paralysis" term, the headache/ICP claim, and the fabricated Nuhfer
-citation). The remaining claims in the chapter (Krakauer/Everest, the
-Dunning-Kruger core numbers, Graber et al.'s general findings, Tetlock's
-284 forecasters) have now been checked and hold up. Recommend moving to
-Chapter 4 rather than continuing to re-scan the same chapter.
+5. Section 3.1 described Rob Hall, going into the May 10, 1996 climb, as
+   someone who "had summited the mountain five times." Multiple sources
+   confirm the May 1996 ascent was itself his fifth summit (1990, 1992,
+   1993, 1994, 1996) — so at the point the chapter describes him
+   approaching this specific climb, he had four prior summits, not five.
+   Fixed to "four times" in both places in Section 3.1, added a line
+   noting this climb would be his fifth (and last), and added a note to
+   the notes entry with the full summit chronology.
+
+**Chapter 3 status: at diminishing returns.** Five real fixes found and
+verified across three passes (Tetlock's number, the borrowed "analysis
+paralysis" term, the headache/ICP claim, the fabricated Nuhfer citation,
+and Rob Hall's summit count). Also checked and confirmed accurate: citation
+numbering across the whole chapter (1–5, all consistent with the notes
+file, including the two sources each reused across two sections), the
+logic-puzzle validity claim in 3.2, and Tetlock's 284-forecaster figure.
+Recommend moving to Chapter 4 rather than continuing to re-scan the same
+chapter — remaining unchecked details are getting progressively more minor.
 
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
