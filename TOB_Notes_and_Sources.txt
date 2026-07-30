@@ -287,9 +287,16 @@ the less-cited half of the original study.
 A Surgeon's Notes on an Imperfect Science. Metropolitan Books.
 
 Gawande's account of how deep clinical expertise can introduce its own form of
-decision paralysis — knowing too much about what can go wrong — is drawn from
-his clinical observations and case descriptions throughout this book, particularly
-the chapters on uncertainty and fallibility in surgical practice.
+hesitation — knowing too much about what can go wrong — is drawn from his
+clinical observations and case descriptions throughout this book, particularly
+"The Case of the Red Leg" and the other essays in the Uncertainty section. Note:
+this is distinct from the "decision paralysis" / "analysis paralysis" literature
+(e.g., Redelmeier, D. A., & Shafir, E. (1995). Discrepancy between medical
+decisions for individual patients and for groups. New England Journal of
+Medicine, 333(16), 1162-1164), which documents a different mechanism — choice
+overload from too many treatment options — not an expert's own accumulated
+knowledge slowing a decision. The chapter text was corrected to avoid implying
+Gawande's observation is the same documented phenomenon as that literature.
 
 5. Superforecasters and epistemic humility: Tetlock, P. E. (2005). Expert Political
 Judgment: How Good Is It? How Can We Know? Princeton University Press.

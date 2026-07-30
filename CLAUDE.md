@@ -323,14 +323,28 @@ retrofitted with a later "real-world examples" pass — its sourced material
 draft. The notes file already includes an honest caveat about Dunning-Kruger
 replication critiques (Nuhfer et al. 2017), which is a good sign.
 
-**Chapter 3 editing pass (1 fix found so far):** Section 3.4 stated Tetlock's
-20-year study produced "nearly twenty thousand predictions" — the
-well-documented, widely-cited figure is 82,361 forecasts by 2003, understating
-the real number by more than 4x. Fixed in both the chapter text and the
-notes entry. Verified separately: the Rob Hall/Everest timeline (4pm summit,
-two hours past the 2pm turnaround rule, Hansen's death on descent, the radio
-call to Hall's pregnant wife) is accurate as written — checked against
-multiple sources, no change needed.
+**Chapter 3 editing pass (2 fixes found so far):**
+1. Section 3.4 stated Tetlock's 20-year study produced "nearly twenty
+   thousand predictions" — the well-documented, widely-cited figure is
+   82,361 forecasts by 2003, understating the real number by more than 4x.
+   Fixed in both the chapter text and the notes entry. Verified separately:
+   the Rob Hall/Everest timeline (4pm summit, two hours past the 2pm
+   turnaround rule, Hansen's death on descent, the radio call to Hall's
+   pregnant wife) is accurate as written — checked against multiple
+   sources, no change needed.
+2. Section 3.4 also described a surgeon's hesitation from over-knowledge as
+   "a documented phenomenon in surgical decision-making sometimes called
+   analysis paralysis," tied to the Gawande citation. That named term
+   actually comes from a different body of research (Redelmeier & Shafir on
+   choice overload — too many treatment options stalling a decision), not
+   from an expert's own accumulated knowledge causing in-the-moment
+   hesitation, which is what the chapter is actually describing. Gawande's
+   book doesn't use the term either — the real parallel there is his essay
+   "The Case of the Red Leg." Same pattern as the Ch2 Williamson
+   misattribution: borrowing the authority of a real named phenomenon for a
+   claim it doesn't actually document. Fixed by dropping the borrowed term
+   from the chapter text and adding a note in the sources file explaining
+   the distinction, so it isn't reintroduced later.
 
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current

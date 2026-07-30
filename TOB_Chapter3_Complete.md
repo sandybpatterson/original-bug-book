@@ -127,7 +127,7 @@ Atul Gawande is a surgeon and a writer, and in his book Complications he describ
 
 The more a physician knows, the harder diagnosis becomes. Not because the knowledge gets in the way — but because the knowledge reveals how many things a given set of symptoms could be. A first-year medical student who hears hoofbeats thinks horses. An experienced clinician thinks horses, but also zebras, and also the seventeen other things that sound like hoofbeats and aren't.
 
-That awareness is the product of hard-won competence. It is also, in the wrong moment, a liability. There is a documented phenomenon in surgical decision-making sometimes called analysis paralysis — the point at which the accumulation of possible variables slows a decision past the window where the decision is useful. A surgeon who has seen every complication knows how many things can go wrong. That knowledge is invaluable in preparation. In the operating room, in the moment, it can become a weight.
+That awareness is the product of hard-won competence. It is also, in the wrong moment, a liability. Gawande describes exactly this in his own practice — moments where the accumulation of possible variables slowed a decision past the point where the decision was still useful. A surgeon who has seen every complication knows how many things can go wrong. That knowledge is invaluable in preparation. In the operating room, in the moment, it can become a weight.
 
 The novice cuts with confidence because they do not yet know what they do not know. The expert hesitates because they know exactly how much is at stake. This is not an argument against expertise. It is an argument against the assumption that calibrated uncertainty is always safe and false confidence is always dangerous.
 
