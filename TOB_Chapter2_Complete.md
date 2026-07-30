@@ -221,15 +221,21 @@ File it anyway. Get comfortable with the discomfort. The best scientists, the be
 
 \* \* \*
 
-The pigeon in Skinner's box never learned that the pattern was not there. It did not have the tools to find out. The box gave it no way to test whether the counterclockwise turn produced the food or whether the food arrived regardless. The certainty was all it had. And the certainty was enough to sustain the ritual for as long as the food kept coming.
+In April 2026, a paper in *Humanities and Social Sciences Communications* — a Nature-family journal — was retracted after nearly a year in circulation. It had reviewed 51 studies of ChatGPT in education and reported, with three decimal places of precision, that it improved student learning performance with an effect size of 0.867. By the time anyone looked closely, it had been read roughly 486,000 times and cited 266 times.⁸
 
-You have the tools the pigeon did not. You have the capacity to test. To withhold the behavior and observe the outcome. To ask for the mechanism and notice when it is vague. To bring that same question to the outputs of a system that finds patterns with the speed and scale of a machine and the verification instincts of a pigeon.
+The number came from pooling fifty-one studies — different populations, different methods, different definitions of "learning" — into a single figure, as if they were fifty-one measurements of the same thing. Ben Williamson, a lecturer at the University of Edinburgh who eventually examined what had actually been combined, made a simpler point than a statistical one: it was not feasible that dozens of the high-quality studies the paper claimed to synthesize could have been conducted, reviewed, and published in the time the paper said they had. The pattern — ChatGPT helps students learn, and here is the precise number — had never been checked against the mechanism that was supposed to have produced it. For eleven months, nobody asked.
 
-The pattern is not the answer.
+That is the mechanism question, failing to get asked at the scale of an entire field. The pattern was precise. The precision was the tell that made it convincing. And for 486,000 readers, it worked.
 
-The mechanism is the beginning of one.
+\* \* \*
 
-Ask for it every time.
+Bring this back to whatever is in front of you right now. When a model tells you what the research says, it is doing exactly what the authors of that meta-analysis did: assembling a pattern from things that may or may not belong together, and presenting the assembly as a finding. The question that would have caught the retracted paper eleven months earlier is the same question that catches a confident synthesis before you repeat it.
+
+Not "what does the research say" — but what specifically was measured, in what studies, and are they actually comparable?
+
+Not "does A cause B" — but what is the pathway, and what would have to be true for it to hold?
+
+The pigeon never got to ask that question. You do. Ask it before you cite the number, not after someone else retracts it.
 
 ---
 

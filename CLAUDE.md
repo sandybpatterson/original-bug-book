@@ -250,12 +250,23 @@ that carried citation ³ but never renumbered the citations after it or removed
 the now-orphaned source #3 (Barclay & Wellman) from the notes file. Citations
 and notes entries have been renumbered contiguously (1–7) to fix this.
 
-**Open editorial question:** Chapter 1 Section 1.5's revision replaced a
-repetitive/rhetorical ending with concrete, sourced, current material — real
-2026 court cases (Sixth Circuit, Nebraska Supreme Court) and specific
-prompt-pattern advice — instead of just restating the thesis. Chapter 2
-Section 2.5 ("The Mechanism Question") still ends the older way: a rhetorical
-crescendo ("Ask for it every time") rather than a concrete example or
-actionable technique. Worth revising to match the pattern that worked in
-Chapter 1 — see conversation for specifics. Same question is worth asking of
-every other chapter's closing section once you get to it.
+**Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
+replaced a repetitive/rhetorical ending with concrete, sourced, current
+material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —
+plus specific prompt-design advice, instead of just restating the thesis.
+Chapter 2 Section 2.5 ("The Mechanism Question") has now been revised the
+same way: its old rhetorical close ("Ask for it every time") was replaced
+with a real, sourced 2026 case (the retracted ChatGPT-in-education
+meta-analysis, g = 0.867 across 51 incompatible pooled studies, retracted
+April 2026 — full citation is entry 8 under Section 2.5 in
+`TOB_Notes_and_Sources.txt`) and a concrete before/after prompt contrast.
+
+**Standing rule for every chapter's `.5` section going forward:** it should
+end by teaching the reader a specific, concrete prompt-design principle
+derived from that chapter's particular cognitive bug — framed as a contrast
+between a weak prompt and a better one — grounded in a real, current, named
+example (a real case, study, or incident with real numbers), not a rhetorical
+restatement of the chapter's thesis. This is the throughline every `.5`
+section should have: Chapter 1 → verification prompts for confabulation,
+Chapter 2 → mechanism-probing prompts for pattern-without-cause. Apply the
+same standard when writing or revising Chapters 3–16's `.5` sections.
