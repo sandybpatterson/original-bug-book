@@ -181,7 +181,7 @@ Asking the calibration question does not make you a diagnostician. It makes you 
 
 \* \* \*
 
-Recall what separated Tetlock's superforecasters from the experts who performed barely better than chance.⁵
+Recall the two things Tetlock found, a decade apart: credentialed pundits performing barely better than chance, and then, within a tournament of ordinary volunteers, a small group who outperformed everyone else — including professional intelligence analysts with access to classified information — by a wide margin.⁵
 
 It was not that they knew more. It was that they treated their own certainty as a variable — something to be measured and updated rather than felt and defended. They were comfortable attaching a probability to a belief and then actively looking for the reasons it might be wrong. Not out of anxiety. Out of discipline. Uncertainty, handled that way, is not weakness. It is the most accurate instrument available.
 

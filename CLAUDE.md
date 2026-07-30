@@ -404,19 +404,29 @@ literature.
    distinct follow-up effort, and added a note to the notes entry
    clarifying the two studies are not the same population.
 
-**Chapter 3 status: at diminishing returns.** Six real fixes found and
-verified across four passes (Tetlock's prediction-count number, the
+7. Fixing #6 above left a loose thread: the Section 3.5 callback still said
+   superforecasters were separated "from the experts who performed barely
+   better than chance" — still implying one population. Checked the real
+   GJP numbers: regular volunteer forecasters were not "barely better than
+   chance" (that description only fits the original pundit study) —
+   superforecasters beat them by ~25-36% on accuracy/calibration, and beat
+   professional intelligence analysts with classified access by ~25-30%.
+   Rewrote the callback to name both findings accurately instead of
+   implying a single comparison group.
+
+**Chapter 3 status: at diminishing returns.** Seven real fixes found and
+verified across five passes (Tetlock's prediction-count number, the
 borrowed "analysis paralysis" term, the headache/ICP claim, the fabricated
-Nuhfer citation, Rob Hall's summit count, and the superforecasters
-study-conflation). Also checked and confirmed accurate: citation numbering
-across the whole chapter (1–5, all consistent with the notes file,
-including the two sources each reused across two sections), the
-logic-puzzle validity claim in 3.2, Tetlock's 284-forecaster figure, and
-the "superforecasters" term's genuine attribution to Tetlock (via the GJP,
-not a misattribution to someone else). Recommend moving to Chapter 4 —
-remaining unchecked details in this chapter are soft, non-quantified
-claims ("guided dozens of clients," "a decade documenting") that aren't
-independently checkable facts.
+Nuhfer citation, Rob Hall's summit count, the superforecasters
+study-conflation, and its follow-on callback inconsistency). Also checked
+and confirmed accurate: citation numbering across the whole chapter (1–5,
+all consistent with the notes file, including the two sources each reused
+across two sections), the logic-puzzle validity claim in 3.2, Tetlock's
+284-forecaster figure, and the "superforecasters" term's genuine
+attribution to Tetlock. Recommend moving to Chapter 4 — remaining
+unchecked details in this chapter are soft, non-quantified claims ("guided
+dozens of clients," "a decade documenting") that aren't independently
+checkable facts.
 
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current

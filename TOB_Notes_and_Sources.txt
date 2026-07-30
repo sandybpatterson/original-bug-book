@@ -325,6 +325,14 @@ subset identified within that tournament, and the term "superforecasters" itself
 are documented in: Tetlock, P. E., & Gardner, D. (2015). Superforecasting: The Art
 and Science of Prediction. Crown Publishers. The chapter text was corrected to
 present these as two distinct studies rather than one continuous 20-year project.
+Note also: regular Good Judgment Project volunteer forecasters were not "barely
+better than chance" — that description applies only to the original 2005 pundit
+study. GJP superforecasters outperformed regular GJP volunteer forecasters by
+roughly 25-36% (accuracy and calibration measures) and outperformed professional
+intelligence community analysts with classified access by roughly 25-30%. The
+Section 3.5 callback was corrected to reflect this rather than implying
+superforecasters were compared against the original "barely better than chance"
+pundits.
 
 ================================================================================
 CHAPTER 4 — THE SHORTCUT PROBLEM
