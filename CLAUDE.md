@@ -298,6 +298,22 @@ that carried citation ³ but never renumbered the citations after it or removed
 the now-orphaned source #3 (Barclay & Wellman) from the notes file. Citations
 and notes entries have been renumbered contiguously (1–7) to fix this.
 
+**Chapter 1 editing pass (1 fix found on request):** Section 1.5's "roughly
+1,490 court proceedings worldwide" claim, cited from a public database, was
+already stale the moment the July 17 revision used it — the database
+(damiencharlotin.com/hallucinations, maintained by Damien Charlotin,
+started April 2025, updates daily) had already reached 1,668 cases by
+July 2, two weeks earlier. Fixed by reframing the claim around the fact
+that the count climbs continuously rather than citing a number that goes
+stale within weeks. Added citation 8 with a proper notes entry, including
+an explicit note that any specific count cited should be treated as a
+snapshot. Same risk applies to Chapter 2's ChatGPT-retraction stats
+(486,000 views / 266 citations) — those are fixed historical facts about a
+specific retracted paper, not a live counter, so they don't have this
+problem, but worth remembering the distinction when adding future
+real-world examples: is the cited number a frozen fact, or a live count
+that will be wrong again in a month?
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —
