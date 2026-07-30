@@ -242,7 +242,25 @@ tracked is done — there is no unconverted chapter left.
 **Known-good:** Chapter 2 checked against every item in this file's format
 standard (header, section breaks, dividers, pull quotes, exhibit boxes, AI
 transcript box, superscript citations, no inline sources, footer) — passes
-cleanly, citations 1–7 all have matching entries in `TOB_Notes_and_Sources.txt`.
+cleanly, citations 1–9 all have matching entries in `TOB_Notes_and_Sources.txt`.
+
+**Chapter 2 editing pass complete (3 fixes, in order found):**
+1. Section 2.4's AI transcript example claimed a second cortisol peak in
+   early afternoon — not well-established circadian science. Tightened to
+   the real, single morning peak.
+2. Section 2.2's hot-hand fallacy passage cited Gilovich et al. (1985) as
+   settled proof of an illusory pattern, without knowing Miller & Sanjurjo
+   (Econometrica, 2018) later found a selection bias in that study's
+   counting method and reversed the finding on reanalysis of the same data.
+   Rewrote the passage to tell that story — strengthens the chapter's own
+   thesis (scientists fell for a pattern-without-mechanism error too) rather
+   than just fixing a stale citation.
+3. The rewritten Section 2.5 ChatGPT-retraction passage initially credited
+   Ben Williamson (University of Edinburgh) with catching the meta-analysis's
+   pooling error. His verified public remarks were actually about the
+   paper's post-publication virality, not the methodological critique —
+   fixed by citing the retraction notice's own stated reason directly
+   instead of an unverified named attribution.
 
 **Fixed:** Chapter 1's July 2026 revision (commit `8043001`, tightened prose
 + rewrote Section 1.5 with the 2026 court-sanction examples) cut a paragraph
