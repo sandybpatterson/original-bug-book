@@ -261,6 +261,18 @@ cleanly, citations 1–9 all have matching entries in `TOB_Notes_and_Sources.txt
    paper's post-publication virality, not the methodological critique —
    fixed by citing the retraction notice's own stated reason directly
    instead of an unverified named attribution.
+4. The rewritten Section 2.2 hot-hand passage explained Miller & Sanjurjo's
+   bias as an end-of-sequence truncation effect (streaks near the end have
+   no "next" flip to check). That's not the actual mechanism — it's a
+   search-procedure asymmetry (a run of hits gets consumed as one continuous
+   chain, giving it fewer independent chances to be checked than isolated
+   hits get). Corrected the explanation to match the real finding.
+
+Note the pattern across fixes 2-4: each one was introduced by the same
+editing pass that added the real-world 2026 examples this file's ".5 section"
+convention calls for. Real examples raise the stakes on getting every detail
+right — verify mechanism, attribution, and citation separately before
+treating a claim as settled, per this chapter's own thesis.
 
 **Fixed:** Chapter 1's July 2026 revision (commit `8043001`, tightened prose
 + rewrote Section 1.5 with the 2026 court-sanction examples) cut a paragraph
