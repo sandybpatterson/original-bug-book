@@ -314,6 +314,24 @@ problem, but worth remembering the distinction when adding future
 real-world examples: is the cited number a frozen fact, or a live count
 that will be wrong again in a month?
 
+---
+
+**Chapter 3 status:** Unlike Chapters 1 and 2, this chapter was never
+retrofitted with a later "real-world examples" pass — its sourced material
+(Rob Hall/1996 Everest disaster, Dunning-Kruger 1999, Gawande's
+*Complications*, Tetlock's forecasting study) was part of the original
+draft. The notes file already includes an honest caveat about Dunning-Kruger
+replication critiques (Nuhfer et al. 2017), which is a good sign.
+
+**Chapter 3 editing pass (1 fix found so far):** Section 3.4 stated Tetlock's
+20-year study produced "nearly twenty thousand predictions" — the
+well-documented, widely-cited figure is 82,361 forecasts by 2003, understating
+the real number by more than 4x. Fixed in both the chapter text and the
+notes entry. Verified separately: the Rob Hall/Everest timeline (4pm summit,
+two hours past the 2pm turnaround rule, Hansen's death on descent, the radio
+call to Hall's pregnant wife) is accurate as written — checked against
+multiple sources, no change needed.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —
