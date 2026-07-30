@@ -294,8 +294,8 @@ the chapters on uncertainty and fallibility in surgical practice.
 5. Superforecasters and epistemic humility: Tetlock, P. E. (2005). Expert Political
 Judgment: How Good Is It? How Can We Know? Princeton University Press.
 
-The twenty-year study of 284 expert forecasters producing nearly 20,000 verifiable
-predictions. The finding that average expert performance barely exceeded chance, and
+The twenty-year study of 284 expert forecasters producing more than 82,000 verifiable
+predictions (82,361 forecasts by 2003, per Tetlock's own accounting). The finding that average expert performance barely exceeded chance, and
 that a small subset of superforecasters dramatically outperformed the group through
 calibrated uncertainty rather than superior domain knowledge, is the book's central
 empirical contribution. For the more accessible treatment and additional findings
