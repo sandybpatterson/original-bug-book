@@ -135,26 +135,38 @@ A. (1985). The hot hand in basketball: On the misperception of random
 sequences. Cognitive Psychology, 17(3), 295-314.
 https://doi.org/10.1016/0010-0285(85)90010-6
 
-The foundational study demonstrating that the belief in a "hot hand" — that a
-player who has made several shots in a row is more likely to make the next
-one — persists despite statistical evidence that shooting performance across
-sequences is much closer to random than perceived.
+The original study concluded that the belief in a "hot hand" persists despite
+shooting performance across sequences being much closer to random than
+perceived. See entry 5 below for the 2018 methodological correction that
+reversed this finding.
+
+5. The statistical bias correction reversing the hot hand fallacy finding:
+Miller, J. B., & Sanjurjo, A. (2018). Surprised by the hot hand fallacy? A
+truth in the law of small numbers. Econometrica, 86(6), 2019-2047.
+https://doi.org/10.3982/ECTA14943
+
+Identifies a subtle selection bias in how Gilovich, Vallone & Tversky (1985)
+and subsequent studies measured the conditional probability of a hit
+following a streak in finite sequences — a bias that makes streaks appear
+weaker than they are even under pure randomness. Correcting for it and
+reanalyzing the original 1985 data reverses the finding: the players in that
+study were, in fact, shooting streakier than chance would predict.
 
 --------------------------------------------------------------------------------
 
 Section 2.3 — Why the Brain Does This
 
-5. The smoke detector principle, explaining why evolution favors
+6. The smoke detector principle, explaining why evolution favors
 over-sensitive threat detection: Nesse, R. M. (2001). The smoke detector
 principle: Natural selection and the regulation of defensive responses.
 Annals of the New York Academy of Sciences, 935(1), 75-85.
 https://doi.org/10.1111/j.1749-6632.2001.tb03472.x
 
-6. On the pervasiveness of patternicity across human belief systems and its
+7. On the pervasiveness of patternicity across human belief systems and its
 evolutionary origin: Shermer, M. (2011). The Believing Brain: From Ghosts and
 Gods to Politics and Conspiracies. Times Books.
 
-7. On the role of dopamine neurons in reward prediction and pattern learning:
+8. On the role of dopamine neurons in reward prediction and pattern learning:
 Schultz, W. (1998). Predictive reward signal of dopamine neurons. Journal of
 Neurophysiology, 80(1), 1-27. https://doi.org/10.1152/jn.1998.80.1.1
 
@@ -174,7 +186,7 @@ research cited in Section 2.2 above, applied to AI outputs.
 
 Section 2.5 — The Mechanism Question
 
-8. The retraction of a widely-cited ChatGPT-in-education meta-analysis for
+9. The retraction of a widely-cited ChatGPT-in-education meta-analysis for
 pooling incomparable studies: Wang, J., & Fan, W. (2025, retracted 2026). The
 effect of ChatGPT on students' learning performance, learning perception, and
 higher-order thinking: insights from a meta-analysis. Humanities and Social
