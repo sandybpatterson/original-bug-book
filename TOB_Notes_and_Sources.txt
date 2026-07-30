@@ -272,7 +272,14 @@ Used in this section to establish the clinical parallel to AI overconfidence —
 that confident fluent outputs in high-stakes medical contexts have documented
 costs when certainty exceeds competence. The paper documents cognitive factors
 including overconfidence and premature closure as primary contributors to
-diagnostic error.
+diagnostic error. Note: the AI transcript's headache example is deliberately
+constructed so that "migraine" is in fact the statistically likely answer
+(SNOOP red-flag criteria — sudden onset, systemic symptoms, neurologic
+signs, positional/pattern change — are all absent from the vignette as
+given); the critique is not that the AI's answer was wrong, but that it
+reached the answer without screening for the red flags that would rule out
+the dangerous alternatives, which is the actual premature-closure failure
+mode this section is illustrating.
 
 --------------------------------------------------------------------------------
 

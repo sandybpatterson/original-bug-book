@@ -345,6 +345,24 @@ replication critiques (Nuhfer et al. 2017), which is a good sign.
    claim it doesn't actually document. Fixed by dropping the borrowed term
    from the chapter text and adding a note in the sources file explaining
    the distinction, so it isn't reintroduced later.
+3. Section 3.3's AI-transcript rebuttal claimed a three-day unilateral
+   headache with light sensitivity (no nausea) "can be a sign of increased
+   intracranial pressure" and needs "same-day evaluation." Checked against
+   actual clinical red-flag criteria (the SNOOP mnemonic: sudden/thunderclap
+   onset, systemic symptoms like fever, neurologic signs, pattern change,
+   age) and this presentation hits none of them — and elevated ICP
+   headaches are classically bilateral with vomiting, not unilateral with
+   photophobia, which is textbook migraine (unilateral in 60-70% of cases,
+   lasting up to 3 days). The book's own rebuttal was the overconfident,
+   unverified claim — the same failure mode the chapter warns about. Fixed
+   by reframing the critique around what's actually true: the AI never
+   asked the red-flag screening questions (sudden onset? fever? neuro
+   signs? worst headache of your life?) that a clinician uses to rule out
+   danger before settling on the likely answer — updated in the chapter
+   text (Section 3.3 and the Section 3.5 callback) and added a note to the
+   sources entry explaining the vignette is constructed so migraine is in
+   fact the statistically correct answer; the failure is skipping the
+   screening, not reaching the wrong conclusion.
 
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
