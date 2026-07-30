@@ -233,10 +233,29 @@ Sandy B. Patterson (he/they). Full name always. Never "Sandy Patterson," never "
 
 ---
 
-## Priority Order
+## Status
 
-Convert chapters in this order, one at a time, confirming each before proceeding:
+All 16 chapters plus the prologue are complete as clean markdown and wired
+into `chapter.html`. The docx-to-markdown conversion work this file originally
+tracked is done — there is no unconverted chapter left.
 
-3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 → Prologue → 16 (add sources only)
+**Known-good:** Chapter 2 checked against every item in this file's format
+standard (header, section breaks, dividers, pull quotes, exhibit boxes, AI
+transcript box, superscript citations, no inline sources, footer) — passes
+cleanly, citations 1–7 all have matching entries in `TOB_Notes_and_Sources.txt`.
 
-Start with Chapter 3. When done, say so and wait for confirmation before continuing to Chapter 4.
+**Fixed:** Chapter 1's July 2026 revision (commit `8043001`, tightened prose
++ rewrote Section 1.5 with the 2026 court-sanction examples) cut a paragraph
+that carried citation ³ but never renumbered the citations after it or removed
+the now-orphaned source #3 (Barclay & Wellman) from the notes file. Citations
+and notes entries have been renumbered contiguously (1–7) to fix this.
+
+**Open editorial question:** Chapter 1 Section 1.5's revision replaced a
+repetitive/rhetorical ending with concrete, sourced, current material — real
+2026 court cases (Sixth Circuit, Nebraska Supreme Court) and specific
+prompt-pattern advice — instead of just restating the thesis. Chapter 2
+Section 2.5 ("The Mechanism Question") still ends the older way: a rhetorical
+crescendo ("Ask for it every time") rather than a concrete example or
+actionable technique. Worth revising to match the pattern that worked in
+Chapter 1 — see conversation for specifics. Same question is worth asking of
+every other chapter's closing section once you get to it.

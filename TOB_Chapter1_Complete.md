@@ -65,7 +65,7 @@ This is not because one of you is lying or has a worse memory than the other. Me
 
 Elizabeth Loftus spent her career making this visible in ways that could not be dismissed. Starting in the 1970s she began demonstrating, through controlled experiments, that memory was not just reconstructive in general but specifically and predictably malleable under the influence of subsequent information.
 
-In her most famous early experiments she showed participants films of traffic accidents and then asked them questions about what they had seen.⁴ The questions contained a single variable — the verb used to describe the collision. Participants asked how fast the cars were going when they "smashed" into each other estimated significantly higher speeds than those asked about when the cars "contacted" each other. Different verb. Same film. Different memory. When asked one week later whether they had seen broken glass in the film — there was none — participants in the "smashed" condition were significantly more likely to report that they had. The word had altered not just their recollection of the speed but the physical content of what they believed they had seen.
+In her most famous early experiments she showed participants films of traffic accidents and then asked them questions about what they had seen.³ The questions contained a single variable — the verb used to describe the collision. Participants asked how fast the cars were going when they "smashed" into each other estimated significantly higher speeds than those asked about when the cars "contacted" each other. Different verb. Same film. Different memory. When asked one week later whether they had seen broken glass in the film — there was none — participants in the "smashed" condition were significantly more likely to report that they had. The word had altered not just their recollection of the speed but the physical content of what they believed they had seen.
 
 A single word in a question asked after the fact.
 
@@ -81,11 +81,11 @@ The answer was yes. With unsettling ease.
 
 \* \* \*
 
-In the early 1990s Loftus and her colleagues developed the lost in the mall procedure.⁵ Subjects were given a booklet containing four short narratives about events from their childhood — three real, one fabricated. The fabricated event described getting lost in a shopping mall as a young child, becoming frightened and upset, and eventually being found by a kind stranger.
+In the early 1990s Loftus and her colleagues developed the lost in the mall procedure.⁴ Subjects were given a booklet containing four short narratives about events from their childhood — three real, one fabricated. The fabricated event described getting lost in a shopping mall as a young child, becoming frightened and upset, and eventually being found by a kind stranger.
 
 Approximately twenty five percent of subjects reported remembering the mall event in at least partial detail. Some remembered it vaguely. Some remembered it with considerable specificity. One subject, when told at the end of the study that the mall event was fabricated, refused to believe it. He was certain he remembered it.
 
-The mall study was replicated and extended — researchers planted memories of hospitalizations, wedding receptions, near-drownings. In each case a meaningful proportion of subjects came to remember the fabricated event with emotional texture, sensory detail, and the full subjective weight of a genuine experience.⁶
+The mall study was replicated and extended — researchers planted memories of hospitalizations, wedding receptions, near-drownings. In each case a meaningful proportion of subjects came to remember the fabricated event with emotional texture, sensory detail, and the full subjective weight of a genuine experience.⁵
 
 > The feeling of remembering a fabricated event is indistinguishable from the feeling of remembering a real one. Because the feeling of remembering is always the same feeling — regardless of whether the memory is genuine or constructed from nothing.
 
@@ -93,7 +93,7 @@ The mall study was replicated and extended — researchers planted memories of h
 
 Then came Bugs Bunny.
 
-In 2001 Loftus and her colleagues showed participants fake advertisements for Disneyland featuring Bugs Bunny — a Warner Bros. character who has never appeared at a Disney park and never could, being the intellectual property of a competing studio. After viewing the ad, a significant proportion of participants reported having met Bugs Bunny at Disneyland as a child.⁷ Some remembered shaking his hand. Some remembered hugging him. Some remembered what he was wearing, what he said, where they were standing in the park.
+In 2001 Loftus and her colleagues showed participants fake advertisements for Disneyland featuring Bugs Bunny — a Warner Bros. character who has never appeared at a Disney park and never could, being the intellectual property of a competing studio. After viewing the ad, a significant proportion of participants reported having met Bugs Bunny at Disneyland as a child.⁶ Some remembered shaking his hand. Some remembered hugging him. Some remembered what he was wearing, what he said, where they were standing in the park.
 
 Bugs Bunny was never at Disneyland. The memory was not a distortion of something that happened — it was a complete fabrication assembled from a suggestion so mild that subjects had not experienced it as a suggestion at all. They had experienced it as an advertisement. And from that, combined with the brain's capacity for constructive gap-filling, they had built a memory that carried the emotional warmth of genuine childhood experience.
 
@@ -119,7 +119,7 @@ This is not a coincidence. And it is not a mystery.
 
 \* \* \*
 
-Language models are trained on text produced almost entirely by human beings — by the same reconstructive, gap-filling, confabulating minds this chapter has been examining. The books, the articles, the forum posts, the legal briefs, the personal essays — all of it produced by a species whose memory is reconstructive, whose confidence is routinely decoupled from its accuracy, and whose brains are in the business of narrative coherence first and factual precision second.⁸
+Language models are trained on text produced almost entirely by human beings — by the same reconstructive, gap-filling, confabulating minds this chapter has been examining. The books, the articles, the forum posts, the legal briefs, the personal essays — all of it produced by a species whose memory is reconstructive, whose confidence is routinely decoupled from its accuracy, and whose brains are in the business of narrative coherence first and factual precision second.⁷
 
 The model trained on this text learned to produce text that looks like the text it trained on. It learned that fluent, authoritative, gap-free prose is what competent communication looks like. It learned — from billions of examples — that when a human being does not know something, they frequently do not say so. They produce a plausible account. They deliver it with confidence. They move on.
 
