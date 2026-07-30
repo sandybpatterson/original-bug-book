@@ -268,11 +268,18 @@ cleanly, citations 1–9 all have matching entries in `TOB_Notes_and_Sources.txt
    chain, giving it fewer independent chances to be checked than isolated
    hits get). Corrected the explanation to match the real finding.
 
-Note the pattern across fixes 2-4: each one was introduced by the same
+5. The new hot-hand passage in Section 2.2 closed with "real in its
+   conviction and absent... from its foundation" — nearly verbatim duplicate
+   of Section 2.5's pre-existing signature line ("real in its conviction,
+   absent in its foundation"), diluting that line's impact by using it twice
+   in one chapter. Gave 2.2 its own closing instead.
+
+Note the pattern across fixes 2-5: each one was introduced by the same
 editing pass that added the real-world 2026 examples this file's ".5 section"
 convention calls for. Real examples raise the stakes on getting every detail
-right — verify mechanism, attribution, and citation separately before
-treating a claim as settled, per this chapter's own thesis.
+right — verify mechanism, attribution, and citation separately, and check
+new prose against the rest of the chapter for unintentional repetition —
+before treating a passage as settled, per this chapter's own thesis.
 
 **Fixed:** Chapter 1's July 2026 revision (commit `8043001`, tightened prose
 + rewrote Section 1.5 with the 2026 court-sanction examples) cut a paragraph
