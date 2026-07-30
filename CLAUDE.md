@@ -452,6 +452,18 @@ source for the anchoring-mechanism claim. Also checked and confirmed
 accurate: the UN Africa hook's "54 of 193 member states, about 28%"
 figure — exact match.
 
+**Chapter 4 editing pass (2 fixes found so far):**
+2. Section 4.3's AI-coding-assistant story ("In 2023 a software developer
+   posted a detailed account...") had no footnote at all — the only
+   uncited specific-incident claim found across Chapters 1-4 so far. No
+   matching real account could be found. Same pattern as fix #1: invented
+   specificity (year, pronoun, "three hours") dressing up an illustrative
+   scenario as a real reported incident. Fixed by rewriting it as an
+   openly-framed hypothetical ("Picture a developer...") and added a
+   Section 4.3 entry to the notes file (there wasn't one) explaining it's
+   a composite of a widely-reported failure pattern, not a specific cited
+   incident.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —

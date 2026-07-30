@@ -383,6 +383,17 @@ is documented in the same study and subsequent replications.
 
 --------------------------------------------------------------------------------
 
+Section 4.3 — The AI Mirror
+
+No new sources in this section. The AI coding-assistant vignette is an
+illustrative composite of a widely-reported failure pattern in AI coding
+tools (models confidently misdiagnosing the wrong function/dependency as
+the source of a bug), not a citation to one specific documented incident.
+Draws on the anchoring and representativeness research cited in Sections
+4.1 and 4.2 above, applied to AI outputs.
+
+--------------------------------------------------------------------------------
+
 Section 4.4 — When Shortcuts Kill
 
 Mars Climate Orbiter: Isbell, A. (1999). Mars Climate Orbiter Mishap
