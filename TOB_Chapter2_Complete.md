@@ -51,7 +51,7 @@ Hold your answer before reading further.
 
 Most people looking at that sequence feel that something is going on. The run of heads at the start feels like too many. The single tails in position six feels like an interruption of something. The return to heads after it feels like a resumption. The sequence feels structured. It feels like it has a shape. It feels like the kind of thing that happens when something is producing it rather than when nothing is.
 
-The sequence was generated randomly. There is nothing going on. Each flip was independent of every other flip — the coin had no memory of what it had done before, no tendency to correct toward tails after a run of heads, no pattern to follow or violate. The sequence looks the way it looks because that is what a random sequence of ten flips looks like when it happens to produce eight heads and two tails. Which happens. Which is not remarkable. Which your brain experienced as remarkable anyway because your brain is not a probability calculator. It is a pattern detector. And pattern detectors find patterns.
+The sequence was generated randomly. There is nothing going on. Each flip was independent of every other flip — the coin had no memory of what it had done before, no tendency to correct toward tails after a run of heads, no pattern to follow or violate. The sequence looks the way it looks because that is what a random sequence of ten flips looks like when it happens to produce nine heads and one tail. Which happens. Which is not remarkable. Which your brain experienced as remarkable anyway because your brain is not a probability calculator. It is a pattern detector. And pattern detectors find patterns.
 
 Even in noise.
 
