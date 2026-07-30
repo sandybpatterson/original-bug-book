@@ -396,11 +396,17 @@ Anchoring in clinical diagnosis: Graber, M. L., Franklin, N., & Gordon, R.
 (2005). Diagnostic error in internal medicine. Archives of Internal Medicine,
 165(13), 1493-1499. https://doi.org/10.1001/archinte.165.13.1493
 
-The estimate that diagnostic errors affect approximately 10-15% of clinical
-encounters, with cognitive bias including anchoring as a contributing factor in
-the majority of cases, draws from: Saposnik, G., Redelmeier, D., Ruff, C. C., &
-Tobler, P. N. (2016). Cognitive biases associated with medical decisions: A
-systematic review. BMC Medical Informatics and Decision Making, 16, 138.
+The chest-pain/anxiety-history vignette in this section is an illustrative
+composite representing a well-documented pattern in the anchoring-bias
+literature, not a single specific real incident — it is not attached to one
+named case report. The "2013 review" estimate of 10-15% of clinical encounters
+affected by diagnostic error refers specifically to: Graber, M. L. (2013). The
+incidence of diagnostic error in medicine. BMJ Quality & Safety, 22(Suppl 2),
+ii21-ii27. https://doi.org/10.1136/bmjqs-2012-001615. For the cognitive-bias
+mechanism (anchoring specifically) underlying such errors, see also: Saposnik,
+G., Redelmeier, D., Ruff, C. C., & Tobler, P. N. (2016). Cognitive biases
+associated with medical decisions: A systematic review. BMC Medical
+Informatics and Decision Making, 16, 138.
 https://doi.org/10.1186/s12911-016-0377-1
 
 COMPAS racial disparities: Angwin, J., Larson, J., Mattu, S., & Kirchner, L.

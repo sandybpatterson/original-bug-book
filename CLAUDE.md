@@ -428,6 +428,30 @@ unchecked details in this chapter are soft, non-quantified claims ("guided
 dozens of clients," "a decade documenting") that aren't independently
 checkable facts.
 
+---
+
+**Chapter 4 editing pass (1 fix found on first check):** Section 4.4's
+"Case Two" (chest pain, anxiety history, three ER visits, cardiac workup
+on the third) was presented as a specific real incident — "In 2009 a
+forty three year old woman arrived at a hospital emergency department in
+the United Kingdom..." — but no documented case matching those specifics
+could be found, and the footnote attached to it (⁵) only points to two
+general review papers, neither of which documents a specific dated
+incident. Unlike Case One (Mars Climate Orbiter, cited to the real NASA
+report) and Case Three (COMPAS, cited to real ProPublica reporting), this
+was invented verisimilitude — a fabricated year, country, and age
+presented as a real event. Fixed by rewriting it as an explicitly framed
+composite ("Picture a woman...") rather than a dated specific incident.
+Also caught in the same footnote: the chapter's "A 2013 review estimated
+[10-15%]" didn't match either cited source (Graber 2005, dated wrong;
+Saposnik et al. 2016, dated wrong) — tracked down the real 2013 paper
+(Graber, M. L. (2013). The incidence of diagnostic error in medicine. BMJ
+Quality & Safety, 22(Suppl 2), ii21-ii27) and added it as the correct
+citation for that specific claim, keeping Saposnik 2016 as the secondary
+source for the anchoring-mechanism claim. Also checked and confirmed
+accurate: the UN Africa hook's "54 of 193 member states, about 28%"
+figure — exact match.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —
