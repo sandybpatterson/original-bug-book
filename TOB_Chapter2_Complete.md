@@ -79,7 +79,7 @@ The 1985 study that established the hot hand as a fallacy counted makes and miss
 
 Nobody caught this for three decades. Not the original researchers. Not the hundreds of papers and textbooks that cited the finding as settled. Not the psychology courses that taught it as the canonical proof that humans see patterns where none exist. Then in 2018, two economists corrected the counting method and reran it on the original 1985 data.⁵ The hot hand came back. The players had been shooting streaky all along.
 
-The people studying why humans believe in illusory patterns had, themselves, spent thirty-three years confidently disbelieving a real one — not because they were careless, but because a subtle flaw in the counting method felt, to everyone who checked it, like it was not there to be found. The certainty was the field's certainty. It was real in its conviction and absent, in one specific and correctable way, from its foundation. The pattern was not the answer. Nobody had asked for the mechanism behind the counting.
+The people studying why humans believe in illusory patterns had, themselves, spent thirty-three years confidently disbelieving a real one — not because they were careless, but because a subtle flaw in the counting method felt, to everyone who checked it, like it was not there to be found. A whole field held the same wrong conclusion for three decades, cited it, taught it, built on it — and it took someone finally rerunning the numbers to notice the flaw. Nobody had asked for the mechanism behind the counting.
 
 \* \* \*
 
