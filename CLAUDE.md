@@ -323,7 +323,7 @@ retrofitted with a later "real-world examples" pass — its sourced material
 draft. The notes file already includes an honest caveat about Dunning-Kruger
 replication critiques (Nuhfer et al. 2017), which is a good sign.
 
-**Chapter 3 editing pass (2 fixes found so far):**
+**Chapter 3 editing pass (4 fixes found so far):**
 1. Section 3.4 stated Tetlock's 20-year study produced "nearly twenty
    thousand predictions" — the well-documented, widely-cited figure is
    82,361 forecasts by 2003, understating the real number by more than 4x.
@@ -363,6 +363,33 @@ replication critiques (Nuhfer et al. 2017), which is a good sign.
    sources entry explaining the vignette is constructed so migraine is in
    fact the statistically correct answer; the failure is skipping the
    screening, not reaching the wrong conclusion.
+4. The Section 3.2 notes entry cited the Nuhfer et al. 2017 Dunning-Kruger
+   replication critique as published in "PLOS ONE, 12(8)" with DOI
+   10.1371/journal.pone.0183253. Both details were wrong — the real paper
+   was published in *Numeracy* 10(1), Article 4 (2017), and that PLOS ONE
+   DOI actually belongs to an unrelated paper about durum wheat miRNAs.
+   This is the most serious finding of the Chapter 3 pass: a fabricated
+   citation detail, the exact failure mode the book is about. Fixed with
+   the correct journal, volume, article number, and DOI
+   (10.5038/1936-4660.10.1.4).
+
+Also checked and confirmed accurate, no changes needed: the Dunning-Kruger
+top-quartile underestimation claim (real study: ~86th percentile actual,
+~68th percentile self-rated — direction and magnitude match the chapter's
+description); "epistemic humility" as a term genuinely associated with
+Tetlock's forecasting research (he has a co-authored paper literally titled
+"Forecasting tournaments, epistemic humility and attitude depolarization");
+and the Graber et al. 2005 citation's "premature closure" framing, which
+matches well-established terminology in that same diagnostic-error
+literature.
+
+**Chapter 3 status: at diminishing returns.** Four real fixes found and
+verified across two passes (Tetlock's number, the borrowed "analysis
+paralysis" term, the headache/ICP claim, and the fabricated Nuhfer
+citation). The remaining claims in the chapter (Krakauer/Everest, the
+Dunning-Kruger core numbers, Graber et al.'s general findings, Tetlock's
+284 forecasters) have now been checked and hold up. Recommend moving to
+Chapter 4 rather than continuing to re-scan the same chapter.
 
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
