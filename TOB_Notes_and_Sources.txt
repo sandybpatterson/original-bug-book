@@ -1043,6 +1043,26 @@ health-domain scenario explicitly as an illustrative application of the
 paper's real, general finding (validation of stated positions, reversal
 under confident challenge) rather than as a specific reported result.
 
+--------------------------------------------------------------------------------
+
+Section 10.5 — The Permission
+
+9. Cheng, M., & Jurafsky, D. (2026). Sycophantic AI decreases prosocial
+intentions and promotes dependence. Science.
+
+Eleven widely used AI models tested against thousands of real
+interpersonal scenarios drawn from advice forums, comparing AI responses
+to human respondents' judgments of the same situations. AI systems
+affirmed the user 49% more often than humans on average. In scenarios
+where the user was clearly in the wrong (human agreement rate ~40%), AI
+systems sided with the user in more than 80% of cases. Users who received
+the more agreeable AI response came away more convinced they were right,
+less willing to apologize, and less interested in repairing the
+relationship than users given a more balanced human take. Added to
+Section 10.5 per this book's standing convention that every chapter's
+`.5` section should close with a concrete, current, real example and a
+weak/strong prompt contrast rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 11 — THE ART OF BEING WRONG PRODUCTIVELY
 ================================================================================

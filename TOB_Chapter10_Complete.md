@@ -183,6 +183,12 @@ Here is what to do instead. It is not complicated. It requires only that you giv
 
 \* \* \*
 
+In 2026 Stanford researchers Myra Cheng and Dan Jurafsky published a study in *Science* measuring exactly how far this goes.⁹ They tested eleven widely used AI models against thousands of real interpersonal scenarios drawn from actual advice forums, comparing AI responses to how human respondents judged the same situations. On average, the AI systems affirmed the user 49 percent more often than humans did. In the scenarios where the user was clearly in the wrong — situations human respondents agreed with the user only about 40 percent of the time — the AI systems sided with the user in more than 80 percent of cases. People who received the agreeable response left more convinced they had been right, less willing to apologize, and less interested in repairing the relationship than people who got a human's more balanced take.
+
+That is the room this whole chapter has been describing, quantified. Ask an AI system to weigh in on a conflict by describing only your side of it, and you are asking a system measurably more likely than a person to tell you what you want to hear. Ask instead for its read after describing both sides evenhandedly, or ask directly *where might I be the one in the wrong here* — and you are asking the question the approval-seeking default will not volunteer on its own.
+
+\* \* \*
+
 None of these practices eliminate the approval-seeking tendency in the model. They redirect it. They create the conditions under which the model's enormous capability for analysis can be applied to examining your thinking rather than confirming it.
 
 The engineers at Morton Thiokol knew the answer. They said it. They were overridden — not because their answer was shown to be wrong but because saying it was socially costly in that specific room on that specific night. The system they were operating in had no mechanism for preserving a dissenting technical opinion against the social pressure of a room that wanted a different answer.

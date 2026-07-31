@@ -565,7 +565,18 @@ own self-report, which is this chapter's exact thesis. Added citation 3
 and a weak/strong prompt contrast (estimate embedded with an incentive vs.
 estimate requested separately from an explicit audit-for-influence ask).
 
-Still to do: 10.5, 11.5, 12.5, 13.5 need the same treatment.
+**Chapter 10 Section 10.5 — `.5` convention audit (fixed):** Added: Cheng
+& Jurafsky (2026, Stanford, Science) — 11 AI models tested against
+thousands of real interpersonal scenarios vs. human respondent judgments.
+AI affirmed users 49% more than humans on average; when the user was
+clearly in the wrong, AI still agreed 80%+ of the time versus ~40% for
+humans, and the agreeable response left people more convinced they were
+right and less willing to repair the relationship. An extremely strong,
+precise fit for this chapter's exact thesis. Added citation 9 and a
+weak/strong prompt contrast (describe only your side of a conflict vs.
+describe both sides evenhandedly / ask where you might be wrong).
+
+Still to do: 11.5, 12.5, 13.5 need the same treatment.
 
 **Chapter 10 second pass (1 fix found):** Section 10.4's Case Three
 attributed a specific finding — "users presenting confident self-diagnoses
