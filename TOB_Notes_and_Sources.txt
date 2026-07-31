@@ -616,15 +616,7 @@ from the peer commentary section of this paper.
 
 Section 7.4 — What Humans Actually Do
 
-3. Clark, A. (2016). Surfing Uncertainty: Prediction, Action, and the
-Embodied Mind. Oxford University Press.
-
-The accessible treatment of predictive processing as a unified framework for
-cognition, perception, and action, with explicit discussion of the implications
-for understanding the relationship between biological and computational
-intelligence.
-
-4. Friston, K. (2010). The free-energy principle: A unified brain theory?
+3. Friston, K. (2010). The free-energy principle: A unified brain theory?
 Nature Reviews Neuroscience, 11, 127-138. https://doi.org/10.1038/nrn2787
 
 The technical formulation of predictive processing as the free-energy
@@ -632,6 +624,14 @@ principle, establishing the mathematical framework underlying the prediction
 machine model of brain function. The description of the brain as a system that
 generates probabilistic predictions based on learned statistical regularities
 and updates via prediction error is drawn from this framework.
+
+4. Clark, A. (2016). Surfing Uncertainty: Prediction, Action, and the
+Embodied Mind. Oxford University Press.
+
+The accessible treatment of predictive processing as a unified framework for
+cognition, perception, and action, with explicit discussion of the implications
+for understanding the relationship between biological and computational
+intelligence.
 
 ================================================================================
 CHAPTER 8 — THE BIAS MIRROR

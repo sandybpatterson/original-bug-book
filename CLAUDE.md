@@ -553,6 +553,14 @@ once you do the math the chapter itself sets up (it states 1980 explicitly).
 Fixed all three instances to "more than four decades," which is accurate
 now and won't go stale as the book's publication date slips.
 
+**Chapter 7 editing pass (2 fixes found so far):**
+2. Section 7.4's predictive-processing sentence mentioned Friston first
+   but marked him ⁴, then mentioned Clark second but marked him ³ —
+   citations appeared out of order when reading straight through (¹, ²,
+   ⁴, ³). Swapped the markers (Friston→³, Clark→⁴) and swapped the
+   corresponding notes entries to match, so citation order now follows
+   reading order.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —
