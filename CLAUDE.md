@@ -561,6 +561,28 @@ now and won't go stale as the book's publication date slips.
    corresponding notes entries to match, so citation order now follows
    reading order.
 
+**Chapter 8 editing pass (1 fix found, two citations involved):** Section
+8.4's Geena Davis Institute / Annenberg citations (7 and 8) were both
+wrong:
+- Citation 7 attributed "Inclusion in the Director's Chair" to the Geena
+  Davis Institute — that report is actually published by USC Annenberg
+  Inclusion Initiative and is about director demographics, not the
+  crowd-scene gender ratio the chapter cites it for. The crowd-scene
+  finding (3:1 male-to-female ratio) is genuinely Geena Davis Institute
+  research (their "See Jane" program); recited to the correct source.
+- Citation 8 cited the 2021 Annenberg Inclusion Initiative Music Report
+  (recording industry) while describing findings from the Annenberg film
+  report (speaking characters, LGBTQ+ representation, disability
+  representation) — wrong report entirely. It also stated women were
+  "thirty eight percent" of speaking characters in 2022; the real,
+  verified figure is 34.6%. Fixed both the citation (now the correct
+  report, Neff/Smith/Pieper 2023, "Inequality Across 1,600 Popular
+  Films") and the percentage, in both the chapter text and notes file.
+
+Also checked and confirmed accurate: the WEAT study's Princeton/University
+of Bath author affiliations, and the Jacky Alciné/Google Photos incident's
+name, date (June 2015), and details.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —

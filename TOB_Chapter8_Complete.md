@@ -119,7 +119,7 @@ These were not laws. They were not universal. There were exceptions, counterexam
 
 The Geena Davis Institute on Gender in Media has tracked gender representation in film and television since 2004.⁷ Their analysis of family films found that for every one female character in a crowd scene, there were three male characters — a three to one ratio that audiences experienced as balanced, because three to one had become the baseline of what normal looked like. A scene with equal numbers of men and women was perceived by test audiences as female-dominated. The skew had become invisible. The default had become neutral.
 
-The Annenberg Inclusion Initiative at USC has tracked representation in the top-grossing films annually since 2007.⁸ In their 2022 report, women represented thirty eight percent of speaking characters. Characters from underrepresented racial and ethnic groups remained underrepresented relative to the actual US population. LGBT characters remained rare. Characters with disabilities were largely absent.
+The Annenberg Inclusion Initiative at USC has tracked representation in the top-grossing films annually since 2007.⁸ In their 2022 report, women represented 34.6 percent of speaking characters. Characters from underrepresented racial and ethnic groups remained underrepresented relative to the actual US population. LGBT characters remained rare. Characters with disabilities were largely absent.
 
 \* \* \*
 

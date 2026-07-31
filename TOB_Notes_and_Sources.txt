@@ -718,27 +718,37 @@ decades of racially disparate enforcement.
 
 Section 8.4 — The Cultural Default
 
-7. Geena Davis Institute on Gender in Media. (2020). Inclusion in the Director's
-Chair: Analysis of Director Gender & Race/Ethnicity Across 1,300 Popular Films
-from 2007-2019. Geena Davis Institute.
-https://seejane.org/research-informs-empowers/inclusion-in-the-directors-chair/
+7. Geena Davis Institute on Gender in Media. Gender Bias in Family Films:
+Benchmark Report 2007-2017 (See Jane research program). geenadavisinstitute.org.
 
 The finding that male-to-female ratios in crowd scenes in family films average
 three to one, and that equal gender representation was perceived by test
 audiences as female-dominated, establishing that the skewed baseline had been
 normalized as neutral. Extensive documentation of representation patterns across
-film and television genres over more than a decade.
+film and television genres over more than a decade. Note: an earlier version of
+this entry cited "Inclusion in the Director's Chair" as a Geena Davis Institute
+publication — that report is actually published by the USC Annenberg Inclusion
+Initiative (about director demographics, not crowd-scene ratios) and has been
+removed from this entry; the crowd-scene finding is the Geena Davis Institute's
+own research, cited correctly above.
 
-8. Smith, S. L., Choueiti, M., Pieper, K., Case, A., & Clark, H. (2022).
-Inclusion in the Recording Industry? The 2021 USC Annenberg Inclusion
-Initiative Music Report. USC Annenberg Inclusion Initiative.
-https://assets.uscannenberg.org/docs/aii-music-report-2022.pdf
+8. Neff, K. L., Smith, S. L., & Pieper, K. (2023). Inequality Across 1,600
+Popular Films: Examining Gender, Race/Ethnicity & Age of Leads/Co-Leads From
+2007 to 2022. USC Annenberg Inclusion Initiative.
+https://assets.uscannenberg.org/docs/aii-inequality-1600-films-20230216.pdf
 
 The annual Annenberg Inclusion Initiative report on representation in
-top-grossing film, TV, and streaming content. The finding that women
-represented thirty-eight percent of speaking characters, with underrepresentation
-of racial/ethnic minorities, LGBT characters, and characters with disabilities
-relative to US population. Annual reports available at: https://annenberg.usc.edu/research/aii
+top-grossing film, TV, and streaming content (69,858 speaking characters
+examined across 1,600 films, 2007-2022). Women represented 34.6% of speaking
+characters in 2022 — not "thirty-eight percent" as an earlier version of this
+entry and the chapter text stated; corrected. Underrepresentation of
+racial/ethnic minorities, LGBTQ+ characters, and characters with disabilities
+relative to US population is also documented in this report. Note: an earlier
+version of this entry cited a different Annenberg publication entirely — the
+2021 Annenberg Inclusion Initiative Music Report, which covers the recording
+industry, not film — despite describing film/TV findings; corrected to the
+actual film report. Annual reports available at:
+https://annenberg.usc.edu/research/aii
 
 --------------------------------------------------------------------------------
 
