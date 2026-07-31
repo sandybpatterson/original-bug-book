@@ -615,6 +615,22 @@ to ⁶ (highest existing marker was ⁵). Added citation 6 and a weak/strong
 prompt contrast (ask for objections generally vs. ask for the single
 strongest objection a genuine expert opponent would raise).
 
+**Prologue editing pass (1 fix found):** The prologue promised "Each
+chapter opens with a story. A real person, a real moment, a real
+situation" — but this overstates the actual pattern. Chapter 7 opens with
+a passage explicitly labeled "composed for this chapter" (fictional, not
+a real person/incident), and Chapter 14 opens with two illustrative
+fictional AI conversations rather than a documented real event. Most
+chapters do open with real cases (Schwartz, Skinner, Rob Hall, Simpson,
+Semmelweis, Lincoln, Asch, Darwin), so the fix was to soften the absolute
+claim rather than remove it: "Most chapters open with a story... A few
+open with an exercise instead." Checked and confirmed accurate: the
+prologue's summary of book contents ("lawyers and pigeons and astronauts
+and siblings") correctly matches Ch1 (Schwartz), Ch2 (Skinner's pigeons),
+Ch10 (Challenger astronauts), and Ch1's sibling-memory exercise. No notes
+file entry exists for the prologue (it has no empirical citations), so no
+notes update was needed.
+
 **Post-audit citation integrity check:** Ran a full citation-numbering
 integrity check across all 16 chapters (every superscript marker
 cross-referenced against its notes entry) given how many new citations

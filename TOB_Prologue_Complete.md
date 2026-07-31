@@ -41,7 +41,7 @@ That understanding is what this book is for.
 
 \* \* \*
 
-Each chapter opens with a story. A real person, a real moment, a real situation where something went interestingly wrong — or interestingly right — in the space between human thinking and machine thinking. From there each chapter moves into the science: what cognitive psychology and neuroscience tell us about how the human mind actually works in this particular domain, which is usually somewhat different from how we assume it works. And from there into the mirror: what the AI does in the same domain, why it does it, and what the connection between the two reveals about both.
+Most chapters open with a story — a real person, a real moment, a real situation where something went interestingly wrong, or interestingly right, in the space between human thinking and machine thinking. A few open with an exercise instead, something built to let you feel the phenomenon in your own mind before you read a word about it. From there each chapter moves into the science: what cognitive psychology and neuroscience tell us about how the human mind actually works in this particular domain, which is usually somewhat different from how we assume it works. And from there into the mirror: what the AI does in the same domain, why it does it, and what the connection between the two reveals about both.
 
 By the end you will have spent time with memory researchers and philosophers and evolutionary biologists and AI engineers, with lawyers and pigeons and astronauts and siblings arguing about what actually happened on a family vacation twenty years ago. You will have tried some things yourself — small experiments built into the chapters that let you experience the phenomena rather than just read about them.
 
