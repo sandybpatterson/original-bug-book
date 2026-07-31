@@ -169,6 +169,12 @@ This is not a technique. It is a posture. It is the difference between asking a 
 
 \* \* \*
 
+In 2025 a researcher named Ken Tsui gave this exact blind spot a name and a number.⁷ He built a benchmark that injected identical errors into a model's reasoning two different ways: once presented as the model's own prior output, and once presented as an external input for the model to review. Across fourteen open-source models, the same error that the model missed in its own work when reviewing itself was caught reliably when it appeared to come from somewhere else. Averaged across the models tested, the self-correction blind spot ran at 64.5 percent — the model failed to catch its own mistake nearly two-thirds of the time, on an error it could identify without difficulty in someone else's.
+
+That is Darwin's notebook, described from the other direction. The model cannot do what the notebook does, because it cannot tell the difference between an error that is its own and an error that only looks unfamiliar. Ask an AI to review its own previous answer and you are asking it to do the one thing this study found it structurally cannot do well. Ask it instead to review the same reasoning with the source stripped out — presented as though it came from someone else, or from you — and you get the real check the first version could not provide.
+
+\* \* \*
+
 The AI does not have a notebook. It cannot keep one. Each response it generates arrives without the accumulated record of what it has previously said, without the dated inconvenient observations of prior conversations, without any mechanism for being held accountable to its own earlier thinking. It is, in this specific sense, permanently in the position of a mind that has never been wrong about anything — not because it has always been right, but because nothing in its architecture preserves the experience of having been wrong in a form that can be consulted and learned from. Every conversation begins clean. Every output arrives with the same confident fluency, regardless of what the previous output missed.
 
 You are different. You have the capacity for a continuous self that persists across time, that accumulates error as experience, that can look back at what it believed and compare it to what turned out to be true. That capacity is not automatic. Left to its own devices it does not produce accurate self-knowledge — it produces the motivated revision of memory that this chapter has been describing. But it is a capacity. It can be cultivated. The notebook is the cultivation.

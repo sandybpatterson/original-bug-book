@@ -576,7 +576,20 @@ precise fit for this chapter's exact thesis. Added citation 9 and a
 weak/strong prompt contrast (describe only your side of a conflict vs.
 describe both sides evenhandedly / ask where you might be wrong).
 
-Still to do: 11.5, 12.5, 13.5 need the same treatment.
+**Chapter 11 Section 11.5 — `.5` convention audit (fixed):** Added: Tsui
+(2025, arXiv) — "Self-Correction Bench," documenting the "self-correction
+blind spot": across 14 open-source models, identical injected errors were
+caught reliably when presented as external input but missed when presented
+as the model's own prior output, at an average blind-spot rate of 64.5%.
+A precise, real-numbers demonstration of this chapter's exact thesis (the
+AI has no notebook and cannot audit its own errors the way it can audit
+someone else's). Caught and fixed my own citation-numbering error in the
+same edit — initially used ⁶, which was already taken by Gollwitzer;
+corrected to ⁷. Added citation 7 and a weak/strong prompt contrast (ask
+the model to review its own prior answer vs. strip the source and ask it
+to review the same reasoning as if it came from someone else).
+
+Still to do: 12.5, 13.5 need the same treatment.
 
 **Chapter 10 second pass (1 fix found):** Section 10.4's Case Three
 attributed a specific finding — "users presenting confident self-diagnoses

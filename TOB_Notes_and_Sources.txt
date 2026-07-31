@@ -1148,6 +1148,24 @@ the design principle that the specificity and externality of a written
 prediction — not just the intention to track one's beliefs — is what makes
 the commitment device effective.
 
+--------------------------------------------------------------------------------
+
+Section 11.5 — What Wrong Looks Like When It Works
+
+7. Tsui, K. (2025). Self-Correction Bench: Uncovering and Addressing the
+Self-Correction Blind Spot in Large Language Models. arXiv:2507.02778.
+
+Injected identical errors into model reasoning two ways: presented as the
+model's own prior output, versus presented as external input to review.
+Across 14 open-source models tested, the same error the model missed when
+reviewing its own work was reliably caught when it appeared to come from
+elsewhere. Average self-correction blind spot rate: 64.5% — the model
+failed to catch its own mistake nearly two-thirds of the time on errors it
+could identify without difficulty in someone else's work. Added to
+Section 11.5 per this book's standing convention that every chapter's
+`.5` section should close with a concrete, current, real example and a
+weak/strong prompt contrast rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 12 — WHEN CERTAINTY KILLS
 ================================================================================
