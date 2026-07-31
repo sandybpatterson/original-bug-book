@@ -857,6 +857,23 @@ accuracy gaps on real deployed systems. A foundational empirical document for
 the claim that representation bias in training produces concrete disparate
 performance outcomes.
 
+11. Gisselbaek, M., Berger-Estilita, J., Minsart, L., et al. (2025). Gender
+disparities in artificial intelligence-generated images of hospital
+leadership in the United States. Mayo Clinic Proceedings: Digital Health,
+3(2), 100218.
+
+1,200 images generated across three AI systems (Midjourney 6.0, DALL-E 3,
+Google Imagen 3) depicting hospital CEOs, CFOs, CMOs, and CNOs with no
+gender specified in the prompt, compared against real US hospital
+leadership demographics. DALL-E depicted CEOs as 100% male versus a real
+rate of 73.2% male — the model did not merely reproduce the real-world
+gender imbalance in hospital leadership, it exaggerated it substantially
+beyond the real disparity. Statistically significant differences were
+found across all four roles and across models. Added to Section 8.5 per
+this book's standing convention that every chapter's `.5` section should
+close with a concrete, current, real example and a weak/strong prompt
+contrast rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 9 — THE EXAMINED ASSUMPTION
 ================================================================================

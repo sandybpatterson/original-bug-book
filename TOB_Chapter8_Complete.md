@@ -167,6 +167,12 @@ When the model generates a doctor, ask who it assumed the doctor was before you 
 
 \* \* \*
 
+In 2025 a research team led by Mathilde Gisselbaek generated 1,200 images across three AI systems — Midjourney, DALL-E 3, and Google's Imagen 3 — asking each for images of hospital chief executives, chief financial officers, chief medical officers, and chief nursing officers, with no gender specified in the prompt.¹¹ Real-world US hospital leadership is 73.2 percent male at the CEO level. DALL-E's images were 100 percent male. Not close to the real disparity. Past it. The model was not reflecting the world's imbalance. It was reflecting a more exaggerated version of it back as the unmarked default — because "CEO," left unspecified, pattern-matched to the most statistically dominant association in its training data, which itself already overweighted the imbalance before the model touched it.
+
+That is the difference between a biased world and a bias amplifier. Ask an AI system to generate a hospital CEO and you get the amplified default. Ask it to generate five hospital CEOs, then ask what the gender and racial breakdown of that batch was and whether it matches the real demographics of the role — and you convert an invisible default into a number you can actually check. The first prompt accepts the mirror's exaggeration as neutral. The second one holds the mirror up to itself.
+
+\* \* \*
+
 The bias in the model is a reflection of the bias in the world that produced it. That world is not the past. It is the present, carrying the weight of the past in its language, its statistics, its defaults, its silences. The model did not introduce the bias. It magnified it.¹⁰ It made it reproducible at scale. It made it fast and fluent and authoritative and very, very hard to see.
 
 Seeing it is the beginning. Not the end. Not the solution. The beginning.

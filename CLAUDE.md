@@ -535,6 +535,25 @@ failure mode matches a documented human — specifically infant — cognitive
 limitation). Added citation 5 and a weak/strong prompt contrast (burying
 the shift in a long example list vs. naming the shift explicitly).
 
+**Chapter 8 Section 8.5 — `.5` convention audit (fixed):** Same gap — 8.5
+closed on "the work is yours" with no concrete current anchor. Added:
+Gisselbaek et al. (2025, Mayo Clinic Proceedings: Digital Health) — 1,200
+AI-generated images across three systems depicting hospital CEOs/CFOs/
+CMOs/CNOs with no gender specified; DALL-E depicted CEOs as 100% male
+versus the real US rate of 73.2% male. A near-perfect fit for this
+chapter's closing line ("the model did not introduce the bias, it
+magnified it") — the model didn't just mirror the real-world imbalance,
+it exaggerated it well beyond the real disparity. Added citation 11 and a
+weak/strong prompt contrast (accept the default vs. generate a batch and
+check its demographic breakdown against reality).
+
+This completes the `.5`-section convention audit for Chapters 4-8 (all
+fixed). Chapters 9-13 already had real historical anchors in their `.5`
+closes from the original drafts (O.J. Simpson, Darwin, Semmelweis/Flash
+Crash, Lincoln, superforecasters) so were not flagged. Chapters 14-16 are
+synthesis/closing chapters with a different structural role and were not
+audited against this convention.
+
 **Chapter 4 editing pass (2 fixes found so far):**
 2. Section 4.3's AI-coding-assistant story ("In 2023 a software developer
    posted a detailed account...") had no footnote at all — the only
