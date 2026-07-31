@@ -545,6 +545,14 @@ in my mind" quote (verified exact wording, February 2003 UN Security
 Council address) and the Chilcot Inquiry timeline (launched July 2009,
 published July 2016 — "more than seven years," exact match).
 
+**Chapter 7 editing pass (1 fix found on first check):** Section 7.2 said
+"forty years" of debate since Searle's 1980 Chinese Room paper, three
+separate times. This book's own present-day anchor (2026, established via
+the Ch1 court cases) puts that at 46 years, not 40 — a real understatement
+once you do the math the chapter itself sets up (it states 1980 explicitly).
+Fixed all three instances to "more than four decades," which is accurate
+now and won't go stale as the book's publication date slips.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —

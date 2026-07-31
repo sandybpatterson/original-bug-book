@@ -45,7 +45,7 @@ Whether that feeling accurately describes what is happening mechanistically — 
 
 ## Section 7.2 — The Room
 
-In 1980 a philosopher at the University of California named John Searle published a paper that has been argued about in philosophy of mind departments ever since.² The argument at its center was not a mathematical proof or an experimental result. It was a story. A thought experiment so simple and so disturbing that forty years of sophisticated objection have not fully put it to rest.
+In 1980 a philosopher at the University of California named John Searle published a paper that has been argued about in philosophy of mind departments ever since.² The argument at its center was not a mathematical proof or an experimental result. It was a story. A thought experiment so simple and so disturbing that more than four decades of sophisticated objection have not fully put it to rest.
 
 **The Chinese Room — John Searle, 1980**
 
@@ -75,7 +75,7 @@ Searle's argument did not go unanswered. The Chinese Room has generated more sus
 
 *The Brain Simulator Reply:* If the rulebook were sophisticated enough to simulate the actual neurons of a Chinese speaker's brain — if what was happening inside the room was not formal symbol manipulation but a perfect functional replica of the neural processes that constitute understanding in a human — would we still want to say that no understanding was occurring? The thought experiment relies on the intuition that the person in the room is clearly not understanding. But that intuition may depend on keeping the implementation simple enough to be obviously mindless.
 
-Searle had responses to all three. His responses generated further objections. The debate continues. What it has not produced, in forty years, is consensus. What it has produced is a clearer picture of how difficult the question is — and a set of pressure points that any honest examination of machine understanding must pass through.
+Searle had responses to all three. His responses generated further objections. The debate continues. What it has not produced, in more than four decades, is consensus. What it has produced is a clearer picture of how difficult the question is — and a set of pressure points that any honest examination of machine understanding must pass through.
 
 ---
 
@@ -153,7 +153,7 @@ That is a real and important difference. The question is whether it is a differe
 
 ## Section 7.5 — The Open Question
 
-This chapter is not going to resolve the question in its title. That is not a failure of nerve. It is intellectual honesty. The question of what understanding is — mechanistically, philosophically, in terms of what is actually happening when a mind grasps what something means — has been open for as long as people have been asking it. Plato asked it. Descartes asked it. Searle asked it with enough precision to generate forty years of argument and no consensus. The neuroscientists who study the brain most carefully have not resolved it. The cognitive scientists who have built the most sophisticated models of human cognition have not resolved it. The people building the most capable AI systems in the world are not agreed on whether their systems understand or only appear to.
+This chapter is not going to resolve the question in its title. That is not a failure of nerve. It is intellectual honesty. The question of what understanding is — mechanistically, philosophically, in terms of what is actually happening when a mind grasps what something means — has been open for as long as people have been asking it. Plato asked it. Descartes asked it. Searle asked it with enough precision to generate more than four decades of argument and no consensus. The neuroscientists who study the brain most carefully have not resolved it. The cognitive scientists who have built the most sophisticated models of human cognition have not resolved it. The people building the most capable AI systems in the world are not agreed on whether their systems understand or only appear to.
 
 Any book that told you otherwise would be lying to you. This one will not.
 
