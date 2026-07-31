@@ -627,17 +627,19 @@ explanations. arXiv:2605.23867.
 
 Large-scale behavioral experiment giving participants an AI system's
 classification prediction, either bare or wrapped in a narrative
-explanation of varying persuasiveness. Persuasiveness of the explanation
-did not meaningfully improve decision accuracy over the bare prediction
-alone; narrative explanations increased reliance on the AI's prediction
-regardless of whether it was correct, and more persuasive narratives were
-associated with slower recognition of incorrect AI predictions. Added to
-Section 6.5 per this book's standing convention that every chapter's `.5`
-section should close with a concrete, current, real example and a
-weak/strong prompt contrast rather than a purely rhetorical close. No
-precise percentage is reported here because none could be reliably
-extracted from the paper — stated qualitatively rather than inventing a
-false-precision number, consistent with this book's own argument.
+explanation of varying persuasiveness. Decision accuracy did not differ
+meaningfully across conditions (F(3,312)=0.91, p=0.44). Reliance on the
+AI's prediction was significantly higher with a narrative explanation
+than with the bare prediction (F(3,312)=3.15, p=0.03), regardless of
+whether the prediction was correct. Response times were significantly
+slower in the most persuasive condition (F(3,312)=3.00, p=0.03). The
+share of participants who caught an incorrect AI prediction and
+outperformed it by trusting their own judgment ran 30-31% in the
+plain-prediction conditions and fell to 22.5-23.8% once a persuasive
+narrative was attached. Added to Section 6.5 per this book's standing
+convention that every chapter's `.5` section should close with a
+concrete, current, real example and a weak/strong prompt contrast rather
+than a purely rhetorical close.
 
 ================================================================================
 CHAPTER 7 — WHAT DOES UNDERSTANDING EVEN MEAN
