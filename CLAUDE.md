@@ -521,6 +521,20 @@ the paper, so the finding is stated qualitatively rather than inventing a
 number — deliberately consistent with the book's own thesis about false
 precision. Added citation 6 and a weak/strong prompt contrast.
 
+**Chapter 7 Section 7.5 — `.5` convention audit (fixed):** Same gap — 7.5
+closed on "hold the question open" with no concrete current anchor. Added:
+Han, Song, Yu, & You (2024, EMNLP Findings) — a text-based adaptation of
+the classic infant "A-not-B error" test for LLMs. Established a pattern
+across in-context examples, then shifted one detail so the correct answer
+changed within the same context window; accuracy dropped up to 83.3% on
+reasoning tasks, with models continuing to answer from the old pattern
+("reaching for cup A") rather than the shifted case in front of them. A
+vivid, real, dual-purpose fit: it grounds the chapter's "Shift the
+Context" practice AND reinforces the book's mirror thesis (the model's
+failure mode matches a documented human — specifically infant — cognitive
+limitation). Added citation 5 and a weak/strong prompt contrast (burying
+the shift in a long example list vs. naming the shift explicitly).
+
 **Chapter 4 editing pass (2 fixes found so far):**
 2. Section 4.3's AI-coding-assistant story ("In 2023 a software developer
    posted a detailed account...") had no footnote at all — the only

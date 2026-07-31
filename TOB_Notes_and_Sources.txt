@@ -691,6 +691,26 @@ cognition, perception, and action, with explicit discussion of the implications
 for understanding the relationship between biological and computational
 intelligence.
 
+--------------------------------------------------------------------------------
+
+Section 7.5 — The Open Question
+
+5. Han, P., Song, P., Yu, H., & You, J. (2024). In-context learning may not
+elicit trustworthy reasoning: A-not-B errors in pretrained language models.
+Findings of EMNLP 2024. arXiv:2409.15454.
+
+Built a text-based version of the classic infant-psychology A-not-B error
+test for language models: establish a pattern across several in-context
+examples, then shift one detail so the correct answer changes within the
+same context window. On reasoning tasks, accuracy dropped by as much as
+83.3% when the shift occurred — models continued answering according to
+the earlier established pattern rather than the shifted case actually in
+front of them, an error pattern the authors explicitly compare to the
+A-not-B error in infants under ~10 months. Added to Section 7.5 per this
+book's standing convention that every chapter's `.5` section should close
+with a concrete, current, real example and a weak/strong prompt contrast
+rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 8 — THE BIAS MIRROR
 ================================================================================

@@ -175,6 +175,14 @@ Here is what productive uncertainty looks like in practice when you are using AI
 
 \* \* \*
 
+There is a name in developmental psychology for what happens when the first practice above — shifting the context — reveals a gap between apparent and actual understanding. It is called the A-not-B error. Show an infant that a toy is hidden under cup A a few times, then, while the infant is watching, move it to cup B. Infants younger than about ten months will still reach for cup A. They saw the toy move. They reach for where it used to be anyway — because the earlier, repeated pattern is stronger than the single new observation that contradicts it.
+
+In 2024 a team of researchers — Pengrui Han, Peiyang Song, Haofei Yu, and Jiaxuan You — built a text version of exactly this test for language models and ran it on several state-of-the-art systems.⁵ They established a pattern across several examples in the prompt, then shifted one detail so the correct answer changed. The models had just been shown, in the same context window, that the answer was now different. On the reasoning tasks in the study, accuracy dropped by as much as 83.3 percent when the shift happened. The models kept reaching for cup A.
+
+Ask an AI a question that repeats an established pattern across several examples and then changes one detail, and you are running this exact test without knowing it — the model may answer from the pattern rather than the shifted case in front of it. The weak version of the prompt buries the shift inside a long list of similar examples and hopes the model catches it. The stronger version names the shift explicitly — *note that this case differs from the previous ones in the following way* — and asks the model to reason from the difference rather than the pattern. One of those prompts is quietly testing whether the model is reaching for cup A. The other is handing it cup B directly.
+
+\* \* \*
+
 These practices connect to everything this book has been building. The calibration question from Chapter 3 — what would have to be true for this to be wrong — is a probe for understanding. The question before the question from Chapter 5 — what am I assuming, what kind of answer does my framing make impossible — is a probe for understanding. The narrative signal from Chapter 6 — is this true or does it just feel like a story that is — is a probe for understanding.
 
 The thread running through all of them is the same: do not accept the output at face value. Examine it. Test it. Bring your own cognition to bear on what the machine produced, because your cognition — however imperfect, however subject to the biases and shortcuts and narrative instincts this book has been cataloguing — is the only thing in the room that has been in the world.
