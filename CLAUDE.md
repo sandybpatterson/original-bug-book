@@ -603,6 +603,28 @@ statistics (75% conformed at least once, 37% of critical trials) and the
 Challenger date/duration (January 28, 1986; broke apart 73 seconds after
 launch) — both exact matches.
 
+**Chapter 11 editing pass:** Full check on Darwin's timeline (twenty years
+between first notebook, 1837, and publication, 1859) and the "Difficulties
+on Theory" chapter title (confirmed as the real Chapter 6 of Origin of
+Species). Both accurate. No fixes found — clean chapter.
+
+**Chapter 12 editing pass:** Full check on the Semmelweis narrative (dates,
+age at death, mortality rates) and the Flash Crash timeline (May 6 2010,
+36 minutes, point decline). All verified accurate. No fixes found — clean
+chapter.
+
+**Chapter 13 editing pass:** Full check on the Lincoln-Douglas debates
+(Freeport as the second of seven, August 27 1858) and Douglas's Senate
+tenure (two completed terms by 1858, correctly described as "a two-term
+senator" at that point). Both accurate. No fixes found — clean chapter.
+
+**Chapter 14 editing pass (1 fix found):** Section 14.5 said "This book
+has been making a single argument across fifteen chapters" — but this is
+Chapter 14 itself, describing the argument built through itself and
+everything preceding it. That's fourteen chapters, not fifteen — a simple
+internal-consistency error, not something requiring outside verification.
+Fixed to "fourteen" (three instances in the same sentence).
+
 **Chapter 8 editing pass, fix 2:** Section 8.3's Amazon recruiting-tool case
 said "Amazon scrapped the tool in 2018." Amazon actually disbanded the team
 and scrapped it in early 2017 — 2018 is when Reuters broke the story
