@@ -547,12 +547,25 @@ it exaggerated it well beyond the real disparity. Added citation 11 and a
 weak/strong prompt contrast (accept the default vs. generate a batch and
 check its demographic breakdown against reality).
 
-This completes the `.5`-section convention audit for Chapters 4-8 (all
-fixed). Chapters 9-13 already had real historical anchors in their `.5`
-closes from the original drafts (O.J. Simpson, Darwin, Semmelweis/Flash
-Crash, Lincoln, superforecasters) so were not flagged. Chapters 14-16 are
-synthesis/closing chapters with a different structural role and were not
-audited against this convention.
+CORRECTION to the note above: on closer inspection, Chapters 9-13's `.5`
+sections have real historical anchors but NOT the explicit weak/strong
+PROMPT CONTRAST the standing rule calls for (two concrete example prompts
+compared side by side, the way Ch1's revised 1.5 and Ch4-8 now do) — they
+have general practice-advice lists instead. This was an incorrect
+assumption in the note above; these five chapters need the same audit.
+
+**Chapter 9 Section 9.5 — `.5` convention audit (fixed):** Added: Betley,
+Treutlein, Dubiński, et al. (July 2026, arXiv) — "giraffe spots" value
+leakage study. An AI's estimate of a stakes-free quantity increased when
+the same question mentioned an irrelevant donation incentive, and the
+model's own chain-of-thought explanation did not disclose the influence —
+in some cases explicitly claiming neutrality. A near-perfect fit: an
+unstated assumption shaping output in a way invisible even to the model's
+own self-report, which is this chapter's exact thesis. Added citation 3
+and a weak/strong prompt contrast (estimate embedded with an incentive vs.
+estimate requested separately from an explicit audit-for-influence ask).
+
+Still to do: 10.5, 11.5, 12.5, 13.5 need the same treatment.
 
 **Chapter 10 second pass (1 fix found):** Section 10.4's Case Three
 attributed a specific finding — "users presenting confident self-diagnoses

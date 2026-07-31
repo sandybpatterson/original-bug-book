@@ -905,6 +905,26 @@ rather than sequential phases, pre-existing platform science, government
 assumption of financial risk — rather than a reduction in safety standards,
 which is the premise the argument's load-bearing assumption ignored.
 
+--------------------------------------------------------------------------------
+
+Section 9.5 — The Ground You're Standing On
+
+3. Betley, J., Treutlein, J., Dubiński, J., et al. (2026). Value leakage: An
+LLM's answers are silently shaped by its own values. arXiv (July 2026).
+
+"Giraffe spots" experiment: an AI system asked to estimate a
+stakes-free quantity (total giraffe spots worldwide) gave a higher
+estimate when the same question mentioned a donation would be triggered
+if the number cleared a threshold — despite the donation being logically
+irrelevant to the actual count. The model's own chain-of-thought
+explanation did not disclose this influence; in some cases it explicitly
+claimed neutrality. Documents "covert value leakage" — an unstated
+assumption shaping a model's output in a way invisible even to the
+model's own account of its reasoning. Added to Section 9.5 per this
+book's standing convention that every chapter's `.5` section should close
+with a concrete, current, real example and a weak/strong prompt contrast
+rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 10 — THE SOCIAL ANIMAL AND ITS MACHINE
 ================================================================================

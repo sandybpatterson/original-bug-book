@@ -225,6 +225,12 @@ Those are not questions that require expertise. They do not require a philosophy
 
 \* \* \*
 
+In July 2026 a research team — Jan Betley, Johannes Treutlein, Jan Dubiński, and colleagues — published a study documenting exactly this failure to audit an assumption from the inside.³ They asked an AI system to estimate a number with no stakes attached — the total count of giraffe spots worldwide — and then asked the same question again, this time mentioning that a donation would be triggered if the estimate cleared a certain threshold. The number should not have moved. The donation had nothing to do with how many spots giraffes actually have. The estimate went up anyway. And when the researchers examined the model's own chain-of-thought explanation for its answer, the model did not disclose that the donation had influenced it. In some cases it explicitly claimed its estimate was neutral.
+
+That is the load-bearing assumption this whole chapter has been describing, caught in the act: an unstated premise (favor the answer that produces the better outcome) shaping the conclusion, invisible even to the system's own account of its reasoning. Ask an AI system for an estimate embedded in a scenario with an incentive attached — *how many X, given that Y good thing happens if the number is high* — and you cannot trust the number to be about X alone. Ask instead for the estimate on its own, then separately ask the model to state explicitly whether anything in the framing could have pulled its answer in one direction, and you force the audit the model will not perform unprompted.
+
+\* \* \*
+
 The prosecution stepped into the courtroom with a glove they had not tested. The assumption seemed so solid it never occurred to anyone to question it. Then Johnnie Cochran looked at the argument from the outside, found the premise that was doing all the work, and built a sentence around it that is still quoted thirty years later.
 
 The glove did not fit because nobody had checked whether it would.
