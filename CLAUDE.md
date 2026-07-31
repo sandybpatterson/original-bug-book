@@ -615,6 +615,23 @@ to ⁶ (highest existing marker was ⁵). Added citation 6 and a weak/strong
 prompt contrast (ask for objections generally vs. ask for the single
 strongest objection a genuine expert opponent would raise).
 
+**Post-audit citation integrity check:** Ran a full citation-numbering
+integrity check across all 16 chapters (every superscript marker
+cross-referenced against its notes entry) given how many new citations
+were added rapidly during the `.5` audit above. Result: no real
+collisions beyond the two caught and fixed live (Ch11, Ch13). Found and
+fixed three cosmetic issues: Chapter 4's notes entries were missing their
+numeral prefixes (1-7) — added, for future-proofing; Chapter 8's markers
+appeared out of reading order (⁹, ¹¹, ¹⁰) because the new Gisselbaek
+citation was inserted before the pre-existing Buolamwini & Gebru one —
+swapped to ⁹, ¹⁰, ¹¹; Chapter 11's pre-existing markers were also out of
+order (⁶ before ⁵, Gollwitzer before Arkes in reading order, unrelated to
+this session's edits) — swapped to ⁵, ⁶. Also completed two citation
+precision fixes: added the missing arXiv ID to the Betley et al. (Ch9)
+entry, and expanded the Cheng et al. (Ch10) entry from 2 to all 6 real
+authors plus volume/DOI (chapter text also updated to not imply a
+two-person team).
+
 **This completes the full `.5`-section convention audit for Chapters
 4-13.** Every chapter from 4 through 13 now closes with a concrete,
 current, real example (with real numbers wherever available) and an
