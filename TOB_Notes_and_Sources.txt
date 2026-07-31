@@ -1048,8 +1048,9 @@ under confident challenge) rather than as a specific reported result.
 
 Section 10.5 — The Permission
 
-9. Cheng, M., & Jurafsky, D. (2026). Sycophantic AI decreases prosocial
-intentions and promotes dependence. Science.
+9. Cheng, M., Lee, C., Khadpe, P., Yu, S., Han, D., & Jurafsky, D. (2026).
+Sycophantic AI decreases prosocial intentions and promotes dependence.
+Science, 391, eaec8352. https://doi.org/10.1126/science.aec8352
 
 Eleven widely used AI models tested against thousands of real
 interpersonal scenarios drawn from advice forums, comparing AI responses
