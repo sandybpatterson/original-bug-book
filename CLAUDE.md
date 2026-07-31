@@ -491,6 +491,32 @@ figure — exact match.
    a composite of a widely-reported failure pattern, not a specific cited
    incident.
 
+**Chapter 5 editing pass (2 fixes found so far):**
+1. Section 5.1's ASCII-42-equals-asterisk claim checked out (independently
+   verified against the ASCII standard), but its citation said "noted by
+   multiple Adams scholars" — vague and unattributable; it's a fan/online
+   observation, not scholarship. Fixed per the new vague-citation standing
+   rule (see below).
+2. Section 5.4's Socrates/Plato citation dated "The Meno; The Theaetetus;
+   The Republic" as one block to "ca. 399-387 BCE." Real scholarly dating
+   spreads these much later and wider: Meno ~386-380 BCE, Republic
+   ~380-370 BCE, Theaetetus ~369 BCE — none of which overlap much with
+   399-387 BCE (which is actually the period right after Socrates's trial
+   and death, matching the Apology, not these three middle-period
+   dialogues). Also, the citation's own description discusses "the
+   Apology" but that work wasn't in the citation's title list at all.
+   Fixed the date range and added Apology to the list with its own
+   correct (earlier) date.
+
+Also checked and confirmed accurate: Adams's "seven and a half million
+years" figure for Deep Thought's computation (matches the actual novel).
+One claim left unresolved rather than forced: whether Adams was 25 or 26
+when he wrote the "42" line — he pitched the radio series in 1977 (age
+25) but the specific reveal episode aired in 1978 after his 26th
+birthday, and the exact drafting date isn't pinned down by any source
+found. Left as-is per the standing policy of not fixing without solid
+evidence either way.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —

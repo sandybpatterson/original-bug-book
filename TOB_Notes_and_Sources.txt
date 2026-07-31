@@ -482,15 +482,22 @@ to authority for a fact that stands on its own; corrected.
 
 Section 5.4 — The Examined Question
 
-2. Plato. (ca. 399-387 BCE). The Meno; The Theaetetus; The Republic.
-Various translations.
+2. Plato. (ca. 386-369 BCE). The Meno; The Republic; The Theaetetus; The
+Apology (ca. 399-387 BCE, Plato's early period, shortly after Socrates's
+trial and death). Various translations.
 
 The primary sources for Socratic method as a practice of examining assumptions
 through structured questioning rather than the delivery of information. The
 concept of the examined life and the priority of the examined assumption are
 central to the Apology. The dialogue form used in this section — following a
 claim through its assumptions via sequential questioning — draws directly on
-the Socratic method as documented across these works.
+the Socratic method as documented across these works. Note: the Meno, Republic,
+and Theaetetus are middle-period dialogues written well after the Apology
+(scholarly consensus dates them roughly 386-369 BCE, with Theaetetus latest at
+~369 BCE) — the previous single date range given here ("399-387 BCE") applied
+only to the Apology's period and mischaracterized the dating of the other
+three works. The Apology itself was also missing from this citation's title
+list despite being discussed in the text above; added.
 
 ================================================================================
 CHAPTER 6 — NARRATIVE IS NOT TRUTH
