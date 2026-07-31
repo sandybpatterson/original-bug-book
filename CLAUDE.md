@@ -601,7 +601,28 @@ citation 12 and a weak/strong prompt contrast (ask the model to evaluate
 its own position vs. ask for a before/after probability with an explicit
 account of what moved the number).
 
-Still to do: 13.5 needs the same treatment — last one in this audit.
+**Chapter 13 Section 13.5 — `.5` convention audit (fixed):** Added:
+Nikeghbal, Kargaran, Kolli, & Diesner (2026, arXiv) — seven frontier models
+challenged on correct answers across 57 academic subjects; flip rate away
+from the correct answer ranged from 17.5% to 97.3% depending on which
+counterargument was used, and deliberately curating the single strongest
+counterargument per question (rather than an arbitrary one) pushed the
+flip rate up by another 23.6 percentage points. Directly supports this
+chapter's thesis that the strawman and the steel man differ in kind, not
+degree. Caught and fixed another citation-numbering slip mid-edit —
+initially used ¹, already taken by the Lincoln-Douglas citation; corrected
+to ⁶ (highest existing marker was ⁵). Added citation 6 and a weak/strong
+prompt contrast (ask for objections generally vs. ask for the single
+strongest objection a genuine expert opponent would raise).
+
+**This completes the full `.5`-section convention audit for Chapters
+4-13.** Every chapter from 4 through 13 now closes with a concrete,
+current, real example (with real numbers wherever available) and an
+explicit weak/strong prompt contrast, matching the standard set by
+Chapters 1-3's original revisions. Chapters 14-16 remain un-audited by
+design — they are synthesis/closing chapters with a structurally
+different role than the "one cognitive bias per chapter" pattern this
+convention was built for.
 
 **Chapter 10 second pass (1 fix found):** Section 10.4's Case Three
 attributed a specific finding — "users presenting confident self-diagnoses

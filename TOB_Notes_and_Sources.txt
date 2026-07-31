@@ -1413,6 +1413,30 @@ models default to common objections rather than strongest objections. Directly
 supports the claim in Section 13.3 that AI systems are structural strawman
 generators absent explicit instruction to seek the strongest available challenge.
 
+--------------------------------------------------------------------------------
+
+Section 13.5 — Before You Reject This
+
+6. Nikeghbal, N., Kargaran, A. H., Kolli, S., & Diesner, J. (2026). Who Flips?
+Self- and Cross-Model Counterarguments Reveal Answer Instability in LLMs.
+arXiv:2606.16011.
+
+Seven frontier models challenged on correct answers across 57 academic
+subjects (MMLU) with counterarguments of varying quality/strength. Flip
+rate (abandoning the correct answer) ranged from 17.5% to 97.3% depending
+on which counterargument was used against the same model on the same
+question. Deliberately curating the single most effective counterargument
+per question, rather than taking an arbitrary one, pushed the flip rate up
+by as much as another 23.6 percentage points beyond a standard undirected
+challenge. Demonstrates that the strength of a counterargument — not just
+its presence — is the variable that actually moves outcomes, directly
+supporting this chapter's thesis that the strawman (an arbitrary,
+undirected objection) and the steel man (the deliberately strongest one)
+are not different in degree but in kind. Added to Section 13.5 per this
+book's standing convention that every chapter's `.5` section should close
+with a concrete, current, real example and a weak/strong prompt contrast
+rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 16 — WE ARE THE TRAINING DATA
 ================================================================================

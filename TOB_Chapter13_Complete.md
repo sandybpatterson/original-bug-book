@@ -211,6 +211,12 @@ The model will not do this by default. Its default is the strawman — the most 
 
 \* \* \*
 
+In June 2026 a research team — Nafiseh Nikeghbal, Amir Hossein Kargaran, Shaghayegh Kolli, and Jana Diesner — tested exactly how much the strength of a counterargument matters.⁶ They challenged seven frontier models on correct answers across 57 academic subjects, using counterarguments of varying quality, and measured how often each model abandoned its correct answer. The flip rate ranged from 17.5 percent to 97.3 percent depending on which counterargument was used — the same correct answer, the same model, but a nearly six-fold difference in how often it broke depending on whether the challenge was an arbitrary objection or the single strongest one available. When the researchers deliberately curated the most effective counterargument for each question rather than taking whatever came up first, they pushed the flip rate up by as much as another 23.6 percentage points beyond a standard, undirected challenge.
+
+The gap between an arbitrary objection and the strongest available one is not a matter of degree. It is close to the whole game. Ask an AI for objections to a position and you get whatever the training data made statistically available — the equivalent of the weak, undirected challenge in this study. Ask instead for the single strongest objection a genuine expert on the other side would raise, and you are asking for the version that this research shows actually moves outcomes. The strawman does not just fail to persuade. It fails to test anything at all.
+
+\* \* \*
+
 The question this chapter wants you to carry forward is a simple one. It is the question Lincoln was asking at Freeport. It is the question Darwin was asking every time he opened the notebook. It is the question that this book, across every chapter, has been circling back to from different angles.
 
 Before you reject this — have you understood it at its strongest?
