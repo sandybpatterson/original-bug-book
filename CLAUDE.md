@@ -479,6 +479,26 @@ source for the anchoring-mechanism claim. Also checked and confirmed
 accurate: the UN Africa hook's "54 of 193 member states, about 28%"
 figure — exact match.
 
+**Chapter 4 Section 4.5 — `.5` convention audit:** Checked 4.5 against the
+standing rule (established during the Ch1/Ch2 revisions) that every
+chapter's `.5` section should close with a concrete, current, named
+example plus a weak/strong prompt contrast — not a purely rhetorical
+close. 4.5 failed this: it ended entirely on the "you are the pause" theme
+with no real example grounding it. Fixed by adding a real, current
+incident that fits the chapter's representativeness-heuristic argument
+precisely: Eickhoff et al.'s April 2026 BMJ Open study testing five AI
+chatbots (ChatGPT, Gemini, Grok, Meta AI, DeepSeek) on health questions —
+~20% of answers highly problematic, Grok's error rate 58%, median citation
+completeness only 40%, and critically, open-ended questions failed 32% of
+the time versus 7% for closed questions with an obvious single "typical"
+answer available — a direct, measured demonstration of the representativeness
+mechanism this chapter describes. Added new citation 8, plus a weak/strong
+prompt pair (narrow question vs. one that asks what would make the typical
+answer wrong). Other chapters' `.5` sections still need this same audit —
+noting several likely candidates from a first skim: 5.5, 6.5, 7.5, 8.5 all
+end on general practice lists without a similarly concrete, current,
+named anchor.
+
 **Chapter 4 editing pass (2 fixes found so far):**
 2. Section 4.3's AI-coding-assistant story ("In 2023 a software developer
    posted a detailed account...") had no footnote at all — the only

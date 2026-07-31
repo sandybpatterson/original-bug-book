@@ -459,6 +459,24 @@ Stanovich, K. E., & West, R. F. (2000). Individual differences in reasoning:
 Implications for the rationality debate. Behavioral and Brain Sciences, 23(5),
 645-665. https://doi.org/10.1017/S0140525X00003435
 
+8. Eickhoff, C., et al. (2026). Generative artificial intelligence-driven
+chatbots and medical misinformation: an accuracy, referencing and
+readability audit. BMJ Open. https://doi.org/10.1136/bmjopen-2025-112695
+
+Study testing ChatGPT, Gemini, Grok, Meta AI, and DeepSeek on real consumer
+health questions. Findings: ~20% of answers rated highly problematic, ~50%
+had some identified problem, Grok's problematic-answer rate reached 58%,
+ChatGPT 52%, Meta AI 50%. Median reference/citation completeness was only
+40% (no model achieved fully accurate citations across all answers).
+Open-ended questions were problematic 32% of the time versus 7% for closed
+questions with an obvious single representative answer — directly
+illustrating this chapter's representativeness-heuristic argument: failure
+concentrates precisely where no single statistically dominant answer
+exists in the training data. Added to Section 4.5 per this book's standing
+convention that every chapter's `.5` section should close with a concrete,
+current, real example and a weak/strong prompt contrast rather than a
+purely rhetorical close.
+
 ================================================================================
 CHAPTER 5 — ASK A BETTER QUESTION
 ================================================================================
