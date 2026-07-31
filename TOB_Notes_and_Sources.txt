@@ -910,7 +910,8 @@ which is the premise the argument's load-bearing assumption ignored.
 Section 9.5 — The Ground You're Standing On
 
 3. Betley, J., Treutlein, J., Dubiński, J., et al. (2026). Value leakage: An
-LLM's answers are silently shaped by its own values. arXiv (July 2026).
+LLM's answers are silently shaped by its own values. arXiv:2607.14345.
+Accepted at ICML 2026 Workshops (AI4GOOD and AIWILD).
 
 "Giraffe spots" experiment: an AI system asked to estimate a
 stakes-free quantity (total giraffe spots worldwide) gave a higher
