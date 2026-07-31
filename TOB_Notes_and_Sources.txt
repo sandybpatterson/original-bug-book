@@ -514,6 +514,12 @@ participants and documenting the universal narrative interpretation response —
 the assignment of intention, emotion, and relationship to triangles and a
 circle. The finding has been replicated across cultures and populations,
 including with participants explicitly warned they are watching geometric shapes.
+The original film ran approximately 2.5 minutes and was shown to 34
+undergraduate women at Smith College; 33 of the 34 narrated the shapes as
+people or animals rather than describing geometric motion. The chapter text
+previously stated the film's length as "thirty four seconds" — an apparent
+mix-up of the 34-subject count with the film's actual ~150-second runtime.
+Corrected to "about two and a half minutes."
 
 --------------------------------------------------------------------------------
 
@@ -555,14 +561,25 @@ cannot, from the inside, reliably distinguish between a genuine memory and a
 narratively coherent reconstruction that has been experienced with sufficient
 emotional intensity.
 
-5. Goldstein, J. A., Sastry, G., Musser, M., DiResta, R., Gentzel, M., &
-Sedova, K. (2023). Generative Language Models and Automated Influence
-Operations: Emerging Threats and Potential Mitigations. arXiv:2301.04246.
+5. Goldstein, J. A., Chao, J., Grossman, S., Stamos, A., & Tomz, M. (2024).
+How persuasive is AI-generated propaganda? PNAS Nexus, 3(2), pgae034.
+https://doi.org/10.1093/pnasnexus/pgae034
 
-On AI-generated narrative misinformation and the specific danger of coherent
-false accounts compared to straightforward factual errors. The finding that
-narrative structure is retained more reliably than factual content by readers
-exposed to AI-generated accounts is central to the argument of Section 6.4.
+Preregistered survey experiment of US respondents comparing the persuasiveness
+of real foreign-propaganda articles against GPT-3-generated articles on the
+same contested topics. GPT-3 output was comparably persuasive to genuine
+propaganda, and lightly edited/curated GPT-3 output was even more persuasive,
+in some cases matching or exceeding the original. Note: an earlier version of
+this entry cited a related but different paper — Goldstein, J. A., Sastry, G.,
+Musser, M., DiResta, R., Gentzel, M., & Sedova, K. (2023). Generative Language
+Models and Automated Influence Operations. arXiv:2301.04246 — which is a
+threat-assessment/policy report, not an empirical study, and does not contain
+the "readers retained narrative structure more reliably than factual content"
+finding the chapter text previously attributed to it. That specific claim
+could not be verified and has been replaced with the real, verified finding
+from the 2024 persuasion study above. The 2023 arXiv report remains useful
+background on the same research program's threat model, but is no longer
+the citation for this section's empirical claim.
 
 ================================================================================
 CHAPTER 7 — WHAT DOES UNDERSTANDING EVEN MEAN

@@ -517,6 +517,34 @@ birthday, and the exact drafting date isn't pinned down by any source
 found. Left as-is per the standing policy of not fixing without solid
 evidence either way.
 
+**Chapter 6 editing pass (2 fixes found so far):**
+1. Section 6.1 described the Heider & Simmel film as running "thirty four
+   seconds." The real film runs about 2.5 minutes (~150 seconds) and was
+   shown to 34 undergraduate women at Smith College — the "34" is the
+   subject count, not a duration. Looks like a straightforward mix-up
+   between the two numbers. Fixed to "about two and a half minutes" and
+   added the real subject count/finding (33 of 34 narrated the shapes as
+   people or animals) to the notes entry.
+2. Case Three (Section 6.4) attributed a specific empirical finding —
+   "readers... retained the narrative structure... far more reliably than
+   readers who received equivalent information presented without narrative
+   shaping" — to Goldstein et al. 2023. Checked that paper directly: it's
+   a threat-assessment/policy report on AI influence operations, not a
+   reader-retention study, and contains no such finding. Same invented-
+   specific-finding pattern as the Ch4 fixes. Replaced with the real,
+   verified finding from a related but different paper by the same
+   research group: Goldstein, Chao, Grossman, Stamos, & Tomz (2024), "How
+   persuasive is AI-generated propaganda?" PNAS Nexus — a preregistered
+   experiment showing GPT-3-generated propaganda was comparably (and with
+   light editing, sometimes more) persuasive than real human-written
+   propaganda. Rewrote the case around this actual finding and corrected
+   the citation.
+
+Also checked and confirmed accurate: the Colin Powell "there is no doubt
+in my mind" quote (verified exact wording, February 2003 UN Security
+Council address) and the Chilcot Inquiry timeline (launched July 2009,
+published July 2016 — "more than seven years," exact match).
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —
