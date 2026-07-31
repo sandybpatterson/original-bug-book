@@ -469,8 +469,14 @@ Section 5.1 — The Hook
 
 The source of the Deep Thought narrative used throughout this chapter,
 including the forty two answer and the wildcard observation. The ASCII
-connection (42 = asterisk) has been noted by multiple Adams scholars and is
-consistent with his documented interest in computing.
+connection (42 = asterisk) is independently verifiable against the ASCII
+standard itself and does not require outside attribution. It is a widely
+circulated observation among fans and online commentators, not a claim
+documented by named Adams scholars or confirmed by Adams himself — the
+chapter's own hedge ("whether Adams intended this precisely... is a
+matter of some debate") reflects that correctly. Previous wording here
+("noted by multiple Adams scholars") was a vague, unattributable appeal
+to authority for a fact that stands on its own; corrected.
 
 --------------------------------------------------------------------------------
 

@@ -511,3 +511,16 @@ restatement of the chapter's thesis. This is the throughline every `.5`
 section should have: Chapter 1 → verification prompts for confabulation,
 Chapter 2 → mechanism-probing prompts for pattern-without-cause. Apply the
 same standard when writing or revising Chapters 3–16's `.5` sections.
+
+**Standing rule for fact-checking passes going forward:** when a claim
+itself checks out but its citation is vague — an unnamed appeal to
+authority like "noted by multiple scholars," "researchers have found," or
+a source that doesn't actually say what it's cited for — fix the citation
+even though the underlying fact isn't in dispute. Either name a real
+source, or state plainly that the fact is independently verifiable and
+doesn't need one. Example: Chapter 5's ASCII-42-equals-asterisk citation
+said "noted by multiple Adams scholars," which wasn't attributable to
+anyone specific — it's a fan/online observation, not scholarship. The
+fact is true (ASCII 42 is the asterisk) and needed no authority to back
+it; the vague attribution was the problem, not the claim. Watch for this
+same pattern in every remaining chapter, not just outright wrong claims.
