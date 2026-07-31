@@ -93,7 +93,7 @@ The mall study was replicated and extended — researchers planted memories of h
 
 Then came Bugs Bunny.
 
-In 2001 Loftus and her colleagues showed participants fake advertisements for Disneyland featuring Bugs Bunny — a Warner Bros. character who has never appeared at a Disney park and never could, being the intellectual property of a competing studio. After viewing the ad, a significant proportion of participants reported having met Bugs Bunny at Disneyland as a child.⁶ Some remembered shaking his hand. Some remembered hugging him. Some remembered what he was wearing, what he said, where they were standing in the park.
+In 2002 Loftus and her colleagues showed participants fake advertisements for Disneyland featuring Bugs Bunny — a Warner Bros. character who has never appeared at a Disney park and never could, being the intellectual property of a competing studio. After viewing the ad, a significant proportion of participants reported having met Bugs Bunny at Disneyland as a child.⁶ Some remembered shaking his hand. Some remembered hugging him. Some remembered what he was wearing, what he said, where they were standing in the park.
 
 Bugs Bunny was never at Disneyland. The memory was not a distortion of something that happened — it was a complete fabrication assembled from a suggestion so mild that subjects had not experienced it as a suggestion at all. They had experienced it as an advertisement. And from that, combined with the brain's capacity for constructive gap-filling, they had built a memory that carried the emotional warmth of genuine childhood experience.
 

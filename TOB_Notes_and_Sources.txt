@@ -55,13 +55,18 @@ that were not present in the film (broken glass).
 
 Section 1.3 — The Invented Memory
 
-4. The "lost in the mall" false memory implantation study: Loftus, E. F.
-(1993). The reality of repressed memories. American Psychologist, 48(5),
-518-537. https://doi.org/10.1037/0003-066X.48.5.518
+4. The "lost in the mall" false memory implantation study: Loftus, E. F., &
+Pickrell, J. E. (1995). The formation of false memories. Psychiatric Annals,
+25(12), 720-725. https://doi.org/10.3928/0048-5713-19951201-07
 
-Introduces and describes the lost in the mall paradigm, in which approximately
-25% of subjects came to falsely remember a fabricated childhood event presented
-alongside three real ones.
+The formal published study: 24 subjects were given booklets of four childhood
+narratives (three real, one fabricated — the mall event) supplied by a family
+member; approximately 25% came to falsely remember the fabricated event, in
+partial or full detail. Note: Loftus's 1993 American Psychologist paper (The
+reality of repressed memories, 48(5), 518-537) is sometimes cited for this
+paradigm, but it only describes the informal single-family pilot that preceded
+this study (the "Chris" story, no quantified results) — the 25% figure and the
+formal multi-subject booklet procedure are from this 1995 paper specifically.
 
 5. Replication and extension of the false memory implantation paradigm: Hyman,
 I. E., Husband, T. H., & Billings, F. J. (1995). False memories of childhood
@@ -76,6 +81,11 @@ subjects with full sensory and emotional detail.
 Loftus, E. F. (2002). Make my memory: How advertising can change our memories
 of the past. Psychology & Marketing, 19(1), 1-23.
 https://doi.org/10.1002/mar.1000
+
+Note: preliminary results were publicly announced via a University of
+Washington press release in June 2001 (widely covered, including by
+ScienceDaily), ahead of the peer-reviewed publication in 2002. The chapter
+text uses 2002 to match the actual peer-reviewed citation.
 
 Documents false memory formation following exposure to a fake advertisement
 featuring a character (Bugs Bunny) who could not plausibly have appeared at

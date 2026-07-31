@@ -314,6 +314,33 @@ problem, but worth remembering the distinction when adding future
 real-world examples: is the cited number a frozen fact, or a live count
 that will be wrong again in a month?
 
+**Chapter 1 editing pass, Section 1.3 full check (2 more fixes, on
+request):** Sandy asked for a full fact-check of the "lost in the mall"
+section specifically. Found:
+1. Citation ⁴ (backing "approximately twenty five percent of subjects...
+   booklet containing four short narratives") pointed to Loftus's 1993
+   American Psychologist paper ("The Reality of Repressed Memories").
+   Checked that paper's actual content — it only describes the informal,
+   single-family pilot that preceded the real study (the "Chris" story,
+   no quantified results, not the formal booklet procedure). The 25%
+   figure and the formal 24-subject, four-narrative methodology are from
+   a different, later paper: Loftus, E. F., & Pickrell, J. E. (1995). The
+   formation of false memories. Psychiatric Annals, 25(12), 720-725.
+   Fixed citation 4 to point to the correct paper, with a note explaining
+   the distinction from the 1993 pilot anecdote.
+2. The Bugs Bunny/Disneyland paragraph said "In 2001," but the actual
+   peer-reviewed paper (already correctly cited as entry 6) is Braun,
+   Ellis & Loftus (2002). The 2001 date comes from a University of
+   Washington press release announcing preliminary results a year ahead
+   of formal publication. Changed the chapter text to 2002 to match the
+   actual cited paper, and added a note explaining the 2001 press
+   coverage so it isn't reintroduced as a "correction" later.
+
+Also checked and confirmed accurate: the Loftus & Pickrell four-narrative
+booklet procedure itself, the ~25% false-memory rate, and the Bugs
+Bunny/Warner-Bros.-vs-Disney premise (a genuinely "impossible" memory,
+since Bugs Bunny could never appear at a Disney park).
+
 ---
 
 **Chapter 3 status:** Unlike Chapters 1 and 2, this chapter was never
