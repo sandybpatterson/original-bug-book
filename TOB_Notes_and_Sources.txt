@@ -1324,6 +1324,27 @@ predictions in an environment the model was not trained on. Provides the
 theoretical framework for the financial trading feedback loop discussed in
 Section 12.4.
 
+--------------------------------------------------------------------------------
+
+Section 12.5 — The Value of Doubt
+
+12. Prasad, P. S., & Nguyen, M. N. (2025). When Two LLMs Debate, Both Think
+They'll Win. arXiv:2505.19184.
+
+Sixty three-round policy debates among ten state-of-the-art LLMs, each side
+privately rating its own win probability (0-100) after every round. Average
+initial confidence was 72.9% against a rational baseline of 50%, and rose
+to 83% by the final round despite each side having heard the opposing
+argument each round. In 61.7% of debates, both sides simultaneously claimed
+>=75% win probability — a logical impossibility. Even when a model was told
+explicitly it was debating an identical copy of itself (exactly 50/50 odds),
+confidence still rose above 50%. A precise, current demonstration of this
+chapter's core mechanism: certainty increasing specifically in response to
+contradicting evidence rather than updating against it. Added to Section
+12.5 per this book's standing convention that every chapter's `.5` section
+should close with a concrete, current, real example and a weak/strong
+prompt contrast rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 13 — STEEL-MANNING THE MACHINE
 ================================================================================

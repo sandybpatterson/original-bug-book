@@ -589,7 +589,19 @@ corrected to ⁷. Added citation 7 and a weak/strong prompt contrast (ask
 the model to review its own prior answer vs. strip the source and ask it
 to review the same reasoning as if it came from someone else).
 
-Still to do: 12.5, 13.5 need the same treatment.
+**Chapter 12 Section 12.5 — `.5` convention audit (fixed):** Added: Prasad
+& Nguyen (2025, arXiv) — 60 three-round LLM debates, confidence rising
+from 72.9% to 83% despite hearing the opposing argument each round; 61.7%
+of debates had both sides simultaneously claiming >=75% win probability
+(logically impossible); confidence rose above 50% even when a model was
+told explicitly it had exactly even odds. An exceptionally precise fit —
+this is the chapter's central thesis (certainty filtering out
+contradicting evidence) caught directly in a controlled experiment. Added
+citation 12 and a weak/strong prompt contrast (ask the model to evaluate
+its own position vs. ask for a before/after probability with an explicit
+account of what moved the number).
+
+Still to do: 13.5 needs the same treatment — last one in this audit.
 
 **Chapter 10 second pass (1 fix found):** Section 10.4's Case Three
 attributed a specific finding — "users presenting confident self-diagnoses
