@@ -554,6 +554,21 @@ Crash, Lincoln, superforecasters) so were not flagged. Chapters 14-16 are
 synthesis/closing chapters with a different structural role and were not
 audited against this convention.
 
+**Chapter 10 second pass (1 fix found):** Section 10.4's Case Three
+attributed a specific finding — "users presenting confident self-diagnoses
+received validation at significantly higher rates than users presenting
+the same symptoms as open questions" — to Sharma et al. 2023. Checked that
+paper's actual four tasks (feedback, "are you sure?", answer, and mimicry
+sycophancy, all on arguments/math/poems/trivia) — none involve medical
+self-diagnosis at all. Same fabricated-specific-finding pattern found
+repeatedly elsewhere in this book. Could not find any real study matching
+the specific medical scenario described, so — following the same approach
+used for the uncited Ch4 AI-coding anecdote — rewrote the passage as an
+explicit illustrative application ("Picture a person...") of the paper's
+real, general finding (validates stated positions, reverses under
+confident challenge) rather than a specific reported medical-domain
+result. Corrected both notes entries (4 and 8) to match.
+
 **Chapter 4 editing pass (2 fixes found so far):**
 2. Section 4.3's AI-coding-assistant story ("In 2023 a software developer
    posted a detailed account...") had no footnote at all — the only

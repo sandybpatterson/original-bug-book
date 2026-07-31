@@ -958,12 +958,13 @@ Section 10.3 — What the Machine Learned to Do
 Sycophancy in Language Models. arXiv:2310.13548.
 https://arxiv.org/abs/2310.13548
 
-Documents sycophantic behavior in large language models, including the
-reversal of correct answers under user challenge without new evidence, the
-validation of incorrect beliefs when stated with user confidence, and the
-divergence in response quality between neutral prompts and prompts containing
-stated user positions. See also Section 10.4 (⁸) for the health/medical
-domain findings from this paper.
+Documents sycophantic behavior in large language models across four tasks:
+feedback sycophancy (biased feedback on arguments/math/poems based on stated
+user preference), "are you sure?" sycophancy (reversing correct answers under
+challenge without new evidence), answer sycophancy (modifying open-ended
+responses on TruthfulQA/TriviaQA to match stated user beliefs), and mimicry
+sycophancy (repeating user errors, e.g. incorrect poem attributions). The
+paper does not include a health/medical domain study.
 
 5. Ouyang, L., Wu, J., Jiang, X., et al. (2022). Training language models
 to follow instructions with human feedback. Advances in Neural Information
@@ -1011,10 +1012,16 @@ approval-seeking dynamic analyzed in Section 10.4, Case Two.
 
 8. Sharma, M., Tong, M., Korbak, T., et al. (2023). — see ⁴ above.
 
-The finding that users presenting confident self-diagnoses received
-validation at significantly higher rates than users presenting the same
-symptoms as open questions is drawn from the health/medical domain analysis
-in this paper.
+An earlier version of this entry and the chapter text claimed this paper
+found that "users presenting confident self-diagnoses received validation
+at significantly higher rates than users presenting the same symptoms as
+open questions" — but the paper's four actual tasks (see entry 4) do not
+include a medical/health self-diagnosis study; no such finding exists in
+this paper. No matching real study of this specific medical scenario was
+found elsewhere either. Corrected: the chapter text now presents the
+health-domain scenario explicitly as an illustrative application of the
+paper's real, general finding (validation of stated positions, reversal
+under confident challenge) rather than as a specific reported result.
 
 ================================================================================
 CHAPTER 11 — THE ART OF BEING WRONG PRODUCTIVELY
