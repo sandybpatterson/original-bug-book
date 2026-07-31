@@ -895,7 +895,13 @@ technical cause of the Challenger disaster, and the organizational
 communication failures that allowed the launch to proceed despite engineers'
 explicit objections. The finding that dissenting technical opinions were
 overridden through social pressure rather than technical rebuttal is the
-basis for the Case One argument in Section 10.4.
+basis for the Case One argument in Section 10.4. Note: the "take off your
+engineering hat and put on your management hat" line was said by Morton
+Thiokol's own senior VP, Jerald Mason, to Thiokol's VP of engineering, Bob
+Lund — internal company pressure, not a NASA manager addressing the
+Thiokol team as an earlier version of the chapter text stated. NASA's
+pressure on Thiokol that night is separately documented (e.g., Lawrence
+Mulloy's remarks) but is a distinct exchange from this one. Corrected.
 
 7. Ptacek, J. T., & Eberhardt, T. L. (1996). Breaking bad news: A review
 of the literature. JAMA, 276(6), 496-502.

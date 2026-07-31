@@ -583,6 +583,26 @@ Also checked and confirmed accurate: the WEAT study's Princeton/University
 of Bath author affiliations, and the Jacky Alciné/Google Photos incident's
 name, date (June 2015), and details.
 
+**Chapter 9 editing pass:** Full check on the O.J. Simpson glove narrative
+(Section 9.1) — date (June 15, 1995), Darden's role, and Cochran's quote
+all verified exactly accurate. Also verified the mRNA vaccine platform's
+"over two decades" of pre-COVID development (Karikó/Weissman research
+traces to the early 1990s). No fixes found — clean chapter.
+
+**Chapter 10 editing pass (1 fix found on first check):** Section 10.4's
+Challenger case misattributed the "take off your engineering hat and put
+on your management hat" line to "one NASA manager" speaking to "the
+Thiokol team." That line was actually said by Morton Thiokol's own senior
+VP, Jerald Mason, to Thiokol's own VP of engineering, Bob Lund — internal
+company pressure, not NASA pressuring Thiokol. NASA did pressure Thiokol
+that night (separately documented, e.g. Lawrence Mulloy's remarks), but
+this specific quote is a different, internal exchange. Fixed the chapter
+text to correctly attribute it and added a clarifying note to the Rogers
+Commission citation. Also verified accurate: the Asch conformity
+statistics (75% conformed at least once, 37% of critical trials) and the
+Challenger date/duration (January 28, 1986; broke apart 73 seconds after
+launch) — both exact matches.
+
 **Chapter 8 editing pass, fix 2:** Section 8.3's Amazon recruiting-tool case
 said "Amazon scrapped the tool in 2018." Amazon actually disbanded the team
 and scrapped it in early 2017 — 2018 is when Reuters broke the story
