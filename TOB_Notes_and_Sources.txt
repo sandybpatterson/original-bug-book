@@ -1106,12 +1106,21 @@ predicting recidivism. Science Advances, 4(1), eaao5580.
 https://doi.org/10.1126/sciadv.aao5580
 
 Demonstrates that COMPAS predictions are no more accurate than those of random
-untrained participants, and that the confident numerical score produces anchoring
-effects in human decision-makers: judges given a risk score cluster their
-decisions around that score in ways inconsistent with using it as one input among
-many. The irreversibility of the criminal justice domain — the sentences are
-served before corrections arrive — makes anchoring to an overconfident score
-particularly costly.
+untrained participants recruited online (via Mechanical Turk) — comparable
+accuracy is achievable with a simple linear classifier using only two features,
+versus COMPAS's 137.
+
+The claim about judicial anchoring to risk scores is not from this paper — an
+earlier version of this entry incorrectly attributed it here. The correct
+source is: Stevenson, M. T., & Doleac, J. L. (2024). Algorithmic risk
+assessment in the hands of humans. American Economic Journal: Economic Policy,
+16(4), 382-414. This study found that judges' sentencing decisions were
+influenced by risk scores (longer sentences for higher-scored defendants,
+shorter for lower-scored), that judicial discretion substantially mediated
+this influence, and that the reshuffling did not produce measurable gains in
+public safety or reduced incarceration. The irreversibility of the criminal
+justice domain — sentences are served before corrections arrive — makes this
+anchoring particularly costly regardless of which paper documents it.
 
 --------------------------------------------------------------------------------
 

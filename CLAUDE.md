@@ -616,8 +616,18 @@ Species). Both accurate. No fixes found — clean chapter.
 
 **Chapter 12 editing pass:** Full check on the Semmelweis narrative (dates,
 age at death, mortality rates) and the Flash Crash timeline (May 6 2010,
-36 minutes, point decline). All verified accurate. No fixes found — clean
-chapter.
+36 minutes, point decline). All verified accurate.
+
+**Chapter 12 second pass (1 fix found):** The judicial-anchoring claim in
+Section 12.3 ("judges given a risk score... show significant anchoring
+effects") was cited to Dressel & Farid 2018 — but that paper is actually
+about COMPAS matching random Mechanical Turk crowd-worker predictions
+(137 features vs. a 2-feature classifier), not about judges anchoring to
+risk scores at all. Found the real source: Stevenson, M. T., & Doleac,
+J. L. (2024). Algorithmic risk assessment in the hands of humans. American
+Economic Journal: Economic Policy, 16(4), 382-414 — which does document
+judges' sentencing decisions being influenced by risk scores. Corrected
+the citation; kept Dressel & Farid for the claim it actually supports.
 
 **Chapter 13 editing pass:** Full check on the Lincoln-Douglas debates
 (Freeport as the second of seven, August 27 1858) and Douglas's Senate
