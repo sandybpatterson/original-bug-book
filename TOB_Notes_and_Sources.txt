@@ -350,7 +350,7 @@ CHAPTER 4 — THE SHORTCUT PROBLEM
 
 Section 4.1 — The Hook
 
-The spinning wheel anchoring experiment: Tversky, A., & Kahneman, D. (1974).
+1. The spinning wheel anchoring experiment: Tversky, A., & Kahneman, D. (1974).
 Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124-1131.
 https://doi.org/10.1126/science.185.4157.1124
 
@@ -377,11 +377,11 @@ disparity between perceived and actual risk; the availability effect on risk
 perception is comprehensively reviewed in: Slovic, P. (1987). Perception of risk.
 Science, 236(4799), 280-285. https://doi.org/10.1126/science.3563507
 
-The representativeness heuristic: Kahneman, D., & Tversky, A. (1973). On the
+2. The representativeness heuristic: Kahneman, D., & Tversky, A. (1973). On the
 psychology of prediction. Psychological Review, 80(4), 237-251.
 https://doi.org/10.1037/h0034747
 
-The Linda problem (conjunction fallacy): Tversky, A., & Kahneman, D. (1983).
+3. The Linda problem (conjunction fallacy): Tversky, A., & Kahneman, D. (1983).
 Extensional versus intuitive reasoning: The conjunction fallacy in probability
 judgment. Psychological Review, 90(4), 293-315.
 https://doi.org/10.1037/0033-295X.90.4.293
@@ -406,14 +406,14 @@ Draws on the anchoring and representativeness research cited in Sections
 
 Section 4.4 — When Shortcuts Kill
 
-Mars Climate Orbiter: Isbell, A. (1999). Mars Climate Orbiter Mishap
+4. Mars Climate Orbiter: Isbell, A. (1999). Mars Climate Orbiter Mishap
 Investigation Board Phase I Report. NASA.
 https://llis.nasa.gov/llis_lib/pdf/1009464main1_0641-mr.pdf
 
 The official investigation documenting the imperial-to-metric units mismatch that
 destroyed the $327 million spacecraft after nine months of undetected error.
 
-Anchoring in clinical diagnosis: Graber, M. L., Franklin, N., & Gordon, R.
+5. Anchoring in clinical diagnosis: Graber, M. L., Franklin, N., & Gordon, R.
 (2005). Diagnostic error in internal medicine. Archives of Internal Medicine,
 165(13), 1493-1499. https://doi.org/10.1001/archinte.165.13.1493
 
@@ -430,7 +430,7 @@ associated with medical decisions: A systematic review. BMC Medical
 Informatics and Decision Making, 16, 138.
 https://doi.org/10.1186/s12911-016-0377-1
 
-COMPAS racial disparities: Angwin, J., Larson, J., Mattu, S., & Kirchner, L.
+6. COMPAS racial disparities: Angwin, J., Larson, J., Mattu, S., & Kirchner, L.
 (2016, May 23). Machine Bias. ProPublica.
 https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
 
@@ -447,7 +447,7 @@ finding, while contested in its interpretation, has not been successfully refute
 
 Section 4.5 — The Close
 
-Kahneman's two-system framework: Kahneman, D. (2011). Thinking, Fast and Slow.
+7. Kahneman's two-system framework: Kahneman, D. (2011). Thinking, Fast and Slow.
 Farrar, Straus and Giroux.
 
 The System 1 / System 2 framework draws on Kahneman's synthesis of decades of
@@ -845,19 +845,7 @@ structures. The argument that scale and fluency amplify rather than neutralize
 historical bias in AI systems — that the model magnifies what it inherited —
 draws on Noble's framework.
 
-10. Buolamwini, J., & Gebru, T. (2018). Gender shades: Intersectional accuracy
-disparities in commercial gender classification. Proceedings of Machine Learning
-Research, 81, 1-15. http://proceedings.mlr.press/v81/buolamwini18a.html
-
-Audit of three commercial facial recognition systems (Microsoft, IBM, Face++)
-finding accuracy disparities of up to 34 percentage points between lighter-
-skinned men (highest accuracy) and darker-skinned women (lowest accuracy). The
-study directly links underrepresentation in training data to measurable, audited
-accuracy gaps on real deployed systems. A foundational empirical document for
-the claim that representation bias in training produces concrete disparate
-performance outcomes.
-
-11. Gisselbaek, M., Berger-Estilita, J., Minsart, L., et al. (2025). Gender
+10. Gisselbaek, M., Berger-Estilita, J., Minsart, L., et al. (2025). Gender
 disparities in artificial intelligence-generated images of hospital
 leadership in the United States. Mayo Clinic Proceedings: Digital Health,
 3(2), 100218.
@@ -873,6 +861,18 @@ found across all four roles and across models. Added to Section 8.5 per
 this book's standing convention that every chapter's `.5` section should
 close with a concrete, current, real example and a weak/strong prompt
 contrast rather than a purely rhetorical close.
+
+11. Buolamwini, J., & Gebru, T. (2018). Gender shades: Intersectional accuracy
+disparities in commercial gender classification. Proceedings of Machine Learning
+Research, 81, 1-15. http://proceedings.mlr.press/v81/buolamwini18a.html
+
+Audit of three commercial facial recognition systems (Microsoft, IBM, Face++)
+finding accuracy disparities of up to 34 percentage points between lighter-
+skinned men (highest accuracy) and darker-skinned women (lowest accuracy). The
+study directly links underrepresentation in training data to measurable, audited
+accuracy gaps on real deployed systems. A foundational empirical document for
+the claim that representation bias in training produces concrete disparate
+performance outcomes.
 
 ================================================================================
 CHAPTER 9 — THE EXAMINED ASSUMPTION
@@ -1128,18 +1128,7 @@ human error-correction practices.
 
 Section 11.4 — Building the System
 
-5. Arkes, H. R., Faust, D., Guilmette, T. J., & Hart, K. (1988).
-Eliminating the hindsight bias. Journal of Applied Psychology, 73(2),
-305-307. https://doi.org/10.1037/0021-9010.73.2.305
-
-Demonstrates that writing down predictions before outcomes are known
-significantly reduces hindsight bias — the tendency to retrospectively
-inflate the perceived probability of what actually occurred. The finding
-that external records outperform retrospective recall for self-assessment
-of reasoning quality is the empirical basis for Practice One and the
-broader design principle of the four-practice system in Section 11.4.
-
-6. Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of
+5. Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of
 simple plans. American Psychologist, 54(7), 493-503.
 https://doi.org/10.1037/0003-066X.54.7.493
 
@@ -1149,6 +1138,17 @@ dramatically higher follow-through rates than general intentions. Supports
 the design principle that the specificity and externality of a written
 prediction — not just the intention to track one's beliefs — is what makes
 the commitment device effective.
+
+6. Arkes, H. R., Faust, D., Guilmette, T. J., & Hart, K. (1988).
+Eliminating the hindsight bias. Journal of Applied Psychology, 73(2),
+305-307. https://doi.org/10.1037/0021-9010.73.2.305
+
+Demonstrates that writing down predictions before outcomes are known
+significantly reduces hindsight bias — the tendency to retrospectively
+inflate the perceived probability of what actually occurred. The finding
+that external records outperform retrospective recall for self-assessment
+of reasoning quality is the empirical basis for Practice One and the
+broader design principle of the four-practice system in Section 11.4.
 
 --------------------------------------------------------------------------------
 
