@@ -691,7 +691,10 @@ Primary reporting on Amazon's internal development and subsequent abandonment
 of a machine learning tool trained on ten years of hiring data that downrated
 resumes containing female-associated signals. The mechanism — learning
 historical success patterns from a dataset with documented gender skew — is the
-historical bias case study in this section.
+historical bias case study in this section. Note: Amazon actually disbanded the
+team and scrapped the tool in early 2017 — the October 2018 date on this
+article is when Reuters broke the story publicly, not when the tool was
+scrapped. The chapter text previously conflated these two dates; corrected.
 
 5. Simonite, T. (2018, January 11). When It Comes to Gorillas, Google Photos
 Remains Blind. Wired.

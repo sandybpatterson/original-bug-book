@@ -583,6 +583,13 @@ Also checked and confirmed accurate: the WEAT study's Princeton/University
 of Bath author affiliations, and the Jacky Alciné/Google Photos incident's
 name, date (June 2015), and details.
 
+**Chapter 8 editing pass, fix 2:** Section 8.3's Amazon recruiting-tool case
+said "Amazon scrapped the tool in 2018." Amazon actually disbanded the team
+and scrapped it in early 2017 — 2018 is when Reuters broke the story
+publicly, more than a year later. Fixed the chapter text to state both
+dates correctly and distinguish them, and added a clarifying note to the
+Dastin citation.
+
 **Resolved — and now a standing convention:** Chapter 1 Section 1.5's revision
 replaced a repetitive/rhetorical ending with concrete, sourced, current
 material — real 2026 court cases (Sixth Circuit, Nebraska Supreme Court) —
