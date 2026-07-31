@@ -587,7 +587,13 @@ name, date (June 2015), and details.
 (Section 9.1) — date (June 15, 1995), Darden's role, and Cochran's quote
 all verified exactly accurate. Also verified the mRNA vaccine platform's
 "over two decades" of pre-COVID development (Karikó/Weissman research
-traces to the early 1990s). No fixes found — clean chapter.
+traces to the early 1990s).
+
+**Chapter 9 second pass (1 fix found):** Checked the Section 9.4 notes
+citations individually. The Krammer 2020 Nature citation (Argument Three)
+is exact. But the Morgan & Thompson "Criminal Victimization, 2020" BJS
+report (Argument One) was cited as "NCJ 301773" — the real report number
+is NCJ 301775. Small transcription error, fixed.
 
 **Chapter 10 editing pass (1 fix found on first check):** Section 10.4's
 Challenger case misattributed the "take off your engineering hat and put
