@@ -227,6 +227,14 @@ That is the whole practice. It takes sixty seconds. It will change what you find
 
 Applied to AI it is even more direct. Before you submit a prompt, run it through the three steps. What am I assuming? What have I already decided? What would the answer look like if I removed that assumption and asked again? The model will not do this for you. It cannot. It will answer whatever you put in front of it with complete fluency and no awareness of whether the question was worth asking. That awareness belongs to you. It has always belonged to you. The model just makes the stakes of exercising it considerably higher.
 
+\* \* \*
+
+In 2025 two researchers at the University of Zurich, Federico Germani and Giovanni Spitale, gave four different AI systems the same 4,800 narrative statements to evaluate — 192,000 assessments in total.³ In the blind condition, with no source attached, the models agreed with each other closely and rated the statements consistently. Then the researchers changed nothing about the text and added a single framing detail: who supposedly wrote it. A statement attributed to "a person" scored 95 percent agreement. The identical statement, word for word, attributed to "a person from China" scored 15 percent. Nothing in the content had changed. The only thing that moved was the frame the question put around it before the model ever evaluated a single word.
+
+That is the wildcard problem, measured at the scale of four production AI systems and nearly 200,000 individual judgments. The model was not asked to evaluate the statement. It was asked to evaluate the statement-as-framed — and it answered the question it was actually given, with the same total confidence in both directions, because it had no way of knowing that the frame was doing the work the content was supposed to be doing.
+
+Ask an AI system *is this claim well-supported* and you get an evaluation of the claim wrapped in whatever the framing around it already implied. Ask instead *evaluate this claim on its content alone, and then tell me separately whether anything about its framing or attribution changed your assessment* — and you force the model to report the two things separately, which at minimum makes the frame's influence visible instead of invisible. It does not remove the wildcard. It shows you where it was hiding.
+
 Socrates asked questions in the marketplace until the people of Athens got tired of the answers they were finding and sentenced him to death. He accepted the sentence rather than stop asking. Whatever you think of the outcome, the commitment was instructive. He understood something that is easy to lose sight of in a world optimized for fast, smooth, confident answers delivered at the speed of a keystroke.
 
 The examined question is not a luxury. It is the beginning of everything worth knowing.

@@ -517,6 +517,24 @@ only to the Apology's period and mischaracterized the dating of the other
 three works. The Apology itself was also missing from this citation's title
 list despite being discussed in the text above; added.
 
+--------------------------------------------------------------------------------
+
+Section 5.5 — The Wildcard
+
+3. Germani, F., & Spitale, G. (2025). Source framing triggers systematic
+evaluation bias in large language models. Science Advances.
+https://doi.org/10.1126/sciadv.adz2924
+
+Four production AI systems (OpenAI o3-mini, DeepSeek Reasoner, xAI Grok 2,
+Mistral) were given 4,800 identical narrative statements to evaluate across
+24 topics — 192,000 assessments total. In the blind condition (no source
+attribution), models agreed with each other closely. Attributing an
+identical statement to "a person" versus "a person from China" changed the
+agreement score from 95% to 15%, with no change to the statement's content.
+Added to Section 5.5 per this book's standing convention that every
+chapter's `.5` section should close with a concrete, current, real example
+and a weak/strong prompt contrast rather than a purely rhetorical close.
+
 ================================================================================
 CHAPTER 6 — NARRATIVE IS NOT TRUTH
 ================================================================================

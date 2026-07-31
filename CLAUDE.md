@@ -499,6 +499,17 @@ noting several likely candidates from a first skim: 5.5, 6.5, 7.5, 8.5 all
 end on general practice lists without a similarly concrete, current,
 named anchor.
 
+**Chapter 5 Section 5.5 — `.5` convention audit (fixed):** Same problem —
+5.5 closed on the Adams/Socrates callbacks with no current real-world
+grounding. Added: Germani & Spitale (2025, Science Advances) — four AI
+systems evaluating 4,800 identical statements, 192,000 assessments total;
+identical text scored 95% agreement attributed to "a person" and 15%
+attributed to "a person from China." A dramatic, real, current
+demonstration of this chapter's exact thesis (the frame determines the
+answer, not the content). Added citation 3 and a weak/strong prompt
+contrast (evaluate the claim directly vs. evaluate content and framing
+separately).
+
 **Chapter 4 editing pass (2 fixes found so far):**
 2. Section 4.3's AI-coding-assistant story ("In 2023 a software developer
    posted a detailed account...") had no footnote at all — the only
