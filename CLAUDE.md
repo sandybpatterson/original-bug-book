@@ -625,6 +625,18 @@ everything preceding it. That's fourteen chapters, not fifteen — a simple
 internal-consistency error, not something requiring outside verification.
 Fixed to "fourteen" (three instances in the same sentence).
 
+**Chapter 15 editing pass (1 fix found):** Section 15.3 said "This is the
+fourteenth time this book has held the mirror up... The third through
+thirteenth followed in order" — then listed twelve chapter topics ending
+with "examined conversation" (Chapter 14's topic). "Third through
+thirteenth" is only eleven chapters; needed to be "third through
+fourteenth" to match both the "fourteenth time" count and the twelve-item
+list. Fixed. Also checked: this chapter's several uses of "fifteen
+chapters" (Sections 15.3, 15.5) are correct as-is, since Chapter 15 talking
+about itself plus everything preceding it is genuinely fifteen chapters —
+unlike Chapter 14's error, which undercounted by referring to a total that
+included a chapter not yet reached.
+
 **Chapter 8 editing pass, fix 2:** Section 8.3's Amazon recruiting-tool case
 said "Amazon scrapped the tool in 2018." Amazon actually disbanded the team
 and scrapped it in early 2017 — 2018 is when Reuters broke the story

@@ -121,7 +121,7 @@ It is what careful thinking actually is, in a mind that has always been and will
 
 ## Section 15.3 — The AI Mirror, One Last Time
 
-This is the fourteenth time this book has held the mirror up. The first was in Chapter 1, where the mirror showed confabulation. The second was in Chapter 2, where it showed pattern-matching in noise. The third through thirteenth followed in order — overconfidence, shortcuts, question framing, narrative construction, understanding, bias, assumption, sycophancy, error-correction, certainty, steel-manning, examined conversation. Each time the mirror was held up it showed the same essential thing from a different angle: the flaw in the machine is the flaw in the original, inherited through the training data, running in both systems simultaneously, producing the same outputs at different scales.
+This is the fourteenth time this book has held the mirror up. The first was in Chapter 1, where the mirror showed confabulation. The second was in Chapter 2, where it showed pattern-matching in noise. The third through fourteenth followed in order — overconfidence, shortcuts, question framing, narrative construction, understanding, bias, assumption, sycophancy, error-correction, certainty, steel-manning, examined conversation. Each time the mirror was held up it showed the same essential thing from a different angle: the flaw in the machine is the flaw in the original, inherited through the training data, running in both systems simultaneously, producing the same outputs at different scales.
 
 This is the last time.
 
