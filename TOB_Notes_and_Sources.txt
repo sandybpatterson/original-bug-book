@@ -617,6 +617,28 @@ from the 2024 persuasion study above. The 2023 arXiv report remains useful
 background on the same research program's threat model, but is no longer
 the citation for this section's empirical claim.
 
+--------------------------------------------------------------------------------
+
+Section 6.5 — The Signal
+
+6. Marusich, L. R., Dhooghe, M. G. K., Bakdash, J. Z., & Kantarcioglu, M.
+(2026). Human decision-making with persuasive and narrative LLM
+explanations. arXiv:2605.23867.
+
+Large-scale behavioral experiment giving participants an AI system's
+classification prediction, either bare or wrapped in a narrative
+explanation of varying persuasiveness. Persuasiveness of the explanation
+did not meaningfully improve decision accuracy over the bare prediction
+alone; narrative explanations increased reliance on the AI's prediction
+regardless of whether it was correct, and more persuasive narratives were
+associated with slower recognition of incorrect AI predictions. Added to
+Section 6.5 per this book's standing convention that every chapter's `.5`
+section should close with a concrete, current, real example and a
+weak/strong prompt contrast rather than a purely rhetorical close. No
+precise percentage is reported here because none could be reliably
+extracted from the paper — stated qualitatively rather than inventing a
+false-precision number, consistent with this book's own argument.
+
 ================================================================================
 CHAPTER 7 — WHAT DOES UNDERSTANDING EVEN MEAN
 ================================================================================

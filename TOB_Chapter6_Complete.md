@@ -181,6 +181,12 @@ Applied to AI this is more specific and more urgent than it sounds in the abstra
 
 None of these signals mean the response is wrong. They mean the response deserves a second look before it becomes belief. The look does not have to be long. It has to happen.
 
+\* \* \*
+
+In May 2026 a research team — Laura Marusich, Mary Grace Kozuch Dhooghe, Jonathan Bakdash, and Murat Kantarcioglu — published a large-scale study testing exactly this signal.⁶ They gave people an AI system's prediction on a classification task, either bare or wrapped in a narrative explanation of varying persuasiveness, and measured what happened to actual decision accuracy. The story did not make people right more often. What it did was make them rely on the AI more — whether the AI's prediction was correct or not — and, in its most persuasive forms, made people slower to notice when the AI was wrong. The narrative did not improve the judgment. It anesthetized the doubt that would have caught the error.
+
+That is the signal this section has been describing, measured directly: coherence bought trust, and trust is not the same currency as accuracy. Ask an AI *why did this happen* and you invite the satisfying arc — cause, effect, resolution — regardless of whether the underlying situation actually resolves that cleanly. Ask instead *what happened, and separately, how confident should I be in that account* and you force the two things the narrative was fusing back apart, where you can actually see whether the confidence is earned.
+
 There is a practice that sits underneath all three signals and makes them easier to apply. Before you accept any explanation — from an AI, from a news source, from an expert, from your own memory of events — ask one question. Not about the conclusion. About the structure.
 
 **The Narrative Check**

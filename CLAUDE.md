@@ -510,6 +510,17 @@ answer, not the content). Added citation 3 and a weak/strong prompt
 contrast (evaluate the claim directly vs. evaluate content and framing
 separately).
 
+**Chapter 6 Section 6.5 — `.5` convention audit (fixed):** Same gap — 6.5
+closed on the "three narrative signals" practice list with no concrete
+current anchor. Added: Marusich, Dhooghe, Bakdash, & Kantarcioglu (May
+2026, arXiv) — large-scale study finding narrative AI explanations didn't
+improve decision accuracy but did increase reliance on the AI regardless
+of correctness, and slowed recognition of wrong predictions when the
+narrative was more persuasive. No precise percentage was extractable from
+the paper, so the finding is stated qualitatively rather than inventing a
+number — deliberately consistent with the book's own thesis about false
+precision. Added citation 6 and a weak/strong prompt contrast.
+
 **Chapter 4 editing pass (2 fixes found so far):**
 2. Section 4.3's AI-coding-assistant story ("In 2023 a software developer
    posted a detailed account...") had no footnote at all — the only
